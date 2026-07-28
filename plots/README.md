@@ -8,7 +8,7 @@ uv run python .\src\plots\main.py
 ## Thesis scalability model
 
 The configuration-level Amdahl--Karp--Flatt analysis reads the 600 raw
-process outputs under `NPB3.4-OMP/benchmarks/dual`, validates the expected
+process outputs under `data/dual`, validates the expected
 two-process cells, fits one effective scaling-loss fraction per kernel and
 condition, performs launch-group bootstrap resampling and a `t=32` forward
 hold-out check, and exports the model data and thesis figure:

@@ -30,7 +30,7 @@ from plots.plotting import (
 )
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-JOB_DIR = REPO_ROOT / "NPB3.4-OMP" / "benchmarks" / "staggered" / "187303"
+JOB_DIR = REPO_ROOT / "data" / "staggered" / "187303"
 
 # Figures are consumed by the thesis repo, which lives outside this one. Point
 # THESIS_FIGURES_DIR at its figures/ directory to write straight into it.
@@ -199,7 +199,7 @@ def _make_speedup_thesis_fig(df: pd.DataFrame) -> go.Figure:
 # `dual-exclusive` is excluded: it only ever launched one process per
 # configuration (no `_2` output files), so dyn=true/false are indistinguishable
 # there and it cannot represent the two-process oversubscription scenario.
-BENCH_ROOT = REPO_ROOT / "NPB3.4-OMP" / "benchmarks"
+BENCH_ROOT = REPO_ROOT / "data"
 agg_sources = [
     ("dual", BENCH_ROOT / "dual"),
 ]

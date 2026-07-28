@@ -21,7 +21,7 @@ class ScalabilityModelTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
         cls.observations = load_dual_observations(
-            REPO_ROOT / "NPB3.4-OMP" / "benchmarks" / "dual"
+            REPO_ROOT / "data" / "dual"
         )
 
     def test_complete_raw_dataset_is_loaded(self) -> None:

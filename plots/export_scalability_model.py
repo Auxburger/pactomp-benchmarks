@@ -17,7 +17,7 @@ from plots.scalability_model import KERNELS, MODES, fit_all, load_dual_observati
 
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-DATA_ROOT = REPO_ROOT / "NPB3.4-OMP" / "benchmarks" / "dual"
+DATA_ROOT = REPO_ROOT / "data" / "dual"
 
 # See export_thesis_figs.py: THESIS_FIGURES_DIR redirects output into the
 # thesis repo's figures/ directory, which no longer sits alongside this one.

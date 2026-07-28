@@ -218,10 +218,10 @@ __marimo__/
 .streamlit/secrets.toml
 
 # ── Benchmark result data ────────────────────────────────────────────────────
-# Raw .log outputs under NPB3.4-OMP (cpu_util, pidstat, rm.log, per-node stdout)
-# are primary research artifacts, not incidental logs. Override the generic
-# "*.log" rule from the Django section above.
-!NPB3.4-OMP/**/*.log
+# Raw .log outputs under data/ (cpu_util, pidstat, rm.log, per-node stdout) are
+# primary research artifacts, not incidental logs. Override the generic "*.log"
+# rule from the Django section above. Keep this negation.
+!data/**/*.log
 
 # Default local output of plots/export_*.py. The canonical copies of these
 # figures are committed in the thesis repo; set THESIS_FIGURES_DIR to write
@@ -234,3 +234,27 @@ __marimo__/
 # CLAUDE.md files are committed deliberately and are not affected.
 **/.claude/settings.json
 **/.claude/settings.local.json
+
+# Per-directory agent memory. Notes-to-self, not project documentation.
+experiments/memory/
+
+# Superseded scripts kept for local reference only.
+experiments/old/
+
+# ── Bundled NPB build output ────────────────────────────────────────────────
+# NPB3.4-OMP/ is a pristine copy of the upstream NPB 3.4.3 release and must stay
+# byte-identical to it. Everything the build produces or requires in place is
+# ignored here, so `git status` stays clean after a build and the tree can be
+# re-verified against the upstream tarball at any time.
+#
+# config/make.def is the one input the build needs inside the tree; the
+# canonical copy lives in experiments/make.def and build_npb.sh installs it.
+NPB3.4-OMP/bin/
+NPB3.4-OMP/config/make.def
+NPB3.4-OMP/config/suite.def
+NPB3.4-OMP/sys/setparams
+NPB3.4-OMP/module
+NPB3.4-OMP/**/npbparams.h
+NPB3.4-OMP/FT/blk_par.h
+NPB3.4-OMP/**/*.o
+NPB3.4-OMP/**/*.mod

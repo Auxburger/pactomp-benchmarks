@@ -14,11 +14,11 @@ cd src && python main.py --png     # also export PNGs next to each HTML (require
 
 Flags can be combined: `--static --png` exports both. Outputs land in `plots/<group>/`.
 
-**Incremental builds**: all three processing stages (aggregated benchmarks, monitoring, staggered) skip regenerating a plot if the output HTML is already newer than every input file. To force a rebuild: touch any input log file (`touch benchmarks/staggered/187303/cg_t32_off10_A1.log`) or delete the output directory.
+**Incremental builds**: all three processing stages (aggregated benchmarks, monitoring, staggered) skip regenerating a plot if the output HTML is already newer than every input file. To force a rebuild: touch any input log file (`touch data/staggered/187303/cg_t32_off10_A1.log`) or delete the output directory.
 
 **Thesis figure export**: `export_thesis_figs.py` (in this directory, not `src/`) is a separate script that regenerates the thesis-quality PDFs for job 187303 (staggered) and job 172930 (aggregated `dual`) and writes them to `../figures/`. It applies thesis styling (legend at bottom, suppressed title, 900×420 px). Run with `uv run python export_thesis_figs.py` (requires Chrome for kaleido rendering — run `kaleido_get_chrome` once if missing). Does **not** generate cpu_placement figures — see warning below.
 
-**Scalability model export**: `export_scalability_model.py` fits the configuration-level Amdahl--Karp--Flatt model over `benchmarks/dual` and writes `amdahl_karp_flatt_capacity.pdf` to `../figures/` plus two CSVs to `plots/model/`. Run with `uv run --project . python export_scalability_model.py` from this directory, or `uv run --project plots python plots/export_scalability_model.py` from the repo root. Same thesis styling and TUM colours as above.
+**Scalability model export**: `export_scalability_model.py` fits the configuration-level Amdahl--Karp--Flatt model over `data/dual` and writes `amdahl_karp_flatt_capacity.pdf` to `../figures/` plus two CSVs to `plots/model/`. Run with `uv run --project . python export_scalability_model.py` from this directory, or `uv run --project plots python plots/export_scalability_model.py` from the repo root. Same thesis styling and TUM colours as above.
 
 **Every figure in `../figures/` must be produced through kaleido.** `main.tex` loads `\usepackage[a-2u]{pdfx}` for PDF/A-2u, which requires all fonts to be embedded; kaleido embeds a subsetted OpenSans, so figures written this way comply. Hand-written PDF (e.g. raw content streams using base-14 Helvetica) does **not** embed fonts and silently breaks PDF/A for the whole thesis. Verify with `pdffonts ../figures/<name>.pdf` — the `emb` column must read `yes` for every row.
 
@@ -28,19 +28,19 @@ Flags can be combined: `--static --png` exports both. Outputs land in `plots/<gr
 
 ## Experiments
 
-### Main experiment (`benchmarks/dual/`)
+### Main experiment (`data/dual/`)
 Two concurrent processes per benchmark (FT, CG, EP from NPB suite):
 - **A-side (`dyn=true`)**: DRM-managed — grants `t/2` threads each → `t` total threads on `t` CPUs (no oversubscription)
 - **B-side (`dyn=false`)**: unmanaged — each uses `t` threads → `2t` total threads on `t` CPUs (2× oversubscription)
 
 Results (job 172930): CG +60%, FT +21% for DRM at t=32. EP ~0% (expected, compute-bound).
 
-### Staggered experiment (`benchmarks/staggered/`)
+### Staggered experiment (`data/staggered/`)
 Demonstrates DRM dynamic rebalancing. A1/B1 start first with full resources; A2/B2 join after `offset` seconds (default 10 s). Each worker logs per-iteration timing. DRM renegotiates `32 → 16+16 → 32` threads as processes join/leave.
 
 **New-format layout** (from `run_staggered.sbatch` / `test_staggered.sh`): logs are written into a per-job subdirectory named after the SLURM job ID:
 ```
-benchmarks/staggered/<SLURM_JOB_ID>/
+data/staggered/<SLURM_JOB_ID>/
   ft_t32_off2_A1.log
   ft_t32_off2_rm.log
   ...
@@ -96,7 +96,7 @@ Both parsers (`staggered_parsing.py`, `monitoring_parsing.py`) handle old logs w
 | FT  | 11.36 s | 9.24 s     | 0.81 | DRM 19 % slower (bandwidth pinning) |
 | EP  | 6.66 s  | 3.22 s     | 0.48 | DRM ~2× slower, unstable |
 
-See `STAGGERED_HANDOVER.md` at the repo root for full per-job history and interpretation.
+See `docs/STAGGERED_HANDOVER.md` for full per-job history and interpretation.
 
 ---
 
@@ -157,9 +157,9 @@ Each staggered iteration is a fresh process (new pid per run). After A2 joins, A
 
 ## Adding new benchmark results
 
-1. Drop the new SLURM job directory into `benchmarks/staggered/` (new format) or run dirs into `benchmarks/dual/`
+1. Drop the new SLURM job directory into `data/staggered/` (new format) or run dirs into `data/dual/`
 2. Run `cd src && python main.py` — only the newest staggered job is plotted; unchanged outputs are skipped
 3. Use `--all` to regenerate everything across all staggered jobs
 4. The `rm.log` DRM blocks are used for `t_inferred` correction in pidstat figures — keep it alongside `pidstat.log`
 5. If the new job should become the canonical thesis run, update `export_thesis_figs.py` (`JOB_DIR`) and re-run it to refresh `../figures/`
-6. Update `STAGGERED_HANDOVER.md` at the repo root with the new numbers
+6. Update `docs/STAGGERED_HANDOVER.md` with the new numbers

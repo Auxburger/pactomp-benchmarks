@@ -71,9 +71,10 @@ def main() -> None:
     args = ap.parse_args()
 
     # Resolve paths relative to repository root (works on Windows and Linux)
-    repo_root = Path(__file__).resolve().parents[1]
-    benchmarks_base = repo_root.parent / "NPB3.4-OMP" / "benchmarks"
-    out_dir = repo_root / "plots"  # outputs into ./plots/<group>
+    plots_root = Path(__file__).resolve().parents[1]
+    repo_root = plots_root.parent
+    benchmarks_base = repo_root / "data"
+    out_dir = plots_root / "plots"  # outputs into ./plots/<group>
 
     sources = [
         ("dual-exclusive", benchmarks_base / "dual-exclusive"),
@@ -318,7 +319,7 @@ def process_staggered_logs(staggered_dir: Path, out_dir: Path, static: bool, png
     stag_out = out_dir / "staggered"
     stag_out.mkdir(parents=True, exist_ok=True)
 
-    # Collect new-format job subdirectories: benchmarks/staggered/<jobid>/
+    # Collect new-format job subdirectories: data/staggered/<jobid>/
     # Each subdir contains the logs for one SLURM job (pidstat.log, cpu_util.log, *_A1.log …)
     # Sort numerically by job ID so the newest (highest) ID is last.
     all_job_subdirs: list[tuple[str, Path]] = sorted(

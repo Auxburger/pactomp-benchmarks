@@ -26,8 +26,9 @@ NPB3.4-OMP/
     developed by the NAS Parallel Benchmarks Group at NASA Ames Research
     Center (npb@nas.nasa.gov). See <https://www.nas.nasa.gov/software/npb.html>.
 
-    Distributed under the NPB license, reproduced in NPB3.4-OMP/LICENSE and
-    carried in the header of each benchmark source file:
+    Distributed under the NPB license, reproduced in
+    NPB3.4-OMP/LICENSE and carried in the header of each benchmark
+    source file:
 
         Permission to use, copy, distribute and modify this software
         for any purpose with or without fee is hereby granted.  We
