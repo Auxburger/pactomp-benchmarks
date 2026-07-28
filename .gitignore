@@ -227,3 +227,10 @@ __marimo__/
 # figures are committed in the thesis repo; set THESIS_FIGURES_DIR to write
 # there directly instead.
 /figures/
+
+# ── Local agent config ───────────────────────────────────────────────────────
+# Claude Code per-directory settings hold machine-local absolute paths (cluster
+# home directories, account IDs) that should not be published. Project-wide
+# CLAUDE.md files are committed deliberately and are not affected.
+**/.claude/settings.json
+**/.claude/settings.local.json

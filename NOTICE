@@ -1,0 +1,45 @@
+PactOMP Benchmarks
+Copyright 2026 Darius Augsburger
+
+This software was developed as part of a Master's thesis at the
+Technical University of Munich (TUM).
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-------------------------------------------------------------------------------
+
+This distribution bundles third-party code that is NOT covered by the
+Apache License above and remains under its own terms:
+
+NPB3.4-OMP/
+    The OpenMP implementation of the NAS Parallel Benchmarks, version 3.4.3,
+    developed by the NAS Parallel Benchmarks Group at NASA Ames Research
+    Center (npb@nas.nasa.gov). See <https://www.nas.nasa.gov/software/npb.html>.
+
+    Distributed under the NPB license, reproduced in NPB3.4-OMP/LICENSE and
+    carried in the header of each benchmark source file:
+
+        Permission to use, copy, distribute and modify this software
+        for any purpose with or without fee is hereby granted.  We
+        request, however, that all derived work reference the NAS
+        Parallel Benchmarks 3.4. This software is provided "as is"
+        without express or implied warranty.
+
+    The benchmark code in that tree is an unmodified copy of NPB 3.4.3 and
+    remains under the NPB license above. The DRM instrumentation lives entirely
+    in a patched LLVM OpenMP runtime outside this repository; the benchmarks
+    link it dynamically and were not themselves changed.
+
+    The build scripts, SLURM launch scripts, analysis code, configuration, and
+    measurement data added alongside that copy are Copyright 2026 Darius
+    Augsburger and licensed under Apache-2.0.

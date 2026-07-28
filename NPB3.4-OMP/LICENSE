@@ -1,0 +1,36 @@
+NAS Parallel Benchmarks 3.4 — OpenMP version (NPB3.4-OMP)
+
+Developed by the NAS Parallel Benchmarks Group, NASA Ames Research Center,
+Moffett Field, CA 94035-1000 <npb@nas.nasa.gov>.
+
+The following notice is carried in the header of each benchmark source file in
+this tree and is reproduced here verbatim:
+
+    Permission to use, copy, distribute and modify this software
+    for any purpose with or without fee is hereby granted.  We
+    request, however, that all derived work reference the NAS
+    Parallel Benchmarks 3.4. This software is provided "as is"
+    without express or implied warranty.
+
+Information on NPB 3.4, including the technical report, the original
+specifications, source code, results and information on how to submit new
+results, is available at:
+
+    https://www.nas.nasa.gov/software/npb.html
+
+-------------------------------------------------------------------------------
+
+SCOPE OF THIS COPY
+
+The NPB 3.4.3 benchmark code in this directory is unmodified and remains under
+the NPB license reproduced above.
+
+Instrumentation for the PactOMP dynamic resource manager (DRM) is not applied
+to the benchmarks themselves: it lives in a patched LLVM OpenMP runtime outside
+this repository, which the benchmark binaries load dynamically at run time.
+
+Files added alongside the benchmark code — build scripts (build_omp.sh), SLURM
+launch scripts (run_*.sbatch, test_*.sh), analysis code, configuration, and the
+retained measurement data under benchmarks/ — are Copyright 2026 Darius
+Augsburger and licensed under the Apache License, Version 2.0. See the LICENSE
+and NOTICE files at the root of this repository.
