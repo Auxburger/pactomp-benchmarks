@@ -1,9 +1,23 @@
-# pactomp-benchmarks
+# PactOMP Benchmarks
 
 Benchmark harness, raw measurement data, and analysis code for the PactOMP
 dynamic resource management (DRM) work. Split out of the master-thesis
 repository so the thesis text stays lightweight and the measurement artifacts
 have a home of their own.
+
+## Related repositories
+
+- **The coordinator** — [Auxburger/pactomp-coordinator](https://github.com/Auxburger/pactomp-coordinator):
+  the DRM daemon itself, a dependency-free Rust binary that arbitrates thread
+  counts and CPU ranges between co-scheduled OpenMP processes. The experiments
+  here launch it and record its `rm.log`.
+- **The client counterpart** — [Auxburger/llvm-project @ `feature/PO-1-implement-llvm-pactomp-connection`](https://github.com/Auxburger/llvm-project/tree/feature/PO-1-implement-llvm-pactomp-connection):
+  an LLVM fork whose OpenMP runtime queries the coordinator before forming a
+  thread team and applies the returned thread count and affinity. This is the
+  `libomp.so` that `experiments/build_omp.sh` builds and the NPB binaries load.
+- **Thesis text** — [Auxburger/master-thesis](https://github.com/Auxburger/master-thesis):
+  the write-up that motivates the design and interprets these measurements. It
+  consumes the figure PDFs exported from this repository.
 
 ## Layout
 
@@ -11,9 +25,16 @@ have a home of their own.
 |------|----------|
 | `data/` | The measurement record — all retained run outputs |
 | `experiments/` | Build and SLURM launch scripts, the NPB build config, and the CPU-utilisation helper |
-| `plots/` | Python analysis pipeline (Plotly): parsing, staggered visualisation, the scalability model, and the thesis figure export |
+| `src/analysis/` | The analysis package (Plotly): parsing, plotting, and the scalability model |
+| `src/main.py` | Pipeline entry point — discovers logs and writes every figure group |
+| `export_*.py` | Standalone thesis figure exports |
+| `tests/` | Test suite for the scalability model |
 | `NPB3.4-OMP/` | Unmodified NAS Parallel Benchmarks 3.4.3 (OpenMP), third-party — see [NOTICE](NOTICE) |
-| `docs/` | Report, per-job handover notes, and project status |
+| `docs/` | Report, per-job handover notes, analysis pipeline guide, project status |
+
+The Python project lives at the repository root: `pyproject.toml`, `src/`, and
+`tests/`. Generated figures land in `output/<group>/` and are gitignored — they
+are fully reproducible from `data/`.
 
 Nothing of ours lives inside `NPB3.4-OMP/`. It is byte-identical to the upstream
 NPB 3.4.3 release, so it can be re-verified against the official tarball at any
@@ -62,30 +83,50 @@ experiment designs, and the known runtime limitations.
 
 ## Analysis
 
-The Python project is managed with [uv](https://docs.astral.sh/uv/):
+The Python project is managed with [uv](https://docs.astral.sh/uv/), and runs
+from the repository root:
 
 ```sh
-cd plots
 uv sync
 uv run python -m pytest tests/ -q
+
+uv run python src/main.py           # newest staggered job only (skips unchanged outputs)
+uv run python src/main.py --all     # every staggered job
+uv run python src/main.py --static  # also export PDFs (requires kaleido + Chrome)
 ```
+
+Figures land in `output/<group>/`. See [docs/ANALYSIS.md](docs/ANALYSIS.md) for
+the plot design decisions, parsing details, and the canonical staggered job.
 
 ## Regenerating the thesis figures
 
-`plots/export_thesis_figs.py` and `plots/export_scalability_model.py` write the
-PDFs that the thesis includes. By default they write to `figures/` at the root
-of this repository. Because the thesis now lives in a separate checkout, point
+`export_thesis_figs.py` and `export_scalability_model.py` write the PDFs that
+the thesis includes. By default they write to `figures/` at the root of this
+repository. Because the thesis lives in a separate checkout, point
 `THESIS_FIGURES_DIR` at its `figures/` directory to write straight into it:
 
 ```sh
-cd plots
-THESIS_FIGURES_DIR=../../master-thesis/figures uv run python export_thesis_figs.py
-THESIS_FIGURES_DIR=../../master-thesis/figures uv run python export_scalability_model.py
+THESIS_FIGURES_DIR=../master-thesis/figures uv run python export_thesis_figs.py
+THESIS_FIGURES_DIR=../master-thesis/figures uv run python export_scalability_model.py
 ```
 
 Adjust the relative path to wherever the thesis repository is checked out.
 `export_scalability_model.py` additionally writes its fitted summary and
-pointwise Karp--Flatt diagnostics to `plots/plots/model/`, which is committed.
+pointwise Karp--Flatt diagnostics to `output/model/`.
+
+### Scalability model
+
+The configuration-level Amdahl--Karp--Flatt analysis reads the 600 raw process
+outputs under `data/dual`, validates the expected two-process cells, fits one
+effective scaling-loss fraction per kernel and condition, performs launch-group
+bootstrap resampling and a `t=32` forward hold-out check, then writes:
+
+- `output/model/amdahl_karp_flatt_summary.csv`
+- `output/model/amdahl_karp_flatt_points.csv`
+- `figures/amdahl_karp_flatt_capacity.pdf`
+
+The CSV half needs only the standard library; the PDF needs Kaleido and Chrome
+(`uv run plotly_get_chrome` once, if missing).
 
 ## License
 

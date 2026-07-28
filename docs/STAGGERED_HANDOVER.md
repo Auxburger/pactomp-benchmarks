@@ -107,11 +107,11 @@ Log format:
 ```
 
 A = mean of (mean(A1 iters 3–13) + mean(A2 iters 3–13)) / 2, similarly for B.
-The same parse logic is in `plots/src/plots/staggered_parsing.py`.
+The same parse logic is in `src/analysis/staggered_parsing.py`.
 
-Plots exist under `plots/plots/staggered/187303/` (cpu_placement, cpu_pins,
+Plots exist under `output/staggered/187303/` (cpu_placement, cpu_pins,
 cpu_slab, threads, timeline per alg, plus cpu_util and steadystate_summary).
-Regenerate with `cd plots && uv run python ./src/plots/main.py`.
+Regenerate with `uv run python src/main.py`.
 
 ---
 

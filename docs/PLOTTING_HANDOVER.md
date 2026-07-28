@@ -191,6 +191,6 @@ experiments/analyze_cpu_util.py
 
 Output plots should go to:
 ```
-<repo root>/plots/
+<repo root>/output/
 ```
 (create if it doesn't exist)

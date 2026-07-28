@@ -13,7 +13,7 @@ relevant markdown files before finishing:
 |------|-------------|
 | `docs/STAGGERED_HANDOVER.md` | New staggered job, per-job results, interpretation changes |
 | `docs/PLOTTING_HANDOVER.md` | Plotting pipeline or staggered analysis changes |
-| `plots/CLAUDE.md` | Plot design decisions, source layout, canonical job changes |
+| `docs/ANALYSIS.md` | Plot design decisions, source layout, canonical job changes |
 | `experiments/CLAUDE.md` | DRM protocol, key paths, known limitations changes |
 
 Do not leave markdown docs stale after a code or data change.
@@ -36,7 +36,7 @@ The thesis consumes those PDFs from its own `figures/` directory, so set
 `figures/` output is gitignored.
 
 The thesis chapters cite paths in this repository as prose references, for
-example `plots/export_thesis_figs.py` and `data/dual`. If you
+example `export_thesis_figs.py` and `data/dual`. If you
 move or rename either, check `chapters/08_benchmarks.tex` in the thesis repo.
 
 ## The bundled NPB tree is pristine
@@ -66,7 +66,20 @@ reintroduce absolute cluster paths — they broke once already when this
 repository was split out of the thesis repo, and they leak the cluster account
 into a public repository.
 
-## Sub-project CLAUDE.md files
+## Further guidance
 
-- [plots/CLAUDE.md](plots/CLAUDE.md) — Python plotting pipeline (Plotly, staggered visualisation, thesis figure export)
-- [experiments/CLAUDE.md](experiments/CLAUDE.md) — DRM protocol, experiment designs, SLURM setup, known limitations
+- [docs/ANALYSIS.md](docs/ANALYSIS.md) — Python analysis pipeline: plot design
+  decisions, parsing details, the canonical staggered job, and the PDF/A
+  constraint on exported figures. Read this before touching `src/` or the
+  `export_*.py` scripts. (Was `plots/CLAUDE.md`; the Python project now lives at
+  the repository root, so it is a referenced doc rather than a directory-scoped
+  CLAUDE.md.)
+- [experiments/CLAUDE.md](experiments/CLAUDE.md) — DRM protocol, experiment
+  designs, SLURM setup, known limitations
+
+## The analysis project is rooted at the repository root
+
+`pyproject.toml`, `src/analysis/` (the package), `src/main.py`, `tests/`, and
+the `export_*.py` scripts all sit at the top level; run everything with
+`uv run` from there. Generated figures go to `output/<group>/`, which is
+gitignored and fully reproducible from `data/` — do not commit them.

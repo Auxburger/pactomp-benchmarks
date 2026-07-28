@@ -1,0 +1,12 @@
+[project]
+name = "pactomp-benchmarks"
+version = "0.1.0"
+description = "Analysis pipeline for the PactOMP DRM benchmark measurements"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "ipykernel>=7.1.0",
+    "kaleido>=1.2.0",
+    "pandas>=3.0.0",
+    "plotly>=6.5.2",
+]

@@ -223,10 +223,15 @@ __marimo__/
 # rule from the Django section above. Keep this negation.
 !data/**/*.log
 
-# Default local output of plots/export_*.py. The canonical copies of these
-# figures are committed in the thesis repo; set THESIS_FIGURES_DIR to write
-# there directly instead.
+# Default local output of export_*.py. The canonical copies of these figures
+# are committed in the thesis repo; set THESIS_FIGURES_DIR to write there
+# directly instead.
 /figures/
+
+# Generated analysis output: interactive HTML per plot group, plus the
+# scalability-model CSVs. All of it is reproducible from data/ by running
+# `uv run python src/main.py` and `uv run python export_scalability_model.py`.
+/output/
 
 # ── Local agent config ───────────────────────────────────────────────────────
 # Claude Code per-directory settings hold machine-local absolute paths (cluster
