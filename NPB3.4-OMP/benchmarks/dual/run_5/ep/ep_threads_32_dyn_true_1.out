@@ -1,0 +1,88 @@
+OMP: pid 45742 tid 45742 thread 0 bound to OS proc set {1-32}
+OMP: pid 45742 tid 45750 thread 3 bound to OS proc set {1-32}
+OMP: pid 45742 tid 45748 thread 2 bound to OS proc set {1-32}
+OMP: pid 45742 tid 45747 thread 1 bound to OS proc set {1-32}
+OMP: pid 45742 tid 45759 thread 8 bound to OS proc set {1-32}
+OMP: pid 45742 tid 45783 thread 15 bound to OS proc set {1-32}
+OMP: pid 45742 tid 45751 thread 4 bound to OS proc set {1-32}
+OMP: pid 45742 tid 45775 thread 12 bound to OS proc set {1-32}
+OMP: pid 45742 tid 45772 thread 11 bound to OS proc set {1-32}
+OMP: pid 45742 tid 45758 thread 7 bound to OS proc set {1-32}
+OMP: pid 45742 tid 45781 thread 14 bound to OS proc set {1-32}
+OMP: pid 45742 tid 45768 thread 10 bound to OS proc set {1-32}
+OMP: pid 45742 tid 45838 thread 31 bound to OS proc set {1-32}
+OMP: pid 45742 tid 45778 thread 13 bound to OS proc set {1-32}
+OMP: pid 45742 tid 45756 thread 6 bound to OS proc set {1-32}
+OMP: pid 45742 tid 45825 thread 28 bound to OS proc set {1-32}
+OMP: pid 45742 tid 45786 thread 16 bound to OS proc set {1-32}
+OMP: pid 45742 tid 45754 thread 5 bound to OS proc set {1-32}
+OMP: pid 45742 tid 45834 thread 30 bound to OS proc set {1-32}
+OMP: pid 45742 tid 45794 thread 19 bound to OS proc set {1-32}
+OMP: pid 45742 tid 45790 thread 18 bound to OS proc set {1-32}
+OMP: pid 45742 tid 45764 thread 9 bound to OS proc set {1-32}
+OMP: pid 45742 tid 45823 thread 27 bound to OS proc set {1-32}
+OMP: pid 45742 tid 45830 thread 29 bound to OS proc set {1-32}
+OMP: pid 45742 tid 45811 thread 24 bound to OS proc set {1-32}
+OMP: pid 45742 tid 45788 thread 17 bound to OS proc set {1-32}
+OMP: pid 45742 tid 45821 thread 26 bound to OS proc set {1-32}
+OMP: pid 45742 tid 45807 thread 22 bound to OS proc set {1-32}
+OMP: pid 45742 tid 45815 thread 25 bound to OS proc set {1-32}
+OMP: pid 45742 tid 45810 thread 23 bound to OS proc set {1-32}
+OMP: pid 45742 tid 45799 thread 20 bound to OS proc set {1-32}
+OMP: pid 45742 tid 45802 thread 21 bound to OS proc set {1-32}
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - EP Benchmark
+
+ Number of random numbers generated:      8589934592
+ Number of available threads:                     32
+
+EP Benchmark Results:
+
+CPU Time =     3.108
+N = 2^   32
+No. Gaussian Pairs =    3373275903.
+Sums =     2.691444083863086D+09    2.691519118724448D+09
+Counts:
+  0    1572172634.
+  1    1501108549.
+  2     281805648.
+  3      17761221.
+  4        424017.
+  5          3821.
+  6            13.
+  7             0.
+  8             0.
+  9             0.
+
+
+ EP Benchmark Completed.
+ Class           =                        C
+ Size            =               8589934592
+ Iterations      =                        0
+ Time in seconds =                     3.11
+ Total threads   =                       32
+ Avail threads   =                       32
+ Mop/s total     =                  2764.05
+ Mop/s/thread    =                    86.38
+ Operation type  = Random numbers generated
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              18 Feb 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L/dss/dsshome1/09/ga27qam2/llvm-project/bu...
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

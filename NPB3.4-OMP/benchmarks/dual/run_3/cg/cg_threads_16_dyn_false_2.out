@@ -1,0 +1,79 @@
+OMP: pid 39489 tid 39489 thread 0 bound to OS proc set {56-71}
+OMP: pid 39489 tid 39545 thread 8 bound to OS proc set {56-71}
+OMP: pid 39489 tid 39546 thread 9 bound to OS proc set {56-71}
+OMP: pid 39489 tid 39547 thread 10 bound to OS proc set {56-71}
+OMP: pid 39489 tid 39548 thread 11 bound to OS proc set {56-71}
+OMP: pid 39489 tid 39549 thread 12 bound to OS proc set {56-71}
+OMP: pid 39489 tid 39550 thread 13 bound to OS proc set {56-71}
+OMP: pid 39489 tid 39551 thread 14 bound to OS proc set {56-71}
+OMP: pid 39489 tid 39552 thread 15 bound to OS proc set {56-71}
+OMP: pid 39489 tid 39541 thread 4 bound to OS proc set {56-71}
+OMP: pid 39489 tid 39544 thread 7 bound to OS proc set {56-71}
+OMP: pid 39489 tid 39543 thread 6 bound to OS proc set {56-71}
+OMP: pid 39489 tid 39542 thread 5 bound to OS proc set {56-71}
+OMP: pid 39489 tid 39539 thread 3 bound to OS proc set {56-71}
+OMP: pid 39489 tid 39538 thread 2 bound to OS proc set {56-71}
+OMP: pid 39489 tid 39537 thread 1 bound to OS proc set {56-71}
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - CG Benchmark
+
+ Size:      150000
+ Iterations:                     75
+ Number of available threads:    16
+
+ Initialization time =           2.036 seconds
+
+   iteration           ||r||                 zeta
+        1       0.35334453751812E-12   109.9994423237398
+        5       0.89225001252059E-15    28.6471670038896
+       10       0.91168828768025E-15    28.9496695448999
+       15       0.90594691885179E-15    28.9716336228373
+       20       0.91546216747709E-15    28.9734210663750
+       25       0.90928699883655E-15    28.9735863059385
+       30       0.90920525323102E-15    28.9736033967630
+       35       0.91024105454117E-15    28.9736053266248
+       40       0.90577089489404E-15    28.9736055590700
+       45       0.91028443519604E-15    28.9736055884129
+       50       0.91074257869461E-15    28.9736055922482
+       55       0.90309263657216E-15    28.9736055927636
+       60       0.90854756225038E-15    28.9736055928341
+       65       0.90720129424927E-15    28.9736055928438
+       70       0.90402943439727E-15    28.9736055928452
+       75       0.90148663422377E-15    28.9736055928455
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ Zeta is     0.2897360559285E+02
+ Error is    0.1581784714701E-13
+
+
+ CG Benchmark Completed.
+ Class           =                        C
+ Size            =                   150000
+ Iterations      =                       75
+ Time in seconds =                    19.30
+ Total threads   =                       16
+ Avail threads   =                       16
+ Mop/s total     =                  7426.11
+ Mop/s/thread    =                   464.13
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              18 Feb 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L/dss/dsshome1/09/ga27qam2/llvm-project/bu...
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

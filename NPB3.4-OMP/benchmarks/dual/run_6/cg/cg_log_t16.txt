@@ -1,0 +1,48 @@
+Batch run started: Mon Mar 16 12:24:07 CET 2026
+Batch run started: Mon Mar 16 12:24:07 CET 2026
+Batch run started: Mon Mar 16 12:24:07 CET 2026
+Batch run started: Mon Mar 16 12:24:07 CET 2026
+dyn=false num_threads=16
+dyn=true num_threads=16
+dyn=true num_threads=16
+dyn=false num_threads=16
+dyn true finished: Mon Mar 16 12:24:20 CET 2026 (Duration: 13078ms)
+dyn false finished: Mon Mar 16 12:24:20 CET 2026 (Duration: 13290ms)
+dyn true finished: Mon Mar 16 12:24:22 CET 2026 (Duration: 14468ms)
+dyn false finished: Mon Mar 16 12:24:24 CET 2026 (Duration: 16637ms)
+Batch run started: Sun Apr 12 23:32:07 CEST 2026
+Batch run started: Sun Apr 12 23:32:07 CEST 2026
+Batch run started: Sun Apr 12 23:32:07 CEST 2026
+Batch run started: Sun Apr 12 23:32:07 CEST 2026
+dyn=false num_threads=16
+dyn=true num_threads=16
+dyn=false num_threads=16
+dyn=true num_threads=16
+dyn false finished: Sun Apr 12 23:32:23 CEST 2026 (Duration: 15950ms)
+dyn false finished: Sun Apr 12 23:32:23 CEST 2026 (Duration: 16374ms)
+dyn true finished: Sun Apr 12 23:32:32 CEST 2026 (Duration: 24839ms)
+dyn true finished: Sun Apr 12 23:32:34 CEST 2026 (Duration: 26865ms)
+Batch run started: Sat May 16 18:07:21 CEST 2026
+Batch run started: Sat May 16 18:07:21 CEST 2026
+Batch run started: Sat May 16 18:07:21 CEST 2026
+Batch run started: Sat May 16 18:07:21 CEST 2026
+dyn=true num_threads=16
+dyn=true num_threads=16
+dyn=false num_threads=16
+dyn=false num_threads=16
+dyn false finished: Sat May 16 18:07:32 CEST 2026 (Duration: 10184ms)
+dyn false finished: Sat May 16 18:07:32 CEST 2026 (Duration: 10388ms)
+dyn true finished: Sat May 16 18:07:34 CEST 2026 (Duration: 12425ms)
+dyn true finished: Sat May 16 18:07:35 CEST 2026 (Duration: 13825ms)
+Batch run started: Mon May 18 05:28:09 CEST 2026
+Batch run started: Mon May 18 05:28:09 CEST 2026
+Batch run started: Mon May 18 05:28:09 CEST 2026
+Batch run started: Mon May 18 05:28:09 CEST 2026
+dyn=false num_threads=16
+dyn=true num_threads=16
+dyn=false num_threads=16
+dyn=true num_threads=16
+dyn true finished: Mon May 18 05:28:22 CEST 2026 (Duration: 13638ms)
+dyn true finished: Mon May 18 05:28:23 CEST 2026 (Duration: 13991ms)
+dyn false finished: Mon May 18 05:28:27 CEST 2026 (Duration: 18316ms)
+dyn false finished: Mon May 18 05:28:27 CEST 2026 (Duration: 18494ms)

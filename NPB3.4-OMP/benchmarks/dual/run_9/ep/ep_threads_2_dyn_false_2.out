@@ -1,0 +1,58 @@
+OMP: pid 20324 tid 20324 thread 0 bound to OS proc set {56,57}
+OMP: pid 20324 tid 20330 thread 1 bound to OS proc set {56,57}
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - EP Benchmark
+
+ Number of random numbers generated:      8589934592
+ Number of available threads:                      2
+
+EP Benchmark Results:
+
+CPU Time =    56.142
+N = 2^   32
+No. Gaussian Pairs =    3373275903.
+Sums =     2.691444083864452D+09    2.691519118720204D+09
+Counts:
+  0    1572172634.
+  1    1501108549.
+  2     281805648.
+  3      17761221.
+  4        424017.
+  5          3821.
+  6            13.
+  7             0.
+  8             0.
+  9             0.
+
+
+ EP Benchmark Completed.
+ Class           =                        C
+ Size            =               8589934592
+ Iterations      =                        0
+ Time in seconds =                    56.14
+ Total threads   =                        2
+ Avail threads   =                        2
+ Mop/s total     =                   153.00
+ Mop/s/thread    =                    76.50
+ Operation type  = Random numbers generated
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              18 Feb 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L/dss/dsshome1/09/ga27qam2/llvm-project/bu...
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

@@ -1,0 +1,72 @@
+OMP: pid 181815 tid 181815 thread 0 bound to OS proc set {56}
+OMP: pid 181815 tid 181829 thread 5 bound to OS proc set {66}
+OMP: pid 181815 tid 181824 thread 2 bound to OS proc set {60}
+OMP: pid 181815 tid 181825 thread 3 bound to OS proc set {62}
+OMP: pid 181815 tid 181835 thread 8 bound to OS proc set {72}
+OMP: pid 181815 tid 181822 thread 1 bound to OS proc set {58}
+OMP: pid 181815 tid 181832 thread 6 bound to OS proc set {68}
+OMP: pid 181815 tid 181837 thread 9 bound to OS proc set {74}
+OMP: pid 181815 tid 181827 thread 4 bound to OS proc set {64}
+OMP: pid 181815 tid 181833 thread 7 bound to OS proc set {70}
+OMP: pid 181815 tid 181839 thread 10 bound to OS proc set {76}
+OMP: pid 181815 tid 181841 thread 11 bound to OS proc set {78}
+OMP: pid 181815 tid 181842 thread 12 bound to OS proc set {80}
+OMP: pid 181815 tid 181847 thread 15 bound to OS proc set {86}
+OMP: pid 181815 tid 181845 thread 14 bound to OS proc set {84}
+OMP: pid 181815 tid 181844 thread 13 bound to OS proc set {82}
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - EP Benchmark
+
+ Number of random numbers generated:      8589934592
+ Number of available threads:                     16
+
+EP Benchmark Results:
+
+CPU Time =     3.526
+N = 2^   32
+No. Gaussian Pairs =    3373275903.
+Sums =     2.691444083862576D+09    2.691519118725089D+09
+Counts:
+  0    1572172634.
+  1    1501108549.
+  2     281805648.
+  3      17761221.
+  4        424017.
+  5          3821.
+  6            13.
+  7             0.
+  8             0.
+  9             0.
+
+
+ EP Benchmark Completed.
+ Class           =                        C
+ Size            =               8589934592
+ Iterations      =                        0
+ Time in seconds =                     3.53
+ Total threads   =                       16
+ Avail threads   =                       16
+ Mop/s total     =                  2436.21
+ Mop/s/thread    =                   152.26
+ Operation type  = Random numbers generated
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              18 Feb 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L/dss/dsshome1/09/ga27qam2/llvm-project/bu...
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

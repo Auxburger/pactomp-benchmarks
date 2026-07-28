@@ -1,0 +1,95 @@
+OMP: pid 43712 tid 43722 thread 4 bound to OS proc set {56-87}
+OMP: pid 43712 tid 43712 thread 0 bound to OS proc set {56-87}
+OMP: pid 43712 tid 43727 thread 6 bound to OS proc set {56-87}
+OMP: pid 43712 tid 43724 thread 5 bound to OS proc set {56-87}
+OMP: pid 43712 tid 43719 thread 3 bound to OS proc set {56-87}
+OMP: pid 43712 tid 43765 thread 14 bound to OS proc set {56-87}
+OMP: pid 43712 tid 43741 thread 9 bound to OS proc set {56-87}
+OMP: pid 43712 tid 43750 thread 11 bound to OS proc set {56-87}
+OMP: pid 43712 tid 43753 thread 12 bound to OS proc set {56-87}
+OMP: pid 43712 tid 43745 thread 10 bound to OS proc set {56-87}
+OMP: pid 43712 tid 43733 thread 7 bound to OS proc set {56-87}
+OMP: pid 43712 tid 43717 thread 2 bound to OS proc set {56-87}
+OMP: pid 43712 tid 43737 thread 8 bound to OS proc set {56-87}
+OMP: pid 43712 tid 43759 thread 13 bound to OS proc set {56-87}
+OMP: pid 43712 tid 43716 thread 1 bound to OS proc set {56-87}
+OMP: pid 43712 tid 43771 thread 15 bound to OS proc set {56-87}
+OMP: pid 43712 tid 43832 thread 28 bound to OS proc set {56-87}
+OMP: pid 43712 tid 43836 thread 31 bound to OS proc set {56-87}
+OMP: pid 43712 tid 43834 thread 30 bound to OS proc set {56-87}
+OMP: pid 43712 tid 43833 thread 29 bound to OS proc set {56-87}
+OMP: pid 43712 tid 43794 thread 19 bound to OS proc set {56-87}
+OMP: pid 43712 tid 43789 thread 18 bound to OS proc set {56-87}
+OMP: pid 43712 tid 43778 thread 16 bound to OS proc set {56-87}
+OMP: pid 43712 tid 43830 thread 27 bound to OS proc set {56-87}
+OMP: pid 43712 tid 43812 thread 23 bound to OS proc set {56-87}
+OMP: pid 43712 tid 43783 thread 17 bound to OS proc set {56-87}
+OMP: pid 43712 tid 43816 thread 24 bound to OS proc set {56-87}
+OMP: pid 43712 tid 43822 thread 25 bound to OS proc set {56-87}
+OMP: pid 43712 tid 43798 thread 20 bound to OS proc set {56-87}
+OMP: pid 43712 tid 43802 thread 21 bound to OS proc set {56-87}
+OMP: pid 43712 tid 43828 thread 26 bound to OS proc set {56-87}
+OMP: pid 43712 tid 43807 thread 22 bound to OS proc set {56-87}
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - CG Benchmark
+
+ Size:      150000
+ Iterations:                     75
+ Number of available threads:    32
+
+ Initialization time =           1.224 seconds
+
+   iteration           ||r||                 zeta
+        1       0.35311972800590E-12   109.9994423237398
+        5       0.89292013847201E-15    28.6471670038895
+       10       0.91188109590553E-15    28.9496695448999
+       15       0.90666321145256E-15    28.9716336228372
+       20       0.91494613821843E-15    28.9734210663749
+       25       0.90887604588248E-15    28.9735863059384
+       30       0.90951127437832E-15    28.9736033967631
+       35       0.90964181661177E-15    28.9736053266249
+       40       0.90651618384692E-15    28.9736055590700
+       45       0.91126755626120E-15    28.9736055884127
+       50       0.90939388118780E-15    28.9736055922484
+       55       0.90526160211966E-15    28.9736055927634
+       60       0.90917260456713E-15    28.9736055928340
+       65       0.90862354818430E-15    28.9736055928439
+       70       0.90132057789095E-15    28.9736055928453
+       75       0.90109357235393E-15    28.9736055928455
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ Zeta is     0.2897360559285E+02
+ Error is    0.1728927478859E-13
+
+
+ CG Benchmark Completed.
+ Class           =                        C
+ Size            =                   150000
+ Iterations      =                       75
+ Time in seconds =                    10.89
+ Total threads   =                       32
+ Avail threads   =                       32
+ Mop/s total     =                 13158.92
+ Mop/s/thread    =                   411.22
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              18 Feb 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L/dss/dsshome1/09/ga27qam2/llvm-project/bu...
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

@@ -1,0 +1,212 @@
+CPU pool (32 cores): 1–32
+Listening on /tmp/omp-rm.sock (capacity=32, strategy=fair_share)
+Accepted connection
+Handling client
+Request from pid 3975: max_threads=65535, hint_threads=32
+[1782676821788] Granted 32 threads to pid 3975 (CPUs 1+32)
+Accepted connection
+Handling client
+Request from pid 4048: max_threads=65535, hint_threads=32
+[1782676822752] Granted 16 threads to pid 4048 (CPUs 0+0)
+Request from pid 3975: max_threads=65535, hint_threads=32
+[1782676824274] Granted 16 threads to pid 3975 (CPUs 1+16)
+Read error: Connection reset by peer (os error 104)
+Accepted connection
+Handling client
+Request from pid 4127: max_threads=65535, hint_threads=32
+[1782676824837] Granted 10 threads to pid 4127 (CPUs 17+10)
+Request from pid 4048: max_threads=65535, hint_threads=32
+[1782676827191] Granted 10 threads to pid 4048 (CPUs 0+0)
+Read error: Connection reset by peer (os error 104)
+Accepted connection
+Handling client
+Request from pid 4244: max_threads=65535, hint_threads=32
+[1782676827744] Granted 8 threads to pid 4244 (CPUs 0+0)
+Request from pid 4127: max_threads=65535, hint_threads=32
+[1782676831610] Granted 10 threads to pid 4127 (CPUs 17+10)
+Read error: Connection reset by peer (os error 104)
+Accepted connection
+Handling client
+Request from pid 4386: max_threads=65535, hint_threads=32
+[1782676832149] Granted 8 threads to pid 4386 (CPUs 1+8)
+Request from pid 4244: max_threads=65535, hint_threads=32
+[1782676834976] Granted 10 threads to pid 4244 (CPUs 0+0)
+Read error: Connection reset by peer (os error 104)
+Accepted connection
+Handling client
+Request from pid 4461: max_threads=65535, hint_threads=32
+[1782676835529] Granted 8 threads to pid 4461 (CPUs 9+8)
+Request from pid 4386: max_threads=65535, hint_threads=32
+[1782676840591] Granted 32 threads to pid 4386 (CPUs 1+32)
+Read error: Connection reset by peer (os error 104)
+Accepted connection
+Handling client
+Request from pid 4666: max_threads=65535, hint_threads=32
+[1782676841137] Granted 16 threads to pid 4666 (CPUs 0+0)
+Request from pid 4461: max_threads=65535, hint_threads=32
+[1782676842855] Granted 10 threads to pid 4461 (CPUs 0+0)
+Read error: Connection reset by peer (os error 104)
+Accepted connection
+Handling client
+Request from pid 4708: max_threads=65535, hint_threads=32
+[1782676843409] Granted 8 threads to pid 4708 (CPUs 0+0)
+Request from pid 4666: max_threads=65535, hint_threads=32
+[1782676844764] Granted 8 threads to pid 4666 (CPUs 0+0)
+Read error: Connection reset by peer (os error 104)
+Accepted connection
+Handling client
+Request from pid 4831: max_threads=65535, hint_threads=32
+[1782676845313] Granted 6 threads to pid 4831 (CPUs 0+0)
+Request from pid 4708: max_threads=65535, hint_threads=32
+[1782676850622] Granted 32 threads to pid 4708 (CPUs 1+32)
+Read error: Connection reset by peer (os error 104)
+Accepted connection
+Handling client
+Request from pid 4958: max_threads=65535, hint_threads=32
+[1782676851165] Granted 16 threads to pid 4958 (CPUs 0+0)
+Request from pid 4831: max_threads=65535, hint_threads=32
+[1782676854765] Granted 10 threads to pid 4831 (CPUs 0+0)
+Read error: Connection reset by peer (os error 104)
+Request from pid 4958: max_threads=65535, hint_threads=32
+[1782676854786] Granted 10 threads to pid 4958 (CPUs 0+0)
+Read error: Connection reset by peer (os error 104)
+Accepted connection
+Handling client
+Request from pid 5109: max_threads=65535, hint_threads=32
+[1782676855300] Granted 8 threads to pid 5109 (CPUs 0+0)
+Accepted connection
+Handling client
+Request from pid 5116: max_threads=65535, hint_threads=32
+[1782676855316] Granted 6 threads to pid 5116 (CPUs 0+0)
+Request from pid 5109: max_threads=65535, hint_threads=32
+[1782676862496] Granted 32 threads to pid 5109 (CPUs 1+32)
+Read error: Connection reset by peer (os error 104)
+Accepted connection
+Handling client
+Request from pid 5396: max_threads=65535, hint_threads=32
+[1782676863033] Granted 16 threads to pid 5396 (CPUs 0+0)
+Request from pid 5116: max_threads=65535, hint_threads=32
+[1782676864948] Granted 10 threads to pid 5116 (CPUs 0+0)
+Read error: Connection reset by peer (os error 104)
+Accepted connection
+Handling client
+Request from pid 5477: max_threads=65535, hint_threads=32
+[1782676865489] Granted 8 threads to pid 5477 (CPUs 0+0)
+Request from pid 5396: max_threads=65535, hint_threads=32
+[1782676866748] Granted 8 threads to pid 5396 (CPUs 0+0)
+Read error: Connection reset by peer (os error 104)
+Accepted connection
+Handling client
+Request from pid 5558: max_threads=65535, hint_threads=32
+[1782676867293] Granted 6 threads to pid 5558 (CPUs 0+0)
+Request from pid 5477: max_threads=65535, hint_threads=32
+[1782676872621] Granted 32 threads to pid 5477 (CPUs 1+32)
+Read error: Connection reset by peer (os error 104)
+Accepted connection
+Handling client
+Request from pid 5719: max_threads=65535, hint_threads=32
+[1782676873173] Granted 16 threads to pid 5719 (CPUs 0+0)
+Request from pid 5719: max_threads=65535, hint_threads=32
+[1782676876788] Granted 16 threads to pid 5719 (CPUs 0+0)
+Read error: Connection reset by peer (os error 104)
+Request from pid 5558: max_threads=65535, hint_threads=32
+[1782676876811] Granted 10 threads to pid 5558 (CPUs 0+0)
+Read error: Connection reset by peer (os error 104)
+Accepted connection
+Handling client
+Request from pid 5849: max_threads=65535, hint_threads=32
+[1782676877321] Granted 8 threads to pid 5849 (CPUs 0+0)
+Accepted connection
+Handling client
+Request from pid 5865: max_threads=65535, hint_threads=32
+[1782676877356] Granted 6 threads to pid 5865 (CPUs 0+0)
+Request from pid 5849: max_threads=65535, hint_threads=32
+[1782676884517] Granted 32 threads to pid 5849 (CPUs 1+32)
+Read error: Connection reset by peer (os error 104)
+Accepted connection
+Handling client
+Request from pid 6114: max_threads=65535, hint_threads=32
+[1782676885065] Granted 16 threads to pid 6114 (CPUs 0+0)
+Request from pid 5865: max_threads=65535, hint_threads=32
+[1782676886913] Granted 10 threads to pid 5865 (CPUs 0+0)
+Read error: Connection reset by peer (os error 104)
+Accepted connection
+Handling client
+Request from pid 6156: max_threads=65535, hint_threads=32
+[1782676887461] Granted 8 threads to pid 6156 (CPUs 0+0)
+Request from pid 6114: max_threads=65535, hint_threads=32
+[1782676888689] Granted 8 threads to pid 6114 (CPUs 0+0)
+Read error: Connection reset by peer (os error 104)
+Accepted connection
+Handling client
+Request from pid 6197: max_threads=65535, hint_threads=32
+[1782676889233] Granted 6 threads to pid 6197 (CPUs 0+0)
+Request from pid 6156: max_threads=65535, hint_threads=32
+[1782676894660] Granted 32 threads to pid 6156 (CPUs 1+32)
+Read error: Connection reset by peer (os error 104)
+Accepted connection
+Handling client
+Request from pid 6248: max_threads=65535, hint_threads=32
+[1782676895201] Granted 16 threads to pid 6248 (CPUs 0+0)
+Request from pid 6197: max_threads=65535, hint_threads=32
+[1782676898684] Granted 10 threads to pid 6197 (CPUs 0+0)
+Read error: Connection reset by peer (os error 104)
+Request from pid 6248: max_threads=65535, hint_threads=32
+[1782676898838] Granted 10 threads to pid 6248 (CPUs 0+0)
+Read error: Connection reset by peer (os error 104)
+Accepted connection
+Handling client
+Request from pid 6296: max_threads=65535, hint_threads=32
+[1782676899218] Granted 8 threads to pid 6296 (CPUs 0+0)
+Accepted connection
+Handling client
+Request from pid 6331: max_threads=65535, hint_threads=32
+[1782676899380] Granted 6 threads to pid 6331 (CPUs 0+0)
+Request from pid 6296: max_threads=65535, hint_threads=32
+[1782676906435] Granted 32 threads to pid 6296 (CPUs 1+32)
+Read error: Connection reset by peer (os error 104)
+Accepted connection
+Handling client
+Request from pid 6376: max_threads=65535, hint_threads=32
+[1782676906984] Granted 16 threads to pid 6376 (CPUs 0+0)
+Request from pid 6331: max_threads=65535, hint_threads=32
+[1782676908952] Granted 10 threads to pid 6331 (CPUs 0+0)
+Read error: Connection reset by peer (os error 104)
+Accepted connection
+Handling client
+Request from pid 6417: max_threads=65535, hint_threads=32
+[1782676909497] Granted 8 threads to pid 6417 (CPUs 0+0)
+Request from pid 6376: max_threads=65535, hint_threads=32
+[1782676910716] Granted 8 threads to pid 6376 (CPUs 0+0)
+Read error: Connection reset by peer (os error 104)
+Accepted connection
+Handling client
+Request from pid 6458: max_threads=65535, hint_threads=32
+[1782676911257] Granted 6 threads to pid 6458 (CPUs 0+0)
+Request from pid 6417: max_threads=65535, hint_threads=32
+[1782676916689] Granted 32 threads to pid 6417 (CPUs 1+32)
+Read error: Connection reset by peer (os error 104)
+Accepted connection
+Handling client
+Request from pid 6499: max_threads=65535, hint_threads=32
+[1782676917233] Granted 16 threads to pid 6499 (CPUs 0+0)
+Request from pid 6458: max_threads=65535, hint_threads=32
+[1782676920874] Granted 10 threads to pid 6458 (CPUs 0+0)
+Read error: Connection reset by peer (os error 104)
+Request from pid 6499: max_threads=65535, hint_threads=32
+[1782676921268] Granted 10 threads to pid 6499 (CPUs 0+0)
+Read error: Connection reset by peer (os error 104)
+Accepted connection
+Handling client
+Request from pid 6569: max_threads=65535, hint_threads=32
+[1782676921409] Granted 8 threads to pid 6569 (CPUs 0+0)
+Accepted connection
+Handling client
+Request from pid 6604: max_threads=65535, hint_threads=32
+[1782676921809] Granted 8 threads to pid 6604 (CPUs 1+8)
+Request from pid 6569: max_threads=65535, hint_threads=32
+[1782676928556] Granted 32 threads to pid 6569 (CPUs 1+32)
+Read error: Connection reset by peer (os error 104)
+Request from pid 6604: max_threads=65535, hint_threads=32
+[1782676932152] Granted 16 threads to pid 6604 (CPUs 0+0)
+Read error: Connection reset by peer (os error 104)

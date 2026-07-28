@@ -1,0 +1,3 @@
+# label=B1 dyn=false t=32 alg=cg
+# iter  start_epoch_ms  duration_ms  time_in_seconds
+1  1782667132418  10083  9.54

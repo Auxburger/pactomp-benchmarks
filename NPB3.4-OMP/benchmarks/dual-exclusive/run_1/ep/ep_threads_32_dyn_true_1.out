@@ -1,0 +1,88 @@
+OMP: pid 183753 tid 183753 thread 0 bound to OS proc set {1}
+OMP: pid 183753 tid 183757 thread 2 bound to OS proc set {3}
+OMP: pid 183753 tid 183773 thread 11 bound to OS proc set {12}
+OMP: pid 183753 tid 183779 thread 14 bound to OS proc set {15}
+OMP: pid 183753 tid 183766 thread 7 bound to OS proc set {8}
+OMP: pid 183753 tid 183759 thread 3 bound to OS proc set {4}
+OMP: pid 183753 tid 183768 thread 8 bound to OS proc set {9}
+OMP: pid 183753 tid 183777 thread 13 bound to OS proc set {14}
+OMP: pid 183753 tid 183780 thread 15 bound to OS proc set {16}
+OMP: pid 183753 tid 183775 thread 12 bound to OS proc set {13}
+OMP: pid 183753 tid 183755 thread 1 bound to OS proc set {2}
+OMP: pid 183753 tid 183769 thread 9 bound to OS proc set {10}
+OMP: pid 183753 tid 183802 thread 27 bound to OS proc set {28}
+OMP: pid 183753 tid 183808 thread 30 bound to OS proc set {31}
+OMP: pid 183753 tid 183771 thread 10 bound to OS proc set {11}
+OMP: pid 183753 tid 183788 thread 19 bound to OS proc set {20}
+OMP: pid 183753 tid 183782 thread 16 bound to OS proc set {17}
+OMP: pid 183753 tid 183786 thread 18 bound to OS proc set {19}
+OMP: pid 183753 tid 183765 thread 6 bound to OS proc set {7}
+OMP: pid 183753 tid 183795 thread 23 bound to OS proc set {24}
+OMP: pid 183753 tid 183806 thread 29 bound to OS proc set {30}
+OMP: pid 183753 tid 183804 thread 28 bound to OS proc set {29}
+OMP: pid 183753 tid 183763 thread 5 bound to OS proc set {6}
+OMP: pid 183753 tid 183761 thread 4 bound to OS proc set {5}
+OMP: pid 183753 tid 183784 thread 17 bound to OS proc set {18}
+OMP: pid 183753 tid 183790 thread 20 bound to OS proc set {21}
+OMP: pid 183753 tid 183797 thread 24 bound to OS proc set {25}
+OMP: pid 183753 tid 183811 thread 31 bound to OS proc set {32}
+OMP: pid 183753 tid 183794 thread 22 bound to OS proc set {23}
+OMP: pid 183753 tid 183792 thread 21 bound to OS proc set {22}
+OMP: pid 183753 tid 183800 thread 26 bound to OS proc set {27}
+OMP: pid 183753 tid 183799 thread 25 bound to OS proc set {26}
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - EP Benchmark
+
+ Number of random numbers generated:      8589934592
+ Number of available threads:                     32
+
+EP Benchmark Results:
+
+CPU Time =     1.761
+N = 2^   32
+No. Gaussian Pairs =    3373275903.
+Sums =     2.691444083863086D+09    2.691519118724447D+09
+Counts:
+  0    1572172634.
+  1    1501108549.
+  2     281805648.
+  3      17761221.
+  4        424017.
+  5          3821.
+  6            13.
+  7             0.
+  8             0.
+  9             0.
+
+
+ EP Benchmark Completed.
+ Class           =                        C
+ Size            =               8589934592
+ Iterations      =                        0
+ Time in seconds =                     1.76
+ Total threads   =                       32
+ Avail threads   =                       32
+ Mop/s total     =                  4877.18
+ Mop/s/thread    =                   152.41
+ Operation type  = Random numbers generated
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              18 Feb 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L/dss/dsshome1/09/ga27qam2/llvm-project/bu...
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

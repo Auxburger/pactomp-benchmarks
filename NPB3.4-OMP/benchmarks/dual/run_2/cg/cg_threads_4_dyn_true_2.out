@@ -1,0 +1,70 @@
+OMP: pid 21986 tid 21990 thread 1 bound to OS proc set {1-4}
+OMP: pid 21986 tid 21992 thread 2 bound to OS proc set {1-4}
+OMP: pid 21986 tid 21997 thread 3 bound to OS proc set {1-4}
+OMP: pid 21986 tid 21986 thread 0 bound to OS proc set {1-4}
+OMP: pid 21986 tid 21986 thread 0 bound to OS proc set {1-4}
+OMP: pid 21986 tid 21990 thread 1 bound to OS proc set {1-4}
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - CG Benchmark
+
+ Size:      150000
+ Iterations:                     75
+ Number of available threads:     4
+
+ Initialization time =           6.150 seconds
+
+   iteration           ||r||                 zeta
+        1       0.35342969571864E-12   109.9994423237398
+        5       0.89094607580778E-15    28.6471670038882
+       10       0.91109742269585E-15    28.9496695449005
+       15       0.90574385801414E-15    28.9716336228368
+       20       0.91810700411548E-15    28.9734210663758
+       25       0.90867940841228E-15    28.9735863059383
+       30       0.90996346158024E-15    28.9736033967627
+       35       0.91310629516034E-15    28.9736053266252
+       40       0.90711447125653E-15    28.9736055590703
+       45       0.90720045404437E-15    28.9736055884132
+       50       0.90914959662942E-15    28.9736055922487
+       55       0.90418880663476E-15    28.9736055927623
+       60       0.90641732409640E-15    28.9736055928346
+       65       0.90376643010189E-15    28.9736055928435
+       70       0.90255159308580E-15    28.9736055928450
+       75       0.90204324984692E-15    28.9736055928458
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ Zeta is     0.2897360559285E+02
+ Error is    0.2611784063808E-13
+
+
+ CG Benchmark Completed.
+ Class           =                        C
+ Size            =                   150000
+ Iterations      =                       75
+ Time in seconds =                    41.81
+ Total threads   =                        2
+ Avail threads   =                        4
+ Warning: Threads used differ from threads available
+ Mop/s total     =                  3428.27
+ Mop/s/thread    =                  1714.14
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              18 Feb 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L/dss/dsshome1/09/ga27qam2/llvm-project/bu...
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

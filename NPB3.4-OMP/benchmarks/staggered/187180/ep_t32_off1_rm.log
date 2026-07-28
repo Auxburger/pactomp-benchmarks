@@ -1,0 +1,16 @@
+CPU pool (32 cores): 1–32
+Listening on /tmp/omp-rm.sock (capacity=32, strategy=fair_share)
+Accepted connection
+Handling client
+Request from pid 221012: max_threads=65535, hint_threads=32
+[1782667145546] Granted 32 threads to pid 221012 (CPUs 1+32)
+Accepted connection
+Handling client
+Request from pid 221088: max_threads=65535, hint_threads=32
+[1782667146579] Granted 16 threads to pid 221088 (CPUs 0+0)
+Request from pid 221012: max_threads=65535, hint_threads=32
+[1782667148012] Granted 16 threads to pid 221012 (CPUs 1+16)
+Read error: Connection reset by peer (os error 104)
+Request from pid 221088: max_threads=65535, hint_threads=32
+[1782667150787] Granted 16 threads to pid 221088 (CPUs 17+16)
+Read error: Connection reset by peer (os error 104)

@@ -1,0 +1,6 @@
+Batch run started: Mon Mar  9 22:21:35 CET 2026
+Batch run started: Mon Mar  9 22:21:35 CET 2026
+dyn=false num_threads=2
+dyn=true num_threads=2
+dyn false finished: Mon Mar  9 22:22:25 CET 2026 (Duration: 49756ms)
+dyn true finished: Mon Mar  9 22:22:27 CET 2026 (Duration: 52228ms)

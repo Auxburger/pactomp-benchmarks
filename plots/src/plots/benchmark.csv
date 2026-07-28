@@ -1,0 +1,9 @@
+threads,time_ms,dynamic,run
+1,1200,false,1
+1,1180,false,2
+2,650,false,1
+2,670,false,2
+1,1300,true,1
+1,1280,true,2
+2,620,true,1
+2,635,true,2

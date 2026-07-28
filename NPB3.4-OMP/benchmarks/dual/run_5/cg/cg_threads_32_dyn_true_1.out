@@ -1,0 +1,112 @@
+OMP: pid 45553 tid 45553 thread 0 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45577 thread 3 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45570 thread 1 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45622 thread 15 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45612 thread 12 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45606 thread 11 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45591 thread 7 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45615 thread 14 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45600 thread 10 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45595 thread 8 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45613 thread 13 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45574 thread 2 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45587 thread 6 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45581 thread 4 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45598 thread 9 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45584 thread 5 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45624 thread 16 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45628 thread 17 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45633 thread 18 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45639 thread 20 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45655 thread 24 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45635 thread 19 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45670 thread 27 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45659 thread 25 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45647 thread 22 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45666 thread 26 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45651 thread 23 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45643 thread 21 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45677 thread 30 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45673 thread 28 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45676 thread 29 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45679 thread 31 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45622 thread 15 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45553 thread 0 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45612 thread 12 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45591 thread 7 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45581 thread 4 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45595 thread 8 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45584 thread 5 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45606 thread 11 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45613 thread 13 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45600 thread 10 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45570 thread 1 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45577 thread 3 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45598 thread 9 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45587 thread 6 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45615 thread 14 bound to OS proc set {1-32}
+OMP: pid 45553 tid 45574 thread 2 bound to OS proc set {1-32}
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - CG Benchmark
+
+ Size:      150000
+ Iterations:                     75
+ Number of available threads:    32
+
+ Initialization time =           1.393 seconds
+
+   iteration           ||r||                 zeta
+        1       0.35313074063645E-12   109.9994423237398
+        5       0.89305088636744E-15    28.6471670038897
+       10       0.91245504254340E-15    28.9496695448999
+       15       0.90621038924901E-15    28.9716336228373
+       20       0.91513677645770E-15    28.9734210663750
+       25       0.91047697061940E-15    28.9735863059385
+       30       0.90872416769388E-15    28.9736033967630
+       35       0.90950549914511E-15    28.9736053266248
+       40       0.90555531554261E-15    28.9736055590700
+       45       0.90986385804811E-15    28.9736055884130
+       50       0.91006870925354E-15    28.9736055922482
+       55       0.90455664143302E-15    28.9736055927635
+       60       0.90883004472364E-15    28.9736055928341
+       65       0.90899799126060E-15    28.9736055928438
+       70       0.90218079256439E-15    28.9736055928452
+       75       0.90225726624319E-15    28.9736055928455
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ Zeta is     0.2897360559285E+02
+ Error is    0.1679879890806E-13
+
+
+ CG Benchmark Completed.
+ Class           =                        C
+ Size            =                   150000
+ Iterations      =                       75
+ Time in seconds =                     7.60
+ Total threads   =                       16
+ Avail threads   =                       32
+ Warning: Threads used differ from threads available
+ Mop/s total     =                 18853.68
+ Mop/s/thread    =                  1178.35
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              18 Feb 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L/dss/dsshome1/09/ga27qam2/llvm-project/bu...
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

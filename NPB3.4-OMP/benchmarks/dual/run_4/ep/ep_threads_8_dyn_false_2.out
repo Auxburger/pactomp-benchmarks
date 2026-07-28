@@ -1,0 +1,64 @@
+OMP: pid 28073 tid 28073 thread 0 bound to OS proc set {56-63}
+OMP: pid 28073 tid 28097 thread 4 bound to OS proc set {56-63}
+OMP: pid 28073 tid 28095 thread 3 bound to OS proc set {56-63}
+OMP: pid 28073 tid 28092 thread 2 bound to OS proc set {56-63}
+OMP: pid 28073 tid 28089 thread 1 bound to OS proc set {56-63}
+OMP: pid 28073 tid 28103 thread 7 bound to OS proc set {56-63}
+OMP: pid 28073 tid 28101 thread 6 bound to OS proc set {56-63}
+OMP: pid 28073 tid 28099 thread 5 bound to OS proc set {56-63}
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - EP Benchmark
+
+ Number of random numbers generated:      8589934592
+ Number of available threads:                      8
+
+EP Benchmark Results:
+
+CPU Time =    14.361
+N = 2^   32
+No. Gaussian Pairs =    3373275903.
+Sums =     2.691444083862811D+09    2.691519118724568D+09
+Counts:
+  0    1572172634.
+  1    1501108549.
+  2     281805648.
+  3      17761221.
+  4        424017.
+  5          3821.
+  6            13.
+  7             0.
+  8             0.
+  9             0.
+
+
+ EP Benchmark Completed.
+ Class           =                        C
+ Size            =               8589934592
+ Iterations      =                        0
+ Time in seconds =                    14.36
+ Total threads   =                        8
+ Avail threads   =                        8
+ Mop/s total     =                   598.13
+ Mop/s/thread    =                    74.77
+ Operation type  = Random numbers generated
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              18 Feb 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L/dss/dsshome1/09/ga27qam2/llvm-project/bu...
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

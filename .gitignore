@@ -216,3 +216,14 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ── Benchmark result data ────────────────────────────────────────────────────
+# Raw .log outputs under NPB3.4-OMP (cpu_util, pidstat, rm.log, per-node stdout)
+# are primary research artifacts, not incidental logs. Override the generic
+# "*.log" rule from the Django section above.
+!NPB3.4-OMP/**/*.log
+
+# Default local output of plots/export_*.py. The canonical copies of these
+# figures are committed in the thesis repo; set THESIS_FIGURES_DIR to write
+# there directly instead.
+/figures/

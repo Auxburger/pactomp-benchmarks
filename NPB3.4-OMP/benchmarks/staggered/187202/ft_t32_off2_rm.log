@@ -1,0 +1,2930 @@
+CPU pool (32 cores): 1–32
+Listening on /tmp/omp-rm.sock (capacity=32, strategy=fair_share)
+Accepted connection
+Handling client
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676441974] Granted 32 threads to pid 226113 (CPUs 1+32)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676442078] Granted 32 threads to pid 226113 (CPUs 1+32)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676442144] Granted 32 threads to pid 226113 (CPUs 1+32)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676442259] Granted 32 threads to pid 226113 (CPUs 1+32)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676442293] Granted 32 threads to pid 226113 (CPUs 1+32)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676442388] Granted 32 threads to pid 226113 (CPUs 1+32)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676442495] Granted 32 threads to pid 226113 (CPUs 1+32)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676442598] Granted 32 threads to pid 226113 (CPUs 1+32)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676442685] Granted 32 threads to pid 226113 (CPUs 1+32)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676442791] Granted 32 threads to pid 226113 (CPUs 1+32)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676442878] Granted 32 threads to pid 226113 (CPUs 1+32)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676442981] Granted 32 threads to pid 226113 (CPUs 1+32)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676443068] Granted 32 threads to pid 226113 (CPUs 1+32)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676443172] Granted 32 threads to pid 226113 (CPUs 1+32)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676443259] Granted 32 threads to pid 226113 (CPUs 1+32)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676443362] Granted 32 threads to pid 226113 (CPUs 1+32)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676443449] Granted 32 threads to pid 226113 (CPUs 1+32)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676443553] Granted 32 threads to pid 226113 (CPUs 1+32)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676443640] Granted 32 threads to pid 226113 (CPUs 1+32)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676443744] Granted 32 threads to pid 226113 (CPUs 1+32)
+Accepted connection
+Handling client
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676443772] Granted 16 threads to pid 226187 (CPUs 0+0)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676443891] Granted 16 threads to pid 226113 (CPUs 1+16)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676444041] Granted 16 threads to pid 226113 (CPUs 1+16)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676444169] Granted 16 threads to pid 226187 (CPUs 17+16)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676444399] Granted 16 threads to pid 226187 (CPUs 17+16)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676444452] Granted 16 threads to pid 226113 (CPUs 1+16)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676444533] Granted 16 threads to pid 226113 (CPUs 1+16)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676444767] Granted 16 threads to pid 226187 (CPUs 17+16)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676444826] Granted 16 threads to pid 226187 (CPUs 17+16)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676444927] Granted 16 threads to pid 226113 (CPUs 1+16)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676445017] Granted 16 threads to pid 226187 (CPUs 17+16)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676445163] Granted 16 threads to pid 226113 (CPUs 1+16)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676445218] Granted 16 threads to pid 226187 (CPUs 17+16)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676445373] Granted 16 threads to pid 226113 (CPUs 1+16)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676445427] Granted 16 threads to pid 226187 (CPUs 17+16)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676445520] Granted 16 threads to pid 226113 (CPUs 1+16)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676445582] Granted 16 threads to pid 226187 (CPUs 17+16)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676445730] Granted 16 threads to pid 226113 (CPUs 1+16)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676445791] Granted 16 threads to pid 226187 (CPUs 17+16)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676445878] Granted 16 threads to pid 226113 (CPUs 1+16)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676445947] Granted 16 threads to pid 226187 (CPUs 17+16)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676446101] Granted 16 threads to pid 226113 (CPUs 1+16)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676446158] Granted 16 threads to pid 226187 (CPUs 17+16)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676446239] Granted 16 threads to pid 226113 (CPUs 1+16)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676446314] Granted 16 threads to pid 226187 (CPUs 17+16)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676446452] Granted 16 threads to pid 226113 (CPUs 1+16)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676446523] Granted 16 threads to pid 226187 (CPUs 17+16)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676446600] Granted 16 threads to pid 226113 (CPUs 1+16)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676446679] Granted 16 threads to pid 226187 (CPUs 17+16)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676446812] Granted 16 threads to pid 226113 (CPUs 1+16)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676446889] Granted 16 threads to pid 226187 (CPUs 17+16)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676446960] Granted 16 threads to pid 226113 (CPUs 1+16)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676447045] Granted 16 threads to pid 226187 (CPUs 17+16)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676447173] Granted 16 threads to pid 226113 (CPUs 1+16)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676447255] Granted 16 threads to pid 226187 (CPUs 17+16)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676447321] Granted 16 threads to pid 226113 (CPUs 1+16)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676447411] Granted 16 threads to pid 226187 (CPUs 17+16)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676447532] Granted 16 threads to pid 226113 (CPUs 1+16)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676447621] Granted 16 threads to pid 226187 (CPUs 17+16)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676447681] Granted 16 threads to pid 226113 (CPUs 1+16)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676447777] Granted 16 threads to pid 226187 (CPUs 17+16)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676447893] Granted 16 threads to pid 226113 (CPUs 1+16)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676447988] Granted 16 threads to pid 226187 (CPUs 17+16)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676448041] Granted 16 threads to pid 226113 (CPUs 1+16)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676448144] Granted 16 threads to pid 226187 (CPUs 17+16)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676448252] Granted 16 threads to pid 226113 (CPUs 1+16)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676448355] Granted 16 threads to pid 226187 (CPUs 17+16)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676448400] Granted 16 threads to pid 226113 (CPUs 1+16)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676448510] Granted 16 threads to pid 226187 (CPUs 17+16)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676448611] Granted 16 threads to pid 226113 (CPUs 1+16)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676448723] Granted 16 threads to pid 226187 (CPUs 17+16)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676448759] Granted 16 threads to pid 226113 (CPUs 1+16)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676448876] Granted 16 threads to pid 226187 (CPUs 17+16)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676448971] Granted 16 threads to pid 226113 (CPUs 1+16)
+Request from pid 226113: max_threads=65535, hint_threads=32
+[1782676449075] Granted 16 threads to pid 226113 (CPUs 1+16)
+Read error: Connection reset by peer (os error 104)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676449086] Granted 16 threads to pid 226187 (CPUs 17+16)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676449227] Granted 16 threads to pid 226187 (CPUs 17+16)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676449430] Granted 16 threads to pid 226187 (CPUs 17+16)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676449570] Granted 16 threads to pid 226187 (CPUs 17+16)
+Accepted connection
+Handling client
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676449620] Granted 10 threads to pid 226261 (CPUs 0+0)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676449843] Granted 10 threads to pid 226261 (CPUs 0+0)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676449886] Granted 10 threads to pid 226187 (CPUs 17+10)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676450117] Granted 10 threads to pid 226187 (CPUs 17+10)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676450135] Granted 10 threads to pid 226261 (CPUs 0+0)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676450482] Granted 10 threads to pid 226187 (CPUs 17+10)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676450492] Granted 10 threads to pid 226261 (CPUs 0+0)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676450576] Granted 10 threads to pid 226261 (CPUs 0+0)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676450697] Granted 10 threads to pid 226187 (CPUs 17+10)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676450876] Granted 10 threads to pid 226261 (CPUs 0+0)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676451024] Granted 10 threads to pid 226187 (CPUs 17+10)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676451147] Granted 10 threads to pid 226261 (CPUs 0+0)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676451241] Granted 10 threads to pid 226187 (CPUs 17+10)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676451474] Granted 10 threads to pid 226261 (CPUs 0+0)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676451568] Granted 10 threads to pid 226187 (CPUs 17+10)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676451684] Granted 10 threads to pid 226261 (CPUs 0+0)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676451785] Granted 10 threads to pid 226187 (CPUs 17+10)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676452010] Granted 10 threads to pid 226261 (CPUs 0+0)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676452112] Granted 10 threads to pid 226187 (CPUs 17+10)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676452221] Granted 10 threads to pid 226261 (CPUs 0+0)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676452329] Granted 10 threads to pid 226187 (CPUs 17+10)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676452548] Granted 10 threads to pid 226261 (CPUs 0+0)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676452656] Granted 10 threads to pid 226187 (CPUs 17+10)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676452758] Granted 10 threads to pid 226261 (CPUs 0+0)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676452873] Granted 10 threads to pid 226187 (CPUs 17+10)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676453085] Granted 10 threads to pid 226261 (CPUs 0+0)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676453199] Granted 10 threads to pid 226187 (CPUs 17+10)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676453295] Granted 10 threads to pid 226261 (CPUs 0+0)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676453416] Granted 10 threads to pid 226187 (CPUs 17+10)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676453622] Granted 10 threads to pid 226261 (CPUs 0+0)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676453744] Granted 10 threads to pid 226187 (CPUs 17+10)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676453832] Granted 10 threads to pid 226261 (CPUs 0+0)
+Request from pid 226187: max_threads=65535, hint_threads=32
+[1782676453906] Granted 10 threads to pid 226187 (CPUs 17+10)
+Read error: Connection reset by peer (os error 104)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676454152] Granted 16 threads to pid 226261 (CPUs 1+16)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676454346] Granted 16 threads to pid 226261 (CPUs 1+16)
+Accepted connection
+Handling client
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676454457] Granted 10 threads to pid 226350 (CPUs 0+0)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676454596] Granted 10 threads to pid 226261 (CPUs 1+10)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676454703] Granted 10 threads to pid 226350 (CPUs 0+0)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676454879] Granted 10 threads to pid 226261 (CPUs 1+10)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676454945] Granted 10 threads to pid 226350 (CPUs 0+0)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676455325] Granted 10 threads to pid 226350 (CPUs 0+0)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676455408] Granted 10 threads to pid 226350 (CPUs 0+0)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676455498] Granted 10 threads to pid 226261 (CPUs 1+10)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676455696] Granted 10 threads to pid 226350 (CPUs 0+0)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676455883] Granted 10 threads to pid 226261 (CPUs 1+10)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676455969] Granted 10 threads to pid 226350 (CPUs 0+0)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676456280] Granted 10 threads to pid 226350 (CPUs 0+0)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676456480] Granted 10 threads to pid 226261 (CPUs 1+10)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676456497] Granted 10 threads to pid 226350 (CPUs 0+0)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676456690] Granted 10 threads to pid 226261 (CPUs 1+10)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676456814] Granted 10 threads to pid 226350 (CPUs 0+0)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676457017] Granted 10 threads to pid 226261 (CPUs 1+10)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676457021] Granted 10 threads to pid 226350 (CPUs 0+0)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676457228] Granted 10 threads to pid 226261 (CPUs 1+10)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676457339] Granted 10 threads to pid 226350 (CPUs 0+0)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676457547] Granted 10 threads to pid 226350 (CPUs 0+0)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676457555] Granted 10 threads to pid 226261 (CPUs 1+10)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676457765] Granted 10 threads to pid 226261 (CPUs 1+10)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676457865] Granted 10 threads to pid 226350 (CPUs 0+0)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676458071] Granted 10 threads to pid 226350 (CPUs 0+0)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676458093] Granted 10 threads to pid 226261 (CPUs 1+10)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676458303] Granted 10 threads to pid 226261 (CPUs 1+10)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676458388] Granted 10 threads to pid 226350 (CPUs 0+0)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676458595] Granted 10 threads to pid 226350 (CPUs 0+0)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676458630] Granted 10 threads to pid 226261 (CPUs 1+10)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676458841] Granted 10 threads to pid 226261 (CPUs 1+10)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676458913] Granted 16 threads to pid 226350 (CPUs 11+16)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676459111] Granted 16 threads to pid 226350 (CPUs 11+16)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676459171] Granted 16 threads to pid 226261 (CPUs 0+0)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676459313] Granted 16 threads to pid 226350 (CPUs 11+16)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676459404] Granted 16 threads to pid 226261 (CPUs 0+0)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676459512] Granted 16 threads to pid 226350 (CPUs 11+16)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676459795] Granted 16 threads to pid 226350 (CPUs 11+16)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676459815] Granted 16 threads to pid 226261 (CPUs 0+0)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676460012] Granted 16 threads to pid 226261 (CPUs 0+0)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676460175] Granted 16 threads to pid 226350 (CPUs 11+16)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676460253] Granted 16 threads to pid 226350 (CPUs 11+16)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676460307] Granted 16 threads to pid 226261 (CPUs 0+0)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676460646] Granted 16 threads to pid 226350 (CPUs 11+16)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676460678] Granted 16 threads to pid 226261 (CPUs 0+0)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676460772] Granted 16 threads to pid 226261 (CPUs 0+0)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676460911] Granted 16 threads to pid 226350 (CPUs 11+16)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676461172] Granted 16 threads to pid 226261 (CPUs 0+0)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676461299] Granted 16 threads to pid 226350 (CPUs 11+16)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676461432] Granted 16 threads to pid 226261 (CPUs 0+0)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676461565] Granted 16 threads to pid 226350 (CPUs 11+16)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676461839] Granted 16 threads to pid 226261 (CPUs 0+0)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676461957] Granted 16 threads to pid 226350 (CPUs 11+16)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676462093] Granted 16 threads to pid 226261 (CPUs 0+0)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676462225] Granted 16 threads to pid 226350 (CPUs 11+16)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676462516] Granted 16 threads to pid 226261 (CPUs 0+0)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676462620] Granted 16 threads to pid 226350 (CPUs 11+16)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676462765] Granted 16 threads to pid 226261 (CPUs 0+0)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676462878] Granted 16 threads to pid 226350 (CPUs 11+16)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676463161] Granted 16 threads to pid 226261 (CPUs 0+0)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676463270] Granted 16 threads to pid 226350 (CPUs 11+16)
+Request from pid 226261: max_threads=65535, hint_threads=32
+[1782676463346] Granted 16 threads to pid 226261 (CPUs 0+0)
+Read error: Connection reset by peer (os error 104)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676463467] Granted 16 threads to pid 226350 (CPUs 11+16)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676463667] Granted 16 threads to pid 226350 (CPUs 11+16)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676463805] Granted 16 threads to pid 226350 (CPUs 11+16)
+Accepted connection
+Handling client
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676463906] Granted 10 threads to pid 226466 (CPUs 1+10)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676464078] Granted 10 threads to pid 226350 (CPUs 11+10)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676464154] Granted 10 threads to pid 226466 (CPUs 1+10)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676464345] Granted 10 threads to pid 226350 (CPUs 11+10)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676464484] Granted 10 threads to pid 226466 (CPUs 1+10)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676464782] Granted 10 threads to pid 226350 (CPUs 11+10)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676464831] Granted 10 threads to pid 226466 (CPUs 1+10)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676464915] Granted 10 threads to pid 226466 (CPUs 1+10)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676464990] Granted 10 threads to pid 226350 (CPUs 11+10)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676465207] Granted 10 threads to pid 226466 (CPUs 1+10)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676465304] Granted 10 threads to pid 226350 (CPUs 11+10)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676465482] Granted 10 threads to pid 226466 (CPUs 1+10)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676465522] Granted 10 threads to pid 226350 (CPUs 11+10)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676465799] Granted 10 threads to pid 226466 (CPUs 1+10)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676465837] Granted 10 threads to pid 226350 (CPUs 11+10)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676466014] Granted 10 threads to pid 226466 (CPUs 1+10)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676466055] Granted 10 threads to pid 226350 (CPUs 11+10)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676466328] Granted 10 threads to pid 226466 (CPUs 1+10)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676466370] Granted 10 threads to pid 226350 (CPUs 11+10)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676466542] Granted 10 threads to pid 226466 (CPUs 1+10)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676466587] Granted 10 threads to pid 226350 (CPUs 11+10)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676466857] Granted 10 threads to pid 226466 (CPUs 1+10)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676466900] Granted 10 threads to pid 226350 (CPUs 11+10)
+Request from pid 226350: max_threads=65535, hint_threads=32
+[1782676467060] Granted 10 threads to pid 226350 (CPUs 11+10)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676467061] Granted 10 threads to pid 226466 (CPUs 1+10)
+Read error: Connection reset by peer (os error 104)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676467370] Granted 10 threads to pid 226466 (CPUs 1+10)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676467569] Granted 10 threads to pid 226466 (CPUs 1+10)
+Accepted connection
+Handling client
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676467609] Granted 8 threads to pid 226547 (CPUs 21+8)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676467896] Granted 8 threads to pid 226547 (CPUs 21+8)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676467992] Granted 8 threads to pid 226466 (CPUs 1+8)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676468147] Granted 8 threads to pid 226547 (CPUs 21+8)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676468255] Granted 8 threads to pid 226466 (CPUs 1+8)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676468583] Granted 10 threads to pid 226547 (CPUs 21+10)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676468677] Granted 10 threads to pid 226547 (CPUs 21+10)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676468679] Granted 10 threads to pid 226466 (CPUs 1+10)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676468920] Granted 10 threads to pid 226466 (CPUs 1+10)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676468974] Granted 10 threads to pid 226547 (CPUs 21+10)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676469236] Granted 10 threads to pid 226466 (CPUs 1+10)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676469241] Granted 10 threads to pid 226547 (CPUs 21+10)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676469442] Granted 10 threads to pid 226466 (CPUs 1+10)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676469562] Granted 10 threads to pid 226547 (CPUs 21+10)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676469758] Granted 10 threads to pid 226466 (CPUs 1+10)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676469770] Granted 10 threads to pid 226547 (CPUs 21+10)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676469964] Granted 10 threads to pid 226466 (CPUs 1+10)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676470091] Granted 10 threads to pid 226547 (CPUs 21+10)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676470279] Granted 10 threads to pid 226466 (CPUs 1+10)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676470299] Granted 10 threads to pid 226547 (CPUs 21+10)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676470486] Granted 10 threads to pid 226466 (CPUs 1+10)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676470620] Granted 10 threads to pid 226547 (CPUs 21+10)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676470801] Granted 10 threads to pid 226466 (CPUs 1+10)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676470828] Granted 10 threads to pid 226547 (CPUs 21+10)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676471008] Granted 10 threads to pid 226466 (CPUs 1+10)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676471149] Granted 10 threads to pid 226547 (CPUs 21+10)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676471322] Granted 10 threads to pid 226466 (CPUs 1+10)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676471357] Granted 10 threads to pid 226547 (CPUs 21+10)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676471529] Granted 10 threads to pid 226466 (CPUs 1+10)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676471678] Granted 10 threads to pid 226547 (CPUs 21+10)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676471842] Granted 10 threads to pid 226466 (CPUs 1+10)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676471886] Granted 10 threads to pid 226547 (CPUs 21+10)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676472050] Granted 10 threads to pid 226466 (CPUs 1+10)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676472207] Granted 16 threads to pid 226547 (CPUs 11+16)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676472363] Granted 16 threads to pid 226466 (CPUs 0+0)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676472405] Granted 16 threads to pid 226547 (CPUs 11+16)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676472567] Granted 16 threads to pid 226466 (CPUs 0+0)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676472614] Granted 16 threads to pid 226547 (CPUs 11+16)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676472760] Granted 16 threads to pid 226547 (CPUs 11+16)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676472777] Granted 16 threads to pid 226466 (CPUs 0+0)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676472922] Granted 16 threads to pid 226466 (CPUs 0+0)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676472970] Granted 16 threads to pid 226547 (CPUs 11+16)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676473116] Granted 16 threads to pid 226547 (CPUs 11+16)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676473133] Granted 16 threads to pid 226466 (CPUs 0+0)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676473278] Granted 16 threads to pid 226466 (CPUs 0+0)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676473326] Granted 16 threads to pid 226547 (CPUs 11+16)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676473473] Granted 16 threads to pid 226547 (CPUs 11+16)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676473488] Granted 16 threads to pid 226466 (CPUs 0+0)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676473634] Granted 16 threads to pid 226466 (CPUs 0+0)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676473684] Granted 16 threads to pid 226547 (CPUs 11+16)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676473831] Granted 16 threads to pid 226547 (CPUs 11+16)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676473847] Granted 16 threads to pid 226466 (CPUs 0+0)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676473993] Granted 16 threads to pid 226466 (CPUs 0+0)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676474042] Granted 16 threads to pid 226547 (CPUs 11+16)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676474190] Granted 16 threads to pid 226547 (CPUs 11+16)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676474206] Granted 16 threads to pid 226466 (CPUs 0+0)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676474351] Granted 16 threads to pid 226466 (CPUs 0+0)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676474401] Granted 16 threads to pid 226547 (CPUs 11+16)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676474548] Granted 16 threads to pid 226547 (CPUs 11+16)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676474564] Granted 16 threads to pid 226466 (CPUs 0+0)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676474710] Granted 16 threads to pid 226466 (CPUs 0+0)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676474760] Granted 16 threads to pid 226547 (CPUs 11+16)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676474906] Granted 16 threads to pid 226547 (CPUs 11+16)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676474923] Granted 16 threads to pid 226466 (CPUs 0+0)
+Request from pid 226466: max_threads=65535, hint_threads=32
+[1782676475024] Granted 16 threads to pid 226466 (CPUs 0+0)
+Read error: Connection reset by peer (os error 104)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676475107] Granted 16 threads to pid 226547 (CPUs 11+16)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676475244] Granted 16 threads to pid 226547 (CPUs 11+16)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676475440] Granted 16 threads to pid 226547 (CPUs 11+16)
+Accepted connection
+Handling client
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676475573] Granted 10 threads to pid 226642 (CPUs 1+10)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676475577] Granted 10 threads to pid 226547 (CPUs 11+10)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676475810] Granted 10 threads to pid 226642 (CPUs 1+10)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676476102] Granted 10 threads to pid 226547 (CPUs 11+10)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676476146] Granted 10 threads to pid 226642 (CPUs 1+10)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676476331] Granted 10 threads to pid 226547 (CPUs 11+10)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676476502] Granted 10 threads to pid 226642 (CPUs 1+10)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676476586] Granted 10 threads to pid 226642 (CPUs 1+10)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676476648] Granted 10 threads to pid 226547 (CPUs 11+10)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676476856] Granted 10 threads to pid 226547 (CPUs 11+10)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676476879] Granted 10 threads to pid 226642 (CPUs 1+10)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676477144] Granted 10 threads to pid 226642 (CPUs 1+10)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676477176] Granted 10 threads to pid 226547 (CPUs 11+10)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676477385] Granted 10 threads to pid 226547 (CPUs 11+10)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676477461] Granted 10 threads to pid 226642 (CPUs 1+10)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676477667] Granted 10 threads to pid 226642 (CPUs 1+10)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676477706] Granted 10 threads to pid 226547 (CPUs 11+10)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676477914] Granted 10 threads to pid 226547 (CPUs 11+10)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676477985] Granted 10 threads to pid 226642 (CPUs 1+10)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676478190] Granted 10 threads to pid 226642 (CPUs 1+10)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676478234] Granted 10 threads to pid 226547 (CPUs 11+10)
+Request from pid 226547: max_threads=65535, hint_threads=32
+[1782676478387] Granted 10 threads to pid 226547 (CPUs 11+10)
+Read error: Connection reset by peer (os error 104)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676478499] Granted 10 threads to pid 226642 (CPUs 1+10)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676478699] Granted 10 threads to pid 226642 (CPUs 1+10)
+Accepted connection
+Handling client
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676478933] Granted 8 threads to pid 226723 (CPUs 21+8)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676479063] Granted 8 threads to pid 226642 (CPUs 1+8)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676479218] Granted 8 threads to pid 226723 (CPUs 21+8)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676479415] Granted 8 threads to pid 226642 (CPUs 1+8)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676479573] Granted 8 threads to pid 226723 (CPUs 21+8)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676479801] Granted 8 threads to pid 226642 (CPUs 1+8)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676480018] Granted 8 threads to pid 226723 (CPUs 21+8)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676480049] Granted 10 threads to pid 226642 (CPUs 1+10)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676480121] Granted 10 threads to pid 226723 (CPUs 21+10)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676480407] Granted 10 threads to pid 226642 (CPUs 1+10)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676480457] Granted 10 threads to pid 226723 (CPUs 21+10)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676480613] Granted 10 threads to pid 226642 (CPUs 1+10)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676480737] Granted 10 threads to pid 226723 (CPUs 21+10)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676480929] Granted 10 threads to pid 226642 (CPUs 1+10)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676481053] Granted 10 threads to pid 226723 (CPUs 21+10)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676481134] Granted 10 threads to pid 226642 (CPUs 1+10)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676481265] Granted 10 threads to pid 226723 (CPUs 21+10)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676481450] Granted 10 threads to pid 226642 (CPUs 1+10)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676481583] Granted 10 threads to pid 226723 (CPUs 21+10)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676481655] Granted 10 threads to pid 226642 (CPUs 1+10)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676481795] Granted 10 threads to pid 226723 (CPUs 21+10)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676481971] Granted 10 threads to pid 226642 (CPUs 1+10)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676482113] Granted 10 threads to pid 226723 (CPUs 21+10)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676482176] Granted 10 threads to pid 226642 (CPUs 1+10)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676482325] Granted 10 threads to pid 226723 (CPUs 21+10)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676482492] Granted 10 threads to pid 226642 (CPUs 1+10)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676482643] Granted 10 threads to pid 226723 (CPUs 21+10)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676482698] Granted 10 threads to pid 226642 (CPUs 1+10)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676482854] Granted 10 threads to pid 226723 (CPUs 21+10)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676483013] Granted 10 threads to pid 226642 (CPUs 1+10)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676483174] Granted 10 threads to pid 226723 (CPUs 21+10)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676483218] Granted 10 threads to pid 226642 (CPUs 1+10)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676483384] Granted 10 threads to pid 226723 (CPUs 21+10)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676483533] Granted 16 threads to pid 226642 (CPUs 1+16)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676483707] Granted 16 threads to pid 226723 (CPUs 17+16)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676483728] Granted 16 threads to pid 226642 (CPUs 1+16)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676483910] Granted 16 threads to pid 226723 (CPUs 17+16)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676483937] Granted 16 threads to pid 226642 (CPUs 1+16)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676484083] Granted 16 threads to pid 226642 (CPUs 1+16)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676484120] Granted 16 threads to pid 226723 (CPUs 17+16)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676484267] Granted 16 threads to pid 226723 (CPUs 17+16)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676484293] Granted 16 threads to pid 226642 (CPUs 1+16)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676484440] Granted 16 threads to pid 226642 (CPUs 1+16)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676484478] Granted 16 threads to pid 226723 (CPUs 17+16)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676484625] Granted 16 threads to pid 226723 (CPUs 17+16)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676484650] Granted 16 threads to pid 226642 (CPUs 1+16)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676484797] Granted 16 threads to pid 226642 (CPUs 1+16)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676484836] Granted 16 threads to pid 226723 (CPUs 17+16)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676484984] Granted 16 threads to pid 226723 (CPUs 17+16)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676485009] Granted 16 threads to pid 226642 (CPUs 1+16)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676485156] Granted 16 threads to pid 226642 (CPUs 1+16)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676485197] Granted 16 threads to pid 226723 (CPUs 17+16)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676485344] Granted 16 threads to pid 226723 (CPUs 17+16)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676485367] Granted 16 threads to pid 226642 (CPUs 1+16)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676485514] Granted 16 threads to pid 226642 (CPUs 1+16)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676485556] Granted 16 threads to pid 226723 (CPUs 17+16)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676485703] Granted 16 threads to pid 226723 (CPUs 17+16)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676485725] Granted 16 threads to pid 226642 (CPUs 1+16)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676485872] Granted 16 threads to pid 226642 (CPUs 1+16)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676485916] Granted 16 threads to pid 226723 (CPUs 17+16)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676486064] Granted 16 threads to pid 226723 (CPUs 17+16)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676486085] Granted 16 threads to pid 226642 (CPUs 1+16)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676486231] Granted 16 threads to pid 226642 (CPUs 1+16)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676486276] Granted 16 threads to pid 226723 (CPUs 17+16)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676486424] Granted 16 threads to pid 226723 (CPUs 17+16)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676486443] Granted 16 threads to pid 226642 (CPUs 1+16)
+Request from pid 226642: max_threads=65535, hint_threads=32
+[1782676486546] Granted 16 threads to pid 226642 (CPUs 1+16)
+Read error: Connection reset by peer (os error 104)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676486625] Granted 16 threads to pid 226723 (CPUs 17+16)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676486762] Granted 16 threads to pid 226723 (CPUs 17+16)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676486960] Granted 16 threads to pid 226723 (CPUs 17+16)
+Accepted connection
+Handling client
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676487092] Granted 10 threads to pid 226846 (CPUs 0+0)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676487097] Granted 10 threads to pid 226723 (CPUs 17+10)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676487321] Granted 10 threads to pid 226846 (CPUs 0+0)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676487561] Granted 10 threads to pid 226846 (CPUs 0+0)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676487583] Granted 10 threads to pid 226723 (CPUs 17+10)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676487816] Granted 10 threads to pid 226723 (CPUs 17+10)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676487924] Granted 10 threads to pid 226846 (CPUs 0+0)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676488007] Granted 10 threads to pid 226846 (CPUs 0+0)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676488135] Granted 10 threads to pid 226723 (CPUs 17+10)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676488302] Granted 10 threads to pid 226846 (CPUs 0+0)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676488344] Granted 10 threads to pid 226723 (CPUs 17+10)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676488577] Granted 10 threads to pid 226846 (CPUs 0+0)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676488666] Granted 10 threads to pid 226723 (CPUs 17+10)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676488875] Granted 10 threads to pid 226723 (CPUs 17+10)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676488899] Granted 10 threads to pid 226846 (CPUs 0+0)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676489107] Granted 10 threads to pid 226846 (CPUs 0+0)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676489198] Granted 10 threads to pid 226723 (CPUs 17+10)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676489407] Granted 10 threads to pid 226723 (CPUs 17+10)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676489430] Granted 10 threads to pid 226846 (CPUs 0+0)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676489637] Granted 10 threads to pid 226846 (CPUs 0+0)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676489730] Granted 10 threads to pid 226723 (CPUs 17+10)
+Request from pid 226723: max_threads=65535, hint_threads=32
+[1782676489885] Granted 10 threads to pid 226723 (CPUs 17+10)
+Read error: Connection reset by peer (os error 104)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676489954] Granted 10 threads to pid 226846 (CPUs 0+0)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676490156] Granted 10 threads to pid 226846 (CPUs 0+0)
+Accepted connection
+Handling client
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676490429] Granted 8 threads to pid 226887 (CPUs 0+0)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676490475] Granted 8 threads to pid 226846 (CPUs 0+0)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676490675] Granted 8 threads to pid 226887 (CPUs 0+0)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676490794] Granted 8 threads to pid 226846 (CPUs 0+0)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676490934] Granted 8 threads to pid 226887 (CPUs 0+0)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676491189] Granted 8 threads to pid 226846 (CPUs 0+0)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676491367] Granted 8 threads to pid 226887 (CPUs 0+0)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676491446] Granted 8 threads to pid 226846 (CPUs 0+0)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676491475] Granted 8 threads to pid 226887 (CPUs 0+0)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676491832] Granted 10 threads to pid 226887 (CPUs 1+10)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676491842] Granted 10 threads to pid 226846 (CPUs 0+0)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676492086] Granted 10 threads to pid 226846 (CPUs 0+0)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676492236] Granted 10 threads to pid 226887 (CPUs 1+10)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676492450] Granted 10 threads to pid 226846 (CPUs 0+0)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676492655] Granted 10 threads to pid 226846 (CPUs 0+0)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676492897] Granted 10 threads to pid 226887 (CPUs 1+10)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676493005] Granted 10 threads to pid 226846 (CPUs 0+0)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676493220] Granted 10 threads to pid 226846 (CPUs 0+0)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676493297] Granted 10 threads to pid 226887 (CPUs 1+10)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676493537] Granted 10 threads to pid 226846 (CPUs 0+0)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676493813] Granted 10 threads to pid 226846 (CPUs 0+0)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676493934] Granted 10 threads to pid 226887 (CPUs 1+10)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676494129] Granted 10 threads to pid 226846 (CPUs 0+0)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676494339] Granted 10 threads to pid 226846 (CPUs 0+0)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676494339] Granted 10 threads to pid 226887 (CPUs 1+10)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676494661] Granted 10 threads to pid 226846 (CPUs 0+0)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676494866] Granted 10 threads to pid 226846 (CPUs 0+0)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676494966] Granted 16 threads to pid 226887 (CPUs 1+16)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676495181] Granted 16 threads to pid 226846 (CPUs 17+16)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676495359] Granted 16 threads to pid 226887 (CPUs 1+16)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676495383] Granted 16 threads to pid 226846 (CPUs 17+16)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676495530] Granted 16 threads to pid 226887 (CPUs 1+16)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676495593] Granted 16 threads to pid 226846 (CPUs 17+16)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676495721] Granted 16 threads to pid 226887 (CPUs 1+16)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676495748] Granted 16 threads to pid 226846 (CPUs 17+16)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676495786] Granted 16 threads to pid 226887 (CPUs 1+16)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676495958] Granted 16 threads to pid 226846 (CPUs 17+16)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676495991] Granted 16 threads to pid 226887 (CPUs 1+16)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676496114] Granted 16 threads to pid 226846 (CPUs 17+16)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676496151] Granted 16 threads to pid 226887 (CPUs 1+16)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676496322] Granted 16 threads to pid 226846 (CPUs 17+16)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676496355] Granted 16 threads to pid 226887 (CPUs 1+16)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676496479] Granted 16 threads to pid 226846 (CPUs 17+16)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676496515] Granted 16 threads to pid 226887 (CPUs 1+16)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676496688] Granted 16 threads to pid 226846 (CPUs 17+16)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676496718] Granted 16 threads to pid 226887 (CPUs 1+16)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676496846] Granted 16 threads to pid 226846 (CPUs 17+16)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676496880] Granted 16 threads to pid 226887 (CPUs 1+16)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676497054] Granted 16 threads to pid 226846 (CPUs 17+16)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676497084] Granted 16 threads to pid 226887 (CPUs 1+16)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676497213] Granted 16 threads to pid 226846 (CPUs 17+16)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676497246] Granted 16 threads to pid 226887 (CPUs 1+16)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676497420] Granted 16 threads to pid 226846 (CPUs 17+16)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676497448] Granted 16 threads to pid 226887 (CPUs 1+16)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676497580] Granted 16 threads to pid 226846 (CPUs 17+16)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676497611] Granted 16 threads to pid 226887 (CPUs 1+16)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676497789] Granted 16 threads to pid 226846 (CPUs 17+16)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676497816] Granted 16 threads to pid 226887 (CPUs 1+16)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676497949] Granted 16 threads to pid 226846 (CPUs 17+16)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676497979] Granted 16 threads to pid 226887 (CPUs 1+16)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676498157] Granted 16 threads to pid 226846 (CPUs 17+16)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676498183] Granted 16 threads to pid 226887 (CPUs 1+16)
+Request from pid 226846: max_threads=65535, hint_threads=32
+[1782676498261] Granted 16 threads to pid 226846 (CPUs 17+16)
+Read error: Connection reset by peer (os error 104)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676498322] Granted 16 threads to pid 226887 (CPUs 1+16)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676498518] Granted 16 threads to pid 226887 (CPUs 1+16)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676498655] Granted 16 threads to pid 226887 (CPUs 1+16)
+Accepted connection
+Handling client
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676498805] Granted 10 threads to pid 227008 (CPUs 0+0)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676498856] Granted 10 threads to pid 226887 (CPUs 1+10)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676499032] Granted 10 threads to pid 227008 (CPUs 0+0)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676499141] Granted 10 threads to pid 226887 (CPUs 1+10)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676499278] Granted 10 threads to pid 227008 (CPUs 0+0)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676499451] Granted 10 threads to pid 226887 (CPUs 1+10)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676499647] Granted 10 threads to pid 227008 (CPUs 0+0)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676499656] Granted 10 threads to pid 226887 (CPUs 1+10)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676499731] Granted 10 threads to pid 227008 (CPUs 0+0)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676499969] Granted 10 threads to pid 226887 (CPUs 1+10)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676500031] Granted 10 threads to pid 227008 (CPUs 0+0)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676500173] Granted 10 threads to pid 226887 (CPUs 1+10)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676500312] Granted 10 threads to pid 227008 (CPUs 0+0)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676500488] Granted 10 threads to pid 226887 (CPUs 1+10)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676500636] Granted 10 threads to pid 227008 (CPUs 0+0)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676500693] Granted 10 threads to pid 226887 (CPUs 1+10)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676500851] Granted 10 threads to pid 227008 (CPUs 0+0)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676501008] Granted 10 threads to pid 226887 (CPUs 1+10)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676501177] Granted 10 threads to pid 227008 (CPUs 0+0)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676501214] Granted 10 threads to pid 226887 (CPUs 1+10)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676501390] Granted 10 threads to pid 227008 (CPUs 0+0)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676501529] Granted 10 threads to pid 226887 (CPUs 1+10)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676501718] Granted 10 threads to pid 227008 (CPUs 0+0)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676501734] Granted 10 threads to pid 226887 (CPUs 1+10)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676501930] Granted 10 threads to pid 227008 (CPUs 0+0)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676502049] Granted 10 threads to pid 226887 (CPUs 1+10)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676502254] Granted 10 threads to pid 226887 (CPUs 1+10)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676502259] Granted 10 threads to pid 227008 (CPUs 0+0)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676502470] Granted 10 threads to pid 227008 (CPUs 0+0)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676502570] Granted 10 threads to pid 226887 (CPUs 1+10)
+Request from pid 226887: max_threads=65535, hint_threads=32
+[1782676502722] Granted 10 threads to pid 226887 (CPUs 1+10)
+Read error: Connection reset by peer (os error 104)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676502793] Granted 10 threads to pid 227008 (CPUs 0+0)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676502998] Granted 10 threads to pid 227008 (CPUs 0+0)
+Accepted connection
+Handling client
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676503269] Granted 10 threads to pid 227072 (CPUs 11+10)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676503326] Granted 10 threads to pid 227008 (CPUs 21+10)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676503513] Granted 10 threads to pid 227008 (CPUs 21+10)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676503522] Granted 10 threads to pid 227072 (CPUs 11+10)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676503824] Granted 10 threads to pid 227008 (CPUs 21+10)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676503834] Granted 10 threads to pid 227072 (CPUs 11+10)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676504123] Granted 10 threads to pid 227008 (CPUs 21+10)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676504206] Granted 10 threads to pid 227072 (CPUs 11+10)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676504290] Granted 10 threads to pid 227072 (CPUs 11+10)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676504361] Granted 10 threads to pid 227008 (CPUs 21+10)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676504592] Granted 10 threads to pid 227072 (CPUs 11+10)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676504661] Granted 10 threads to pid 227008 (CPUs 21+10)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676504728] Granted 10 threads to pid 227008 (CPUs 21+10)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676504874] Granted 10 threads to pid 227072 (CPUs 11+10)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676505057] Granted 10 threads to pid 227008 (CPUs 21+10)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676505199] Granted 10 threads to pid 227072 (CPUs 11+10)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676505269] Granted 10 threads to pid 227008 (CPUs 21+10)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676505415] Granted 10 threads to pid 227072 (CPUs 11+10)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676505597] Granted 10 threads to pid 227008 (CPUs 21+10)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676505740] Granted 10 threads to pid 227072 (CPUs 11+10)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676505810] Granted 10 threads to pid 227008 (CPUs 21+10)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676505964] Granted 10 threads to pid 227072 (CPUs 11+10)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676506138] Granted 10 threads to pid 227008 (CPUs 21+10)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676506281] Granted 10 threads to pid 227072 (CPUs 11+10)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676506350] Granted 10 threads to pid 227008 (CPUs 21+10)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676506498] Granted 10 threads to pid 227072 (CPUs 11+10)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676506679] Granted 10 threads to pid 227008 (CPUs 21+10)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676506823] Granted 10 threads to pid 227072 (CPUs 11+10)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676506891] Granted 10 threads to pid 227008 (CPUs 21+10)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676507039] Granted 10 threads to pid 227072 (CPUs 11+10)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676507220] Granted 10 threads to pid 227008 (CPUs 21+10)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676507364] Granted 10 threads to pid 227072 (CPUs 11+10)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676507432] Granted 10 threads to pid 227008 (CPUs 21+10)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676507580] Granted 10 threads to pid 227072 (CPUs 11+10)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676507761] Granted 16 threads to pid 227008 (CPUs 0+0)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676507908] Granted 16 threads to pid 227072 (CPUs 1+16)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676507964] Granted 16 threads to pid 227008 (CPUs 17+16)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676508069] Granted 16 threads to pid 227072 (CPUs 1+16)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676508175] Granted 16 threads to pid 227008 (CPUs 17+16)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676508317] Granted 16 threads to pid 227008 (CPUs 17+16)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676508355] Granted 16 threads to pid 227072 (CPUs 1+16)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676508523] Granted 16 threads to pid 227008 (CPUs 17+16)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676508570] Granted 16 threads to pid 227072 (CPUs 1+16)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676508629] Granted 16 threads to pid 227072 (CPUs 1+16)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676508680] Granted 16 threads to pid 227008 (CPUs 17+16)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676508843] Granted 16 threads to pid 227072 (CPUs 1+16)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676508887] Granted 16 threads to pid 227008 (CPUs 17+16)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676509004] Granted 16 threads to pid 227072 (CPUs 1+16)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676509045] Granted 16 threads to pid 227008 (CPUs 17+16)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676509209] Granted 16 threads to pid 227072 (CPUs 1+16)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676509253] Granted 16 threads to pid 227008 (CPUs 17+16)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676509361] Granted 16 threads to pid 227072 (CPUs 1+16)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676509411] Granted 16 threads to pid 227008 (CPUs 17+16)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676509576] Granted 16 threads to pid 227072 (CPUs 1+16)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676509620] Granted 16 threads to pid 227008 (CPUs 17+16)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676509730] Granted 16 threads to pid 227072 (CPUs 1+16)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676509778] Granted 16 threads to pid 227008 (CPUs 17+16)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676509948] Granted 16 threads to pid 227072 (CPUs 1+16)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676509992] Granted 16 threads to pid 227008 (CPUs 17+16)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676510093] Granted 16 threads to pid 227072 (CPUs 1+16)
+Request from pid 227008: max_threads=65535, hint_threads=32
+[1782676510101] Granted 16 threads to pid 227008 (CPUs 17+16)
+Read error: Connection reset by peer (os error 104)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676510295] Granted 16 threads to pid 227072 (CPUs 1+16)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676510435] Granted 16 threads to pid 227072 (CPUs 1+16)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676510637] Granted 16 threads to pid 227072 (CPUs 1+16)
+Accepted connection
+Handling client
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676510649] Granted 10 threads to pid 227324 (CPUs 0+0)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676510870] Granted 10 threads to pid 227072 (CPUs 1+10)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676510877] Granted 10 threads to pid 227324 (CPUs 0+0)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676511105] Granted 10 threads to pid 227324 (CPUs 0+0)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676511377] Granted 10 threads to pid 227072 (CPUs 1+10)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676511457] Granted 10 threads to pid 227324 (CPUs 0+0)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676511539] Granted 10 threads to pid 227324 (CPUs 0+0)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676511629] Granted 10 threads to pid 227072 (CPUs 1+10)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676511835] Granted 10 threads to pid 227324 (CPUs 0+0)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676511956] Granted 10 threads to pid 227072 (CPUs 1+10)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676512104] Granted 10 threads to pid 227324 (CPUs 0+0)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676512171] Granted 10 threads to pid 227072 (CPUs 1+10)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676512428] Granted 10 threads to pid 227324 (CPUs 0+0)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676512498] Granted 10 threads to pid 227072 (CPUs 1+10)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676512637] Granted 10 threads to pid 227324 (CPUs 0+0)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676512714] Granted 10 threads to pid 227072 (CPUs 1+10)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676512964] Granted 10 threads to pid 227324 (CPUs 0+0)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676513041] Granted 10 threads to pid 227072 (CPUs 1+10)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676513169] Granted 10 threads to pid 227324 (CPUs 0+0)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676513257] Granted 10 threads to pid 227072 (CPUs 1+10)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676513492] Granted 10 threads to pid 227324 (CPUs 0+0)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676513584] Granted 10 threads to pid 227072 (CPUs 1+10)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676513701] Granted 10 threads to pid 227324 (CPUs 0+0)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676513800] Granted 10 threads to pid 227072 (CPUs 1+10)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676514024] Granted 10 threads to pid 227324 (CPUs 0+0)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676514127] Granted 10 threads to pid 227072 (CPUs 1+10)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676514233] Granted 10 threads to pid 227324 (CPUs 0+0)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676514343] Granted 10 threads to pid 227072 (CPUs 1+10)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676514556] Granted 10 threads to pid 227324 (CPUs 0+0)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676514670] Granted 10 threads to pid 227072 (CPUs 1+10)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676514765] Granted 10 threads to pid 227324 (CPUs 0+0)
+Request from pid 227072: max_threads=65535, hint_threads=32
+[1782676514832] Granted 10 threads to pid 227072 (CPUs 1+10)
+Read error: Connection reset by peer (os error 104)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676515081] Granted 10 threads to pid 227324 (CPUs 0+0)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676515283] Granted 16 threads to pid 227324 (CPUs 11+16)
+Accepted connection
+Handling client
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676515381] Granted 10 threads to pid 227407 (CPUs 0+0)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676515591] Granted 10 threads to pid 227407 (CPUs 0+0)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676515676] Granted 10 threads to pid 227324 (CPUs 11+10)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676515823] Granted 10 threads to pid 227407 (CPUs 21+10)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676515945] Granted 10 threads to pid 227324 (CPUs 11+10)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676516210] Granted 10 threads to pid 227407 (CPUs 21+10)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676516294] Granted 10 threads to pid 227407 (CPUs 21+10)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676516309] Granted 10 threads to pid 227324 (CPUs 11+10)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676516517] Granted 10 threads to pid 227324 (CPUs 11+10)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676516595] Granted 10 threads to pid 227407 (CPUs 21+10)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676516837] Granted 10 threads to pid 227324 (CPUs 11+10)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676516864] Granted 10 threads to pid 227407 (CPUs 21+10)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676517046] Granted 10 threads to pid 227324 (CPUs 11+10)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676517189] Granted 10 threads to pid 227407 (CPUs 21+10)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676517365] Granted 10 threads to pid 227324 (CPUs 11+10)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676517399] Granted 10 threads to pid 227407 (CPUs 21+10)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676517574] Granted 10 threads to pid 227324 (CPUs 11+10)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676517724] Granted 10 threads to pid 227407 (CPUs 21+10)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676517892] Granted 10 threads to pid 227324 (CPUs 11+10)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676517933] Granted 10 threads to pid 227407 (CPUs 21+10)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676518102] Granted 10 threads to pid 227324 (CPUs 11+10)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676518259] Granted 10 threads to pid 227407 (CPUs 21+10)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676518420] Granted 10 threads to pid 227324 (CPUs 11+10)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676518468] Granted 10 threads to pid 227407 (CPUs 21+10)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676518630] Granted 10 threads to pid 227324 (CPUs 11+10)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676518793] Granted 10 threads to pid 227407 (CPUs 21+10)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676518948] Granted 10 threads to pid 227324 (CPUs 11+10)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676519003] Granted 10 threads to pid 227407 (CPUs 21+10)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676519159] Granted 10 threads to pid 227324 (CPUs 11+10)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676519328] Granted 10 threads to pid 227407 (CPUs 21+10)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676519475] Granted 10 threads to pid 227324 (CPUs 11+10)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676519538] Granted 10 threads to pid 227407 (CPUs 21+10)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676519687] Granted 10 threads to pid 227324 (CPUs 11+10)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676519863] Granted 16 threads to pid 227407 (CPUs 0+0)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676520003] Granted 16 threads to pid 227324 (CPUs 1+16)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676520061] Granted 16 threads to pid 227407 (CPUs 17+16)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676520167] Granted 16 threads to pid 227324 (CPUs 1+16)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676520275] Granted 16 threads to pid 227407 (CPUs 17+16)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676520415] Granted 16 threads to pid 227407 (CPUs 17+16)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676520461] Granted 16 threads to pid 227324 (CPUs 1+16)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676520618] Granted 16 threads to pid 227407 (CPUs 17+16)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676520668] Granted 16 threads to pid 227324 (CPUs 1+16)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676520729] Granted 16 threads to pid 227324 (CPUs 1+16)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676520775] Granted 16 threads to pid 227407 (CPUs 17+16)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676520937] Granted 16 threads to pid 227324 (CPUs 1+16)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676520980] Granted 16 threads to pid 227407 (CPUs 17+16)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676521087] Granted 16 threads to pid 227324 (CPUs 1+16)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676521136] Granted 16 threads to pid 227407 (CPUs 17+16)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676521297] Granted 16 threads to pid 227324 (CPUs 1+16)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676521342] Granted 16 threads to pid 227407 (CPUs 17+16)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676521446] Granted 16 threads to pid 227324 (CPUs 1+16)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676521497] Granted 16 threads to pid 227407 (CPUs 17+16)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676521657] Granted 16 threads to pid 227324 (CPUs 1+16)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676521704] Granted 16 threads to pid 227407 (CPUs 17+16)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676521805] Granted 16 threads to pid 227324 (CPUs 1+16)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676521858] Granted 16 threads to pid 227407 (CPUs 17+16)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676522017] Granted 16 threads to pid 227324 (CPUs 1+16)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676522066] Granted 16 threads to pid 227407 (CPUs 17+16)
+Request from pid 227324: max_threads=65535, hint_threads=32
+[1782676522120] Granted 16 threads to pid 227324 (CPUs 1+16)
+Read error: Connection reset by peer (os error 104)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676522205] Granted 16 threads to pid 227407 (CPUs 17+16)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676522404] Granted 16 threads to pid 227407 (CPUs 17+16)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676522542] Granted 16 threads to pid 227407 (CPUs 17+16)
+Accepted connection
+Handling client
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676522663] Granted 10 threads to pid 227488 (CPUs 0+0)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676522778] Granted 10 threads to pid 227407 (CPUs 17+10)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676522883] Granted 10 threads to pid 227488 (CPUs 0+0)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676523066] Granted 10 threads to pid 227407 (CPUs 17+10)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676523160] Granted 10 threads to pid 227488 (CPUs 0+0)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676523502] Granted 10 threads to pid 227407 (CPUs 17+10)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676523517] Granted 10 threads to pid 227488 (CPUs 0+0)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676523601] Granted 10 threads to pid 227488 (CPUs 0+0)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676523713] Granted 10 threads to pid 227407 (CPUs 17+10)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676523902] Granted 10 threads to pid 227488 (CPUs 0+0)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676524035] Granted 10 threads to pid 227407 (CPUs 17+10)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676524173] Granted 10 threads to pid 227488 (CPUs 0+0)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676524248] Granted 10 threads to pid 227407 (CPUs 17+10)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676524500] Granted 10 threads to pid 227488 (CPUs 0+0)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676524569] Granted 10 threads to pid 227407 (CPUs 17+10)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676524711] Granted 10 threads to pid 227488 (CPUs 0+0)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676524783] Granted 10 threads to pid 227407 (CPUs 17+10)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676525038] Granted 10 threads to pid 227488 (CPUs 0+0)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676525104] Granted 10 threads to pid 227407 (CPUs 17+10)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676525248] Granted 10 threads to pid 227488 (CPUs 0+0)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676525317] Granted 10 threads to pid 227407 (CPUs 17+10)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676525575] Granted 10 threads to pid 227488 (CPUs 0+0)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676525638] Granted 10 threads to pid 227407 (CPUs 17+10)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676525786] Granted 10 threads to pid 227488 (CPUs 0+0)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676525851] Granted 10 threads to pid 227407 (CPUs 17+10)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676526113] Granted 10 threads to pid 227488 (CPUs 0+0)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676526173] Granted 10 threads to pid 227407 (CPUs 17+10)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676526323] Granted 10 threads to pid 227488 (CPUs 0+0)
+Request from pid 227407: max_threads=65535, hint_threads=32
+[1782676526333] Granted 10 threads to pid 227407 (CPUs 17+10)
+Read error: Connection reset by peer (os error 104)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676526643] Granted 10 threads to pid 227488 (CPUs 0+0)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676526847] Granted 10 threads to pid 227488 (CPUs 0+0)
+Accepted connection
+Handling client
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676526877] Granted 8 threads to pid 227570 (CPUs 0+0)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676527113] Granted 8 threads to pid 227570 (CPUs 0+0)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676527181] Granted 10 threads to pid 227488 (CPUs 1+10)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676527381] Granted 10 threads to pid 227570 (CPUs 0+0)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676527390] Granted 10 threads to pid 227488 (CPUs 1+10)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676527712] Granted 10 threads to pid 227488 (CPUs 1+10)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676527766] Granted 10 threads to pid 227570 (CPUs 0+0)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676527850] Granted 10 threads to pid 227570 (CPUs 0+0)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676527924] Granted 10 threads to pid 227488 (CPUs 1+10)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676528142] Granted 10 threads to pid 227570 (CPUs 0+0)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676528246] Granted 10 threads to pid 227488 (CPUs 1+10)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676528413] Granted 10 threads to pid 227570 (CPUs 0+0)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676528465] Granted 10 threads to pid 227488 (CPUs 1+10)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676528731] Granted 10 threads to pid 227570 (CPUs 0+0)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676528787] Granted 10 threads to pid 227488 (CPUs 1+10)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676528937] Granted 10 threads to pid 227570 (CPUs 0+0)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676529001] Granted 10 threads to pid 227488 (CPUs 1+10)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676529255] Granted 10 threads to pid 227570 (CPUs 0+0)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676529324] Granted 10 threads to pid 227488 (CPUs 1+10)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676529461] Granted 10 threads to pid 227570 (CPUs 0+0)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676529538] Granted 10 threads to pid 227488 (CPUs 1+10)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676529779] Granted 10 threads to pid 227570 (CPUs 0+0)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676529860] Granted 10 threads to pid 227488 (CPUs 1+10)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676529985] Granted 10 threads to pid 227570 (CPUs 0+0)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676530075] Granted 10 threads to pid 227488 (CPUs 1+10)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676530303] Granted 10 threads to pid 227570 (CPUs 0+0)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676530397] Granted 10 threads to pid 227488 (CPUs 1+10)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676530509] Granted 10 threads to pid 227570 (CPUs 0+0)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676530611] Granted 10 threads to pid 227488 (CPUs 1+10)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676530827] Granted 10 threads to pid 227570 (CPUs 0+0)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676530933] Granted 10 threads to pid 227488 (CPUs 1+10)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676531033] Granted 10 threads to pid 227570 (CPUs 0+0)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676531147] Granted 10 threads to pid 227488 (CPUs 1+10)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676531351] Granted 16 threads to pid 227570 (CPUs 11+16)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676531470] Granted 16 threads to pid 227488 (CPUs 0+0)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676531546] Granted 16 threads to pid 227570 (CPUs 11+16)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676531678] Granted 16 threads to pid 227488 (CPUs 0+0)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676531757] Granted 16 threads to pid 227570 (CPUs 11+16)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676531889] Granted 16 threads to pid 227488 (CPUs 0+0)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676531904] Granted 16 threads to pid 227570 (CPUs 11+16)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676532038] Granted 16 threads to pid 227488 (CPUs 0+0)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676532116] Granted 16 threads to pid 227570 (CPUs 11+16)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676532249] Granted 16 threads to pid 227488 (CPUs 0+0)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676532262] Granted 16 threads to pid 227570 (CPUs 11+16)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676532398] Granted 16 threads to pid 227488 (CPUs 0+0)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676532473] Granted 16 threads to pid 227570 (CPUs 11+16)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676532610] Granted 16 threads to pid 227488 (CPUs 0+0)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676532619] Granted 16 threads to pid 227570 (CPUs 11+16)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676532759] Granted 16 threads to pid 227488 (CPUs 0+0)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676532833] Granted 16 threads to pid 227570 (CPUs 11+16)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676532976] Granted 16 threads to pid 227488 (CPUs 0+0)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676532980] Granted 16 threads to pid 227570 (CPUs 11+16)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676533122] Granted 16 threads to pid 227488 (CPUs 0+0)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676533193] Granted 16 threads to pid 227570 (CPUs 11+16)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676533337] Granted 16 threads to pid 227488 (CPUs 0+0)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676533340] Granted 16 threads to pid 227570 (CPUs 11+16)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676533485] Granted 16 threads to pid 227488 (CPUs 0+0)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676533553] Granted 16 threads to pid 227570 (CPUs 11+16)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676533700] Granted 16 threads to pid 227570 (CPUs 11+16)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676533701] Granted 16 threads to pid 227488 (CPUs 0+0)
+Request from pid 227488: max_threads=65535, hint_threads=32
+[1782676533805] Granted 16 threads to pid 227488 (CPUs 0+0)
+Read error: Connection reset by peer (os error 104)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676533908] Granted 16 threads to pid 227570 (CPUs 11+16)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676534040] Granted 16 threads to pid 227570 (CPUs 11+16)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676534239] Granted 16 threads to pid 227570 (CPUs 11+16)
+Accepted connection
+Handling client
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676534353] Granted 10 threads to pid 227661 (CPUs 1+10)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676534381] Granted 10 threads to pid 227570 (CPUs 11+10)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676534583] Granted 10 threads to pid 227661 (CPUs 1+10)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676534800] Granted 10 threads to pid 227570 (CPUs 11+10)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676534871] Granted 10 threads to pid 227661 (CPUs 1+10)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676535006] Granted 10 threads to pid 227570 (CPUs 11+10)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676535226] Granted 10 threads to pid 227661 (CPUs 1+10)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676535309] Granted 10 threads to pid 227661 (CPUs 1+10)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676535320] Granted 10 threads to pid 227570 (CPUs 11+10)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676535526] Granted 10 threads to pid 227570 (CPUs 11+10)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676535606] Granted 10 threads to pid 227661 (CPUs 1+10)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676535841] Granted 10 threads to pid 227570 (CPUs 11+10)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676535871] Granted 10 threads to pid 227661 (CPUs 1+10)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676536048] Granted 10 threads to pid 227570 (CPUs 11+10)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676536190] Granted 10 threads to pid 227661 (CPUs 1+10)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676536364] Granted 10 threads to pid 227570 (CPUs 11+10)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676536396] Granted 10 threads to pid 227661 (CPUs 1+10)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676536571] Granted 10 threads to pid 227570 (CPUs 11+10)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676536715] Granted 10 threads to pid 227661 (CPUs 1+10)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676536886] Granted 10 threads to pid 227570 (CPUs 11+10)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676536924] Granted 10 threads to pid 227661 (CPUs 1+10)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676537094] Granted 10 threads to pid 227570 (CPUs 11+10)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676537240] Granted 10 threads to pid 227661 (CPUs 1+10)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676537409] Granted 10 threads to pid 227570 (CPUs 11+10)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676537448] Granted 10 threads to pid 227661 (CPUs 1+10)
+Request from pid 227570: max_threads=65535, hint_threads=32
+[1782676537563] Granted 10 threads to pid 227570 (CPUs 11+10)
+Read error: Connection reset by peer (os error 104)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676537759] Granted 10 threads to pid 227661 (CPUs 1+10)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676537968] Granted 10 threads to pid 227661 (CPUs 1+10)
+Accepted connection
+Handling client
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676538110] Granted 8 threads to pid 227742 (CPUs 21+8)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676538302] Granted 8 threads to pid 227661 (CPUs 1+8)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676538395] Granted 8 threads to pid 227742 (CPUs 21+8)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676538519] Granted 8 threads to pid 227661 (CPUs 1+8)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676538647] Granted 8 threads to pid 227742 (CPUs 21+8)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676538909] Granted 10 threads to pid 227661 (CPUs 1+10)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676539079] Granted 10 threads to pid 227742 (CPUs 21+10)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676539156] Granted 10 threads to pid 227661 (CPUs 1+10)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676539185] Granted 10 threads to pid 227742 (CPUs 21+10)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676539471] Granted 10 threads to pid 227661 (CPUs 1+10)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676539474] Granted 10 threads to pid 227742 (CPUs 21+10)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676539677] Granted 10 threads to pid 227661 (CPUs 1+10)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676539751] Granted 10 threads to pid 227742 (CPUs 21+10)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676539996] Granted 10 threads to pid 227661 (CPUs 1+10)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676540064] Granted 10 threads to pid 227742 (CPUs 21+10)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676540203] Granted 10 threads to pid 227661 (CPUs 1+10)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676540273] Granted 10 threads to pid 227742 (CPUs 21+10)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676540523] Granted 10 threads to pid 227661 (CPUs 1+10)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676540587] Granted 10 threads to pid 227742 (CPUs 21+10)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676540730] Granted 10 threads to pid 227661 (CPUs 1+10)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676540796] Granted 10 threads to pid 227742 (CPUs 21+10)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676541049] Granted 10 threads to pid 227661 (CPUs 1+10)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676541108] Granted 10 threads to pid 227742 (CPUs 21+10)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676541257] Granted 10 threads to pid 227661 (CPUs 1+10)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676541319] Granted 10 threads to pid 227742 (CPUs 21+10)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676541577] Granted 10 threads to pid 227661 (CPUs 1+10)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676541632] Granted 10 threads to pid 227742 (CPUs 21+10)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676541787] Granted 10 threads to pid 227661 (CPUs 1+10)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676541845] Granted 10 threads to pid 227742 (CPUs 21+10)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676542107] Granted 10 threads to pid 227661 (CPUs 1+10)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676542159] Granted 10 threads to pid 227742 (CPUs 21+10)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676542320] Granted 10 threads to pid 227661 (CPUs 1+10)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676542374] Granted 10 threads to pid 227742 (CPUs 21+10)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676542638] Granted 16 threads to pid 227661 (CPUs 1+16)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676542686] Granted 16 threads to pid 227742 (CPUs 17+16)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676542834] Granted 16 threads to pid 227661 (CPUs 1+16)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676542889] Granted 16 threads to pid 227742 (CPUs 17+16)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676543045] Granted 16 threads to pid 227661 (CPUs 1+16)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676543094] Granted 16 threads to pid 227742 (CPUs 17+16)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676543192] Granted 16 threads to pid 227661 (CPUs 1+16)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676543247] Granted 16 threads to pid 227742 (CPUs 17+16)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676543403] Granted 16 threads to pid 227661 (CPUs 1+16)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676543452] Granted 16 threads to pid 227742 (CPUs 17+16)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676543548] Granted 16 threads to pid 227661 (CPUs 1+16)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676543605] Granted 16 threads to pid 227742 (CPUs 17+16)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676543760] Granted 16 threads to pid 227661 (CPUs 1+16)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676543810] Granted 16 threads to pid 227742 (CPUs 17+16)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676543916] Granted 16 threads to pid 227661 (CPUs 1+16)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676543964] Granted 16 threads to pid 227742 (CPUs 17+16)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676544117] Granted 16 threads to pid 227661 (CPUs 1+16)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676544171] Granted 16 threads to pid 227742 (CPUs 17+16)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676544265] Granted 16 threads to pid 227661 (CPUs 1+16)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676544324] Granted 16 threads to pid 227742 (CPUs 17+16)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676544477] Granted 16 threads to pid 227661 (CPUs 1+16)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676544529] Granted 16 threads to pid 227742 (CPUs 17+16)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676544624] Granted 16 threads to pid 227661 (CPUs 1+16)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676544684] Granted 16 threads to pid 227742 (CPUs 17+16)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676544835] Granted 16 threads to pid 227661 (CPUs 1+16)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676544889] Granted 16 threads to pid 227742 (CPUs 17+16)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676544982] Granted 16 threads to pid 227661 (CPUs 1+16)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676545043] Granted 16 threads to pid 227742 (CPUs 17+16)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676545193] Granted 16 threads to pid 227661 (CPUs 1+16)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676545248] Granted 16 threads to pid 227742 (CPUs 17+16)
+Request from pid 227661: max_threads=65535, hint_threads=32
+[1782676545295] Granted 16 threads to pid 227661 (CPUs 1+16)
+Read error: Connection reset by peer (os error 104)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676545386] Granted 16 threads to pid 227742 (CPUs 17+16)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676545583] Granted 16 threads to pid 227742 (CPUs 17+16)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676545721] Granted 16 threads to pid 227742 (CPUs 17+16)
+Accepted connection
+Handling client
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676545844] Granted 10 threads to pid 227832 (CPUs 0+0)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676545967] Granted 10 threads to pid 227742 (CPUs 17+10)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676546091] Granted 10 threads to pid 227832 (CPUs 0+0)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676546254] Granted 10 threads to pid 227742 (CPUs 17+10)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676546389] Granted 10 threads to pid 227832 (CPUs 0+0)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676546713] Granted 10 threads to pid 227742 (CPUs 17+10)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676546746] Granted 10 threads to pid 227832 (CPUs 0+0)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676546830] Granted 10 threads to pid 227832 (CPUs 0+0)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676546920] Granted 10 threads to pid 227742 (CPUs 17+10)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676547131] Granted 10 threads to pid 227832 (CPUs 0+0)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676547232] Granted 10 threads to pid 227742 (CPUs 17+10)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676547412] Granted 10 threads to pid 227832 (CPUs 0+0)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676547451] Granted 10 threads to pid 227742 (CPUs 17+10)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676547737] Granted 10 threads to pid 227832 (CPUs 0+0)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676547764] Granted 10 threads to pid 227742 (CPUs 17+10)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676547963] Granted 10 threads to pid 227832 (CPUs 0+0)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676547987] Granted 10 threads to pid 227742 (CPUs 17+10)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676548286] Granted 10 threads to pid 227832 (CPUs 0+0)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676548302] Granted 10 threads to pid 227742 (CPUs 17+10)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676548516] Granted 10 threads to pid 227832 (CPUs 0+0)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676548529] Granted 10 threads to pid 227742 (CPUs 17+10)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676548839] Granted 10 threads to pid 227832 (CPUs 0+0)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676548841] Granted 10 threads to pid 227742 (CPUs 17+10)
+Request from pid 227742: max_threads=65535, hint_threads=32
+[1782676548996] Granted 10 threads to pid 227742 (CPUs 17+10)
+Read error: Connection reset by peer (os error 104)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676549045] Granted 10 threads to pid 227832 (CPUs 0+0)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676549364] Granted 10 threads to pid 227832 (CPUs 0+0)
+Accepted connection
+Handling client
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676549541] Granted 8 threads to pid 227907 (CPUs 0+0)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676549592] Granted 8 threads to pid 227832 (CPUs 0+0)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676549783] Granted 8 threads to pid 227907 (CPUs 0+0)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676550093] Granted 8 threads to pid 227907 (CPUs 0+0)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676550096] Granted 8 threads to pid 227832 (CPUs 0+0)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676550351] Granted 10 threads to pid 227832 (CPUs 1+10)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676550538] Granted 10 threads to pid 227907 (CPUs 0+0)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676550639] Granted 10 threads to pid 227907 (CPUs 0+0)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676550867] Granted 10 threads to pid 227832 (CPUs 1+10)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676550931] Granted 10 threads to pid 227907 (CPUs 0+0)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676551212] Granted 10 threads to pid 227907 (CPUs 0+0)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676551270] Granted 10 threads to pid 227832 (CPUs 1+10)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676551527] Granted 10 threads to pid 227907 (CPUs 0+0)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676551735] Granted 10 threads to pid 227907 (CPUs 0+0)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676551904] Granted 10 threads to pid 227832 (CPUs 1+10)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676552050] Granted 10 threads to pid 227907 (CPUs 0+0)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676552275] Granted 10 threads to pid 227907 (CPUs 0+0)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676552313] Granted 10 threads to pid 227832 (CPUs 1+10)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676552590] Granted 10 threads to pid 227907 (CPUs 0+0)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676552797] Granted 10 threads to pid 227907 (CPUs 0+0)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676552941] Granted 10 threads to pid 227832 (CPUs 1+10)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676553112] Granted 10 threads to pid 227907 (CPUs 0+0)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676553330] Granted 10 threads to pid 227907 (CPUs 0+0)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676553354] Granted 10 threads to pid 227832 (CPUs 1+10)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676553646] Granted 10 threads to pid 227907 (CPUs 0+0)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676553853] Granted 10 threads to pid 227907 (CPUs 0+0)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676553998] Granted 16 threads to pid 227832 (CPUs 1+16)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676554168] Granted 16 threads to pid 227907 (CPUs 17+16)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676554308] Granted 16 threads to pid 227832 (CPUs 1+16)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676554392] Granted 16 threads to pid 227907 (CPUs 17+16)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676554499] Granted 16 threads to pid 227832 (CPUs 1+16)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676554594] Granted 16 threads to pid 227907 (CPUs 17+16)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676554688] Granted 16 threads to pid 227832 (CPUs 1+16)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676554766] Granted 16 threads to pid 227907 (CPUs 17+16)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676554876] Granted 16 threads to pid 227832 (CPUs 1+16)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676554970] Granted 16 threads to pid 227907 (CPUs 17+16)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676555066] Granted 16 threads to pid 227832 (CPUs 1+16)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676555140] Granted 16 threads to pid 227907 (CPUs 17+16)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676555254] Granted 16 threads to pid 227832 (CPUs 1+16)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676555345] Granted 16 threads to pid 227907 (CPUs 17+16)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676555444] Granted 16 threads to pid 227832 (CPUs 1+16)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676555513] Granted 16 threads to pid 227907 (CPUs 17+16)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676555629] Granted 16 threads to pid 227832 (CPUs 1+16)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676555717] Granted 16 threads to pid 227907 (CPUs 17+16)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676555820] Granted 16 threads to pid 227832 (CPUs 1+16)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676555884] Granted 16 threads to pid 227907 (CPUs 17+16)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676556005] Granted 16 threads to pid 227832 (CPUs 1+16)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676556091] Granted 16 threads to pid 227907 (CPUs 17+16)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676556197] Granted 16 threads to pid 227832 (CPUs 1+16)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676556257] Granted 16 threads to pid 227907 (CPUs 17+16)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676556379] Granted 16 threads to pid 227832 (CPUs 1+16)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676556462] Granted 16 threads to pid 227907 (CPUs 17+16)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676556571] Granted 16 threads to pid 227832 (CPUs 1+16)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676556628] Granted 16 threads to pid 227907 (CPUs 17+16)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676556753] Granted 16 threads to pid 227832 (CPUs 1+16)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676556834] Granted 16 threads to pid 227907 (CPUs 17+16)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676556945] Granted 16 threads to pid 227832 (CPUs 1+16)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676556998] Granted 16 threads to pid 227907 (CPUs 17+16)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676557126] Granted 16 threads to pid 227832 (CPUs 1+16)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676557204] Granted 16 threads to pid 227907 (CPUs 17+16)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676557318] Granted 16 threads to pid 227832 (CPUs 1+16)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676557366] Granted 16 threads to pid 227907 (CPUs 17+16)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676557390] Granted 16 threads to pid 227832 (CPUs 1+16)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676557573] Granted 16 threads to pid 227907 (CPUs 17+16)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676557596] Granted 16 threads to pid 227832 (CPUs 1+16)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676557734] Granted 16 threads to pid 227907 (CPUs 17+16)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676557761] Granted 16 threads to pid 227832 (CPUs 1+16)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676557940] Granted 16 threads to pid 227907 (CPUs 17+16)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676557967] Granted 16 threads to pid 227832 (CPUs 1+16)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676558100] Granted 16 threads to pid 227907 (CPUs 17+16)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676558130] Granted 16 threads to pid 227832 (CPUs 1+16)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676558309] Granted 16 threads to pid 227907 (CPUs 17+16)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676558337] Granted 16 threads to pid 227832 (CPUs 1+16)
+Request from pid 227832: max_threads=65535, hint_threads=32
+[1782676558453] Granted 16 threads to pid 227832 (CPUs 1+16)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676558453] Granted 16 threads to pid 227907 (CPUs 17+16)
+Read error: Connection reset by peer (os error 104)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676558652] Granted 16 threads to pid 227907 (CPUs 17+16)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676558789] Granted 16 threads to pid 227907 (CPUs 17+16)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676558987] Granted 16 threads to pid 227907 (CPUs 17+16)
+Accepted connection
+Handling client
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676558996] Granted 10 threads to pid 228028 (CPUs 0+0)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676559108] Granted 10 threads to pid 227907 (CPUs 17+10)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676559237] Granted 10 threads to pid 228028 (CPUs 0+0)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676559489] Granted 10 threads to pid 228028 (CPUs 0+0)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676559529] Granted 10 threads to pid 227907 (CPUs 17+10)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676559852] Granted 10 threads to pid 228028 (CPUs 0+0)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676559936] Granted 10 threads to pid 228028 (CPUs 0+0)
+Request from pid 227907: max_threads=65535, hint_threads=32
+[1782676560099] Granted 10 threads to pid 227907 (CPUs 17+10)
+[1782676560115] Client pid 227907 disconnected — removed from state
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676560241] Granted 16 threads to pid 228028 (CPUs 17+16)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676560496] Granted 16 threads to pid 228028 (CPUs 17+16)
+Accepted connection
+Handling client
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676560656] Granted 10 threads to pid 228092 (CPUs 0+0)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676560706] Granted 10 threads to pid 228028 (CPUs 17+10)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676560875] Granted 10 threads to pid 228092 (CPUs 0+0)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676560896] Granted 10 threads to pid 228028 (CPUs 17+10)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676561110] Granted 10 threads to pid 228092 (CPUs 0+0)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676561203] Granted 10 threads to pid 228028 (CPUs 17+10)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676561467] Granted 10 threads to pid 228092 (CPUs 0+0)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676561512] Granted 10 threads to pid 228028 (CPUs 17+10)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676561565] Granted 10 threads to pid 228092 (CPUs 0+0)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676561762] Granted 10 threads to pid 228028 (CPUs 17+10)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676561868] Granted 10 threads to pid 228092 (CPUs 0+0)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676562072] Granted 10 threads to pid 228028 (CPUs 17+10)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676562162] Granted 10 threads to pid 228092 (CPUs 0+0)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676562336] Granted 10 threads to pid 228028 (CPUs 17+10)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676562483] Granted 10 threads to pid 228092 (CPUs 0+0)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676562646] Granted 10 threads to pid 228028 (CPUs 17+10)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676562708] Granted 10 threads to pid 228092 (CPUs 0+0)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676562903] Granted 10 threads to pid 228028 (CPUs 17+10)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676563030] Granted 10 threads to pid 228092 (CPUs 0+0)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676563213] Granted 10 threads to pid 228028 (CPUs 17+10)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676563247] Granted 10 threads to pid 228092 (CPUs 0+0)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676563462] Granted 16 threads to pid 228028 (CPUs 1+16)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676563572] Granted 16 threads to pid 228092 (CPUs 17+16)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676563815] Granted 16 threads to pid 228092 (CPUs 17+16)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676563850] Granted 16 threads to pid 228028 (CPUs 1+16)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676563931] Granted 16 threads to pid 228028 (CPUs 1+16)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676564142] Granted 16 threads to pid 228092 (CPUs 17+16)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676564209] Granted 16 threads to pid 228028 (CPUs 1+16)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676564289] Granted 16 threads to pid 228092 (CPUs 17+16)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676564366] Granted 16 threads to pid 228028 (CPUs 1+16)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676564499] Granted 16 threads to pid 228092 (CPUs 17+16)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676564575] Granted 16 threads to pid 228028 (CPUs 1+16)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676564647] Granted 16 threads to pid 228092 (CPUs 17+16)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676564732] Granted 16 threads to pid 228028 (CPUs 1+16)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676564858] Granted 16 threads to pid 228092 (CPUs 17+16)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676564942] Granted 16 threads to pid 228028 (CPUs 1+16)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676565006] Granted 16 threads to pid 228092 (CPUs 17+16)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676565100] Granted 16 threads to pid 228028 (CPUs 1+16)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676565216] Granted 16 threads to pid 228092 (CPUs 17+16)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676565312] Granted 16 threads to pid 228028 (CPUs 1+16)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676565364] Granted 16 threads to pid 228092 (CPUs 17+16)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676565469] Granted 16 threads to pid 228028 (CPUs 1+16)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676565576] Granted 16 threads to pid 228092 (CPUs 17+16)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676565682] Granted 16 threads to pid 228028 (CPUs 1+16)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676565724] Granted 16 threads to pid 228092 (CPUs 17+16)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676565838] Granted 16 threads to pid 228028 (CPUs 1+16)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676565936] Granted 16 threads to pid 228092 (CPUs 17+16)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676566053] Granted 16 threads to pid 228028 (CPUs 1+16)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676566083] Granted 16 threads to pid 228092 (CPUs 17+16)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676566207] Granted 16 threads to pid 228028 (CPUs 1+16)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676566295] Granted 16 threads to pid 228092 (CPUs 17+16)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676566424] Granted 16 threads to pid 228028 (CPUs 1+16)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676566442] Granted 16 threads to pid 228092 (CPUs 17+16)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676566576] Granted 16 threads to pid 228028 (CPUs 1+16)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676566654] Granted 16 threads to pid 228092 (CPUs 17+16)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676566795] Granted 16 threads to pid 228028 (CPUs 1+16)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676566801] Granted 16 threads to pid 228092 (CPUs 17+16)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676566946] Granted 16 threads to pid 228028 (CPUs 1+16)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676567014] Granted 16 threads to pid 228092 (CPUs 17+16)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676567162] Granted 16 threads to pid 228092 (CPUs 17+16)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676567166] Granted 16 threads to pid 228028 (CPUs 1+16)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676567317] Granted 16 threads to pid 228028 (CPUs 1+16)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676567374] Granted 16 threads to pid 228092 (CPUs 17+16)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676567522] Granted 16 threads to pid 228092 (CPUs 17+16)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676567537] Granted 16 threads to pid 228028 (CPUs 1+16)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676567688] Granted 16 threads to pid 228028 (CPUs 1+16)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676567734] Granted 16 threads to pid 228092 (CPUs 17+16)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676567882] Granted 16 threads to pid 228092 (CPUs 17+16)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676567907] Granted 16 threads to pid 228028 (CPUs 1+16)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676568059] Granted 16 threads to pid 228028 (CPUs 1+16)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676568096] Granted 16 threads to pid 228092 (CPUs 17+16)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676568244] Granted 16 threads to pid 228092 (CPUs 17+16)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676568278] Granted 16 threads to pid 228028 (CPUs 1+16)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676568430] Granted 16 threads to pid 228028 (CPUs 1+16)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676568456] Granted 16 threads to pid 228092 (CPUs 17+16)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676568604] Granted 16 threads to pid 228092 (CPUs 17+16)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676568649] Granted 16 threads to pid 228028 (CPUs 1+16)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676568801] Granted 16 threads to pid 228028 (CPUs 1+16)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676568817] Granted 16 threads to pid 228092 (CPUs 17+16)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676568964] Granted 16 threads to pid 228092 (CPUs 17+16)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676569020] Granted 16 threads to pid 228028 (CPUs 1+16)
+Request from pid 228028: max_threads=65535, hint_threads=32
+[1782676569128] Granted 16 threads to pid 228028 (CPUs 1+16)
+Read error: Connection reset by peer (os error 104)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676569168] Granted 16 threads to pid 228092 (CPUs 17+16)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676569306] Granted 16 threads to pid 228092 (CPUs 17+16)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676569504] Granted 16 threads to pid 228092 (CPUs 17+16)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676569642] Granted 16 threads to pid 228092 (CPUs 17+16)
+Accepted connection
+Handling client
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676569680] Granted 10 threads to pid 228213 (CPUs 0+0)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676569922] Granted 10 threads to pid 228213 (CPUs 0+0)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676569930] Granted 10 threads to pid 228092 (CPUs 17+10)
+Request from pid 228092: max_threads=65535, hint_threads=32
+[1782676570093] Granted 10 threads to pid 228092 (CPUs 17+10)
+Read error: Connection reset by peer (os error 104)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676570160] Granted 10 threads to pid 228213 (CPUs 0+0)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676570502] Granted 10 threads to pid 228213 (CPUs 0+0)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676570584] Granted 10 threads to pid 228213 (CPUs 0+0)
+Accepted connection
+Handling client
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676570649] Granted 8 threads to pid 228254 (CPUs 0+0)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676570886] Granted 8 threads to pid 228254 (CPUs 0+0)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676570992] Granted 8 threads to pid 228213 (CPUs 0+0)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676571145] Granted 8 threads to pid 228254 (CPUs 0+0)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676571265] Granted 8 threads to pid 228213 (CPUs 0+0)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676571586] Granted 8 threads to pid 228254 (CPUs 0+0)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676571653] Granted 8 threads to pid 228213 (CPUs 0+0)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676571688] Granted 8 threads to pid 228254 (CPUs 0+0)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676571902] Granted 8 threads to pid 228213 (CPUs 0+0)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676572056] Granted 8 threads to pid 228254 (CPUs 0+0)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676572290] Granted 8 threads to pid 228213 (CPUs 0+0)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676572380] Granted 8 threads to pid 228254 (CPUs 0+0)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676572542] Granted 8 threads to pid 228213 (CPUs 0+0)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676572778] Granted 8 threads to pid 228254 (CPUs 0+0)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676572931] Granted 8 threads to pid 228213 (CPUs 0+0)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676573030] Granted 8 threads to pid 228254 (CPUs 0+0)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676573183] Granted 8 threads to pid 228213 (CPUs 0+0)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676573427] Granted 8 threads to pid 228254 (CPUs 0+0)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676573571] Granted 8 threads to pid 228213 (CPUs 0+0)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676573680] Granted 8 threads to pid 228254 (CPUs 0+0)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676573823] Granted 8 threads to pid 228213 (CPUs 0+0)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676574077] Granted 8 threads to pid 228254 (CPUs 0+0)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676574212] Granted 10 threads to pid 228213 (CPUs 1+10)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676574329] Granted 10 threads to pid 228254 (CPUs 0+0)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676574500] Granted 10 threads to pid 228213 (CPUs 1+10)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676574716] Granted 10 threads to pid 228254 (CPUs 0+0)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676574923] Granted 10 threads to pid 228254 (CPUs 0+0)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676575126] Granted 16 threads to pid 228213 (CPUs 1+16)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676575236] Granted 16 threads to pid 228254 (CPUs 17+16)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676575452] Granted 16 threads to pid 228254 (CPUs 17+16)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676575470] Granted 16 threads to pid 228213 (CPUs 1+16)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676575663] Granted 16 threads to pid 228254 (CPUs 17+16)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676575676] Granted 16 threads to pid 228213 (CPUs 1+16)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676575830] Granted 16 threads to pid 228254 (CPUs 17+16)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676575843] Granted 16 threads to pid 228213 (CPUs 1+16)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676576039] Granted 16 threads to pid 228254 (CPUs 17+16)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676576047] Granted 16 threads to pid 228213 (CPUs 1+16)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676576210] Granted 16 threads to pid 228254 (CPUs 17+16)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676576216] Granted 16 threads to pid 228213 (CPUs 1+16)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676576416] Granted 16 threads to pid 228254 (CPUs 17+16)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676576418] Granted 16 threads to pid 228213 (CPUs 1+16)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676576591] Granted 16 threads to pid 228213 (CPUs 1+16)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676576591] Granted 16 threads to pid 228254 (CPUs 17+16)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676576790] Granted 16 threads to pid 228213 (CPUs 1+16)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676576793] Granted 16 threads to pid 228254 (CPUs 17+16)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676576960] Granted 16 threads to pid 228213 (CPUs 1+16)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676576965] Granted 16 threads to pid 228254 (CPUs 17+16)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676577165] Granted 16 threads to pid 228213 (CPUs 1+16)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676577173] Granted 16 threads to pid 228254 (CPUs 17+16)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676577334] Granted 16 threads to pid 228213 (CPUs 1+16)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676577343] Granted 16 threads to pid 228254 (CPUs 17+16)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676577542] Granted 16 threads to pid 228213 (CPUs 1+16)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676577552] Granted 16 threads to pid 228254 (CPUs 17+16)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676577708] Granted 16 threads to pid 228213 (CPUs 1+16)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676577721] Granted 16 threads to pid 228254 (CPUs 17+16)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676577915] Granted 16 threads to pid 228213 (CPUs 1+16)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676577928] Granted 16 threads to pid 228254 (CPUs 17+16)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676578079] Granted 16 threads to pid 228213 (CPUs 1+16)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676578096] Granted 16 threads to pid 228254 (CPUs 17+16)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676578286] Granted 16 threads to pid 228213 (CPUs 1+16)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676578302] Granted 16 threads to pid 228254 (CPUs 17+16)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676578449] Granted 16 threads to pid 228213 (CPUs 1+16)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676578469] Granted 16 threads to pid 228254 (CPUs 17+16)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676578655] Granted 16 threads to pid 228213 (CPUs 1+16)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676578675] Granted 16 threads to pid 228254 (CPUs 17+16)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676578817] Granted 16 threads to pid 228213 (CPUs 1+16)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676578840] Granted 16 threads to pid 228254 (CPUs 17+16)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676579027] Granted 16 threads to pid 228213 (CPUs 1+16)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676579050] Granted 16 threads to pid 228254 (CPUs 17+16)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676579187] Granted 16 threads to pid 228213 (CPUs 1+16)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676579214] Granted 16 threads to pid 228254 (CPUs 17+16)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676579397] Granted 16 threads to pid 228213 (CPUs 1+16)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676579422] Granted 16 threads to pid 228254 (CPUs 17+16)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676579555] Granted 16 threads to pid 228213 (CPUs 1+16)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676579585] Granted 16 threads to pid 228254 (CPUs 17+16)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676579767] Granted 16 threads to pid 228213 (CPUs 1+16)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676579796] Granted 16 threads to pid 228254 (CPUs 17+16)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676579925] Granted 16 threads to pid 228213 (CPUs 1+16)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676579958] Granted 16 threads to pid 228254 (CPUs 17+16)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676580131] Granted 16 threads to pid 228213 (CPUs 1+16)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676580161] Granted 16 threads to pid 228254 (CPUs 17+16)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676580288] Granted 16 threads to pid 228213 (CPUs 1+16)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676580323] Granted 16 threads to pid 228254 (CPUs 17+16)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676580494] Granted 16 threads to pid 228213 (CPUs 1+16)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676580526] Granted 16 threads to pid 228254 (CPUs 17+16)
+Request from pid 228213: max_threads=65535, hint_threads=32
+[1782676580596] Granted 16 threads to pid 228213 (CPUs 1+16)
+Read error: Connection reset by peer (os error 104)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676580664] Granted 16 threads to pid 228254 (CPUs 17+16)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676580860] Granted 16 threads to pid 228254 (CPUs 17+16)
+Request from pid 228254: max_threads=65535, hint_threads=32
+[1782676580961] Granted 16 threads to pid 228254 (CPUs 17+16)
+Read error: Connection reset by peer (os error 104)
+Accepted connection
+Handling client
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676581128] Granted 10 threads to pid 228383 (CPUs 0+0)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676581264] Granted 10 threads to pid 228383 (CPUs 0+0)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676581445] Granted 10 threads to pid 228383 (CPUs 0+0)
+Accepted connection
+Handling client
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676581497] Granted 8 threads to pid 228418 (CPUs 0+0)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676581716] Granted 8 threads to pid 228418 (CPUs 0+0)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676581943] Granted 8 threads to pid 228383 (CPUs 0+0)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676581968] Granted 8 threads to pid 228418 (CPUs 0+0)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676582034] Granted 8 threads to pid 228383 (CPUs 0+0)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676582403] Granted 8 threads to pid 228383 (CPUs 0+0)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676582408] Granted 8 threads to pid 228418 (CPUs 0+0)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676582510] Granted 8 threads to pid 228418 (CPUs 0+0)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676582734] Granted 8 threads to pid 228383 (CPUs 0+0)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676582878] Granted 8 threads to pid 228418 (CPUs 0+0)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676583133] Granted 8 threads to pid 228383 (CPUs 0+0)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676583203] Granted 8 threads to pid 228418 (CPUs 0+0)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676583389] Granted 8 threads to pid 228383 (CPUs 0+0)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676583602] Granted 8 threads to pid 228418 (CPUs 0+0)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676583790] Granted 8 threads to pid 228383 (CPUs 0+0)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676583853] Granted 8 threads to pid 228418 (CPUs 0+0)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676584046] Granted 8 threads to pid 228383 (CPUs 0+0)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676584253] Granted 8 threads to pid 228418 (CPUs 0+0)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676584446] Granted 8 threads to pid 228383 (CPUs 0+0)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676584504] Granted 8 threads to pid 228418 (CPUs 0+0)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676584702] Granted 8 threads to pid 228383 (CPUs 0+0)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676584904] Granted 8 threads to pid 228418 (CPUs 0+0)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676585103] Granted 8 threads to pid 228383 (CPUs 0+0)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676585155] Granted 8 threads to pid 228418 (CPUs 0+0)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676585359] Granted 8 threads to pid 228383 (CPUs 0+0)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676585554] Granted 8 threads to pid 228418 (CPUs 0+0)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676585760] Granted 10 threads to pid 228383 (CPUs 1+10)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676585806] Granted 10 threads to pid 228418 (CPUs 0+0)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676586050] Granted 16 threads to pid 228383 (CPUs 1+16)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676586177] Granted 16 threads to pid 228418 (CPUs 17+16)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676586384] Granted 16 threads to pid 228418 (CPUs 17+16)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676586459] Granted 16 threads to pid 228383 (CPUs 1+16)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676586605] Granted 16 threads to pid 228383 (CPUs 1+16)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676586657] Granted 16 threads to pid 228418 (CPUs 17+16)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676586803] Granted 16 threads to pid 228418 (CPUs 17+16)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676586818] Granted 16 threads to pid 228383 (CPUs 1+16)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676586965] Granted 16 threads to pid 228383 (CPUs 1+16)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676587014] Granted 16 threads to pid 228418 (CPUs 17+16)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676587161] Granted 16 threads to pid 228418 (CPUs 17+16)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676587179] Granted 16 threads to pid 228383 (CPUs 1+16)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676587326] Granted 16 threads to pid 228383 (CPUs 1+16)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676587371] Granted 16 threads to pid 228418 (CPUs 17+16)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676587518] Granted 16 threads to pid 228418 (CPUs 17+16)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676587540] Granted 16 threads to pid 228383 (CPUs 1+16)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676587687] Granted 16 threads to pid 228383 (CPUs 1+16)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676587728] Granted 16 threads to pid 228418 (CPUs 17+16)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676587875] Granted 16 threads to pid 228418 (CPUs 17+16)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676587901] Granted 16 threads to pid 228383 (CPUs 1+16)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676588050] Granted 16 threads to pid 228383 (CPUs 1+16)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676588088] Granted 16 threads to pid 228418 (CPUs 17+16)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676588235] Granted 16 threads to pid 228418 (CPUs 17+16)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676588265] Granted 16 threads to pid 228383 (CPUs 1+16)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676588413] Granted 16 threads to pid 228383 (CPUs 1+16)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676588446] Granted 16 threads to pid 228418 (CPUs 17+16)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676588594] Granted 16 threads to pid 228418 (CPUs 17+16)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676588627] Granted 16 threads to pid 228383 (CPUs 1+16)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676588775] Granted 16 threads to pid 228383 (CPUs 1+16)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676588806] Granted 16 threads to pid 228418 (CPUs 17+16)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676588954] Granted 16 threads to pid 228418 (CPUs 17+16)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676588989] Granted 16 threads to pid 228383 (CPUs 1+16)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676589137] Granted 16 threads to pid 228383 (CPUs 1+16)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676589166] Granted 16 threads to pid 228418 (CPUs 17+16)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676589314] Granted 16 threads to pid 228418 (CPUs 17+16)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676589352] Granted 16 threads to pid 228383 (CPUs 1+16)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676589500] Granted 16 threads to pid 228383 (CPUs 1+16)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676589527] Granted 16 threads to pid 228418 (CPUs 17+16)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676589674] Granted 16 threads to pid 228418 (CPUs 17+16)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676589715] Granted 16 threads to pid 228383 (CPUs 1+16)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676589863] Granted 16 threads to pid 228383 (CPUs 1+16)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676589887] Granted 16 threads to pid 228418 (CPUs 17+16)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676590035] Granted 16 threads to pid 228418 (CPUs 17+16)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676590078] Granted 16 threads to pid 228383 (CPUs 1+16)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676590226] Granted 16 threads to pid 228383 (CPUs 1+16)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676590247] Granted 16 threads to pid 228418 (CPUs 17+16)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676590394] Granted 16 threads to pid 228418 (CPUs 17+16)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676590441] Granted 16 threads to pid 228383 (CPUs 1+16)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676590589] Granted 16 threads to pid 228383 (CPUs 1+16)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676590606] Granted 16 threads to pid 228418 (CPUs 17+16)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676590753] Granted 16 threads to pid 228418 (CPUs 17+16)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676590803] Granted 16 threads to pid 228383 (CPUs 1+16)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676590951] Granted 16 threads to pid 228383 (CPUs 1+16)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676590966] Granted 16 threads to pid 228418 (CPUs 17+16)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676591113] Granted 16 threads to pid 228418 (CPUs 17+16)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676591166] Granted 16 threads to pid 228383 (CPUs 1+16)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676591314] Granted 16 threads to pid 228383 (CPUs 1+16)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676591325] Granted 16 threads to pid 228418 (CPUs 17+16)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676591472] Granted 16 threads to pid 228418 (CPUs 17+16)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676591528] Granted 16 threads to pid 228383 (CPUs 1+16)
+Request from pid 228383: max_threads=65535, hint_threads=32
+[1782676591632] Granted 16 threads to pid 228383 (CPUs 1+16)
+Read error: Connection reset by peer (os error 104)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676591673] Granted 16 threads to pid 228418 (CPUs 17+16)
+Request from pid 228418: max_threads=65535, hint_threads=32
+[1782676591774] Granted 16 threads to pid 228418 (CPUs 17+16)
+Read error: Connection reset by peer (os error 104)
+Accepted connection
+Handling client
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676592166] Granted 10 threads to pid 228555 (CPUs 0+0)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676592297] Granted 10 threads to pid 228555 (CPUs 0+0)
+Accepted connection
+Handling client
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676592312] Granted 8 threads to pid 228596 (CPUs 0+0)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676592610] Granted 8 threads to pid 228596 (CPUs 0+0)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676592663] Granted 8 threads to pid 228555 (CPUs 0+0)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676592875] Granted 8 threads to pid 228596 (CPUs 0+0)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676593077] Granted 8 threads to pid 228555 (CPUs 0+0)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676593179] Granted 8 threads to pid 228555 (CPUs 0+0)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676593325] Granted 8 threads to pid 228596 (CPUs 0+0)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676593426] Granted 8 threads to pid 228596 (CPUs 0+0)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676593547] Granted 8 threads to pid 228555 (CPUs 0+0)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676593798] Granted 8 threads to pid 228596 (CPUs 0+0)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676593873] Granted 8 threads to pid 228555 (CPUs 0+0)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676594135] Granted 8 threads to pid 228596 (CPUs 0+0)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676594273] Granted 8 threads to pid 228555 (CPUs 0+0)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676594525] Granted 8 threads to pid 228555 (CPUs 0+0)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676594542] Granted 8 threads to pid 228596 (CPUs 0+0)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676594797] Granted 8 threads to pid 228596 (CPUs 0+0)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676594925] Granted 8 threads to pid 228555 (CPUs 0+0)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676595177] Granted 8 threads to pid 228555 (CPUs 0+0)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676595204] Granted 8 threads to pid 228596 (CPUs 0+0)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676595460] Granted 8 threads to pid 228596 (CPUs 0+0)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676595577] Granted 8 threads to pid 228555 (CPUs 0+0)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676595829] Granted 8 threads to pid 228555 (CPUs 0+0)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676595867] Granted 8 threads to pid 228596 (CPUs 0+0)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676596122] Granted 8 threads to pid 228596 (CPUs 0+0)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676596229] Granted 8 threads to pid 228555 (CPUs 0+0)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676596481] Granted 8 threads to pid 228555 (CPUs 0+0)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676596528] Granted 8 threads to pid 228596 (CPUs 0+0)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676596784] Granted 16 threads to pid 228596 (CPUs 1+16)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676596881] Granted 16 threads to pid 228555 (CPUs 17+16)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676597129] Granted 16 threads to pid 228555 (CPUs 17+16)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676597160] Granted 16 threads to pid 228596 (CPUs 1+16)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676597310] Granted 16 threads to pid 228596 (CPUs 1+16)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676597340] Granted 16 threads to pid 228555 (CPUs 17+16)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676597487] Granted 16 threads to pid 228555 (CPUs 17+16)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676597526] Granted 16 threads to pid 228596 (CPUs 1+16)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676597676] Granted 16 threads to pid 228596 (CPUs 1+16)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676597698] Granted 16 threads to pid 228555 (CPUs 17+16)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676597845] Granted 16 threads to pid 228555 (CPUs 17+16)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676597893] Granted 16 threads to pid 228596 (CPUs 1+16)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676598043] Granted 16 threads to pid 228596 (CPUs 1+16)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676598056] Granted 16 threads to pid 228555 (CPUs 17+16)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676598202] Granted 16 threads to pid 228555 (CPUs 17+16)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676598259] Granted 16 threads to pid 228596 (CPUs 1+16)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676598408] Granted 16 threads to pid 228596 (CPUs 1+16)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676598414] Granted 16 threads to pid 228555 (CPUs 17+16)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676598560] Granted 16 threads to pid 228555 (CPUs 17+16)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676598626] Granted 16 threads to pid 228596 (CPUs 1+16)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676598774] Granted 16 threads to pid 228555 (CPUs 17+16)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676598776] Granted 16 threads to pid 228596 (CPUs 1+16)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676598921] Granted 16 threads to pid 228555 (CPUs 17+16)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676598994] Granted 16 threads to pid 228596 (CPUs 1+16)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676599132] Granted 16 threads to pid 228555 (CPUs 17+16)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676599145] Granted 16 threads to pid 228596 (CPUs 1+16)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676599280] Granted 16 threads to pid 228555 (CPUs 17+16)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676599362] Granted 16 threads to pid 228596 (CPUs 1+16)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676599489] Granted 16 threads to pid 228555 (CPUs 17+16)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676599512] Granted 16 threads to pid 228596 (CPUs 1+16)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676599638] Granted 16 threads to pid 228555 (CPUs 17+16)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676599730] Granted 16 threads to pid 228596 (CPUs 1+16)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676599845] Granted 16 threads to pid 228555 (CPUs 17+16)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676599881] Granted 16 threads to pid 228596 (CPUs 1+16)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676599996] Granted 16 threads to pid 228555 (CPUs 17+16)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676600099] Granted 16 threads to pid 228596 (CPUs 1+16)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676600202] Granted 16 threads to pid 228555 (CPUs 17+16)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676600249] Granted 16 threads to pid 228596 (CPUs 1+16)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676600355] Granted 16 threads to pid 228555 (CPUs 17+16)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676600466] Granted 16 threads to pid 228596 (CPUs 1+16)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676600558] Granted 16 threads to pid 228555 (CPUs 17+16)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676600617] Granted 16 threads to pid 228596 (CPUs 1+16)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676600712] Granted 16 threads to pid 228555 (CPUs 17+16)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676600835] Granted 16 threads to pid 228596 (CPUs 1+16)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676600916] Granted 16 threads to pid 228555 (CPUs 17+16)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676600986] Granted 16 threads to pid 228596 (CPUs 1+16)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676601070] Granted 16 threads to pid 228555 (CPUs 17+16)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676601205] Granted 16 threads to pid 228596 (CPUs 1+16)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676601276] Granted 16 threads to pid 228555 (CPUs 17+16)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676601355] Granted 16 threads to pid 228596 (CPUs 1+16)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676601430] Granted 16 threads to pid 228555 (CPUs 17+16)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676601573] Granted 16 threads to pid 228596 (CPUs 1+16)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676601636] Granted 16 threads to pid 228555 (CPUs 17+16)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676601723] Granted 16 threads to pid 228596 (CPUs 1+16)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676601790] Granted 16 threads to pid 228555 (CPUs 17+16)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676601941] Granted 16 threads to pid 228596 (CPUs 1+16)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676601996] Granted 16 threads to pid 228555 (CPUs 17+16)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676602090] Granted 16 threads to pid 228596 (CPUs 1+16)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676602149] Granted 16 threads to pid 228555 (CPUs 17+16)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676602310] Granted 16 threads to pid 228596 (CPUs 1+16)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676602358] Granted 16 threads to pid 228555 (CPUs 17+16)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676602459] Granted 16 threads to pid 228596 (CPUs 1+16)
+Request from pid 228555: max_threads=65535, hint_threads=32
+[1782676602468] Granted 16 threads to pid 228555 (CPUs 17+16)
+Read error: Connection reset by peer (os error 104)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676602662] Granted 16 threads to pid 228596 (CPUs 1+16)
+Request from pid 228596: max_threads=65535, hint_threads=32
+[1782676602766] Granted 16 threads to pid 228596 (CPUs 1+16)
+Read error: Connection reset by peer (os error 104)
+Accepted connection
+Handling client
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676603001] Granted 10 threads to pid 228692 (CPUs 0+0)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676603132] Granted 10 threads to pid 228692 (CPUs 0+0)
+Accepted connection
+Handling client
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676603305] Granted 8 threads to pid 228727 (CPUs 0+0)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676603314] Granted 8 threads to pid 228692 (CPUs 0+0)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676603555] Granted 8 threads to pid 228727 (CPUs 0+0)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676603807] Granted 8 threads to pid 228727 (CPUs 0+0)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676603823] Granted 8 threads to pid 228692 (CPUs 0+0)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676603925] Granted 8 threads to pid 228692 (CPUs 0+0)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676604240] Granted 8 threads to pid 228727 (CPUs 0+0)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676604294] Granted 8 threads to pid 228692 (CPUs 0+0)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676604342] Granted 8 threads to pid 228727 (CPUs 0+0)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676604624] Granted 8 threads to pid 228692 (CPUs 0+0)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676604706] Granted 8 threads to pid 228727 (CPUs 0+0)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676605025] Granted 8 threads to pid 228727 (CPUs 0+0)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676605026] Granted 8 threads to pid 228692 (CPUs 0+0)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676605279] Granted 8 threads to pid 228692 (CPUs 0+0)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676605424] Granted 8 threads to pid 228727 (CPUs 0+0)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676605673] Granted 8 threads to pid 228727 (CPUs 0+0)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676605682] Granted 8 threads to pid 228692 (CPUs 0+0)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676605935] Granted 8 threads to pid 228692 (CPUs 0+0)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676606065] Granted 8 threads to pid 228727 (CPUs 0+0)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676606314] Granted 8 threads to pid 228727 (CPUs 0+0)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676606338] Granted 8 threads to pid 228692 (CPUs 0+0)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676606592] Granted 8 threads to pid 228692 (CPUs 0+0)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676606706] Granted 8 threads to pid 228727 (CPUs 0+0)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676606955] Granted 8 threads to pid 228727 (CPUs 0+0)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676606995] Granted 8 threads to pid 228692 (CPUs 0+0)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676607248] Granted 8 threads to pid 228692 (CPUs 0+0)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676607347] Granted 8 threads to pid 228727 (CPUs 0+0)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676607596] Granted 10 threads to pid 228727 (CPUs 17+10)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676607651] Granted 10 threads to pid 228692 (CPUs 0+0)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676607897] Granted 16 threads to pid 228692 (CPUs 1+16)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676607962] Granted 16 threads to pid 228727 (CPUs 17+16)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676608162] Granted 16 threads to pid 228727 (CPUs 17+16)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676608181] Granted 16 threads to pid 228692 (CPUs 1+16)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676608328] Granted 16 threads to pid 228692 (CPUs 1+16)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676608371] Granted 16 threads to pid 228727 (CPUs 17+16)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676608516] Granted 16 threads to pid 228727 (CPUs 17+16)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676608541] Granted 16 threads to pid 228692 (CPUs 1+16)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676608688] Granted 16 threads to pid 228692 (CPUs 1+16)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676608726] Granted 16 threads to pid 228727 (CPUs 17+16)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676608871] Granted 16 threads to pid 228727 (CPUs 17+16)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676608900] Granted 16 threads to pid 228692 (CPUs 1+16)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676609048] Granted 16 threads to pid 228692 (CPUs 1+16)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676609080] Granted 16 threads to pid 228727 (CPUs 17+16)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676609225] Granted 16 threads to pid 228727 (CPUs 17+16)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676609261] Granted 16 threads to pid 228692 (CPUs 1+16)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676609408] Granted 16 threads to pid 228692 (CPUs 1+16)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676609435] Granted 16 threads to pid 228727 (CPUs 17+16)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676609582] Granted 16 threads to pid 228727 (CPUs 17+16)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676609624] Granted 16 threads to pid 228692 (CPUs 1+16)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676609772] Granted 16 threads to pid 228692 (CPUs 1+16)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676609792] Granted 16 threads to pid 228727 (CPUs 17+16)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676609939] Granted 16 threads to pid 228727 (CPUs 17+16)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676609987] Granted 16 threads to pid 228692 (CPUs 1+16)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676610135] Granted 16 threads to pid 228692 (CPUs 1+16)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676610149] Granted 16 threads to pid 228727 (CPUs 17+16)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676610295] Granted 16 threads to pid 228727 (CPUs 17+16)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676610352] Granted 16 threads to pid 228692 (CPUs 1+16)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676610499] Granted 16 threads to pid 228692 (CPUs 1+16)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676610505] Granted 16 threads to pid 228727 (CPUs 17+16)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676610649] Granted 16 threads to pid 228727 (CPUs 17+16)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676610712] Granted 16 threads to pid 228692 (CPUs 1+16)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676610861] Granted 16 threads to pid 228692 (CPUs 1+16)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676610864] Granted 16 threads to pid 228727 (CPUs 17+16)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676611008] Granted 16 threads to pid 228727 (CPUs 17+16)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676611074] Granted 16 threads to pid 228692 (CPUs 1+16)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676611220] Granted 16 threads to pid 228727 (CPUs 17+16)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676611222] Granted 16 threads to pid 228692 (CPUs 1+16)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676611365] Granted 16 threads to pid 228727 (CPUs 17+16)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676611437] Granted 16 threads to pid 228692 (CPUs 1+16)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676611575] Granted 16 threads to pid 228727 (CPUs 17+16)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676611586] Granted 16 threads to pid 228692 (CPUs 1+16)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676611721] Granted 16 threads to pid 228727 (CPUs 17+16)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676611798] Granted 16 threads to pid 228692 (CPUs 1+16)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676611932] Granted 16 threads to pid 228727 (CPUs 17+16)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676611948] Granted 16 threads to pid 228692 (CPUs 1+16)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676612078] Granted 16 threads to pid 228727 (CPUs 17+16)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676612160] Granted 16 threads to pid 228692 (CPUs 1+16)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676612288] Granted 16 threads to pid 228727 (CPUs 17+16)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676612310] Granted 16 threads to pid 228692 (CPUs 1+16)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676612435] Granted 16 threads to pid 228727 (CPUs 17+16)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676612523] Granted 16 threads to pid 228692 (CPUs 1+16)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676612642] Granted 16 threads to pid 228727 (CPUs 17+16)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676612672] Granted 16 threads to pid 228692 (CPUs 1+16)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676612790] Granted 16 threads to pid 228727 (CPUs 17+16)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676612886] Granted 16 threads to pid 228692 (CPUs 1+16)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676612997] Granted 16 threads to pid 228727 (CPUs 17+16)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676613035] Granted 16 threads to pid 228692 (CPUs 1+16)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676613146] Granted 16 threads to pid 228727 (CPUs 17+16)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676613249] Granted 16 threads to pid 228692 (CPUs 1+16)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676613352] Granted 16 threads to pid 228727 (CPUs 17+16)
+Request from pid 228692: max_threads=65535, hint_threads=32
+[1782676613354] Granted 16 threads to pid 228692 (CPUs 1+16)
+Read error: Connection reset by peer (os error 104)
+Request from pid 228727: max_threads=65535, hint_threads=32
+[1782676613450] Granted 16 threads to pid 228727 (CPUs 17+16)
+Read error: Connection reset by peer (os error 104)

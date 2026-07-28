@@ -1,0 +1,16 @@
+PID: 96521
+OMP: pid 96521 tid 96521 thread 0 bound to OS proc set {0}
+[REGION 1] pthread id: 133327650813760, omp tid: 0/8
+OMP: pid 96521 tid 96537 thread 2 bound to OS proc set {8}
+[REGION 1] pthread id: 133327640054720, omp tid: 2/8
+OMP: pid 96521 tid 96538 thread 3 bound to OS proc set {10}
+[REGION 1] pthread id: 133327631658048, omp tid: 3/8
+OMP: pid 96521 tid 96539 thread 4 bound to OS proc set {12}
+[REGION 1] pthread id: 133327623261376, omp tid: 4/8
+OMP: pid 96521 tid 96542 thread 7 bound to OS proc set {14}
+[REGION 1] pthread id: 133327126261312, omp tid: 7/8
+OMP: pid 96521 tid 96540 thread 5 bound to OS proc set {2}
+[REGION 1] pthread id: 133327614864704, omp tid: 5/8
+OMP: pid 96521 tid 96541 thread 6 bound to OS proc set {4}
+[REGION 1] pthread id: 133327606468032, omp tid: 6/8
+OMP: pid 96521 tid 96536 thread 1 bound to OS proc set {6}
