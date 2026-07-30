@@ -6,6 +6,11 @@ import plotly.graph_objects as go
 
 from .io_utils import add_figure_note
 
+_MODE_MARKERS = {
+    "dynamic=true": "circle",
+    "dynamic=false": "diamond",
+}
+
 
 def _hex_to_rgba(hex_color: str, alpha: float) -> str:
     h = hex_color.lstrip("#")
@@ -86,6 +91,11 @@ def _make_metric_figure(
         sub = agg[(agg["source"] == source) & (agg["mode"] == mode)].sort_values("threads")
         if sub.empty:
             continue
+        trace.marker.update(
+            size=9,
+            symbol=_MODE_MARKERS.get(mode, "circle"),
+            line=dict(color="white", width=1),
+        )
         trace.customdata = list(zip(sub["min"], sub["max"], sub["n"]))
         trace.hovertemplate = (
             f"Source={source}<br>"
@@ -239,6 +249,11 @@ def _make_combined_metric_figure(
         ].sort_values("threads")
         if sub.empty:
             continue
+        trace.marker.update(
+            size=9,
+            symbol=_MODE_MARKERS.get(mode, "circle"),
+            line=dict(color="white", width=1),
+        )
         trace.customdata = list(zip(sub["min"], sub["max"]))
         trace.hovertemplate = (
             f"Source={source}<br>"
