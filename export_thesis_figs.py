@@ -1,4 +1,4 @@
-"""Export thesis-quality PDFs for staggered job 187303 and aggregated benchmarks."""
+"""Export thesis-quality PDFs and PNG previews for the benchmark figures."""
 from __future__ import annotations
 
 import os
@@ -39,6 +39,7 @@ OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 THESIS_WIDTH = 900   # px — roughly \linewidth at 96 dpi
 THESIS_HEIGHT = 420
+PNG_SCALE = 2
 
 LEGEND_FONT = 15
 AXIS_FONT = 15
@@ -49,6 +50,16 @@ BENCHMARK_MARKERS = {
     "EP": "diamond",
     "FT": "square",
 }
+
+
+def write_figure_outputs(fig, pdf_path: Path) -> None:
+    """Write a publication PDF and a high-resolution PNG beside it."""
+    png_path = pdf_path.with_suffix(".png")
+    fig.write_image(str(pdf_path))
+    fig.write_image(str(png_path), scale=PNG_SCALE)
+    print(f"Wrote {pdf_path}")
+    print(f"Wrote {png_path}")
+
 
 def apply_thesis_style(fig, w=THESIS_WIDTH, h=THESIS_HEIGHT):
     fig.update_layout(
@@ -91,8 +102,7 @@ for alg_key, (df, t, offset) in dfs.items():
     )
     apply_thesis_style(fig)
     out = OUT_DIR / f"staggered_{alg_key.lower()}_timeline.pdf"
-    fig.write_image(str(out))
-    print(f"Wrote {out}")
+    write_figure_outputs(fig, out)
 
 # ── Steady-state summary ─────────────────────────────────────────────────────
 all_dfs = [df for df, _, _ in dfs.values()]
@@ -104,8 +114,7 @@ fig_ss.update_layout(
 )
 apply_thesis_style(fig_ss, h=380)
 out_ss = OUT_DIR / "staggered_steadystate_summary.pdf"
-fig_ss.write_image(str(out_ss))
-print(f"Wrote {out_ss}")
+write_figure_outputs(fig_ss, out_ss)
 
 # ── Thread-grant step figure for FT (shows 32→16 renegotiation) ──────────────
 if "FT" in dfs:
@@ -123,8 +132,7 @@ if "FT" in dfs:
     )
     apply_thesis_style(fig_thr)
     out_thr = OUT_DIR / "staggered_ft_threads.pdf"
-    fig_thr.write_image(str(out_thr))
-    print(f"Wrote {out_thr}")
+    write_figure_outputs(fig_thr, out_thr)
 
 # ── CPU slab figures (DRM-granted core range per A-side worker) ───────────────
 for alg_key, (df, t, offset) in dfs.items():
@@ -140,8 +148,7 @@ for alg_key, (df, t, offset) in dfs.items():
     )
     apply_thesis_style(fig_slab)
     out_slab = OUT_DIR / f"staggered_{alg_key.lower()}_cpu_slab.pdf"
-    fig_slab.write_image(str(out_slab))
-    print(f"Wrote {out_slab}")
+    write_figure_outputs(fig_slab, out_slab)
 
 
 def _make_speedup_thesis_fig(df: pd.DataFrame) -> go.Figure:
@@ -243,8 +250,7 @@ for group_name, dirs in build_groups(agg_run_dirs):
         fig_rt.update_layout(title=dict(text=""), xaxis_title="Threads", yaxis_title="Time (ms)")
         apply_thesis_style(fig_rt)
         out = OUT_DIR / f"aggregated_{bench.lower()}_runtime.pdf"
-        fig_rt.write_image(str(out))
-        print(f"Wrote {out}")
+        write_figure_outputs(fig_rt, out)
 
         df_mops = df_bench[df_bench["mops_total"].notna()].copy()
         if not df_mops.empty:
@@ -252,15 +258,13 @@ for group_name, dirs in build_groups(agg_run_dirs):
             fig_m.update_layout(title=dict(text=""), xaxis_title="Threads", yaxis_title="Mop/s total")
             apply_thesis_style(fig_m)
             out = OUT_DIR / f"aggregated_{bench.lower()}_mops.pdf"
-            fig_m.write_image(str(out))
-            print(f"Wrote {out}")
+            write_figure_outputs(fig_m, out)
 
     modes = set(df_group["mode"].unique())
     if "dynamic=true" in modes and "dynamic=false" in modes:
         fig_sp = _make_speedup_thesis_fig(df_group)
         apply_thesis_style(fig_sp)
         out = OUT_DIR / "aggregated_drm_speedup.pdf"
-        fig_sp.write_image(str(out))
-        print(f"Wrote {out}")
+        write_figure_outputs(fig_sp, out)
 
 print("Done.")

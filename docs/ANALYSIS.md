@@ -16,9 +16,9 @@ Flags can be combined: `--static --png` exports both. Outputs land in `output/<g
 
 **Incremental builds**: all three processing stages (aggregated benchmarks, monitoring, staggered) skip regenerating a plot if the output HTML is already newer than every input file. To force a rebuild: touch any input log file (`touch data/staggered/187303/cg_t32_off10_A1.log`) or delete the output directory.
 
-**Thesis figure export**: `export_thesis_figs.py` (at the repository root, not under `src/`) is a separate script that regenerates the thesis-quality PDFs for job 187303 (staggered) and job 172930 (aggregated `dual`) and writes them to `figures/`. It applies thesis styling (legend at bottom, suppressed title, 900×420 px). Run with `uv run python export_thesis_figs.py` (requires Chrome for kaleido rendering — run `kaleido_get_chrome` once if missing). Does **not** generate cpu_placement figures — see warning below.
+**Thesis figure export**: `export_thesis_figs.py` (at the repository root, not under `src/`) is a separate script that regenerates the thesis-quality PDFs and high-resolution PNG previews for job 187303 (staggered) and job 172930 (aggregated `dual`) and writes both formats to `figures/`. It applies thesis styling (legend at bottom, suppressed title, 900×420 px). Run with `uv run python export_thesis_figs.py` (requires Chrome for kaleido rendering — run `kaleido_get_chrome` once if missing). Does **not** generate cpu_placement figures — see warning below.
 
-**Scalability model export**: `export_scalability_model.py` fits the configuration-level Amdahl--Karp--Flatt model over `data/dual` and writes `amdahl_karp_flatt_capacity.pdf` to `figures/` plus two CSVs to `output/model/`. Run with `uv run python export_scalability_model.py` from the repository root. Same thesis styling and TUM colours as above.
+**Scalability model export**: `export_scalability_model.py` fits the configuration-level Amdahl--Karp--Flatt model over `data/dual` and writes `amdahl_karp_flatt_capacity.pdf` plus a same-directory PNG preview to `figures/`, together with two CSVs in `output/model/`. Run with `uv run python export_scalability_model.py` from the repository root. Same thesis styling and TUM colours as above.
 
 **Every figure in `figures/` must be produced through kaleido.** `main.tex` loads `\usepackage[a-2u]{pdfx}` for PDF/A-2u, which requires all fonts to be embedded; kaleido embeds a subsetted OpenSans, so figures written this way comply. Hand-written PDF (e.g. raw content streams using base-14 Helvetica) does **not** embed fonts and silently breaks PDF/A for the whole thesis. Verify with `pdffonts figures/<name>.pdf` — the `emb` column must read `yes` for every row.
 
@@ -80,9 +80,9 @@ Both parsers (`staggered_parsing.py`, `monitoring_parsing.py`) handle old logs w
 | `src/analysis/staggered_parsing.py` | Parses staggered worker logs and groups them |
 | `src/analysis/staggered_plots.py` | Per-iteration duration scatter plot for staggered runs |
 | `src/analysis/io_utils.py` | `write_outputs()` — saves HTML, optionally PDF (`also_static=True`) and/or PNG (`also_png=True`, `scale=2`) |
-| `export_thesis_figs.py` | Standalone script: generates thesis-quality PDFs for job 187303 into `figures/` |
+| `export_thesis_figs.py` | Standalone script: generates thesis-quality PDFs and PNG previews for job 187303 into `figures/` |
 | `src/analysis/scalability_model.py` | Amdahl--Karp--Flatt fit over `dual`: OLS effective fraction, pointwise Karp--Flatt, launch-group bootstrap, hold-out |
-| `export_scalability_model.py` | Standalone script: writes the model CSVs to `output/model/` and `amdahl_karp_flatt_capacity.pdf` into `figures/` |
+| `export_scalability_model.py` | Standalone script: writes the model CSVs to `output/model/` and PDF plus PNG figure outputs into `figures/` |
 
 ---
 

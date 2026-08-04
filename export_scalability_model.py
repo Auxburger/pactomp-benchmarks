@@ -1,4 +1,4 @@
-"""Fit and export the configuration-level Amdahl--Karp--Flatt model."""
+"""Fit the configuration model and export its data, PDF, and PNG preview."""
 
 from __future__ import annotations
 
@@ -30,6 +30,7 @@ POINTS_PATH = OUTPUT_DIR / "amdahl_karp_flatt_points.csv"
 # Thesis figure styling, matching export_thesis_figs.py.
 FIGURE_WIDTH = 900
 FIGURE_HEIGHT = 420
+PNG_SCALE = 2
 AXIS_FONT = 15
 LEGEND_FONT = 15
 TITLE_FONT = 16
@@ -64,8 +65,8 @@ def _write_csv(path: Path, rows: list[dict]) -> None:
         writer.writerows(rows)
 
 
-def _write_model_pdf(path: Path, fits, points) -> None:
-    """Render the three-kernel model figure with the shared Plotly pipeline."""
+def _write_model_outputs(path: Path, fits, points) -> Path:
+    """Render the model to PDF and to a high-resolution PNG beside it."""
     figure = make_subplots(
         rows=1,
         cols=len(KERNELS),
@@ -233,7 +234,10 @@ def _write_model_pdf(path: Path, fits, points) -> None:
             annotation.font = dict(size=TITLE_FONT, color=INK_COLOR)
 
     path.parent.mkdir(parents=True, exist_ok=True)
+    png_path = path.with_suffix(".png")
     figure.write_image(str(path))
+    figure.write_image(str(png_path), scale=PNG_SCALE)
+    return png_path
 
 
 observations = load_dual_observations(DATA_ROOT)
@@ -256,9 +260,10 @@ summary_rows = [
 ]
 _write_csv(SUMMARY_PATH, summary_rows)
 _write_csv(POINTS_PATH, points)
-_write_model_pdf(FIGURE_PATH, fits, points)
+png_path = _write_model_outputs(FIGURE_PATH, fits, points)
 
 print(f"Loaded {len(observations)} process outcomes")
 print(f"Wrote {SUMMARY_PATH}")
 print(f"Wrote {POINTS_PATH}")
 print(f"Wrote {FIGURE_PATH}")
+print(f"Wrote {png_path}")

@@ -100,9 +100,11 @@ the plot design decisions, parsing details, and the canonical staggered job.
 
 ## Regenerating the thesis figures
 
-`export_thesis_figs.py` and `export_scalability_model.py` write the PDFs that
-the thesis includes. By default they write to `figures/` at the root of this
-repository. Because the thesis lives in a separate checkout, point
+`export_thesis_figs.py` and `export_scalability_model.py` write each figure as
+a vector PDF for the thesis and as a high-resolution PNG for quick inspection.
+Both files share the same basename and directory. By default they write to
+`figures/` at the root of this repository. Because the thesis lives in a
+separate checkout, point
 `THESIS_FIGURES_DIR` at its `figures/` directory to write straight into it:
 
 ```sh
@@ -124,9 +126,10 @@ bootstrap resampling and a `t=32` forward hold-out check, then writes:
 - `output/model/amdahl_karp_flatt_summary.csv`
 - `output/model/amdahl_karp_flatt_points.csv`
 - `figures/amdahl_karp_flatt_capacity.pdf`
+- `figures/amdahl_karp_flatt_capacity.png`
 
-The CSV half needs only the standard library; the PDF needs Kaleido and Chrome
-(`uv run plotly_get_chrome` once, if missing).
+The CSV half needs only the standard library. The PDF and PNG exports need
+Kaleido and Chrome (`uv run plotly_get_chrome` once, if missing).
 
 ## License
 
