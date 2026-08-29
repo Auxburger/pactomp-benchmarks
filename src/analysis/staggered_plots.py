@@ -23,6 +23,12 @@ _WORKER_DASH = {
     "B1": "solid",
     "B2": "dot",
 }
+_WORKER_MARKERS = {
+    "A1": "circle",
+    "A2": "square",
+    "B1": "diamond",
+    "B2": "cross",
+}
 
 
 def _build_thread_step(
@@ -162,14 +168,18 @@ def make_staggered_threads_figure(
             go.Scatter(
                 x=xs,
                 y=ys,
-                mode="lines" if (use_grants and dyn == "true") else "lines+markers",
+                mode="lines+markers",
                 line=dict(
                     color=_WORKER_COLORS.get(worker, "#aaaaaa"),
                     dash=_WORKER_DASH.get(worker, "solid"),
                     width=2,
                     shape="hv",
                 ),
-                marker=dict(size=4),
+                marker=dict(
+                    size=7,
+                    symbol=_WORKER_MARKERS.get(worker, "circle"),
+                    line=dict(color="white", width=1),
+                ),
                 name=_WORKER_LABELS.get(worker, worker),
                 customdata=cd,
                 hovertemplate=hover,
@@ -307,8 +317,12 @@ def make_staggered_cpu_slab_figure(
         # Upper boundary — invisible, defines top of fill, no tooltip
         fig.add_trace(go.Scatter(
             x=xu, y=yu,
-            mode="lines",
+            mode="lines+markers",
             line=dict(color=color, width=1.5),
+            marker=dict(
+                size=5,
+                symbol=_WORKER_MARKERS.get(worker, "circle"),
+            ),
             name=f"{worker} slab top",
             legendgroup=worker,
             showlegend=False,
@@ -398,9 +412,9 @@ def make_staggered_steadystate_figure(
     algs = sorted(agg["alg"].unique())
 
     fig = go.Figure()
-    for dyn, color, label in [
-        ("true", _WORKER_COLORS["A1"], "A – DRM"),
-        ("false", _WORKER_COLORS["B1"], "B – no DRM"),
+    for dyn, color, label, pattern in [
+        ("true", _WORKER_COLORS["A1"], "A – DRM", ""),
+        ("false", _WORKER_COLORS["B1"], "B – no DRM", "/"),
     ]:
         sub = agg[agg["dyn"] == dyn].set_index("alg")
         means = [float(sub.loc[a, "mean"]) if a in sub.index else 0.0 for a in algs]
@@ -412,6 +426,7 @@ def make_staggered_steadystate_figure(
             y=means,
             name=label,
             marker_color=color,
+            marker_pattern_shape=pattern,
             error_y=dict(type="data", array=stds, visible=True),
             customdata=list(zip(stds, ns)),
             hovertemplate=(
@@ -553,7 +568,11 @@ def make_staggered_figure(df: pd.DataFrame, title: str | None = None) -> go.Figu
                     dash=_WORKER_DASH.get(worker, "solid"),
                     width=2,
                 ),
-                marker=dict(size=7),
+                marker=dict(
+                    size=8,
+                    symbol=_WORKER_MARKERS.get(worker, "circle"),
+                    line=dict(color="white", width=1),
+                ),
                 customdata=sub[["iter", "duration_ms"]].values,
                 hovertemplate=(
                     f"Worker: {worker}<br>"

@@ -30,9 +30,9 @@ POINTS_PATH = OUTPUT_DIR / "amdahl_karp_flatt_points.csv"
 # Thesis figure styling, matching export_thesis_figs.py.
 FIGURE_WIDTH = 900
 FIGURE_HEIGHT = 420
-AXIS_FONT = 13
-LEGEND_FONT = 13
-TITLE_FONT = 14
+AXIS_FONT = 15
+LEGEND_FONT = 15
+TITLE_FONT = 16
 
 # TUM corporate colours, as used by settings.tex. The pair passes the
 # categorical colour checks for normal vision and for all three CVD types;
@@ -40,6 +40,7 @@ TITLE_FONT = 14
 MODE_COLORS = {"dynamic=true": "#0065BD", "dynamic=false": "#E37222"}
 MODE_LABELS = {"dynamic=true": "Enabled", "dynamic=false": "Unmanaged"}
 MODE_DASHES = {"dynamic=true": "solid", "dynamic=false": "dash"}
+MODE_MARKERS = {"dynamic=true": "circle", "dynamic=false": "diamond"}
 
 INK_COLOR = "#333333"
 MUTED_COLOR = "#808080"
@@ -88,7 +89,7 @@ def _write_model_pdf(path: Path, fits, points) -> None:
                 x=curve_x,
                 y=curve_x,
                 mode="lines",
-                name="Ideal (f = 0)",
+                name="Ideal (s = 0)",
                 legendgroup="ideal",
                 showlegend=column == 1,
                 line=dict(color=GRID_LINE_COLOR, width=1.5, dash="dot"),
@@ -144,7 +145,7 @@ def _write_model_pdf(path: Path, fits, points) -> None:
                     marker=dict(
                         color=color,
                         size=9,
-                        symbol="square",
+                        symbol=MODE_MARKERS[mode],
                         line=dict(color="white", width=1),
                     ),
                     hovertemplate=f"{label} observed<br>t=%{{customdata}}<br>capacity=%{{y:.2f}}<extra></extra>",
@@ -166,8 +167,8 @@ def _write_model_pdf(path: Path, fits, points) -> None:
                 xanchor="left",
                 yanchor="top",
                 showarrow=False,
-                text=f"{label} f = {100.0 * fit.effective_fraction:.2f}%",
-                font=dict(size=11, color=color),
+                text=f"{label} s = {100.0 * fit.effective_fraction:.2f}%",
+                font=dict(size=13, color=color),
             )
 
         figure.update_xaxes(
@@ -224,8 +225,8 @@ def _write_model_pdf(path: Path, fits, points) -> None:
         y=-0.38,
         xanchor="center",
         showarrow=False,
-        text="Squares: observations. Lines: fitted Amdahl configuration model.",
-        font=dict(size=11, color=MUTED_COLOR),
+        text="Circles and diamonds: observations. Lines: fitted Amdahl configuration model.",
+        font=dict(size=13, color=MUTED_COLOR),
     )
     for annotation in figure.layout.annotations:
         if annotation.text in KERNELS:

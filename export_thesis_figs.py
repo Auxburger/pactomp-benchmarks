@@ -40,9 +40,15 @@ OUT_DIR.mkdir(parents=True, exist_ok=True)
 THESIS_WIDTH = 900   # px — roughly \linewidth at 96 dpi
 THESIS_HEIGHT = 420
 
-LEGEND_FONT = 13
-AXIS_FONT = 13
-TITLE_FONT = 14
+LEGEND_FONT = 15
+AXIS_FONT = 15
+TITLE_FONT = 16
+
+BENCHMARK_MARKERS = {
+    "CG": "circle",
+    "EP": "diamond",
+    "FT": "square",
+}
 
 def apply_thesis_style(fig, w=THESIS_WIDTH, h=THESIS_HEIGHT):
     fig.update_layout(
@@ -172,7 +178,11 @@ def _make_speedup_thesis_fig(df: pd.DataFrame) -> go.Figure:
             mode="lines+markers",
             name=bench,
             line=dict(color=bench_colors[bench], width=2),
-            marker=dict(size=8),
+            marker=dict(
+                size=9,
+                symbol=BENCHMARK_MARKERS.get(bench.upper(), "circle"),
+                line=dict(color="white", width=1),
+            ),
             hovertemplate=(
                 f"Benchmark: {bench}<br>"
                 "Threads: %{x}<br>"
