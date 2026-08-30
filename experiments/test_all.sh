@@ -171,7 +171,7 @@ RM_LOG="$BASE_OUT/$RUN_TAG/rm.log"
 
 # Pre-build DRM once so restarts between thread counts are instant.
 echo "Building DRM at $(date)" >> "$RM_LOG"
-cd "$DRM_DIR"
+cd "$POMP_DIR"
 cargo build --release >> "$RM_LOG" 2>&1
 cd "$NPB_DIR"
 
@@ -193,18 +193,18 @@ for t in "${threads[@]}"; do
   echo "t=$t | A_pool: [$CPU_A_T] | B_pool: [$CPU_B_T]"
 
   # Start DRM with:
-  #   DRM_CAPACITY=t   → fair-share grants t/2 threads per client (2 clients)
-  #   DRM_CPU_LIST=... → ordered pool of t A-domain CPUs; DRM assigns disjoint
+  #   POMP_CAPACITY=t   → fair-share grants t/2 threads per client (2 clients)
+  #   POMP_CPU_LIST=... → ordered pool of t A-domain CPUs; DRM assigns disjoint
   #                      contiguous slices of size t/2 to each process
   rm -f /tmp/omp-rm.sock
   echo "Starting DRM at $(date), capacity=$t, cpu_pool=$CPU_A_T, RM_CPU=$RM_CPU" >> "$RM_LOG"
-  DRM_CAPACITY="$t" DRM_CPU_LIST="$CPU_A_T" \
+  POMP_CAPACITY="$t" POMP_CPU_LIST="$CPU_A_T" \
     stdbuf -oL -eL numactl --cpunodebind="$NODE_A" --membind="$NODE_A" \
     taskset -c "$RM_CPU" nice -n 15 \
-    "$DRM_BIN" >> "$RM_LOG" 2>&1 &
-  DRM_PID=$!
+    "$POMP_BIN" >> "$RM_LOG" 2>&1 &
+  POMP_PID=$!
   sleep 0.2
-  ps -p "$DRM_PID" -o pid,cmd >> "$RM_LOG" 2>&1 || true
+  ps -p "$POMP_PID" -o pid,cmd >> "$RM_LOG" 2>&1 || true
 
   for ((r=1; r<=runs; r++)); do
     echo "==== t=$t r=$r ====" | tee -a "$META_A/meta.txt" "$META_B/meta.txt" >/dev/null
@@ -248,8 +248,8 @@ for t in "${threads[@]}"; do
   done
 
   # Stop DRM before next thread count
-  kill "$DRM_PID" 2>/dev/null || true
-  wait "$DRM_PID" 2>/dev/null || true
+  kill "$POMP_PID" 2>/dev/null || true
+  wait "$POMP_PID" 2>/dev/null || true
   echo "DRM stopped at $(date), was capacity=$t" >> "$RM_LOG"
   sleep 1
 done

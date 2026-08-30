@@ -143,8 +143,8 @@ LLVM_BUILD=/anderswo/llvm-project/build ./experiments/build_npb.sh
 | `algorithms` | Benchmarks: `ft cg ep` |
 | `runs` | Wiederholungen pro Thread count (Standard: 10) |
 | `threads` | Automatisch als Potenzen von 2 bis `domain_cpus` |
-| `DRM_CAPACITY` | Wird pro `t` auf `t` gesetzt → Fair-Share gibt `t/2` pro Client |
-| `DRM_CPU_LIST` | Erste `t` CPUs des A-Domains → DRM weist disjunkte Hälften zu |
+| `POMP_CAPACITY` | Wird pro `t` auf `t` gesetzt → Fair-Share gibt `t/2` pro Client |
+| `POMP_CPU_LIST` | Erste `t` CPUs des A-Domains → DRM weist disjunkte Hälften zu |
 | `KMP_DYNAMIC_MODE` | `thread_limit` — verhindert dass die LLVM-Runtime den DRM-Grant überschreibt |
 
 ---
@@ -192,8 +192,8 @@ python3 experiments/analyze_cpu_util.py \
 |---|---|---|
 | `OMP_DISPLAY_AFFINITY` | `1` | Thread-Bindung in Ausgabedateien protokollieren |
 | `KMP_DYNAMIC_MODE` | `thread_limit` | LLVM Load-Balance-Heuristik deaktivieren |
-| `DRM_CAPACITY` | `t` (pro Thread count) | Kapazität des DRM-Schedulers |
-| `DRM_CPU_LIST` | erste `t` CPUs des A-Domains | CPU-Pool für DRM-Zuweisung |
+| `POMP_CAPACITY` | `t` (pro Thread count) | Kapazität des DRM-Schedulers |
+| `POMP_CPU_LIST` | erste `t` CPUs des A-Domains | CPU-Pool für DRM-Zuweisung |
 
 ---
 

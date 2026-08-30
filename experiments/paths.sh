@@ -32,8 +32,8 @@ SLURM_LOG_DIR="${SLURM_LOG_DIR:-$DATA_DIR/slurm_logs}"
 # made; it is now pactomp-coordinator. The default keeps the original name so
 # existing cluster checkouts keep working.
 LLVM_BUILD="${LLVM_BUILD:-$HOME/llvm-project/build}"
-DRM_DIR="${DRM_DIR:-$HOME/dynamic-resource-manager}"
-DRM_BIN="${DRM_BIN:-$DRM_DIR/target/release/dynamic-resource-manager}"
+POMP_DIR="${POMP_DIR:-$HOME/dynamic-resource-manager}"
+POMP_BIN="${POMP_BIN:-$POMP_DIR/target/release/dynamic-resource-manager}"
 
 export EXPERIMENTS_DIR REPO_ROOT NPB_DIR NPB_BIN DATA_DIR SLURM_LOG_DIR
-export LLVM_BUILD DRM_DIR DRM_BIN
+export LLVM_BUILD POMP_DIR POMP_BIN

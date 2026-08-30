@@ -12,8 +12,8 @@ checkouts come from the environment with `$HOME`-relative defaults.
 
 | What | Variable | Default |
 |------|----------|---------|
-| DRM source (Rust) | `$DRM_DIR` | `$HOME/dynamic-resource-manager` |
-| DRM binary | `$DRM_BIN` | `$DRM_DIR/target/release/dynamic-resource-manager` |
+| DRM source (Rust) | `$POMP_DIR` | `$HOME/dynamic-resource-manager` |
+| DRM binary | `$POMP_BIN` | `$POMP_DIR/target/release/dynamic-resource-manager` |
 | LLVM build output | `$LLVM_BUILD` | `$HOME/llvm-project/build` (provides `lib/libomp.so`) |
 | LLVM runtime source | — | `$LLVM_BUILD/../openmp/runtime/src/kmp_resource_manager.cpp` |
 | Bundled NPB tree | `$NPB_DIR` | `<repo>/NPB3.4-OMP` |
@@ -25,7 +25,7 @@ Override any of them from the environment:
 
 ```bash
 LLVM_BUILD=/elsewhere/llvm-project/build ./build_npb.sh
-DRM_DIR=~/pactomp-coordinator ./test_all.sh 89
+POMP_DIR=~/pactomp-coordinator ./test_all.sh 89
 ```
 
 The coordinator was called `dynamic-resource-manager` when these runs were
@@ -91,7 +91,7 @@ sbatch --clusters=cm4 experiments/run_staggered.sbatch
 - **Request** (16 bytes): `pid` (u32), `max_threads` (u16), `hint_threads` (u16), `flags` (u32), `seq` (u32)
 - **Reply** (12 bytes): `granted` (u16), `ttl_ms` (u16), `epoch` (u32), `base_cpu` (u16), `num_cpus` (u16)
 - Fair-share formula: `granted = 1 + (capacity - n_active) / n_active`
-- DRM started with `DRM_CAPACITY=t` and `DRM_CPU_LIST=<first t CPUs of A domain>`
+- DRM started with `POMP_CAPACITY=t` and `POMP_CPU_LIST=<first t CPUs of A domain>`
 
 ## Building
 
@@ -129,6 +129,6 @@ is deliberately not committed inside the pristine NPB tree:
 |----------|-------|--------|
 | `KMP_DYNAMIC_MODE` | `thread_limit` | Disables LLVM load-average heuristic that can override DRM grant |
 | `OMP_DYNAMIC` | `true` / `false` | Enables/disables DRM queries in the runtime |
-| `DRM_CAPACITY` | `t` | Fair-share capacity → grants t/2 per client with 2 clients |
-| `DRM_CPU_LIST` | first t CPUs of A domain | CPU pool for DRM assignment |
+| `POMP_CAPACITY` | `t` | Fair-share capacity → grants t/2 per client with 2 clients |
+| `POMP_CPU_LIST` | first t CPUs of A domain | CPU pool for DRM assignment |
 | `LLVM_BUILD` | `$HOME/llvm-project/build` (override to relocate) | Used for `LD_LIBRARY_PATH` |

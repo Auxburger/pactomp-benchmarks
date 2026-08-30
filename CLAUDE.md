@@ -61,7 +61,7 @@ installs it before building.
 
 Scripts in `experiments/` derive every repository path from their own location
 via `experiments/paths.sh`, and take external dependencies (`LLVM_BUILD`,
-`DRM_DIR`) from the environment with `$HOME`-relative defaults. Do not
+`POMP_DIR`) from the environment with `$HOME`-relative defaults. Do not
 reintroduce absolute cluster paths — they broke once already when this
 repository was split out of the thesis repo, and they leak the cluster account
 into a public repository.

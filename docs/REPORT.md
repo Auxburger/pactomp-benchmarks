@@ -235,7 +235,7 @@ A2's last two iterations return to fast performance as A1 finishes — the DRM a
 | `dynamic-resource-manager/src/state.rs` | Added `cpu_pool`, `cpu_slot_start/count` per client; `get_or_assign_cpus()` |
 | `dynamic-resource-manager/src/server.rs` | Calls `get_or_assign_cpus()`, includes CPU range in reply |
 | `llvm-project/openmp/runtime/src/kmp_resource_manager.cpp` | Reads `base_cpu`/`num_cpus` from reply; calls `apply_cpu_affinity()` on master |
-| `experiments/test_all.sh` | Removed `OMP_PROC_BIND`/`OMP_PLACES`; per-t taskset (`CPU_A_T`, `CPU_B_T`); `DRM_CPU_LIST` per t |
+| `experiments/test_all.sh` | Removed `OMP_PROC_BIND`/`OMP_PLACES`; per-t taskset (`CPU_A_T`, `CPU_B_T`); `POMP_CPU_LIST` per t |
 | `experiments/test-one.sh` | Added `iter_start` parameter; parallelised iteration loop |
 | `experiments/test_staggered.sh` | New: staggered-start experiment with per-iteration timing |
 | `experiments/run_staggered.sbatch` | New: SLURM job for staggered experiment |

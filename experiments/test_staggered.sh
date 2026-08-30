@@ -124,11 +124,11 @@ source ~/.cargo/env
 RM_LOG="$BASE_OUT/${LABEL}_rm.log"
 
 rm -f /tmp/omp-rm.sock
-DRM_CAPACITY="$t" DRM_CPU_LIST="$CPU_A_T" \
+POMP_CAPACITY="$t" POMP_CPU_LIST="$CPU_A_T" \
   stdbuf -oL -eL numactl --cpunodebind="$NODE_A" --membind="$NODE_A" \
   taskset -c "$RM_CPU" nice -n 15 \
-  "$DRM_BIN" >> "$RM_LOG" 2>&1 &
-DRM_PID=$!
+  "$POMP_BIN" >> "$RM_LOG" 2>&1 &
+POMP_PID=$!
 sleep 0.5
 
 # ── Worker runner ─────────────────────────────────────────────────────────────
@@ -174,8 +174,8 @@ PID_B2=$!
 
 wait "$PID_A1" "$PID_A2" "$PID_B1" "$PID_B2"
 
-kill "$DRM_PID" 2>/dev/null || true
-wait "$DRM_PID" 2>/dev/null || true
+kill "$POMP_PID" 2>/dev/null || true
+wait "$POMP_PID" 2>/dev/null || true
 
 echo "=== done ==="
 echo "Results in $BASE_OUT/${LABEL}_*.log"
