@@ -159,7 +159,7 @@ Fields: pid, tid, assigned range (base-top), running_on (CPU at time of pinning 
 
 ## 4. Style Recommendations
 
-- Use matplotlib with a clean academic style (`plt.style.use('seaborn-v0_8-whitegrid')` or similar)
+- Use Plotly (the repository has no matplotlib dependency any more); take colours and the thesis layout from `src/analysis/plots/style.py`
 - Consistent color scheme across all plots: blue = DRM (dyn=true), orange = no DRM (dyn=false)
 - Font size ≥ 11pt for readability in thesis (two-column format typical)
 - Save as PDF (vector) for thesis inclusion: `plt.savefig('plot.pdf', bbox_inches='tight')`

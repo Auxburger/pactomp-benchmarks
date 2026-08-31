@@ -28,6 +28,15 @@ BENCH_COLORS = {"FT": "#4C72B0", "CG": "#DD8452", "EP": "#55A868"}
 BENCHMARK_MARKERS = {"CG": "circle", "EP": "diamond", "FT": "square"}
 SLAB_COLORS = ["#1f77b4", "#ff7f0e"]
 
+# Worker partitions in the CPU-utilisation figure (A1/A2 are DRM-managed).
+PARTITION_COLORS = {"A1": "#d62728", "A2": "#ff7f0e", "B1": "#1f77b4", "B2": "#17becf"}
+PARTITION_LABELS = {
+    "A1": "Worker A iter 1 (dyn=true)",
+    "A2": "Worker A iter 2 (dyn=true)",
+    "B1": "Worker B iter 1 (dyn=false)",
+    "B2": "Worker B iter 2 (dyn=false)",
+}
+
 WORKER_COLORS = {"A1": "#4C72B0", "A2": "#96B5D8", "B1": "#DD8452", "B2": "#EDB899"}
 WORKER_LABELS = {
     "A1": "A1 – DRM (first)",

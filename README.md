@@ -134,8 +134,12 @@ needs the job's `meta.txt` files and optionally the SLURM log:
 ```sh
 uv run python src/analyze_cpu_util.py data/dual/cpu_util_172930.log \
   data/dual/89/node0/meta.txt data/dual/89/node1/meta.txt \
-  --pidstat data/dual/pidstat_172930.log --out cpu_utilisation.png
+  --pidstat data/dual/pidstat_172930.log --out cpu_utilisation.html
 ```
+
+It writes interactive HTML; add `--static` or `--png` for the kaleido exports.
+Every figure in this repository is a Plotly figure — there is no second
+plotting stack to keep in sync.
 
 ## Regenerating the thesis figures
 

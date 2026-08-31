@@ -84,11 +84,12 @@ standard library.
 | `src/analysis/datasets/staggered.py` | Staggered worker logs, DRM grants, DRM pins |
 | `src/analysis/datasets/drm.py` | `rm.log` (grants) and `pidstat_*.log` |
 | `src/analysis/datasets/cpu_util.py` | `mpstat -P ALL` output (`cpu_util_*.log`) |
+| `src/analysis/datasets/meta.py` | `meta.txt` benchmark start events and the SLURM log's CPU splits |
 | `src/analysis/plots/style.py` | Palettes, markers, figure note, thesis layout — the single source for all of them |
 | `src/analysis/plots/npb.py` | Runtime/MOPS/init/speedup figures |
 | `src/analysis/plots/_metrics.py` | The two generic metric builders behind them |
 | `src/analysis/plots/drm.py` | DRM allocation violin, slab assignment, CPU placement Gantt |
-| `src/analysis/plots/cpu_util.py` | Per-CPU utilisation heatmap (time × core) |
+| `src/analysis/plots/cpu_util.py` | Per-CPU utilisation heatmap, and the annotated composite (heatmap + thread placement + benchmark timeline) |
 | `src/analysis/plots/staggered/` | `threads.py`, `cpu.py`, `iterations.py` |
 | `src/analysis/reports/npb.py` | Groups dual/dual-exclusive runs, writes the aggregated figures |
 | `src/analysis/reports/drm.py` | `output/monitoring/<jobid>/` |
@@ -97,12 +98,19 @@ standard library.
 | `src/analysis/reports/freshness.py` | The incremental-build check shared by all reports |
 | `src/analysis/model/amdahl.py` | Amdahl–Karp–Flatt fit over `dual` (standard library only) |
 | `src/analysis/io.py` | `write_outputs()` — HTML, optionally PDF (`also_static=True`) and/or PNG (`also_png=True`, `scale=2`) |
-| `src/analyze_cpu_util.py` | Standalone matplotlib figure: utilisation heatmap + process placement + benchmark annotations |
+| `src/analyze_cpu_util.py` | Entry point for that composite figure — needs the job's `meta.txt` files, optionally `pidstat` and the SLURM log |
 | `export_thesis_figs.py` | Standalone script: thesis-quality PDFs for job 187303 into `figures/` |
 | `export_scalability_model.py` | Standalone script: model CSVs to `output/model/`, `amdahl_karp_flatt_capacity.pdf` to `figures/` |
 
 Both export scripts take their styling from `plots/style.py`, so the thesis
 PDFs and the interactive HTML cannot drift apart.
+
+**Everything renders through Plotly.** `analyze_cpu_util.py` was the last
+matplotlib holdout; it now builds a Plotly composite and writes HTML through
+`io.write_outputs()` like every other figure, with `--static`/`--png` for the
+kaleido exports. Its benchmark starts are a slim timeline row rather than the
+old full-height lines — several hundred of them buried the heatmap — and the
+shared x-axis spike line does the visual alignment instead.
 
 ---
 
