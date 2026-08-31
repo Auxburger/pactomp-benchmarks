@@ -8,7 +8,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO_ROOT / "src"))
 
-from analysis.scalability_model import (  # noqa: E402
+from analysis.model.amdahl import (  # noqa: E402
     fit_all,
     karp_flatt_fraction,
     load_dual_observations,

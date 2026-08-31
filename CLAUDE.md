@@ -77,9 +77,26 @@ into a public repository.
 - [experiments/CLAUDE.md](experiments/CLAUDE.md) — DRM protocol, experiment
   designs, SLURM setup, known limitations
 
-## The analysis project is rooted at the repository root
+## The Python project is rooted at the repository root
 
-`pyproject.toml`, `src/analysis/` (the package), `src/main.py`, `tests/`, and
-the `export_*.py` scripts all sit at the top level; run everything with
-`uv run` from there. Generated figures go to `output/<group>/`, which is
-gitignored and fully reproducible from `data/` — do not commit them.
+`pyproject.toml`, `src/`, `tests/`, and the `export_*.py` scripts all sit at
+the top level; run everything with `uv run` from there. Generated figures go to
+`output/<group>/`, which is gitignored and fully reproducible from `data/` — do
+not commit them.
+
+## src/ is split by runtime environment, not by topic
+
+| Package | Runs | May import |
+|---------|------|------------|
+| `src/harness/` | on the cluster, with the system `python3` | **standard library only** |
+| `src/analysis/` | locally, under `uv run` | anything in `pyproject.toml` |
+
+`src/harness/` is what produces measurements (the tracing sweep, the DRM
+coordinator, the NUMA layout picker the shell scripts call). Adding a
+third-party import there breaks the cluster runs, where there is no uv and no
+virtualenv. `src/analysis/` is what reads them, cut by layer:
+`datasets/ → plots/ → reports/`, never backwards, plus `model/` for fits.
+
+Runnable entry points are the scripts directly under `src/`
+(`main.py`, `run_llvm_tracing.py`, `analyze_cpu_util.py`, `pick_cpus.py`);
+everything below them is a package. Keep source files under 500 lines.

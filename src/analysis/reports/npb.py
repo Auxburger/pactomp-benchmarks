@@ -5,9 +5,9 @@ from pathlib import Path
 
 import pandas as pd
 
-from .io_utils import write_outputs
-from .parsing import KNOWN_BENCHES, load_benchmark_dir
-from .plotting import (
+from ..io import write_outputs
+from ..datasets.npb import KNOWN_BENCHES, load_benchmark_dir
+from ..plots.npb import (
     make_combined_figure,
     make_combined_init_figure,
     make_combined_mops_figure,

@@ -1,4 +1,4 @@
-# CLAUDE.md — NPB DRM Benchmark Visualisation Pipeline
+# Analysis Pipeline — NPB DRM Benchmark Visualisation
 
 ## What this directory is
 
@@ -35,6 +35,9 @@ Two concurrent processes per benchmark (FT, CG, EP from NPB suite):
 
 Results (job 172930): CG +60%, FT +21% for DRM at t=32. EP ~0% (expected, compute-bound).
 
+### Tracing microbenchmark (`data/tracing/<jobid>/`)
+Produced by the `src/harness/tracing/` driver package (entry point `src/run_llvm_tracing.py`, submitted via `experiments/run_llvm_tracing.sbatch`). The `omp_dyn.c` microbenchmark stands in for the NPB kernels: two concurrent processes per (thread count, `OMP_DYNAMIC`) cell, `OMP_DISPLAY_AFFINITY` on, and an NPB-shaped summary block so `datasets/npb.py` reads the `.out` files unchanged. `omp` is therefore part of `KNOWN_BENCHES`, and `reports/tracing.py` plots these runs as the separate `output/tracing/` group — the run directories sit one level deeper (`<jobid>/run_<n>/omp/`) than the dual experiment, so `reports/tracing.py` handles the discovery. Each job directory also carries `timings.csv` and `manifest.json` written by the driver.
+
 ### Staggered experiment (`data/staggered/`)
 Demonstrates DRM dynamic rebalancing. A1/B1 start first with full resources; A2/B2 join after `offset` seconds (default 10 s). Each worker logs per-iteration timing. DRM renegotiates `32 → 16+16 → 32` threads as processes join/leave.
 
@@ -61,28 +64,45 @@ Worker log format (one line per iteration):
 [1782666117548] Granted 32 threads to pid 217518 (CPUs 1+32)
 [1782666142090] Client pid 217518 disconnected — removed from state
 ```
-Both parsers (`staggered_parsing.py`, `monitoring_parsing.py`) handle old logs without timestamps via linear interpolation as fallback.
+Both parsers (`datasets/staggered.py`, `datasets/drm.py`) handle old logs without timestamps via linear interpolation as fallback.
 
 ---
 
 ## Source layout
 
+The package is cut by layer, and the dependency direction follows the folders:
+`datasets → plots → reports`, never backwards. `datasets/` returns DataFrames
+and never plots; `plots/` returns figures and never writes files; `reports/`
+decides which measurements become which figures and where they land. `model/`
+sits outside that chain — it fits numbers, not figures, and uses only the
+standard library.
+
 | File | Purpose |
 |------|---------|
-| `src/main.py` | Entry point — discovers logs, calls all plot functions |
-| `src/analysis/pipeline.py` | Groups dual/dual-exclusive run directories |
-| `src/analysis/parsing.py` | Parses NPB benchmark result logs (runtime, MOPS) |
-| `src/analysis/plotting.py` | Aggregated benchmark bar/line plots |
-| `src/analysis/monitoring_parsing.py` | Parses `rm.log` (DRM grants) and `pidstat_*.log` |
-| `src/analysis/monitoring_plots.py` | CPU placement Gantt, DRM allocation violin, slab assignment bar |
-| `src/analysis/cpu_util_parsing.py` | Parses `mpstat -P ALL` output (`cpu_util_*.log`) |
-| `src/analysis/cpu_util_plots.py` | Per-CPU utilisation heatmap (time × core) |
-| `src/analysis/staggered_parsing.py` | Parses staggered worker logs and groups them |
-| `src/analysis/staggered_plots.py` | Per-iteration duration scatter plot for staggered runs |
-| `src/analysis/io_utils.py` | `write_outputs()` — saves HTML, optionally PDF (`also_static=True`) and/or PNG (`also_png=True`, `scale=2`) |
-| `export_thesis_figs.py` | Standalone script: generates thesis-quality PDFs for job 187303 into `figures/` |
-| `src/analysis/scalability_model.py` | Amdahl--Karp--Flatt fit over `dual`: OLS effective fraction, pointwise Karp--Flatt, launch-group bootstrap, hold-out |
-| `export_scalability_model.py` | Standalone script: writes the model CSVs to `output/model/` and `amdahl_karp_flatt_capacity.pdf` into `figures/` |
+| `src/main.py` | Entry point — resolves paths, calls the four reports |
+| `src/analysis/datasets/npb.py` | NPB `.out` files → runtime/MOPS DataFrame |
+| `src/analysis/datasets/staggered.py` | Staggered worker logs, DRM grants, DRM pins |
+| `src/analysis/datasets/drm.py` | `rm.log` (grants) and `pidstat_*.log` |
+| `src/analysis/datasets/cpu_util.py` | `mpstat -P ALL` output (`cpu_util_*.log`) |
+| `src/analysis/plots/style.py` | Palettes, markers, figure note, thesis layout — the single source for all of them |
+| `src/analysis/plots/npb.py` | Runtime/MOPS/init/speedup figures |
+| `src/analysis/plots/_metrics.py` | The two generic metric builders behind them |
+| `src/analysis/plots/drm.py` | DRM allocation violin, slab assignment, CPU placement Gantt |
+| `src/analysis/plots/cpu_util.py` | Per-CPU utilisation heatmap (time × core) |
+| `src/analysis/plots/staggered/` | `threads.py`, `cpu.py`, `iterations.py` |
+| `src/analysis/reports/npb.py` | Groups dual/dual-exclusive runs, writes the aggregated figures |
+| `src/analysis/reports/drm.py` | `output/monitoring/<jobid>/` |
+| `src/analysis/reports/staggered.py` | `output/staggered/<jobid>/` |
+| `src/analysis/reports/tracing.py` | `output/tracing/` |
+| `src/analysis/reports/freshness.py` | The incremental-build check shared by all reports |
+| `src/analysis/model/amdahl.py` | Amdahl–Karp–Flatt fit over `dual` (standard library only) |
+| `src/analysis/io.py` | `write_outputs()` — HTML, optionally PDF (`also_static=True`) and/or PNG (`also_png=True`, `scale=2`) |
+| `src/analyze_cpu_util.py` | Standalone matplotlib figure: utilisation heatmap + process placement + benchmark annotations |
+| `export_thesis_figs.py` | Standalone script: thesis-quality PDFs for job 187303 into `figures/` |
+| `export_scalability_model.py` | Standalone script: model CSVs to `output/model/`, `amdahl_karp_flatt_capacity.pdf` to `figures/` |
+
+Both export scripts take their styling from `plots/style.py`, so the thesis
+PDFs and the interactive HTML cannot drift apart.
 
 ---
 
@@ -106,7 +126,7 @@ The pidstat-based `*_cpu_placement` figures from CoolMUC-4 produce **50–80 MB 
 
 ---
 
-## CPU placement Gantt (`monitoring_plots.py`)
+## CPU placement Gantt (`plots/drm.py`)
 
 Key design decisions, hard-won through iteration:
 
@@ -122,7 +142,7 @@ Key design decisions, hard-won through iteration:
 
 ---
 
-## CPU utilisation heatmap (`cpu_util_plots.py`)
+## CPU utilisation heatmap (`plots/cpu_util.py`)
 
 Parses `mpstat -P ALL 5` output. Active CPUs (ever >10% usr) are auto-detected and grouped into contiguous domains. Only the top-2 domains by total utilisation are shown (to avoid system-process noise creating 20+ subplots). Colour scale: white=0% → rust=100% usr.
 
@@ -143,7 +163,7 @@ Parses `mpstat -P ALL 5` output. Active CPUs (ever >10% usr) are auto-detected a
 
 ---
 
-## Staggered grant parsing (`staggered_parsing.py`)
+## Staggered grant parsing (`datasets/staggered.py`)
 
 **`load_staggered_grants()`** builds a per-grant DataFrame from the rm.log and worker logs.
 
@@ -157,7 +177,7 @@ Each staggered iteration is a fresh process (new pid per run). After A2 joins, A
 
 ## Adding new benchmark results
 
-1. Drop the new SLURM job directory into `data/staggered/` (new format) or run dirs into `data/dual/`
+1. Drop the new SLURM job directory into `data/staggered/` (new format), run dirs into `data/dual/`, or a tracing job into `data/tracing/`
 2. Run `cd src && python main.py` — only the newest staggered job is plotted; unchanged outputs are skipped
 3. Use `--all` to regenerate everything across all staggered jobs
 4. The `rm.log` DRM blocks are used for `t_inferred` correction in pidstat figures — keep it alongside `pidstat.log`

@@ -23,7 +23,7 @@ AVAIL_THREADS_RE = re.compile(r"^Avail threads\s*=\s*([0-9]+)", re.IGNORECASE)
 OP_TYPE_RE = re.compile(r"^Operation type\s*=\s*(.+)$", re.IGNORECASE)
 PID_RE = re.compile(r"^OMP:\s*pid\s+(\d+)\b", re.IGNORECASE)
 
-KNOWN_BENCHES = {"is", "cg", "ep", "ft", "mg"}  # NPB kernels you have
+KNOWN_BENCHES = {"is", "cg", "ep", "ft", "mg", "omp"}  # NPB kernels, plus the tracing microbenchmark
 
 
 @dataclass(frozen=True)

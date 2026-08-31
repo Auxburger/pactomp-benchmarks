@@ -3,12 +3,8 @@ from __future__ import annotations
 import pandas as pd
 import plotly.graph_objects as go
 
-from .monitoring_parsing import compute_inter_grant_times
-from .io_utils import add_figure_note
-
-
-_BENCH_COLORS = {"FT": "#4C72B0", "CG": "#DD8452", "EP": "#55A868"}
-_SLAB_COLORS = ["#1f77b4", "#ff7f0e"]
+from ..datasets.drm import compute_inter_grant_times
+from .style import BENCH_COLORS as _BENCH_COLORS, SLAB_COLORS as _SLAB_COLORS, add_figure_note
 
 
 def _band_color(hex_color: str, band: int) -> str:

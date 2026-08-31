@@ -13,7 +13,23 @@ sys.path.insert(0, str(Path(__file__).parent / "src"))
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
-from analysis.scalability_model import KERNELS, MODES, fit_all, load_dual_observations
+from analysis.model.amdahl import KERNELS, MODES, fit_all, load_dual_observations
+from analysis.plots.style import (
+    AXIS_COLOR,
+    AXIS_FONT,
+    GRID_COLOR,
+    GRID_LINE_COLOR,
+    INK_COLOR,
+    LEGEND_FONT,
+    MODE_COLORS,
+    MODE_DASHES,
+    MODE_LABELS,
+    MODE_MARKERS,
+    MUTED_COLOR,
+    THESIS_HEIGHT as FIGURE_HEIGHT,
+    THESIS_WIDTH as FIGURE_WIDTH,
+    TITLE_FONT,
+)
 
 
 REPO_ROOT = Path(__file__).resolve().parent
@@ -28,26 +44,6 @@ SUMMARY_PATH = OUTPUT_DIR / "amdahl_karp_flatt_summary.csv"
 POINTS_PATH = OUTPUT_DIR / "amdahl_karp_flatt_points.csv"
 
 # Thesis figure styling, matching export_thesis_figs.py.
-FIGURE_WIDTH = 900
-FIGURE_HEIGHT = 420
-AXIS_FONT = 15
-LEGEND_FONT = 15
-TITLE_FONT = 16
-
-# TUM corporate colours, as used by settings.tex. The pair passes the
-# categorical colour checks for normal vision and for all three CVD types;
-# the solid/dashed line styles add a second, colour-independent encoding.
-MODE_COLORS = {"dynamic=true": "#0065BD", "dynamic=false": "#E37222"}
-MODE_LABELS = {"dynamic=true": "Enabled", "dynamic=false": "Unmanaged"}
-MODE_DASHES = {"dynamic=true": "solid", "dynamic=false": "dash"}
-MODE_MARKERS = {"dynamic=true": "circle", "dynamic=false": "diamond"}
-
-INK_COLOR = "#333333"
-MUTED_COLOR = "#808080"
-GRID_COLOR = "#E6E6E1"
-GRID_LINE_COLOR = "#B8B8B2"
-AXIS_COLOR = "#808080"
-
 MIN_MULTIPLIER = 1.0
 MAX_MULTIPLIER = 16.0
 

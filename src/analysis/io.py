@@ -5,21 +5,6 @@ from pathlib import Path
 import plotly.graph_objects as go
 
 
-def add_figure_note(fig: go.Figure, text: str) -> None:
-    """Add a small source/description note below the chart area."""
-    fig.add_annotation(
-        text=text,
-        xref="paper", yref="paper",
-        x=0.0, y=-0.13,
-        showarrow=False,
-        font=dict(size=10, color="#666666"),
-        align="left",
-        xanchor="left",
-    )
-    current_b = fig.layout.margin.b
-    fig.update_layout(margin=dict(b=max(current_b if current_b else 60, 80)))
-
-
 def _apply_static_legend(fig: go.Figure) -> go.Figure:
     """Return a copy of fig with the legend repositioned to the bottom (horizontal)."""
     import copy

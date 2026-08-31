@@ -5,7 +5,7 @@ benchmark application was running, which CPU partition it owned, and
 which processes (from pidstat) were running on which CPUs.
 
 Usage:
-    python3 analyze_cpu_util.py <cpu_util_log> <meta_a_txt> <meta_b_txt> \
+    uv run python src/analyze_cpu_util.py <cpu_util_log> <meta_a_txt> <meta_b_txt> \
         [--pidstat pidstat_<JOBID>.log] \
         [--slurm-out slurm-XXXX.out] \
         [--out plot.png]
@@ -13,13 +13,19 @@ Usage:
 Logs must have been produced with:
     mpstat -P ALL 5 >> cpu_util_<JOBID>.log
     pidstat -u -t 5 >> pidstat_<JOBID>.log
+
+The mpstat and pidstat parsers live in src/analysis — this script only adds the
+meta.txt/SLURM-log parsing and the composite matplotlib figure.
 """
+
+from __future__ import annotations
 
 import argparse
 import re
 import sys
 from collections import defaultdict
 from datetime import datetime
+from pathlib import Path
 
 import matplotlib
 matplotlib.use("Agg")
@@ -28,101 +34,14 @@ import matplotlib.patches as mpatches
 import numpy as np
 import pandas as pd
 
+if __package__ in (None, ""):
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-# ── parsers ───────────────────────────────────────────────────────────────────
-
-def parse_mpstat(path: str) -> pd.DataFrame:
-    """Parse `mpstat -P ALL <interval>` → tidy DataFrame (ts, cpu, usr)."""
-    records, current_ts, date_str = [], None, None
-    with open(path) as f:
-        for line in f:
-            line = line.rstrip()
-            if line.startswith("Linux"):
-                m = re.search(r"(\d{2}/\d{2}/\d{2,4})", line)
-                if m:
-                    date_str = m.group(1)
-                continue
-            if not line or "CPU" in line:
-                continue
-            parts = line.split()
-            if len(parts) < 12:
-                continue
-            time_s, cpu_s, usr_s = parts[0], parts[1], parts[2]
-            if cpu_s == "all":
-                try:
-                    current_ts = datetime.strptime(f"{date_str} {time_s}", "%m/%d/%y %H:%M:%S")
-                except Exception:
-                    pass
-                continue
-            try:
-                records.append({"ts": current_ts, "cpu": int(cpu_s), "usr": float(usr_s)})
-            except (ValueError, TypeError):
-                continue
-    df = pd.DataFrame(records)
-    if df.empty:
-        sys.exit("ERROR: no data parsed from mpstat log")
-    return df
+from analysis.cpu_util_parsing import parse_cpu_util
+from analysis.monitoring_parsing import parse_pidstat
 
 
-def parse_pidstat(path: str) -> pd.DataFrame:
-    """
-    Parse `pidstat -u -t <interval>` → tidy DataFrame.
-    Columns: ts, pid, tid, cpu, usr, command
-    Lines look like (thread lines start with '-'):
-      HH:MM:SS   UID   PID  %usr %sys %guest %wait  %CPU  CPU  Command
-      HH:MM:SS   UID     -  TID  %usr ...               CPU  Command
-    We keep only benchmark processes (*.C.x).
-    """
-    records, current_ts, date_str = [], None, None
-    # pidstat column headers vary; we detect data lines by pattern
-    with open(path) as f:
-        for line in f:
-            line = line.rstrip()
-            if line.startswith("Linux"):
-                m = re.search(r"(\d{2}/\d{2}/\d{2,4})", line)
-                if m:
-                    date_str = m.group(1)
-                continue
-            if not line or line.lstrip().startswith("Time") or line.lstrip().startswith("#"):
-                continue
-            parts = line.split()
-            # Expect at least 10 columns; last column = command
-            if len(parts) < 10:
-                continue
-            time_s = parts[0]
-            command = parts[-1]
-            # Only keep NPB benchmark processes
-            if not command.endswith(".C.x"):
-                continue
-            try:
-                current_ts = datetime.strptime(f"{date_str} {time_s}", "%m/%d/%y %H:%M:%S")
-            except Exception:
-                continue
-            try:
-                # pidstat -u -t layout:
-                # Time UID PID %usr %sys %guest %wait %CPU CPU Command  (process)
-                # Time UID  -  TID %usr %sys %guest %wait %CPU CPU Command (thread)
-                uid = parts[1]
-                pid_or_dash = parts[2]
-                if pid_or_dash == "-":
-                    # thread line: Time UID - TID %usr %sys %guest %wait %CPU CPU Command
-                    tid  = int(parts[3])
-                    usr  = float(parts[4])
-                    cpu  = int(parts[-2])
-                    pid  = None
-                else:
-                    pid  = int(pid_or_dash)
-                    tid  = pid
-                    usr  = float(parts[3])
-                    cpu  = int(parts[-2])
-                records.append({
-                    "ts": current_ts, "pid": pid, "tid": tid,
-                    "cpu": cpu, "usr": usr, "command": command,
-                })
-            except (ValueError, IndexError):
-                continue
-    return pd.DataFrame(records)
-
+# ── parsers (meta.txt and SLURM log; the rest comes from analysis/) ──────────
 
 def parse_meta(path: str):
     events, cur_t, cur_r = [], None, None
@@ -221,7 +140,7 @@ def make_plot(df_mpstat, df_pidstat, events_a, events_b, splits, out_path):
                     cpu_t_max[c] = t
                     cpu_partition[c] = part
 
-    pivot = df_mpstat.pivot_table(index="cpu", columns="sec", values="usr", aggfunc="mean")
+    pivot = df_mpstat.pivot_table(index="cpu", columns="sec", values="pct_usr", aggfunc="mean")
     cpu_order = sorted(pivot.index)
     pivot = pivot.loc[cpu_order]
     cpu_to_row = {c: i for i, c in enumerate(cpu_order)}
@@ -369,13 +288,15 @@ def main():
     args = ap.parse_args()
 
     print("Parsing mpstat …")
-    df_mpstat = parse_mpstat(args.cpu_log)
+    df_mpstat = parse_cpu_util(Path(args.cpu_log), min_pct_usr=0.0)
+    if df_mpstat.empty:
+        sys.exit("ERROR: no data parsed from mpstat log")
     print(f"  {len(df_mpstat)} records, {df_mpstat['cpu'].nunique()} CPUs")
 
     df_pidstat = None
     if args.pidstat:
         print("Parsing pidstat …")
-        df_pidstat = parse_pidstat(args.pidstat)
+        df_pidstat = parse_pidstat(Path(args.pidstat))
         if df_pidstat.empty:
             print("  WARNING: no benchmark processes found in pidstat log")
         else:

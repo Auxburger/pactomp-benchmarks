@@ -33,6 +33,11 @@ data/                             # Messdaten (unveränderlich)
 │   ├── <alg>_t<t>_off<s>_B1.log  # Worker B1
 │   ├── <alg>_t<t>_off<s>_B2.log  # Worker B2
 │   └── <alg>_t<t>_off<s>_rm.log  # DRM-Log
+├── tracing/<JID>/                # Tracing-Microbenchmark (omp_dyn.c)
+│   ├── run_<r>/omp/*.out         # stdout + Affinity-Trace pro Prozess
+│   ├── timings.csv               # eine Zeile pro Prozess
+│   ├── manifest.json             # argv, git rev, Compile-Kommando, Quell-Hash
+│   └── rm.log                    # DRM-Log
 ├── dual-exclusive/               # Vergleichsläufe auf exklusivem Knoten
 └── slurm_logs/                   # SLURM stdout/stderr Logs
 
@@ -41,16 +46,33 @@ experiments/
 ├── run_npb_tiny.sbatch           # SLURM Job-Skript (Hauptexperiment)
 ├── run_staggered.sbatch          # SLURM Job-Skript (gestaffeltes Experiment)
 ├── run_npb_exclusive.sbatch      # SLURM Job-Skript (exklusiver Knoten)
+├── run_llvm_tracing.sbatch       # SLURM Job-Skript (Tracing-Microbenchmark)
 ├── test_all.sh                   # Haupt-Orchestrierungsskript
 ├── test_staggered.sh             # Gestaffeltes Experiment (A2/B2 mit Zeitversatz)
 ├── test-one.sh                   # Führt einen Benchmark aus (1 Iteration)
 ├── build_omp.sh                  # Baut die LLVM OpenMP Runtime (libomp.so)
 ├── build_npb.sh                  # Installiert make.def, baut die NPB-Binaries
-├── make.def                      # NPB-Build-Konfiguration (kanonische Kopie)
-└── analyze_cpu_util.py           # Analyse & Visualisierung der CPU-Auslastung
+└── make.def                      # NPB-Build-Konfiguration (kanonische Kopie)
 
 NPB3.4-OMP/                       # Unveränderte NPB 3.4.3 (Drittanbieter-Code)
 └── bin/                          # Kompilierte NPB-Binaries (gitignored)
+
+src/harness/                      # läuft auf dem Cluster — nur stdlib, kein uv
+├── paths.py                      # Python-Spiegel von experiments/paths.sh
+├── cpu_layout.py                 # NUMA-Picker (früher Heredoc in den .sh)
+├── coordinator.py                # DRM starten/stoppen
+├── children.py, logging_utils.py, record.py
+└── tracing/                      # Tracing-Microbenchmark + Treiber
+    ├── omp_dyn.c                 # Microbenchmark (zwei parallele Regionen)
+    ├── config.py, build.py, runner.py, record.py, sweep.py
+    └── legacy/                   # die abgelösten Shell-Skripte, zur Referenz
+
+src/analysis/                     # läuft lokal — datasets/, plots/, reports/, model/
+
+src/main.py                       # Einstiegspunkt: Analyse-Pipeline
+src/run_llvm_tracing.py           # Einstiegspunkt: Tracing-Sweep
+src/analyze_cpu_util.py           # Einstiegspunkt: CPU-Auslastungs-Figur
+src/pick_cpus.py                  # Einstiegspunkt: NUMA-Picker für die .sh
 
 docs/
 ├── REPORT.md                     # Technischer Bericht (Bugs, Fixes, Ergebnisse)
@@ -77,6 +99,19 @@ A1 und B1 starten zuerst mit vollem Zugriff. A2 und B2 starten nach `offset` Sek
 
 Zeigt die **dynamische Umverteilung** des DRM: A1 wird automatisch auf `t/2` Threads reduziert sobald A2 beitritt. B1 leidet sofort unter Überlastung ohne Koordination.
 
+### `tracing` — Tracing-Microbenchmark
+
+Ersetzt die früheren Shell-Skripte (jetzt in `src/harness/tracing/legacy/`). Statt NPB läuft
+`omp_dyn.c`: zwei parallele Regionen mit Busy-Loop und eine NPB-förmige
+Zusammenfassung. Der Treiber übersetzt die Quelle gegen die gepatchte Runtime
+und fährt pro Thread count zwei nebenläufige Prozesse — einmal mit
+`OMP_DYNAMIC=true`, einmal mit `false` — bei aktivem `OMP_DISPLAY_AFFINITY`.
+
+Damit lässt sich das Verhalten der Runtime (Grant, Thread-Team-Größe,
+Affinität) ohne den Umweg über die NPB-Kernel nachvollziehen. Die
+Ausgabedateien heißen wie die der NPB-Läufe, `src/main.py` erzeugt daraus die
+Gruppe `output/tracing/`.
+
 ---
 
 ## Jobs ausführen
@@ -87,6 +122,13 @@ sbatch --clusters=cm4 experiments/run_npb_tiny.sbatch
 
 # Gestaffeltes Experiment
 sbatch --clusters=cm4 experiments/run_staggered.sbatch
+
+# Tracing-Microbenchmark (weitere Argumente gehen an run_llvm_tracing.py)
+sbatch --clusters=cm4 experiments/run_llvm_tracing.sbatch
+sbatch --clusters=cm4 experiments/run_llvm_tracing.sbatch --runs 3 --threads 2,4,8,16,32
+
+# Tracing lokal, ohne SLURM
+python3 src/run_llvm_tracing.py --build --out /tmp/tracing --no-drm
 
 # Status prüfen
 squeue --clusters=cm4 --me

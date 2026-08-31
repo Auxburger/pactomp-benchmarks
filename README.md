@@ -24,16 +24,24 @@ have a home of their own.
 | Path | Contents |
 |------|----------|
 | `data/` | The measurement record — all retained run outputs |
-| `experiments/` | Build and SLURM launch scripts, the NPB build config, and the CPU-utilisation helper |
-| `src/analysis/` | The analysis package (Plotly): parsing, plotting, and the scalability model |
-| `src/main.py` | Pipeline entry point — discovers logs and writes every figure group |
+| `experiments/` | Shell side of the harness: build scripts, SLURM job files, the NPB build config |
+| `src/harness/` | Everything that runs on the cluster — standard library only, no uv |
+| `src/analysis/` | Everything that reads the results — `datasets/`, `plots/`, `reports/`, `model/` |
+| `src/main.py` | Entry point: the analysis pipeline |
+| `src/run_llvm_tracing.py` | Entry point: a tracing microbenchmark sweep |
+| `src/analyze_cpu_util.py` | Entry point: the annotated CPU-utilisation figure |
+| `src/pick_cpus.py` | Entry point: the NUMA layout picker the shell scripts call |
 | `export_*.py` | Standalone thesis figure exports |
 | `tests/` | Test suite for the scalability model |
 | `NPB3.4-OMP/` | Unmodified NAS Parallel Benchmarks 3.4.3 (OpenMP), third-party — see [NOTICE](NOTICE) |
 | `docs/` | Report, per-job handover notes, analysis pipeline guide, project status |
 
 The Python project lives at the repository root: `pyproject.toml`, `src/`, and
-`tests/`. Generated figures land in `output/<group>/` and are gitignored — they
+`tests/`. Inside `src/`, the split follows the runtime environment:
+`src/harness/` runs on the cluster with the system `python3` and may use only
+the standard library, while `src/analysis/` runs locally and may use everything
+in `pyproject.toml`. Runnable entry points are the scripts directly under
+`src/`; everything below them is a package. Generated figures land in `output/<group>/` and are gitignored — they
 are fully reproducible from `data/`.
 
 Nothing of ours lives inside `NPB3.4-OMP/`. It is byte-identical to the upstream
@@ -48,6 +56,7 @@ The primary measurement data lives in `data/`:
 - `dual/` — the main dual-launch experiment, SLURM job 172930 on LRZ CoolMUC-4
 - `staggered/<jobid>/` — the staggered-launch jobs
 - `dual-exclusive/` — exclusive-node comparison runs
+- `tracing/<jobid>/` — the LLVM OpenMP tracing microbenchmark runs
 
 plus `slurm_logs/` for the per-job SLURM stdout and stderr.
 
@@ -76,7 +85,28 @@ themselves through `SLURM_SUBMIT_DIR`:
 ```sh
 sbatch --clusters=cm4 experiments/run_staggered.sbatch
 sbatch --clusters=cm4 experiments/run_npb_tiny.sbatch
+sbatch --clusters=cm4 experiments/run_llvm_tracing.sbatch
 ```
+
+The tracing job wraps `src/run_llvm_tracing.py`, the entry point of the
+`src/harness/tracing/` driver package that sits next to the OpenMP
+microbenchmark it runs (`omp_dyn.c`). It compiles the microbenchmark against the patched
+runtime, sweeps thread counts, and runs two concurrent processes per cell —
+once with `OMP_DYNAMIC=true`, once with `false` — recording each process's
+affinity trace and runtime. Arguments after the sbatch script are forwarded to
+it, and it also runs standalone:
+
+```sh
+sbatch --clusters=cm4 experiments/run_llvm_tracing.sbatch --runs 3 --threads 2,4,8,16,32
+python3 src/run_llvm_tracing.py --build --out /tmp/tracing --no-drm
+python3 src/run_llvm_tracing.py --help
+```
+
+It writes `data/tracing/<jobid>/`, needs only the standard library — no uv, so
+the cluster `python3` runs it — and its per-process `.out` files carry the same
+names as the NPB runs, so `src/main.py` picks them up as the `output/tracing/`
+figure group. The shell scripts it replaces are kept in
+`src/harness/tracing/legacy/`.
 
 See [experiments/CLAUDE.md](experiments/CLAUDE.md) for the DRM protocol, the
 experiment designs, and the known runtime limitations.
@@ -97,6 +127,15 @@ uv run python src/main.py --static  # also export PDFs (requires kaleido + Chrom
 
 Figures land in `output/<group>/`. See [docs/ANALYSIS.md](docs/ANALYSIS.md) for
 the plot design decisions, parsing details, and the canonical staggered job.
+
+The annotated per-CPU utilisation figure is a separate entry point, since it
+needs the job's `meta.txt` files and optionally the SLURM log:
+
+```sh
+uv run python src/analyze_cpu_util.py data/dual/cpu_util_172930.log \
+  data/dual/89/node0/meta.txt data/dual/89/node1/meta.txt \
+  --pidstat data/dual/pidstat_172930.log --out cpu_utilisation.png
+```
 
 ## Regenerating the thesis figures
 

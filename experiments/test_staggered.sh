@@ -27,77 +27,12 @@ export OMP_NUM_THREADS="$t"
 # ── CPU layout ────────────────────────────────────────────────────────────────
 ALLOWED_RAW=$(awk -F'\t' '/^Cpus_allowed_list:/ {print $2}' /proc/self/status)
 
-readarray -t PICK < <(
-  MASK="$ALLOWED_RAW" CPUS="$cpus" DOMAIN_CPUS="$domain_cpus" python3 - <<'PY'
-import glob, os
-from collections import defaultdict
-import subprocess
+readarray -t PICK < <(python3 "$REPO_ROOT/src/pick_cpus.py" --mask "$ALLOWED_RAW" --domain-cpus "$domain_cpus")
 
-mask  = os.environ.get("MASK","").strip()
-cpus  = int(os.environ["CPUS"])
-domain = int(os.environ["DOMAIN_CPUS"])
-
-def expand(mask):
-    out=[]
-    for part in mask.split(','):
-        if '-' in part:
-            a,b=part.split('-',1)
-            out.extend(range(int(a),int(b)+1))
-        else:
-            out.append(int(part))
-    return out
-
-def node_of(cpu):
-    paths = glob.glob(f"/sys/devices/system/cpu/cpu{cpu}/node*")
-    for p in paths:
-        b=os.path.basename(p)
-        if b.startswith("node"):
-            return int(b[4:])
-    return -1
-
-allowed = expand(mask)
-by = defaultdict(list)
-for c in allowed:
-    by[node_of(c)].append(c)
-
-cands = sorted((n,sorted(v)) for n,v in by.items() if n >= 0)
-needA = 1 + domain
-needB = domain
-goodA = [(n,v) for n,v in cands if len(v) >= needA]
-goodB = [(n,v) for n,v in cands if len(v) >= needB]
-
-cpu_to_socket = {}
-txt = subprocess.check_output(["lscpu","-e=CPU,SOCKET,NODE"], universal_newlines=True)
-for line in txt.strip().splitlines()[1:]:
-    cpu,sock,node = line.split()
-    cpu_to_socket[int(cpu)] = int(sock)
-
-goodA.sort(key=lambda nv: len(nv[1]), reverse=True)
-goodB.sort(key=lambda nv: len(nv[1]), reverse=True)
-best=None
-for ni,vi in goodA:
-    si = cpu_to_socket.get(vi[0],-1)
-    for nj,vj in goodB:
-        if nj==ni: continue
-        sj = cpu_to_socket.get(vj[0],-1)
-        if si!=-1 and sj!=-1 and si!=sj:
-            best=(ni,vi,nj,vj); break
-    if best: break
-if not best:
-    ni,vi=goodA[0]
-    nj,vj=next(((n,v) for n,v in goodB if n!=ni),goodB[0])
-    best=(ni,vi,nj,vj)
-
-ni,vi,nj,vj=best
-rm_cpu=vi[0]
-a_cpus=vi[1:1+domain]
-b_cpus=vj[:domain]
-def fmt(lst): return ",".join(map(str,lst))
-print(rm_cpu)
-print(ni, fmt(a_cpus))
-print(nj, fmt(b_cpus))
-PY
-)
+if ((${#PICK[@]} < 3)) || [[ "${PICK[0]}" == ERROR* ]]; then
+  printf '%s\n' "${PICK[@]:-<empty>}" >&2
+  exit 1
+fi
 
 RM_CPU="${PICK[0]}"
 NODE_A="${PICK[1]%% *}"; CPU_A_LIST="${PICK[1]#* }"

@@ -11,20 +11,26 @@ import plotly.graph_objects as go
 
 sys.path.insert(0, str(Path(__file__).parent / "src"))
 
-from analysis.staggered_parsing import (
+from analysis.datasets.staggered import (
     discover_staggered_groups,
     load_staggered_group,
     load_staggered_grants,
 )
-from analysis.staggered_plots import (
+from analysis.plots.staggered import (
     make_staggered_figure,
     make_staggered_steadystate_figure,
     make_staggered_threads_figure,
     make_staggered_cpu_slab_figure,
 )
-from analysis.parsing import load_benchmark_dir, KNOWN_BENCHES
-from analysis.pipeline import build_groups
-from analysis.plotting import (
+from analysis.datasets.npb import load_benchmark_dir, KNOWN_BENCHES
+from analysis.reports.npb import build_groups
+from analysis.plots.style import (
+    BENCHMARK_MARKERS,
+    THESIS_HEIGHT,
+    THESIS_WIDTH,
+    apply_thesis_style,
+)
+from analysis.plots.npb import (
     make_figure,
     make_mops_figure,
 )
@@ -36,42 +42,6 @@ JOB_DIR = REPO_ROOT / "data" / "staggered" / "187303"
 # THESIS_FIGURES_DIR at its figures/ directory to write straight into it.
 OUT_DIR = Path(os.environ.get("THESIS_FIGURES_DIR", REPO_ROOT / "figures")).resolve()
 OUT_DIR.mkdir(parents=True, exist_ok=True)
-
-THESIS_WIDTH = 900   # px — roughly \linewidth at 96 dpi
-THESIS_HEIGHT = 420
-
-LEGEND_FONT = 15
-AXIS_FONT = 15
-TITLE_FONT = 16
-
-BENCHMARK_MARKERS = {
-    "CG": "circle",
-    "EP": "diamond",
-    "FT": "square",
-}
-
-def apply_thesis_style(fig, w=THESIS_WIDTH, h=THESIS_HEIGHT):
-    fig.update_layout(
-        width=w,
-        height=h,
-        margin=dict(l=60, r=20, t=50, b=110),
-        font=dict(size=AXIS_FONT),
-        legend=dict(
-            orientation="h",
-            yanchor="top",
-            y=-0.22,
-            xanchor="center",
-            x=0.5,
-            font=dict(size=LEGEND_FONT),
-        ),
-        title=dict(font=dict(size=TITLE_FONT)),
-    )
-    # Remove the source note margin — it's for the interactive HTML
-    for ann in fig.layout.annotations:
-        if ann.yref == "paper" and ann.y < 0:
-            ann.visible = False
-    return fig
-
 
 groups = discover_staggered_groups(JOB_DIR)
 dfs = {}

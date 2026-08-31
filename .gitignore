@@ -223,6 +223,11 @@ __marimo__/
 # rule from the Django section above. Keep this negation.
 !data/**/*.log
 
+# The tracing microbenchmark binary, compiled next to the run it belongs to.
+# Reproducible from src/harness/tracing/omp_dyn.c via run_llvm_tracing.py --build.
+data/tracing/*/omp
+/src/harness/tracing/omp
+
 # Default local output of export_*.py. The canonical copies of these figures
 # are committed in the thesis repo; set THESIS_FIGURES_DIR to write there
 # directly instead.

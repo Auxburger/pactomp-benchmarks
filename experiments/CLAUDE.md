@@ -10,6 +10,10 @@ All paths are resolved by `paths.sh`, which every script in this directory
 sources. Repository paths come from the script's own location; the two external
 checkouts come from the environment with `$HOME`-relative defaults.
 
+`src/harness/paths.py` mirrors this file for the Python side. The duplication
+is deliberate — the shell scripts must not need a Python detour for their own
+variables — so keep the two in sync when either changes.
+
 | What | Variable | Default |
 |------|----------|---------|
 | DRM source (Rust) | `$POMP_DIR` | `$HOME/dynamic-resource-manager` |
@@ -18,7 +22,7 @@ checkouts come from the environment with `$HOME`-relative defaults.
 | LLVM runtime source | — | `$LLVM_BUILD/../openmp/runtime/src/kmp_resource_manager.cpp` |
 | Bundled NPB tree | `$NPB_DIR` | `<repo>/NPB3.4-OMP` |
 | NPB binaries | `$NPB_BIN` | `$NPB_DIR/bin` — `ft.C.x`, `cg.C.x`, `ep.C.x` |
-| Benchmark results | `$DATA_DIR` | `<repo>/data` — `dual/`, `staggered/` |
+| Benchmark results | `$DATA_DIR` | `<repo>/data` — `dual/`, `staggered/`, `tracing/` |
 | SLURM logs | `$SLURM_LOG_DIR` | `<repo>/data/slurm_logs/slurm-<JOBID>.out/.err` |
 
 Override any of them from the environment:
@@ -85,6 +89,73 @@ sbatch --clusters=cm4 experiments/run_staggered.sbatch
 - CG: up to +60% for dyn=true at t=32
 - FT: up to +21% for dyn=true at t=32
 - EP: ~0% (compute-bound, expected negative control)
+
+## Tracing Microbenchmark
+
+**Files:** `run_llvm_tracing.sbatch` here; the driver itself is the
+`src/harness/tracing/` package next to `omp_dyn.c`, entered through
+`src/run_llvm_tracing.py`.
+
+**Purpose:** The minimal reproducer for the runtime's thread-allocation
+behaviour, without NPB in the way. `omp_dyn.c` runs two parallel regions of a
+busy loop and prints an NPB-shaped summary block; the driver sweeps thread
+counts and launches `--procs` concurrent processes per (thread count,
+`OMP_DYNAMIC`) cell, with `OMP_DISPLAY_AFFINITY` on so each `.out` carries the
+runtime's affinity trace next to the timing.
+
+This is the Python rewrite of the old shell scripts, which are kept for
+reference in `src/harness/tracing/legacy/` (`test-omp-dyn.sh`, `test-one-dyn.sh`).
+The driver uses the standard library only, so the cluster `python3` runs it —
+no uv needed.
+
+**Submit:**
+```bash
+# Submit from the repository root; extra arguments go to run_llvm_tracing.py
+sbatch --clusters=cm4 experiments/run_llvm_tracing.sbatch
+sbatch --clusters=cm4 experiments/run_llvm_tracing.sbatch --runs 3 --threads 2,4,8,16,32
+
+# Locally, without SLURM
+python3 src/run_llvm_tracing.py --build --out /tmp/tracing --threads 2,4 --no-drm
+```
+
+**Output files** (in `data/tracing/<jobid>/`):
+```
+run_<r>/omp/omp_threads_<t>_dyn_<true|false>_<i>.out   # stdout + affinity trace per process
+run_<r>/omp/omp_log_t<t>.txt                           # per-cell start/finish/duration
+timings.csv                                            # one row per process
+manifest.json                                          # argv, git rev, compile command, source hash
+rm.log                                                 # DRM grants (when the coordinator runs)
+cpu_util.log, pidstat.log                              # mpstat/pidstat, from the sbatch wrapper
+```
+
+The `.out` names match the NPB experiments, so `src/main.py` plots tracing runs
+as its own `output/tracing/` group (`omp` is in `KNOWN_BENCHES`).
+
+**Defaults worth knowing:**
+- `--pin threads` gives each cell the first `t` allowed CPUs, so `dyn=false`
+  oversubscribes `2t` threads onto `t` CPUs exactly as the main experiment does
+- `--drm` defaults to on when `$POMP_BIN` exists; the coordinator is restarted
+  per thread count with `POMP_CAPACITY=t`, as in `test_all.sh`
+- `OMP_PROC_BIND` is deliberately unset (see limitation 2 below); `--proc-bind`
+  sets it if you want the old `spread` behaviour of `legacy/test-omp-dyn.sh`
+- `--busy-seconds` (default 2.0) is the per-region busy loop, scaled inside
+  `omp_dyn.c` by the oversubscription factor
+
+## CPU Layout Picker
+
+`test_all.sh` and `test_staggered.sh` both need the same decision: which NUMA
+node hosts worker A (plus one CPU for the coordinator), which hosts worker B,
+and which CPUs each gets. That logic lives in `src/harness/cpu_layout.py` and
+is called through `src/pick_cpus.py`:
+
+```bash
+readarray -t PICK < <(python3 "$REPO_ROOT/src/pick_cpus.py" --mask "$ALLOWED_RAW" --domain-cpus "$domain_cpus")
+```
+
+It prints three lines — coordinator CPU, `<node> <cpus>` for worker A, the same
+for worker B — or `ERROR <reason>` with exit code 2, which both callers check.
+It used to be a ~90-line heredoc inside each script; the copies had drifted and
+the staggered one had lost its error handling. Tests: `tests/test_cpu_layout.py`.
 
 ## DRM Protocol
 
