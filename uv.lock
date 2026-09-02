@@ -452,6 +452,11 @@ dependencies = [
     { name = "plotly" },
 ]
 
+[package.dev-dependencies]
+dev = [
+    { name = "pytest" },
+]
+
 [package.metadata]
 requires-dist = [
     { name = "ipykernel", specifier = ">=7.1.0" },
@@ -460,6 +465,9 @@ requires-dist = [
     { name = "pandas", specifier = ">=3.0.0" },
     { name = "plotly", specifier = ">=6.5.2" },
 ]
+
+[package.metadata.requires-dev]
+dev = [{ name = "pytest", specifier = ">=8" }]
 
 [[package]]
 name = "pandas"

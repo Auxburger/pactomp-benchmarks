@@ -48,7 +48,8 @@ existing cluster checkouts keep working.
 sbatch --clusters=cm4 experiments/run_staggered.sbatch
 ```
 
-**Output files** (in `data/staggered/`):
+**Output files** (in `data/staggered/<jobid>/` — the sbatch passes the job id
+as the output directory):
 ```
 <alg>_t<t>_off<s>_A1.log   # dyn=true, starts first
 <alg>_t<t>_off<s>_A2.log   # dyn=true, joins after offset
@@ -69,13 +70,19 @@ sbatch --clusters=cm4 experiments/run_staggered.sbatch
 - After offset: A side degrades less than B side (DRM coordination vs uncoordinated oversubscription)
 - End of run: last remaining process gets full allocation restored
 
-**Current default:** `ft cg ep`, t=32, 15 iterations, 10 s offset (see `run_staggered.sbatch`)
+**Current default** (see `run_staggered.sbatch`): `ft cg ep` at t=32, 15
+iterations for A1/B1 and 15 for A2/B2, 10 s offset for FT and CG, 5 s for EP —
+EP is short enough that a 10 s offset would let A1/B1 finish before A2/B2 join.
 
 **Calling convention:**
 ```bash
-./test_staggered.sh <total_cpus> [domain_cpus] [threads] [algorithm] [iters] [offset_sec]
-# Example: ./test_staggered.sh 89 32 32 ft 15 10
+./test_staggered.sh <total_cpus> [domain_cpus] [threads] [algorithm] [iters1] [offset_sec] [iters2] [outdir]
+# As the sbatch calls it:
+./test_staggered.sh 89 32 32 ft 15 10 15 "$DATA_DIR/staggered/$SLURM_JOB_ID"
 ```
+
+`iters2` is what A2/B2 run before leaving again, so A1/B1 see the full cycle:
+solo → shared → solo restored.
 
 ## Main Experiment
 

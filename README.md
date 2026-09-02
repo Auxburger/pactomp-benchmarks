@@ -32,7 +32,7 @@ have a home of their own.
 | `src/analyze_cpu_util.py` | Entry point: the annotated CPU-utilisation figure |
 | `src/pick_cpus.py` | Entry point: the NUMA layout picker the shell scripts call |
 | `export_*.py` | Standalone thesis figure exports |
-| `tests/` | Test suite for the scalability model |
+| `tests/` | Tests: scalability model, CPU layout picker, tracing driver, meta parsing, the stdlib rule for `src/harness/` |
 | `NPB3.4-OMP/` | Unmodified NAS Parallel Benchmarks 3.4.3 (OpenMP), third-party — see [NOTICE](NOTICE) |
 | `docs/` | Report, per-job handover notes, analysis pipeline guide, project status |
 
@@ -41,8 +41,10 @@ The Python project lives at the repository root: `pyproject.toml`, `src/`, and
 `src/harness/` runs on the cluster with the system `python3` and may use only
 the standard library, while `src/analysis/` runs locally and may use everything
 in `pyproject.toml`. Runnable entry points are the scripts directly under
-`src/`; everything below them is a package. Generated figures land in `output/<group>/` and are gitignored — they
-are fully reproducible from `data/`.
+`src/`; everything below them is a package.
+
+Generated figures land in `output/<group>/` and are gitignored — they are fully
+reproducible from `data/`.
 
 Nothing of ours lives inside `NPB3.4-OMP/`. It is byte-identical to the upstream
 NPB 3.4.3 release, so it can be re-verified against the official tarball at any

@@ -11,3 +11,8 @@ dependencies = [
     "pandas>=3.0.0",
     "plotly>=6.5.2",
 ]
+
+[dependency-groups]
+# pytest currently arrives transitively through kaleido's pytest-timeout;
+# declare it so the documented test command survives a kaleido release that drops it.
+dev = ["pytest>=8"]

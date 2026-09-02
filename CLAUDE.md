@@ -15,6 +15,8 @@ relevant markdown files before finishing:
 | `docs/PLOTTING_HANDOVER.md` | Plotting pipeline or staggered analysis changes |
 | `docs/ANALYSIS.md` | Plot design decisions, source layout, canonical job changes |
 | `experiments/CLAUDE.md` | DRM protocol, key paths, known limitations changes |
+| `docs/experiments.md` | Directory layout, experiment designs, submit commands (German) |
+| `README.md` | Layout, entry points, dependencies, anything a newcomer runs |
 
 Do not leave markdown docs stale after a code or data change.
 
@@ -61,21 +63,12 @@ installs it before building.
 
 Scripts in `experiments/` derive every repository path from their own location
 via `experiments/paths.sh`, and take external dependencies (`LLVM_BUILD`,
-`POMP_DIR`) from the environment with `$HOME`-relative defaults. Do not
+`POMP_DIR`) from the environment with `$HOME`-relative defaults. The same holds
+for `src/harness/paths.py`, which mirrors `paths.sh` for the Python side and
+resolves the repository from its own `__file__` — keep the two in sync. Do not
 reintroduce absolute cluster paths — they broke once already when this
 repository was split out of the thesis repo, and they leak the cluster account
 into a public repository.
-
-## Further guidance
-
-- [docs/ANALYSIS.md](docs/ANALYSIS.md) — Python analysis pipeline: plot design
-  decisions, parsing details, the canonical staggered job, and the PDF/A
-  constraint on exported figures. Read this before touching `src/` or the
-  `export_*.py` scripts. (Was `plots/CLAUDE.md`; the Python project now lives at
-  the repository root, so it is a referenced doc rather than a directory-scoped
-  CLAUDE.md.)
-- [experiments/CLAUDE.md](experiments/CLAUDE.md) — DRM protocol, experiment
-  designs, SLURM setup, known limitations
 
 ## The Python project is rooted at the repository root
 
@@ -100,3 +93,12 @@ virtualenv. `src/analysis/` is what reads them, cut by layer:
 Runnable entry points are the scripts directly under `src/`
 (`main.py`, `run_llvm_tracing.py`, `analyze_cpu_util.py`, `pick_cpus.py`);
 everything below them is a package. Keep source files under 500 lines.
+
+## Further guidance
+
+- [docs/ANALYSIS.md](docs/ANALYSIS.md) — Python analysis pipeline: plot design
+  decisions, parsing details, the canonical staggered job, and the PDF/A
+  constraint on exported figures. Read this before touching
+  `src/analysis/` or the `export_*.py` scripts.
+- [experiments/CLAUDE.md](experiments/CLAUDE.md) — DRM protocol, experiment
+  designs, SLURM setup, known limitations
