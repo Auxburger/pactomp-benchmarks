@@ -20,6 +20,11 @@ iters2="${7:-5}"
 source "$(dirname "${BASH_SOURCE[0]}")/paths.sh"
 BASE_OUT="${8:-$DATA_DIR/staggered/${SLURM_JOB_ID:-$$}}"
 
+command -v taskset >/dev/null 2>&1 || {
+  echo "ERROR: 'taskset' not found on $(hostname); CPU pinning is not optional." >&2
+  exit 2
+}
+
 export LD_LIBRARY_PATH="$LLVM_BUILD/lib:${LD_LIBRARY_PATH:-}"
 export KMP_DYNAMIC_MODE=thread_limit
 export OMP_NUM_THREADS="$t"
@@ -60,15 +65,14 @@ RM_LOG="$BASE_OUT/${LABEL}_rm.log"
 
 rm -f /tmp/omp-rm.sock
 POMP_CAPACITY="$t" POMP_CPU_LIST="$CPU_A_T" \
-  stdbuf -oL -eL numactl --cpunodebind="$NODE_A" --membind="$NODE_A" \
-  taskset -c "$RM_CPU" nice -n 15 \
+  taskset -c "$RM_CPU" stdbuf -oL -eL nice -n 15 \
   "$POMP_BIN" >> "$RM_LOG" 2>&1 &
 POMP_PID=$!
 sleep 0.5
 
 # ── Worker runner ─────────────────────────────────────────────────────────────
 run_worker() {
-  local label="$1" dyn="$2" cpus="$3" node="$4" outfile="$5" iters="$6"
+  local label="$1" dyn="$2" cpus="$3" outfile="$4" iters="$5"
   export OMP_DYNAMIC="$dyn"
 
   echo "# label=$label dyn=$dyn t=$OMP_NUM_THREADS alg=$alg" > "$outfile"
@@ -77,8 +81,7 @@ run_worker() {
   for i in $(seq 1 "$iters"); do
     local t0 t1 dur raw
     t0=$(date +%s%3N)
-    raw=$(numactl --cpunodebind="$node" --membind="$node" \
-            taskset -c "$cpus" \
+    raw=$(taskset -c "$cpus" \
             "$NPB_BIN/${alg}.C.x" \
             2>>"$BASE_OUT/${LABEL}_${label}_drm.log")
     t1=$(date +%s%3N)
@@ -92,9 +95,9 @@ run_worker() {
 
 # ── A1 and B1 start first ─────────────────────────────────────────────────────
 echo "=== $(date) : starting A1 and B1 (${iters1} iters each) ==="
-run_worker A1 true  "$CPU_A_T" "$NODE_A" "$OUT_A1" "$iters1" &
+run_worker A1 true  "$CPU_A_T" "$OUT_A1" "$iters1" &
 PID_A1=$!
-run_worker B1 false "$CPU_B_T" "$NODE_B" "$OUT_B1" "$iters1" &
+run_worker B1 false "$CPU_B_T" "$OUT_B1" "$iters1" &
 PID_B1=$!
 
 # ── A2 and B2 join after offset, run fewer iterations then leave ──────────────
@@ -102,9 +105,9 @@ echo "=== sleeping ${offset}s before A2/B2 ==="
 sleep "$offset"
 
 echo "=== $(date) : starting A2 and B2 (${iters2} iters each) ==="
-run_worker A2 true  "$CPU_A_T" "$NODE_A" "$OUT_A2" "$iters2" &
+run_worker A2 true  "$CPU_A_T" "$OUT_A2" "$iters2" &
 PID_A2=$!
-run_worker B2 false "$CPU_B_T" "$NODE_B" "$OUT_B2" "$iters2" &
+run_worker B2 false "$CPU_B_T" "$OUT_B2" "$iters2" &
 PID_B2=$!
 
 wait "$PID_A1" "$PID_A2" "$PID_B1" "$PID_B2"

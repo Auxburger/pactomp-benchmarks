@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "seed": 16,
+  "jobs": [
+    {
+      "job_id": 1,
+      "algorithm": "ft",
+      "start_offset": 0.0,
+      "duration": 48.123,
+      "threads": 32
+    },
+    {
+      "job_id": 2,
+      "algorithm": "ep",
+      "start_offset": 8.999,
+      "duration": 77.355,
+      "threads": 32
+    },
+    {
+      "job_id": 3,
+      "algorithm": "ft",
+      "start_offset": 13.099,
+      "duration": 54.571,
+      "threads": 32
+    },
+    {
+      "job_id": 4,
+      "algorithm": "cg",
+      "start_offset": 13.773,
+      "duration": 47.096,
+      "threads": 32
+    },
+    {
+      "job_id": 5,
+      "algorithm": "cg",
+      "start_offset": 19.698,
+      "duration": 87.101,
+      "threads": 32
+    },
+    {
+      "job_id": 6,
+      "algorithm": "ep",
+      "start_offset": 21.026,
+      "duration": 44.272,
+      "threads": 32
+    }
+  ]
+}

@@ -3,9 +3,9 @@
 #SBATCH --partition=cm4_tiny
 #SBATCH --export=NONE
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=89
+#SBATCH --cpus-per-task=64
 #SBATCH --hint=nomultithread
-#SBATCH --time=02:00:00
+#SBATCH --time=00:15:00
 #SBATCH --output=data/slurm_logs/slurm-%j.out
 #SBATCH --error=data/slurm_logs/slurm-%j.err
 

@@ -5,21 +5,15 @@ fixed thread count and OMP_DYNAMIC setting.
 from __future__ import annotations
 
 import os
-import re
 import subprocess
 import time
 from dataclasses import dataclass
 from pathlib import Path
 
-from .. import children
+from .. import children, npb_out
 from .config import Config
 from ..logging_utils import fmt_cpus, log, now
 from ..paths import LLVM_BUILD
-
-TIME_SECONDS_RE = re.compile(r"^\s*Time in seconds\s*=\s*([0-9]+(?:\.[0-9]+)?)", re.IGNORECASE)
-TOTAL_THREADS_RE = re.compile(r"^\s*Total threads\s*=\s*([0-9]+)", re.IGNORECASE)
-AVAIL_THREADS_RE = re.compile(r"^\s*Avail threads\s*=\s*([0-9]+)", re.IGNORECASE)
-PID_RE = re.compile(r"^\s*PID:\s*([0-9]+)")
 
 
 @dataclass
@@ -74,6 +68,9 @@ def build_env(cfg: Config, threads: int, dynamic: bool, cpus: "list[int] | None"
     # Read by omp_dyn.c: busy-loop length, scaled by the oversubscription factor.
     env["OMP_DYN_BUSY_SECONDS"] = str(cfg.busy_seconds)
     env["OMP_DYN_CORES"] = str(len(cpus) if cpus else len(allowed_cpus()))
+    if cfg.region_sizes:
+        env["OMP_DYN_REGION_SIZES"] = cfg.region_sizes
+        env["OMP_DYN_REGION_DWELL_SECONDS"] = str(cfg.region_dwell_seconds)
     return env
 
 
@@ -89,28 +86,8 @@ def _pin_to(cpus: "list[int] | None"):
 
 def parse_out_file(path: Path) -> "tuple[float | None, int | None, int | None, int | None]":
     """Read the NPB-shaped summary block: seconds, total threads, avail threads, pid."""
-    seconds = total = avail = pid = None
-    for line in path.read_text(encoding="utf-8", errors="replace").splitlines():
-        if seconds is None:
-            m = TIME_SECONDS_RE.match(line)
-            if m:
-                seconds = float(m.group(1))
-                continue
-        if total is None:
-            m = TOTAL_THREADS_RE.match(line)
-            if m:
-                total = int(m.group(1))
-                continue
-        if avail is None:
-            m = AVAIL_THREADS_RE.match(line)
-            if m:
-                avail = int(m.group(1))
-                continue
-        if pid is None:
-            m = PID_RE.match(line)
-            if m:
-                pid = int(m.group(1))
-    return seconds, total, avail, pid
+    s = npb_out.parse_out_file(path)
+    return s["time_seconds"], s["total_threads"], s["avail_threads"], s["pid"]
 
 
 def _await_all(entries: list, deadline: float, timeout: float) -> None:

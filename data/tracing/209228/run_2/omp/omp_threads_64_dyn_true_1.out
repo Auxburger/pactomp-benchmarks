@@ -1,0 +1,266 @@
+PID: 202210
+native_threads_start = 1
+OMP: pid 202210 tid 202210 thread 0 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202220 thread 3 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202217 thread 2 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202231 thread 11 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202236 thread 15 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202232 thread 12 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202227 thread 8 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202225 thread 7 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202230 thread 10 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202212 thread 1 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202235 thread 14 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202221 thread 4 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202224 thread 6 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202287 thread 48 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202243 thread 19 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202311 thread 63 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202281 thread 44 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202267 thread 35 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202261 thread 32 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202275 thread 40 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202292 thread 51 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202265 thread 34 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202242 thread 18 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202239 thread 16 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202234 thread 13 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202256 thread 28 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202290 thread 50 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202286 thread 47 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202279 thread 43 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202260 thread 31 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202264 thread 33 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202259 thread 30 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202269 thread 36 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202284 thread 46 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202278 thread 42 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202308 thread 61 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202257 thread 29 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202283 thread 45 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202273 thread 39 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202289 thread 49 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202250 thread 24 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202255 thread 27 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202309 thread 62 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202276 thread 41 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202223 thread 5 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202272 thread 38 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202270 thread 37 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202249 thread 23 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202306 thread 60 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202240 thread 17 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202297 thread 54 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202253 thread 26 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202298 thread 55 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202245 thread 20 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202301 thread 57 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202294 thread 52 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202299 thread 56 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202247 thread 21 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202252 thread 25 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202295 thread 53 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202248 thread 22 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202229 thread 9 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202304 thread 58 bound to OS proc set {0-63}
+OMP: pid 202210 tid 202305 thread 59 bound to OS proc set {0-63}
+[DRM-pin] pid=202210 tid=202231 assigned=0-63 running_on=12
+[DRM-pin] pid=202210 tid=202248 assigned=0-63 running_on=23
+[DRM-pin] pid=202210 tid=202292 assigned=0-63 running_on=14
+[DRM-pin] pid=202210 tid=202269 assigned=0-63 running_on=40
+[DRM-pin] pid=202210 tid=202272 assigned=0-63 running_on=37
+[DRM-pin] pid=202210 tid=202255 assigned=0-63 running_on=29
+[DRM-pin] pid=202210 tid=202286 assigned=0-63 running_on=16
+[DRM-pin] pid=202210 tid=202294 assigned=0-63 running_on=35
+[DRM-pin] pid=202210 tid=202224 assigned=0-63 running_on=7
+[DRM-pin] pid=202210 tid=202249 assigned=0-63 running_on=24
+[DRM-pin] pid=202210 tid=202225 assigned=0-63 running_on=8
+[DRM-pin] pid=202210 tid=202256 assigned=0-63 running_on=30
+[DRM-pin] pid=202210 tid=202273 assigned=0-63 running_on=44
+[DRM-pin] pid=202210 tid=202223 assigned=0-63 running_on=21
+[DRM-pin] pid=202210 tid=202221 assigned=0-63 running_on=37
+[DRM-pin] pid=202210 tid=202289 assigned=0-63 running_on=53
+[DRM-pin] pid=202210 tid=202260 assigned=0-63 running_on=34
+[DRM-pin] pid=202210 tid=202252 assigned=0-63 running_on=33
+[DRM-pin] pid=202210 tid=202240 assigned=0-63 running_on=26
+[DRM-pin] pid=202210 tid=202253 assigned=0-63 running_on=28
+[DRM-pin] pid=202210 tid=202281 assigned=0-63 running_on=32
+[DRM-pin] pid=202210 tid=202229 assigned=0-63 running_on=62
+[DRM-pin] pid=202210 tid=202265 assigned=0-63 running_on=49
+[DRM-pin] pid=202210 tid=202235 assigned=0-63 running_on=1
+[DRM-pin] pid=202210 tid=202290 assigned=0-63 running_on=36
+[DRM-pin] pid=202210 tid=202217 assigned=0-63 running_on=45
+[DRM-pin] pid=202210 tid=202245 assigned=0-63 running_on=2
+[DRM-pin] pid=202210 tid=202305 assigned=0-63 running_on=56
+[DRM-pin] pid=202210 tid=202250 assigned=0-63 running_on=41
+[DRM-pin] pid=202210 tid=202261 assigned=0-63 running_on=9
+[DRM-pin] pid=202210 tid=202247 assigned=0-63 running_on=22
+[DRM-pin] pid=202210 tid=202270 assigned=0-63 running_on=3
+[DRM-pin] pid=202210 tid=202259 assigned=0-63 running_on=20
+[DRM-pin] pid=202210 tid=202212 assigned=0-63 running_on=27
+[DRM-pin] pid=202210 tid=202239 assigned=0-63 running_on=17
+[DRM-pin] pid=202210 tid=202283 assigned=0-63 running_on=43
+[DRM-pin] pid=202210 tid=202284 assigned=0-63 running_on=53
+[DRM-pin] pid=202210 tid=202264 assigned=0-63 running_on=37
+[DRM-pin] pid=202210 tid=202227 assigned=0-63 running_on=42
+[DRM-pin] pid=202210 tid=202275 assigned=0-63 running_on=45
+[DRM-pin] pid=202210 tid=202276 assigned=0-63 running_on=28
+[DRM-pin] pid=202210 tid=202295 assigned=0-63 running_on=36
+[DRM-pin] pid=202210 tid=202278 assigned=0-63 running_on=47
+[DRM-pin] pid=202210 tid=202243 assigned=0-63 running_on=20
+[DRM-pin] pid=202210 tid=202311 assigned=0-63 running_on=22
+[DRM-pin] pid=202210 tid=202287 assigned=0-63 running_on=46
+[DRM-pin] pid=202210 tid=202309 assigned=0-63 running_on=25
+[DRM-pin] pid=202210 tid=202306 assigned=0-63 running_on=14
+[DRM-pin] pid=202210 tid=202267 assigned=0-63 running_on=39
+[DRM-pin] pid=202210 tid=202308 assigned=0-63 running_on=1
+[DRM-pin] pid=202210 tid=202297 assigned=0-63 running_on=52
+[DRM-pin] pid=202210 tid=202220 assigned=0-63 running_on=3
+[DRM-pin] pid=202210 tid=202242 assigned=0-63 running_on=19
+[DRM-pin] pid=202210 tid=202279 assigned=0-63 running_on=48
+[DRM-pin] pid=202210 tid=202301 assigned=0-63 running_on=1
+[DRM-pin] pid=202210 tid=202299 assigned=0-63 running_on=6
+[DRM-pin] pid=202210 tid=202298 assigned=0-63 running_on=5
+[DRM-pin] pid=202210 tid=202236 assigned=0-63 running_on=27
+[DRM-pin] pid=202210 tid=202234 assigned=0-63 running_on=18
+[DRM-pin] pid=202210 tid=202232 assigned=0-63 running_on=0
+[DRM-pin] pid=202210 tid=202304 assigned=0-63 running_on=57
+[DRM-pin] pid=202210 tid=202230 assigned=0-63 running_on=11
+[DRM-pin] pid=202210 tid=202257 assigned=0-63 running_on=31
+[REGION 1] pthread id: 22875801120576, omp tid: 41/64
+[REGION 1] pthread id: 22872043022656, omp tid: 61/64
+[REGION 1] pthread id: 22874391835328, omp tid: 48/64
+[REGION 1] pthread id: 22873989182400, omp tid: 50/64
+[REGION 1] pthread id: 22876002447040, omp tid: 40/64
+[REGION 1] pthread id: 22880968503488, omp tid: 12/64
+[REGION 1] pthread id: 22878552569792, omp tid: 26/64
+[REGION 1] pthread id: 22881169813568, omp tid: 11/64
+[REGION 1] pthread id: 22881908018624, omp tid: 6/64
+[REGION 1] pthread id: 22880632959296, omp tid: 13/64
+[REGION 1] pthread id: 22878284110016, omp tid: 28/64
+[REGION 1] pthread id: 22876203773504, omp tid: 39/64
+[REGION 1] pthread id: 22879961871168, omp tid: 17/64
+[REGION 1] pthread id: 22873787855936, omp tid: 51/64
+[REGION 1] pthread id: 22879827637312, omp tid: 19/64
+[REGION 1] pthread id: 22871640369728, omp tid: 63/64
+[REGION 1] pthread id: 22874794488256, omp tid: 46/64
+[REGION 1] pthread id: 22881840901696, omp tid: 7/64
+[REGION 1] pthread id: 22878351231040, omp tid: 27/64
+[REGION 1] pthread id: 22881304047424, omp tid: 9/64
+[REGION 1] pthread id: 22879894754240, omp tid: 18/64
+[REGION 1] pthread id: 22881236930496, omp tid: 10/64
+[REGION 1] pthread id: 22872244316352, omp tid: 60/64
+[REGION 1] pthread id: 22877210405824, omp tid: 34/64
+[REGION 1] pthread id: 22874593161792, omp tid: 47/64
+[REGION 1] pthread id: 22882713332672, omp tid: 2/64
+[REGION 1] pthread id: 22882856112960, omp tid: 0/64
+[REGION 1] pthread id: 22877747276224, omp tid: 30/64
+[REGION 1] pthread id: 22875197141184, omp tid: 44/64
+[REGION 1] pthread id: 22877613034176, omp tid: 32/64
+[REGION 1] pthread id: 22872311441472, omp tid: 59/64
+[REGION 1] pthread id: 22880297415360, omp tid: 16/64
+[REGION 1] pthread id: 22881639591616, omp tid: 8/64
+[REGION 1] pthread id: 22878082820416, omp tid: 29/64
+[REGION 1] pthread id: 22879223666112, omp tid: 22/64
+[REGION 1] pthread id: 22877009079360, omp tid: 35/64
+[REGION 1] pthread id: 22879626327232, omp tid: 20/64
+[REGION 1] pthread id: 22880565842368, omp tid: 14/64
+[REGION 1] pthread id: 22882109353280, omp tid: 5/64
+[REGION 1] pthread id: 22872915416768, omp tid: 56/64
+[REGION 1] pthread id: 22876807752896, omp tid: 36/64
+[REGION 1] pthread id: 22875599794112, omp tid: 42/64
+[REGION 1] pthread id: 22871841696192, omp tid: 62/64
+[REGION 1] pthread id: 22875398467648, omp tid: 43/64
+[REGION 1] pthread id: 22878619690816, omp tid: 25/64
+[REGION 1] pthread id: 22872982537792, omp tid: 55/64
+[REGION 1] pthread id: 22873049658816, omp tid: 54/64
+[REGION 1] pthread id: 22880498725440, omp tid: 15/64
+[REGION 1] pthread id: 22882852453184, omp tid: 1/64
+[REGION 1] pthread id: 22874190508864, omp tid: 49/64
+[REGION 1] pthread id: 22874995814720, omp tid: 45/64
+[REGION 1] pthread id: 22879156549184, omp tid: 23/64
+[REGION 1] pthread id: 22873586529472, omp tid: 52/64
+[REGION 1] pthread id: 22877411732288, omp tid: 33/64
+[REGION 1] pthread id: 22877680155200, omp tid: 31/64
+[REGION 1] pthread id: 22876606426432, omp tid: 37/64
+[REGION 1] pthread id: 22872378566592, omp tid: 58/64
+[REGION 1] pthread id: 22882512006208, omp tid: 3/64
+[REGION 1] pthread id: 22882310679744, omp tid: 4/64
+[REGION 1] pthread id: 22876405099968, omp tid: 38/64
+[REGION 1] pthread id: 22872714110784, omp tid: 57/64
+[REGION 1] pthread id: 22873385203008, omp tid: 53/64
+[REGION 1] pthread id: 22879290783040, omp tid: 21/64
+[REGION 1] pthread id: 22878955239104, omp tid: 24/64
+[REGION 2] pthread id: 22882856112960, omp tid: 0/64
+[REGION 2] pthread id: 22881169813568, omp tid: 11/64
+[REGION 2] pthread id: 22879223666112, omp tid: 22/64
+[REGION 2] pthread id: 22873787855936, omp tid: 51/64
+[REGION 2] pthread id: 22876807752896, omp tid: 36/64
+[REGION 2] pthread id: 22876405099968, omp tid: 38/64
+[REGION 2] pthread id: 22878351231040, omp tid: 27/64
+[REGION 2] pthread id: 22874593161792, omp tid: 47/64
+[REGION 2] pthread id: 22873586529472, omp tid: 52/64
+[REGION 2] pthread id: 22881908018624, omp tid: 6/64
+[REGION 2] pthread id: 22879156549184, omp tid: 23/64
+[REGION 2] pthread id: 22881840901696, omp tid: 7/64
+[REGION 2] pthread id: 22878284110016, omp tid: 28/64
+[REGION 2] pthread id: 22876203773504, omp tid: 39/64
+[REGION 2] pthread id: 22882109353280, omp tid: 5/64
+[REGION 2] pthread id: 22882310679744, omp tid: 4/64
+[REGION 2] pthread id: 22874190508864, omp tid: 49/64
+[REGION 2] pthread id: 22877680155200, omp tid: 31/64
+[REGION 2] pthread id: 22878619690816, omp tid: 25/64
+[REGION 2] pthread id: 22879961871168, omp tid: 17/64
+[REGION 2] pthread id: 22878552569792, omp tid: 26/64
+[REGION 2] pthread id: 22875197141184, omp tid: 44/64
+[REGION 2] pthread id: 22881304047424, omp tid: 9/64
+[REGION 2] pthread id: 22877210405824, omp tid: 34/64
+[REGION 2] pthread id: 22880565842368, omp tid: 14/64
+[REGION 2] pthread id: 22873989182400, omp tid: 50/64
+[REGION 2] pthread id: 22882713332672, omp tid: 2/64
+[REGION 2] pthread id: 22879626327232, omp tid: 20/64
+[REGION 2] pthread id: 22872311441472, omp tid: 59/64
+[REGION 2] pthread id: 22878955239104, omp tid: 24/64
+[REGION 2] pthread id: 22877613034176, omp tid: 32/64
+[REGION 2] pthread id: 22879290783040, omp tid: 21/64
+[REGION 2] pthread id: 22876606426432, omp tid: 37/64
+[REGION 2] pthread id: 22877747276224, omp tid: 30/64
+[REGION 2] pthread id: 22882852453184, omp tid: 1/64
+[REGION 2] pthread id: 22880297415360, omp tid: 16/64
+[REGION 2] pthread id: 22874995814720, omp tid: 45/64
+[REGION 2] pthread id: 22874794488256, omp tid: 46/64
+[REGION 2] pthread id: 22877411732288, omp tid: 33/64
+[REGION 2] pthread id: 22881639591616, omp tid: 8/64
+[REGION 2] pthread id: 22876002447040, omp tid: 40/64
+[REGION 2] pthread id: 22875801120576, omp tid: 41/64
+[REGION 2] pthread id: 22873385203008, omp tid: 53/64
+[REGION 2] pthread id: 22875599794112, omp tid: 42/64
+[REGION 2] pthread id: 22879827637312, omp tid: 19/64
+[REGION 2] pthread id: 22871640369728, omp tid: 63/64
+[REGION 2] pthread id: 22874391835328, omp tid: 48/64
+[REGION 2] pthread id: 22871841696192, omp tid: 62/64
+[REGION 2] pthread id: 22872244316352, omp tid: 60/64
+[REGION 2] pthread id: 22877009079360, omp tid: 35/64
+[REGION 2] pthread id: 22872043022656, omp tid: 61/64
+[REGION 2] pthread id: 22873049658816, omp tid: 54/64
+[REGION 2] pthread id: 22882512006208, omp tid: 3/64
+[REGION 2] pthread id: 22879894754240, omp tid: 18/64
+[REGION 2] pthread id: 22875398467648, omp tid: 43/64
+[REGION 2] pthread id: 22872714110784, omp tid: 57/64
+[REGION 2] pthread id: 22872915416768, omp tid: 56/64
+[REGION 2] pthread id: 22872982537792, omp tid: 55/64
+[REGION 2] pthread id: 22880498725440, omp tid: 15/64
+[REGION 2] pthread id: 22880632959296, omp tid: 13/64
+[REGION 2] pthread id: 22880968503488, omp tid: 12/64
+[REGION 2] pthread id: 22872378566592, omp tid: 58/64
+[REGION 2] pthread id: 22881236930496, omp tid: 10/64
+[REGION 2] pthread id: 22878082820416, omp tid: 29/64
+native_threads_end = 64
+ Iterations      =                        2
+ Time in seconds =                     4.09
+ Total threads   =                       64
+ Avail threads   =                       64
+ Mop/s total     =                     0.00
+ Mop/s/thread    =                     0.00
+ Operation type  =           floating point
+done

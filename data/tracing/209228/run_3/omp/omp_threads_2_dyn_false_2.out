@@ -1,0 +1,17 @@
+PID: 200971
+native_threads_start = 1
+OMP: pid 200971 tid 200971 thread 0 bound to OS proc set {0,1}
+OMP: pid 200971 tid 200974 thread 1 bound to OS proc set {0,1}
+[REGION 1] pthread id: 22965201441600, omp tid: 0/2
+[REGION 1] pthread id: 22965197781824, omp tid: 1/2
+[REGION 2] pthread id: 22965201441600, omp tid: 0/2
+[REGION 2] pthread id: 22965197781824, omp tid: 1/2
+native_threads_end = 2
+ Iterations      =                        2
+ Time in seconds =                     4.05
+ Total threads   =                        2
+ Avail threads   =                        2
+ Mop/s total     =                     0.00
+ Mop/s/thread    =                     0.00
+ Operation type  =           floating point
+done

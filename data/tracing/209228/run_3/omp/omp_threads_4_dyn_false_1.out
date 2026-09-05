@@ -1,0 +1,23 @@
+PID: 201067
+native_threads_start = 1
+OMP: pid 201067 tid 201067 thread 0 bound to OS proc set {0-3}
+OMP: pid 201067 tid 201069 thread 1 bound to OS proc set {0-3}
+OMP: pid 201067 tid 201070 thread 2 bound to OS proc set {0-3}
+OMP: pid 201067 tid 201071 thread 3 bound to OS proc set {0-3}
+[REGION 1] pthread id: 23203485838272, omp tid: 2/4
+[REGION 1] pthread id: 23203687172928, omp tid: 1/4
+[REGION 1] pthread id: 23203292376128, omp tid: 3/4
+[REGION 1] pthread id: 23203690832704, omp tid: 0/4
+[REGION 2] pthread id: 23203690832704, omp tid: 0/4
+[REGION 2] pthread id: 23203485838272, omp tid: 2/4
+[REGION 2] pthread id: 23203687172928, omp tid: 1/4
+[REGION 2] pthread id: 23203292376128, omp tid: 3/4
+native_threads_end = 4
+ Iterations      =                        2
+ Time in seconds =                     4.02
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                     0.00
+ Mop/s/thread    =                     0.00
+ Operation type  =           floating point
+done

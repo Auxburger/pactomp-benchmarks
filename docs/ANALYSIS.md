@@ -14,9 +14,9 @@ uv run python src/main.py --png     # also export PNGs next to each HTML (requir
 
 Flags can be combined: `--static --png` exports both. Outputs land in `output/<group>/`.
 
-**Incremental builds**: all three processing stages (aggregated benchmarks, monitoring, staggered) skip regenerating a plot if the output HTML is already newer than every input file. To force a rebuild: touch any input log file (`touch data/staggered/187303/cg_t32_off10_A1.log`) or delete the output directory.
+**Incremental builds**: all three processing stages (aggregated benchmarks, monitoring, staggered) skip regenerating a plot if the output HTML is already newer than every input file. To force a rebuild: touch any input log file (`touch data/staggered/209445/cg_t32_off10_A1.log`) or delete the output directory.
 
-**Thesis figure export**: `export_thesis_figs.py` (at the repository root, not under `src/`) is a separate script that regenerates the thesis-quality PDFs for job 187303 (staggered) and job 172930 (aggregated `dual`) and writes them to `figures/`. It applies thesis styling (legend at bottom, suppressed title, 900×420 px). Run with `uv run python export_thesis_figs.py` (requires Chrome for kaleido rendering — run `uv run plotly_get_chrome` once if missing). Does **not** generate cpu_placement figures — see warning below.
+**Thesis figure export**: `export_thesis_figs.py` (at the repository root, not under `src/`) is a separate script that regenerates the thesis-quality PDFs for job 209445 (staggered) and job 172930 (aggregated `dual`) and writes them to `figures/`. It applies thesis styling (legend at bottom, suppressed title, 900×420 px). Run with `uv run python export_thesis_figs.py` (requires Chrome for kaleido rendering — run `uv run plotly_get_chrome` once if missing). Does **not** generate cpu_placement figures — see warning below.
 
 **Scalability model export**: `export_scalability_model.py` fits the configuration-level Amdahl--Karp--Flatt model over `data/dual` and writes `amdahl_karp_flatt_capacity.pdf` to `figures/` plus two CSVs to `output/model/`. Run with `uv run python export_scalability_model.py` from the repository root. Same thesis styling and TUM colours as above.
 
@@ -99,7 +99,7 @@ standard library.
 | `src/analysis/model/amdahl.py` | Amdahl–Karp–Flatt fit over `dual` (standard library only) |
 | `src/analysis/io.py` | `write_outputs()` — HTML, optionally PDF (`also_static=True`) and/or PNG (`also_png=True`, `scale=2`) |
 | `src/analyze_cpu_util.py` | Entry point for that composite figure — needs the job's `meta.txt` files, optionally `pidstat` and the SLURM log |
-| `export_thesis_figs.py` | Standalone script: thesis-quality PDFs for job 187303 into `figures/` |
+| `export_thesis_figs.py` | Standalone script: thesis-quality PDFs for job 209445 into `figures/` |
 | `export_scalability_model.py` | Standalone script: model CSVs to `output/model/`, `amdahl_karp_flatt_capacity.pdf` to `figures/` |
 
 Both export scripts take their styling from `plots/style.py`, so the thesis
@@ -116,13 +116,13 @@ shared x-axis spike line does the visual alignment instead.
 
 ## Canonical staggered job
 
-**Job 187303** (2026-06-29) is the canonical staggered run: 10 s offset for CG/FT, 5 s for EP, 15 iterations each. Steady-state results (iters 3–13, t=32):
+**Job 209445** (2026-09-04) is the canonical staggered run: 10 s offset for CG/FT, 5 s for EP, 15 iterations each. Steady-state results (iters 3–13, t=32):
 
 | Alg | A (DRM) | B (no DRM) | B/A  | Effect              |
 |-----|---------|------------|------|---------------------|
-| CG  | 7.58 s  | 12.32 s    | 1.62 | DRM saves 38 %      |
-| FT  | 11.36 s | 9.24 s     | 0.81 | DRM 19 % slower (bandwidth pinning) |
-| EP  | 6.66 s  | 3.22 s     | 0.48 | DRM ~2× slower, unstable |
+| CG  | 7.76 s  | 11.69 s    | 1.51 | DRM saves 34 %      |
+| FT  | 11.09 s | 9.76 s     | 0.88 | DRM 12 % slower (bandwidth pinning) |
+| EP  | 14.30 s | 6.88 s     | 0.48 | DRM ~2× slower, high variance |
 
 See `docs/STAGGERED_HANDOVER.md` for full per-job history and interpretation.
 

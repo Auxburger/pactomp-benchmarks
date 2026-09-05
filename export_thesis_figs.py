@@ -1,4 +1,4 @@
-"""Export thesis-quality PDFs for staggered job 187303 and aggregated benchmarks."""
+"""Export thesis-quality PDFs for staggered job 209445 and aggregated benchmarks."""
 from __future__ import annotations
 
 import os
@@ -36,7 +36,7 @@ from analysis.plots.npb import (
 )
 
 REPO_ROOT = Path(__file__).resolve().parent
-JOB_DIR = REPO_ROOT / "data" / "staggered" / "187303"
+JOB_DIR = REPO_ROOT / "data" / "staggered" / "209445"
 
 # Figures are consumed by the thesis repo, which lives outside this one. Point
 # THESIS_FIGURES_DIR at its figures/ directory to write straight into it.

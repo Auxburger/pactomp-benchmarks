@@ -240,3 +240,55 @@ A2's last two iterations return to fast performance as A1 finishes — the DRM a
 | `experiments/test_staggered.sh` | New: staggered-start experiment with per-iteration timing |
 | `experiments/run_staggered.sbatch` | New: SLURM job for staggered experiment |
 | `experiments/build_omp.sh` | Fixed: module load failures silently killed script; added per-step logging |
+
+---
+
+## 8. Tracing Microbenchmark (jobs 209227, 209228, 2026-09-03)
+
+First cluster runs of the `src/harness/tracing/` driver. Both jobs completed
+with empty `.err`. Provenance is recorded in each `manifest.json`: LLVM revision
+`5226a9f` with a clean runtime source tree, the CMake configuration, and SHA256
+plus mtime of `libomp.so` and the coordinator binary.
+
+### 8.1 Grant application (job 209228)
+
+Sweep over `t ∈ {2,4,8,16,32,64}`, two concurrent processes per cell, three runs.
+Cross-referencing `rm.log` grants against the per-region team sizes in the
+`.out` files gives an exact match for **36 of 36** `dyn=true` processes:
+
+| Region | Team size | Why |
+|--------|-----------|-----|
+| 1 | always the full requested `t` | the reply has not arrived at fork time |
+| 2 | exactly the granted value | the grant is applied to the next region |
+
+This is the direct empirical form of the active-team-control claim, and it
+quantifies the documented first-region fallback: the fallback costs exactly one
+region, never more, at every thread count measured.
+
+**Measurement caveat.** The `total_threads` column in `timings.csv` is read from
+the NPB-shaped summary, which `omp_dyn.c` fills from region 1 — the fallback
+region. That column is therefore blind to the grant by construction, and
+`dyn=true` and `dyn=false` look identical in it. The evidence sits in the
+per-region trace inside the `.out` files, not in the CSV.
+
+The coordinator also grants `CPUs 0+0` (no interval) to the second client once
+the first has taken the whole pool. That is the case the `num == 0` guard in
+`__kmp_drm_apply_affinity` exists for.
+
+### 8.2 Worker lifecycle (job 209227)
+
+`--region-sizes 16,4,4`, single process, no DRM, three runs — the reconstruction
+of the historical worker-lifecycle experiment, which survived only as an
+incomplete log without a recorded LLVM revision or build configuration.
+
+Identical in all three runs:
+
+- Region 1 (16 threads) raises the native population from 1 to 16.
+- Regions 2 and 3 (`num_threads(4)`) contain **zero** thread identities not
+  already seen in region 1 — complete reuse.
+- The native population stays at 16 through both smaller regions and until
+  process exit; it never shrinks with the team.
+
+Both the POSIX handle and the Linux thread id are recorded per thread per
+region, so the trace is comparable with libomp's own diagnostic lines, and the
+native count comes from `/proc/self/task` rather than from OpenMP.

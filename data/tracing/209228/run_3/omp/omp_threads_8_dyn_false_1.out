@@ -1,0 +1,35 @@
+PID: 201211
+native_threads_start = 1
+OMP: pid 201211 tid 201219 thread 7 bound to OS proc set {0-7}
+OMP: pid 201211 tid 201214 thread 2 bound to OS proc set {0-7}
+OMP: pid 201211 tid 201211 thread 0 bound to OS proc set {0-7}
+OMP: pid 201211 tid 201213 thread 1 bound to OS proc set {0-7}
+OMP: pid 201211 tid 201215 thread 3 bound to OS proc set {0-7}
+OMP: pid 201211 tid 201218 thread 6 bound to OS proc set {0-7}
+OMP: pid 201211 tid 201216 thread 4 bound to OS proc set {0-7}
+OMP: pid 201211 tid 201217 thread 5 bound to OS proc set {0-7}
+[REGION 1] pthread id: 23432938908736, omp tid: 3/8
+[REGION 1] pthread id: 23432133602880, omp tid: 7/8
+[REGION 1] pthread id: 23433339341632, omp tid: 1/8
+[REGION 1] pthread id: 23432536255808, omp tid: 5/8
+[REGION 1] pthread id: 23433140235200, omp tid: 2/8
+[REGION 1] pthread id: 23432737582272, omp tid: 4/8
+[REGION 1] pthread id: 23432334929344, omp tid: 6/8
+[REGION 1] pthread id: 23433343001408, omp tid: 0/8
+[REGION 2] pthread id: 23433343001408, omp tid: 0/8
+[REGION 2] pthread id: 23432737582272, omp tid: 4/8
+[REGION 2] pthread id: 23433140235200, omp tid: 2/8
+[REGION 2] pthread id: 23432536255808, omp tid: 5/8
+[REGION 2] pthread id: 23432133602880, omp tid: 7/8
+[REGION 2] pthread id: 23432334929344, omp tid: 6/8
+[REGION 2] pthread id: 23433339341632, omp tid: 1/8
+[REGION 2] pthread id: 23432938908736, omp tid: 3/8
+native_threads_end = 8
+ Iterations      =                        2
+ Time in seconds =                     4.05
+ Total threads   =                        8
+ Avail threads   =                        8
+ Mop/s total     =                     0.00
+ Mop/s/thread    =                     0.00
+ Operation type  =           floating point
+done

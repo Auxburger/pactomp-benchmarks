@@ -1,0 +1,107 @@
+PID: 201853
+native_threads_start = 1
+OMP: pid 201853 tid 201853 thread 0 bound to OS proc set {0-31}
+OMP: pid 201853 tid 201869 thread 1 bound to OS proc set {0-31}
+OMP: pid 201853 tid 201871 thread 2 bound to OS proc set {0-31}
+OMP: pid 201853 tid 201872 thread 3 bound to OS proc set {0-31}
+OMP: pid 201853 tid 201877 thread 7 bound to OS proc set {0-31}
+OMP: pid 201853 tid 201876 thread 6 bound to OS proc set {0-31}
+OMP: pid 201853 tid 201873 thread 4 bound to OS proc set {0-31}
+OMP: pid 201853 tid 201875 thread 5 bound to OS proc set {0-31}
+OMP: pid 201853 tid 201883 thread 10 bound to OS proc set {0-31}
+OMP: pid 201853 tid 201885 thread 11 bound to OS proc set {0-31}
+OMP: pid 201853 tid 201893 thread 15 bound to OS proc set {0-31}
+OMP: pid 201853 tid 201886 thread 12 bound to OS proc set {0-31}
+OMP: pid 201853 tid 201895 thread 16 bound to OS proc set {0-31}
+OMP: pid 201853 tid 201891 thread 14 bound to OS proc set {0-31}
+OMP: pid 201853 tid 201903 thread 20 bound to OS proc set {0-31}
+OMP: pid 201853 tid 201908 thread 23 bound to OS proc set {0-31}
+OMP: pid 201853 tid 201905 thread 21 bound to OS proc set {0-31}
+OMP: pid 201853 tid 201879 thread 8 bound to OS proc set {0-31}
+OMP: pid 201853 tid 201913 thread 27 bound to OS proc set {0-31}
+OMP: pid 201853 tid 201907 thread 22 bound to OS proc set {0-31}
+OMP: pid 201853 tid 201880 thread 9 bound to OS proc set {0-31}
+OMP: pid 201853 tid 201914 thread 28 bound to OS proc set {0-31}
+OMP: pid 201853 tid 201915 thread 29 bound to OS proc set {0-31}
+OMP: pid 201853 tid 201916 thread 30 bound to OS proc set {0-31}
+OMP: pid 201853 tid 201917 thread 31 bound to OS proc set {0-31}
+OMP: pid 201853 tid 201899 thread 18 bound to OS proc set {0-31}
+OMP: pid 201853 tid 201901 thread 19 bound to OS proc set {0-31}
+OMP: pid 201853 tid 201912 thread 26 bound to OS proc set {0-31}
+OMP: pid 201853 tid 201909 thread 24 bound to OS proc set {0-31}
+OMP: pid 201853 tid 201911 thread 25 bound to OS proc set {0-31}
+OMP: pid 201853 tid 201889 thread 13 bound to OS proc set {0-31}
+OMP: pid 201853 tid 201897 thread 17 bound to OS proc set {0-31}
+[REGION 1] pthread id: 22653018283072, omp tid: 3/32
+[REGION 1] pthread id: 22650717991616, omp tid: 16/32
+[REGION 1] pthread id: 22649510032832, omp tid: 22/32
+[REGION 1] pthread id: 22651321971008, omp tid: 13/32
+[REGION 1] pthread id: 22649241581248, omp tid: 24/32
+[REGION 1] pthread id: 22651523289280, omp tid: 12/32
+[REGION 1] pthread id: 22649308698176, omp tid: 23/32
+[REGION 1] pthread id: 22649912685760, omp tid: 20/32
+[REGION 1] pthread id: 22653424612160, omp tid: 0/32
+[REGION 1] pthread id: 22651993050944, omp tid: 9/32
+[REGION 1] pthread id: 22649040267072, omp tid: 25/32
+[REGION 1] pthread id: 22650919318080, omp tid: 15/32
+[REGION 1] pthread id: 22651925934016, omp tid: 10/32
+[REGION 1] pthread id: 22650516665152, omp tid: 17/32
+[REGION 1] pthread id: 22649711359296, omp tid: 21/32
+[REGION 1] pthread id: 22653420952384, omp tid: 1/32
+[REGION 1] pthread id: 22650315338688, omp tid: 18/32
+[REGION 1] pthread id: 22651120644544, omp tid: 14/32
+[REGION 1] pthread id: 22651590406208, omp tid: 11/32
+[REGION 1] pthread id: 22653219617728, omp tid: 2/32
+[REGION 1] pthread id: 22648637601856, omp tid: 27/32
+[REGION 1] pthread id: 22648570480832, omp tid: 28/32
+[REGION 1] pthread id: 22648704722880, omp tid: 26/32
+[REGION 1] pthread id: 22652060167872, omp tid: 8/32
+[REGION 1] pthread id: 22648167852480, omp tid: 30/32
+[REGION 1] pthread id: 22647966526016, omp tid: 31/32
+[REGION 1] pthread id: 22650114012224, omp tid: 19/32
+[REGION 1] pthread id: 22648369178944, omp tid: 29/32
+[REGION 1] pthread id: 22652816948416, omp tid: 4/32
+[REGION 1] pthread id: 22652347162176, omp tid: 7/32
+[REGION 1] pthread id: 22652615613760, omp tid: 5/32
+[REGION 1] pthread id: 22652414279104, omp tid: 6/32
+[REGION 2] pthread id: 22650114012224, omp tid: 19/32
+[REGION 2] pthread id: 22653219617728, omp tid: 2/32
+[REGION 2] pthread id: 22648167852480, omp tid: 30/32
+[REGION 2] pthread id: 22651120644544, omp tid: 14/32
+[REGION 2] pthread id: 22651523289280, omp tid: 12/32
+[REGION 2] pthread id: 22651321971008, omp tid: 13/32
+[REGION 2] pthread id: 22652414279104, omp tid: 6/32
+[REGION 2] pthread id: 22649711359296, omp tid: 21/32
+[REGION 2] pthread id: 22650717991616, omp tid: 16/32
+[REGION 2] pthread id: 22650315338688, omp tid: 18/32
+[REGION 2] pthread id: 22650919318080, omp tid: 15/32
+[REGION 2] pthread id: 22651993050944, omp tid: 9/32
+[REGION 2] pthread id: 22648369178944, omp tid: 29/32
+[REGION 2] pthread id: 22648637601856, omp tid: 27/32
+[REGION 2] pthread id: 22649912685760, omp tid: 20/32
+[REGION 2] pthread id: 22648570480832, omp tid: 28/32
+[REGION 2] pthread id: 22649241581248, omp tid: 24/32
+[REGION 2] pthread id: 22653018283072, omp tid: 3/32
+[REGION 2] pthread id: 22649308698176, omp tid: 23/32
+[REGION 2] pthread id: 22647966526016, omp tid: 31/32
+[REGION 2] pthread id: 22653424612160, omp tid: 0/32
+[REGION 2] pthread id: 22649040267072, omp tid: 25/32
+[REGION 2] pthread id: 22652615613760, omp tid: 5/32
+[REGION 2] pthread id: 22651925934016, omp tid: 10/32
+[REGION 2] pthread id: 22648704722880, omp tid: 26/32
+[REGION 2] pthread id: 22652816948416, omp tid: 4/32
+[REGION 2] pthread id: 22652060167872, omp tid: 8/32
+[REGION 2] pthread id: 22649510032832, omp tid: 22/32
+[REGION 2] pthread id: 22653420952384, omp tid: 1/32
+[REGION 2] pthread id: 22651590406208, omp tid: 11/32
+[REGION 2] pthread id: 22650516665152, omp tid: 17/32
+[REGION 2] pthread id: 22652347162176, omp tid: 7/32
+native_threads_end = 32
+ Iterations      =                        2
+ Time in seconds =                     4.09
+ Total threads   =                       32
+ Avail threads   =                       32
+ Mop/s total     =                     0.00
+ Mop/s/thread    =                     0.00
+ Operation type  =           floating point
+done

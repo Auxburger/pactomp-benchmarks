@@ -1,0 +1,74 @@
+PID: 201407
+native_threads_start = 1
+OMP: pid 201407 tid 201418 thread 10 bound to OS proc set {0-15}
+OMP: pid 201407 tid 201407 thread 0 bound to OS proc set {0-15}
+OMP: pid 201407 tid 201423 thread 15 bound to OS proc set {0-15}
+OMP: pid 201407 tid 201420 thread 12 bound to OS proc set {0-15}
+OMP: pid 201407 tid 201413 thread 5 bound to OS proc set {0-15}
+OMP: pid 201407 tid 201416 thread 8 bound to OS proc set {0-15}
+OMP: pid 201407 tid 201409 thread 1 bound to OS proc set {0-15}
+OMP: pid 201407 tid 201410 thread 2 bound to OS proc set {0-15}
+OMP: pid 201407 tid 201411 thread 3 bound to OS proc set {0-15}
+OMP: pid 201407 tid 201422 thread 14 bound to OS proc set {0-15}
+OMP: pid 201407 tid 201412 thread 4 bound to OS proc set {0-15}
+OMP: pid 201407 tid 201419 thread 11 bound to OS proc set {0-15}
+OMP: pid 201407 tid 201415 thread 7 bound to OS proc set {0-15}
+OMP: pid 201407 tid 201421 thread 13 bound to OS proc set {0-15}
+OMP: pid 201407 tid 201414 thread 6 bound to OS proc set {0-15}
+OMP: pid 201407 tid 201417 thread 9 bound to OS proc set {0-15}
+[DRM-pin] pid=201407 tid=201420 assigned=0-15 running_on=13
+[DRM-pin] pid=201407 tid=201409 assigned=0-15 running_on=0
+[DRM-pin] pid=201407 tid=201410 assigned=0-15 running_on=1
+[DRM-pin] pid=201407 tid=201415 assigned=0-15 running_on=9
+[DRM-pin] pid=201407 tid=201412 assigned=0-15 running_on=4
+[DRM-pin] pid=201407 tid=201414 assigned=0-15 running_on=6
+[DRM-pin] pid=201407 tid=201423 assigned=0-15 running_on=5
+[DRM-pin] pid=201407 tid=201413 assigned=0-15 running_on=8
+[DRM-pin] pid=201407 tid=201411 assigned=0-15 running_on=3
+[DRM-pin] pid=201407 tid=201421 assigned=0-15 running_on=14
+[DRM-pin] pid=201407 tid=201422 assigned=0-15 running_on=8
+[DRM-pin] pid=201407 tid=201416 assigned=0-15 running_on=0
+[DRM-pin] pid=201407 tid=201418 assigned=0-15 running_on=2
+[DRM-pin] pid=201407 tid=201419 assigned=0-15 running_on=12
+[DRM-pin] pid=201407 tid=201417 assigned=0-15 running_on=11
+[REGION 1] pthread id: 23332879584576, omp tid: 5/16
+[REGION 1] pthread id: 23333506872128, omp tid: 0/16
+[REGION 1] pthread id: 23332275605184, omp tid: 8/16
+[REGION 1] pthread id: 23333503212352, omp tid: 1/16
+[REGION 1] pthread id: 23332946701504, omp tid: 4/16
+[REGION 1] pthread id: 23332678266304, omp tid: 6/16
+[REGION 1] pthread id: 23332208488256, omp tid: 9/16
+[REGION 1] pthread id: 23332007178176, omp tid: 10/16
+[REGION 1] pthread id: 23331671633984, omp tid: 11/16
+[REGION 1] pthread id: 23331604517056, omp tid: 12/16
+[REGION 1] pthread id: 23333436095424, omp tid: 2/16
+[REGION 1] pthread id: 23331537400128, omp tid: 13/16
+[REGION 1] pthread id: 23333282245696, omp tid: 3/16
+[REGION 1] pthread id: 23331336090048, omp tid: 14/16
+[REGION 1] pthread id: 23331000545856, omp tid: 15/16
+[REGION 1] pthread id: 23332476939840, omp tid: 7/16
+[REGION 2] pthread id: 23333506872128, omp tid: 0/16
+[REGION 2] pthread id: 23331604517056, omp tid: 12/16
+[REGION 2] pthread id: 23333503212352, omp tid: 1/16
+[REGION 2] pthread id: 23333436095424, omp tid: 2/16
+[REGION 2] pthread id: 23332476939840, omp tid: 7/16
+[REGION 2] pthread id: 23332946701504, omp tid: 4/16
+[REGION 2] pthread id: 23332678266304, omp tid: 6/16
+[REGION 2] pthread id: 23331000545856, omp tid: 15/16
+[REGION 2] pthread id: 23332879584576, omp tid: 5/16
+[REGION 2] pthread id: 23333282245696, omp tid: 3/16
+[REGION 2] pthread id: 23331537400128, omp tid: 13/16
+[REGION 2] pthread id: 23331336090048, omp tid: 14/16
+[REGION 2] pthread id: 23332275605184, omp tid: 8/16
+[REGION 2] pthread id: 23332007178176, omp tid: 10/16
+[REGION 2] pthread id: 23331671633984, omp tid: 11/16
+[REGION 2] pthread id: 23332208488256, omp tid: 9/16
+native_threads_end = 16
+ Iterations      =                        2
+ Time in seconds =                     4.05
+ Total threads   =                       16
+ Avail threads   =                       16
+ Mop/s total     =                     0.00
+ Mop/s/thread    =                     0.00
+ Operation type  =           floating point
+done

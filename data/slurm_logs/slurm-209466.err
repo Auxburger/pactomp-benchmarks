@@ -1,0 +1,2 @@
+/var/slurmd-cm4/job209466/slurm_script: line 59: mpstat: command not found
+/var/slurmd-cm4/job209466/slurm_script: line 61: pidstat: command not found

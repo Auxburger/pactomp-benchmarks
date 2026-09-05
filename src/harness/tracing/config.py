@@ -25,6 +25,8 @@ class Config:
     procs: int
     pin: str
     busy_seconds: float
+    region_sizes: "str | None"
+    region_dwell_seconds: float
     settle_seconds: float
     timeout: float
     display_affinity: bool
@@ -84,6 +86,11 @@ def build_parser() -> argparse.ArgumentParser:
                    help="CPU set per cell: first <t> allowed CPUs, all allowed CPUs, or no pinning")
     p.add_argument("--busy-seconds", type=float, default=2.0,
                    help="OMP_DYN_BUSY_SECONDS: busy-loop length per region (default: 2.0)")
+    p.add_argument("--region-sizes", default=None,
+                   help="worker-lifecycle mode: comma-separated team sizes for a region "
+                        "sequence (e.g. 16,4,4). Replaces the two busy regions.")
+    p.add_argument("--region-dwell-seconds", type=float, default=1.0,
+                   help="how long each region of --region-sizes stays active (default: 1.0)")
     p.add_argument("--settle-seconds", type=float, default=5.0, help="pause between cells (default: 5)")
     p.add_argument("--timeout", type=float, default=600.0, help="per-cell timeout in seconds (default: 600)")
 
@@ -133,6 +140,8 @@ def make_config(args: argparse.Namespace) -> Config:
         procs=args.procs,
         pin=args.pin,
         busy_seconds=args.busy_seconds,
+        region_sizes=args.region_sizes,
+        region_dwell_seconds=args.region_dwell_seconds,
         settle_seconds=args.settle_seconds,
         timeout=args.timeout,
         display_affinity=args.display_affinity,

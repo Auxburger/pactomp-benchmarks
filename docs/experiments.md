@@ -38,6 +38,14 @@ data/                             # Messdaten (unveränderlich)
 │   ├── timings.csv               # eine Zeile pro Prozess
 │   ├── manifest.json             # argv, git rev, Compile-Kommando, Quell-Hash
 │   └── rm.log                    # DRM-Log
+├── mix/<JID>/                    # Gemischte Last (Seed-Schedule, zwei Arme)
+│   ├── schedule.json             # gezogener Schedule — mit --schedule wiederholbar
+│   ├── iterations.csv            # eine Zeile pro Benchmark-Prozess, beide Arme
+│   ├── summary.json              # Kennzahlen pro Arm/Job + drm/nodrm-Vergleich
+│   ├── manifest.json             # argv, git rev, Seed, CPU-Layout, Konfiguration
+│   ├── drm/J01_ft.out            # rohes stdout pro Job, ein Block pro Iteration
+│   ├── nodrm/J01_ft.out
+│   └── rm.log                    # DRM-Log (nur Arm drm)
 ├── dual-exclusive/               # Vergleichsläufe auf exklusivem Knoten
 └── slurm_logs/                   # SLURM stdout/stderr Logs
 
@@ -47,6 +55,7 @@ experiments/
 ├── run_staggered.sbatch          # SLURM Job-Skript (gestaffeltes Experiment)
 ├── run_npb_exclusive.sbatch      # SLURM Job-Skript (exklusiver Knoten)
 ├── run_llvm_tracing.sbatch       # SLURM Job-Skript (Tracing-Microbenchmark)
+├── run_mix.sbatch                # SLURM Job-Skript (gemischte Last)
 ├── test_all.sh                   # Haupt-Orchestrierungsskript
 ├── test_staggered.sh             # Gestaffeltes Experiment (A2/B2 mit Zeitversatz)
 ├── test-one.sh                   # Führt einen Benchmark aus (1 Iteration)
@@ -62,15 +71,20 @@ src/harness/                      # läuft auf dem Cluster — nur stdlib, kein 
 ├── cpu_layout.py                 # NUMA-Picker (früher Heredoc in den .sh)
 ├── coordinator.py                # DRM starten/stoppen
 ├── children.py, logging_utils.py, record.py
-└── tracing/                      # Tracing-Microbenchmark + Treiber
-    ├── omp_dyn.c                 # Microbenchmark (zwei parallele Regionen)
-    ├── config.py, build.py, runner.py, record.py, sweep.py
-    └── legacy/                   # die abgelösten Shell-Skripte, zur Referenz
+├── npb_out.py                    # NPB-Zusammenfassungsblock parsen (gemeinsam genutzt)
+├── tracing/                      # Tracing-Microbenchmark + Treiber
+│   ├── omp_dyn.c                 # Microbenchmark (zwei parallele Regionen)
+│   ├── config.py, build.py, runner.py, record.py, sweep.py
+│   └── legacy/                   # die abgelösten Shell-Skripte, zur Referenz
+└── mix/                          # Gemischte Last: Seed-Schedule, zwei Arme
+    ├── schedule.py               # Schedule ziehen/speichern/wiederholen
+    ├── config.py, runner.py, record.py, experiment.py
 
 src/analysis/                     # läuft lokal — datasets/, plots/, reports/, model/
 
 src/main.py                       # Einstiegspunkt: Analyse-Pipeline
 src/run_llvm_tracing.py           # Einstiegspunkt: Tracing-Sweep
+src/run_mix.py                    # Einstiegspunkt: gemischte Last
 src/analyze_cpu_util.py           # Einstiegspunkt: CPU-Auslastungs-Figur
 src/pick_cpus.py                  # Einstiegspunkt: NUMA-Picker für die .sh
 
@@ -112,6 +126,43 @@ Affinität) ohne den Umweg über die NPB-Kernel nachvollziehen. Die
 Ausgabedateien heißen wie die der NPB-Läufe, `src/main.py` erzeugt daraus die
 Gruppe `output/tracing/`.
 
+**Worker-Lifecycle-Modus.** `--region-sizes 16,4,4` ersetzt die beiden
+Busy-Regionen durch eine Folge von Regionen mit den angegebenen Teamgrößen.
+Jeder Thread protokolliert pro Region seine OpenMP-Nummer, sein
+`pthread_self`-Handle *und* seine Linux-Thread-ID; die native Thread-Anzahl des
+Prozesses wird aus `/proc/self/task` vor und nach jeder Region gemessen. Damit
+wird die Beobachtung rekonstruierbar, dass eine spätere kleinere Region die
+Identitäten der früheren größeren wiederverwendet und die native
+Worker-Population dabei nicht schrumpft. Ohne DRM laufen lassen (`--no-drm`),
+sonst überlagert ein Grant die `num_threads`-Klausel.
+
+### `mix` — Gemischte Last (Seed-Schedule)
+
+Mehrere verschiedene NPB-Kernel starten mit zufälligem Offset und laufen für
+ein zufälliges Zeitfenster; jeder Job wiederholt seinen Kernel, bis sein
+Fenster endet. Die Anzahl gleichzeitiger OpenMP-Prozesse steigt und fällt also
+so, wie es auf einem geteilten Knoten tatsächlich passiert.
+
+Alles Zufällige kommt aus `--seed`: Algorithmus, Offset und Fenster jedes Jobs.
+Derselbe Schedule wird zweimal abgespielt — als Arm `drm` mit laufendem
+Koordinator und `OMP_DYNAMIC=true`, als Arm `nodrm` ohne beides:
+
+| | Arm `drm` | Arm `nodrm` |
+|---|---|---|
+| Koordinator | läuft, `POMP_CAPACITY` = CPUs der Domain | wird nicht gestartet |
+| `OMP_DYNAMIC` | `true` → Runtime fragt ihren Anteil an | `false` → jeder Job nimmt alle Threads |
+| Überlastung | keine — Grants summieren sich zur Kapazität | `n_aktiv × threads` auf `domain_cpus` |
+
+Beide Arme laufen auf demselben NUMA-Knoten, nacheinander statt gleichzeitig:
+ein Arm sättigt die Domain schon allein, es bleibt also kein zweiter Knoten
+zum Vergleich im selben Moment. Vergleichbar macht die Arme der Seed, nicht die
+Gleichzeitigkeit — das ist der einzige Unterschied im Aufbau gegenüber `dual`
+und `staggered`.
+
+Kennzahl ist die Zahl abgeschlossener Iterationen pro Job: beide Arme bekommen
+identische Zeitfenster, der Arm mit mehr fertiger Arbeit darin gewinnt
+(`summary.json`, `comparison.iterations_gain_pct`).
+
 ---
 
 ## Jobs ausführen
@@ -126,6 +177,10 @@ sbatch --clusters=cm4 experiments/run_staggered.sbatch
 # Tracing-Microbenchmark (weitere Argumente gehen an run_llvm_tracing.py)
 sbatch --clusters=cm4 experiments/run_llvm_tracing.sbatch
 sbatch --clusters=cm4 experiments/run_llvm_tracing.sbatch --runs 3 --threads 2,4,8,16,32
+
+# Gemischte Last (weitere Argumente gehen an run_mix.py)
+sbatch --clusters=cm4 experiments/run_mix.sbatch
+sbatch --clusters=cm4 experiments/run_mix.sbatch --seed 7 --jobs 8
 
 # Tracing lokal, ohne SLURM
 python3 src/run_llvm_tracing.py --build --out /tmp/tracing --no-drm

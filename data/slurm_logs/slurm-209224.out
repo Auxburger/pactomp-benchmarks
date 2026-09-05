@@ -1,0 +1,13 @@
+/dss/lrzsys/sys/spack/release/24.4.0/opt/x86_64/ninja/1.12.1-gcc-ggmzzs5/bin/ninja
+/dss/lrzsys/sys/spack/release/24.4.0/opt/x86_64/cmake/3.30.0-gcc-jo2m272/bin/cmake
+/dss/lrzsys/sys/spack/release/24.4.0/opt/x86_64/gcc/13.2.0-gcc-j6fttbw/bin/gcc
+/lrz/sys/spack/release/24.4.0/views/python/3.10.12-base/bin/python3
+Cpus_allowed_list: 0-63,112-175
+Running on cm4r13c02s01
+[12:42:23] output dir : /dss/dsshome1/09/ga27qam2/pactomp-benchmarks/data/tracing/209224
+[12:42:23] allowed CPUs: 128 (0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175)
+[12:42:23] threads    : [16]
+[12:42:23] modes      : ['false']
+[12:42:23] runs       : 3   procs/cell: 1   pin: threads
+[12:42:23] DRM        : off
+[12:42:23] compiling: /dss/dsshome1/09/ga27qam2/llvm-project/build/bin/clang -O2 -fopenmp -I /dss/dsshome1/09/ga27qam2/llvm-project/build/projects/openmp/runtime/src -Wl,-rpath,/dss/dsshome1/09/ga27qam2/llvm-project/build/lib /dss/dsshome1/09/ga27qam2/pactomp-benchmarks/src/harness/tracing/omp_dyn.c -o /dss/dsshome1/09/ga27qam2/pactomp-benchmarks/data/tracing/209224/omp

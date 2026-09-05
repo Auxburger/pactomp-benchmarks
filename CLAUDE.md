@@ -23,6 +23,18 @@ Do not leave markdown docs stale after a code or data change.
 Architecture changes and key findings that bear on the thesis narrative belong
 in `THESIS_HANDOVER.md` in the thesis repository, not here.
 
+## Never poll SLURM in a tight loop
+
+LRZ policy forbids high-frequency queries to `squeue` and `sacct`. Their
+guidance is one query per ten minutes, and permanent high-frequency polling
+"may lead to a ban of the user ID". A `sleep 20` wait loop around `squeue` is
+exactly the prohibited pattern, and the account it costs is the user's.
+
+When waiting for a job, either sleep 600 seconds or more between queries, or do
+not poll the queue at all and watch `data/slurm_logs/slurm-<jobid>.out` instead.
+The login nodes are likewise for preparing jobs, compiling and moving data —
+not for running the benchmarks themselves.
+
 ## Measurement data is immutable
 
 `data/` holds retained run outputs. Do not edit, reformat, or
@@ -91,7 +103,8 @@ virtualenv. `src/analysis/` is what reads them, cut by layer:
 `datasets/ → plots/ → reports/`, never backwards, plus `model/` for fits.
 
 Runnable entry points are the scripts directly under `src/`
-(`main.py`, `run_llvm_tracing.py`, `analyze_cpu_util.py`, `pick_cpus.py`);
+(`main.py`, `run_llvm_tracing.py`, `run_mix.py`, `analyze_cpu_util.py`,
+`pick_cpus.py`);
 everything below them is a package. Keep source files under 500 lines.
 
 ## Further guidance

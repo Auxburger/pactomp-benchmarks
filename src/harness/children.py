@@ -32,9 +32,17 @@ def terminate(proc: subprocess.Popen) -> None:
         proc.wait(timeout=5)
 
 
-def install_signal_handlers(log) -> None:
+def install_signal_handlers(log, on_signal=None) -> None:
+    """Terminate every registered child on SIGINT/SIGTERM.
+
+    `on_signal` runs first, for drivers that have their own worker threads to
+    stop before the children go away.
+    """
+
     def handler(signum, _frame):
         log(f"received signal {signum}, terminating {len(CHILDREN)} child process(es)")
+        if on_signal is not None:
+            on_signal()
         for proc in list(CHILDREN):
             try:
                 terminate(proc)

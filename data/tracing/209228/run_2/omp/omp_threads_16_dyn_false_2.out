@@ -1,0 +1,59 @@
+PID: 201362
+native_threads_start = 1
+OMP: pid 201362 tid 201367 thread 3 bound to OS proc set {0-15}
+OMP: pid 201362 tid 201378 thread 10 bound to OS proc set {0-15}
+OMP: pid 201362 tid 201391 thread 15 bound to OS proc set {0-15}
+OMP: pid 201362 tid 201381 thread 12 bound to OS proc set {0-15}
+OMP: pid 201362 tid 201380 thread 11 bound to OS proc set {0-15}
+OMP: pid 201362 tid 201362 thread 0 bound to OS proc set {0-15}
+OMP: pid 201362 tid 201386 thread 14 bound to OS proc set {0-15}
+OMP: pid 201362 tid 201366 thread 2 bound to OS proc set {0-15}
+OMP: pid 201362 tid 201375 thread 8 bound to OS proc set {0-15}
+OMP: pid 201362 tid 201365 thread 1 bound to OS proc set {0-15}
+OMP: pid 201362 tid 201371 thread 6 bound to OS proc set {0-15}
+OMP: pid 201362 tid 201373 thread 7 bound to OS proc set {0-15}
+OMP: pid 201362 tid 201369 thread 4 bound to OS proc set {0-15}
+OMP: pid 201362 tid 201370 thread 5 bound to OS proc set {0-15}
+OMP: pid 201362 tid 201377 thread 9 bound to OS proc set {0-15}
+OMP: pid 201362 tid 201383 thread 13 bound to OS proc set {0-15}
+[REGION 1] pthread id: 23350998986304, omp tid: 7/16
+[REGION 1] pthread id: 23351670074432, omp tid: 3/16
+[REGION 1] pthread id: 23350126563520, omp tid: 12/16
+[REGION 1] pthread id: 23349522592320, omp tid: 15/16
+[REGION 1] pthread id: 23351267413312, omp tid: 5/16
+[REGION 1] pthread id: 23351200296384, omp tid: 6/16
+[REGION 1] pthread id: 23351334530240, omp tid: 4/16
+[REGION 1] pthread id: 23351886832448, omp tid: 0/16
+[REGION 1] pthread id: 23351883172672, omp tid: 1/16
+[REGION 1] pthread id: 23351816055744, omp tid: 2/16
+[REGION 1] pthread id: 23350529208256, omp tid: 10/16
+[REGION 1] pthread id: 23350193680448, omp tid: 11/16
+[REGION 1] pthread id: 23349723918784, omp tid: 14/16
+[REGION 1] pthread id: 23350596325184, omp tid: 9/16
+[REGION 1] pthread id: 23350663442112, omp tid: 8/16
+[REGION 1] pthread id: 23349925245248, omp tid: 13/16
+[REGION 2] pthread id: 23351886832448, omp tid: 0/16
+[REGION 2] pthread id: 23351816055744, omp tid: 2/16
+[REGION 2] pthread id: 23351883172672, omp tid: 1/16
+[REGION 2] pthread id: 23349723918784, omp tid: 14/16
+[REGION 2] pthread id: 23349522592320, omp tid: 15/16
+[REGION 2] pthread id: 23351334530240, omp tid: 4/16
+[REGION 2] pthread id: 23351267413312, omp tid: 5/16
+[REGION 2] pthread id: 23350663442112, omp tid: 8/16
+[REGION 2] pthread id: 23351670074432, omp tid: 3/16
+[REGION 2] pthread id: 23350193680448, omp tid: 11/16
+[REGION 2] pthread id: 23350529208256, omp tid: 10/16
+[REGION 2] pthread id: 23350596325184, omp tid: 9/16
+[REGION 2] pthread id: 23349925245248, omp tid: 13/16
+[REGION 2] pthread id: 23350998986304, omp tid: 7/16
+[REGION 2] pthread id: 23350126563520, omp tid: 12/16
+[REGION 2] pthread id: 23351200296384, omp tid: 6/16
+native_threads_end = 16
+ Iterations      =                        2
+ Time in seconds =                     4.05
+ Total threads   =                       16
+ Avail threads   =                       16
+ Mop/s total     =                     0.00
+ Mop/s/thread    =                     0.00
+ Operation type  =           floating point
+done

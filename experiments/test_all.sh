@@ -66,6 +66,9 @@ META_A="$BASE_OUT/$RUN_TAG/node${NODE_A}"
 META_B="$BASE_OUT/$RUN_TAG/node${NODE_B}"
 mkdir -p "$META_A" "$META_B"
 
+ASSIGN="$BASE_OUT/$RUN_TAG/assignment.csv"
+[[ -f "$ASSIGN" ]] || echo "run,threads,alg,enabled_node,unmanaged_node" > "$ASSIGN"
+
 echo "start $(date) host $(hostname) mask $ALLOWED_RAW" | tee "$META_A/meta.txt" "$META_B/meta.txt" >/dev/null
 
 source ~/.cargo/env
@@ -76,7 +79,7 @@ RM_LOG="$BASE_OUT/$RUN_TAG/rm.log"
 echo "Building DRM at $(date)" >> "$RM_LOG"
 cd "$POMP_DIR"
 cargo build --release >> "$RM_LOG" 2>&1
-cd "$NPB_DIR"
+cd "$REPO_ROOT"
 
 # -------------------------
 # Run loop — t is outermost so DRM capacity and CPU assignments match each thread count.
@@ -95,66 +98,67 @@ for t in "${threads[@]}"; do
   CPU_B_T=$(echo "$CPU_B_LIST" | tr ',' '\n' | head -n "$t" | tr '\n' ',' | sed 's/,$//')
   echo "t=$t | A_pool: [$CPU_A_T] | B_pool: [$CPU_B_T]"
 
-  # Start DRM with:
-  #   POMP_CAPACITY=t   → fair-share grants t/2 threads per client (2 clients)
-  #   POMP_CPU_LIST=... → ordered pool of t A-domain CPUs; DRM assigns disjoint
-  #                      contiguous slices of size t/2 to each process
-  rm -f /tmp/omp-rm.sock
-  echo "Starting DRM at $(date), capacity=$t, cpu_pool=$CPU_A_T, RM_CPU=$RM_CPU" >> "$RM_LOG"
-  POMP_CAPACITY="$t" POMP_CPU_LIST="$CPU_A_T" \
-    stdbuf -oL -eL numactl --cpunodebind="$NODE_A" --membind="$NODE_A" \
-    taskset -c "$RM_CPU" nice -n 15 \
-    "$POMP_BIN" >> "$RM_LOG" 2>&1 &
-  POMP_PID=$!
-  sleep 0.2
-  ps -p "$POMP_PID" -o pid,cmd >> "$RM_LOG" 2>&1 || true
-
   for ((r=1; r<=runs; r++)); do
-    echo "==== t=$t r=$r ====" | tee -a "$META_A/meta.txt" "$META_B/meta.txt" >/dev/null
+    # Alternate which domain hosts the coordinator-enabled pair. The domains are
+    # not symmetric, so a fixed assignment confounds condition with node.
+    if (( r % 2 == 1 )); then
+      ON_NODE="$NODE_A"; ON_CPUS="$CPU_A_T"; ON_META="$META_A"
+      OFF_NODE="$NODE_B"; OFF_CPUS="$CPU_B_T"; OFF_META="$META_B"
+    else
+      ON_NODE="$NODE_B"; ON_CPUS="$CPU_B_T"; ON_META="$META_B"
+      OFF_NODE="$NODE_A"; OFF_CPUS="$CPU_A_T"; OFF_META="$META_A"
+    fi
+
+    # POMP_CPU_LIST follows the enabled domain, so the coordinator restarts per
+    # run rather than per thread count.
+    #   POMP_CAPACITY=t → fair-share grants t/2 threads per client (2 clients)
+    rm -f /tmp/omp-rm.sock
+    echo "Starting DRM at $(date), capacity=$t, cpu_pool=$ON_CPUS, RM_CPU=$RM_CPU" >> "$RM_LOG"
+    POMP_CAPACITY="$t" POMP_CPU_LIST="$ON_CPUS" \
+      stdbuf -oL -eL taskset -c "$RM_CPU" nice -n 15 \
+      "$POMP_BIN" >> "$RM_LOG" 2>&1 &
+    POMP_PID=$!
+    sleep 0.2
+
+    echo "==== t=$t r=$r enabled_node=$ON_NODE ====" | tee -a "$META_A/meta.txt" "$META_B/meta.txt" >/dev/null
 
     for alg in "${algorithms[@]}"; do
       echo "alg=$alg start $(date)" | tee -a "$META_A/meta.txt" "$META_B/meta.txt" >/dev/null
+      echo "$r,$t,$alg,$ON_NODE,$OFF_NODE" >> "$ASSIGN"
 
-      # WorkerA iter 1 — t A-domain CPUs, DRM pins to first t/2
+      # Enabled pair — t CPUs of the enabled domain, DRM pins each to t/2
       ( export OMP_NUM_THREADS="$t"
-        numactl --cpunodebind="$NODE_A" --membind="$NODE_A" \
-          taskset -c "$CPU_A_T" \
-          ./test-one.sh "$alg" "run_${r}" "1" "true" $BASE_OUT "1" \
-          >> "$META_A/${alg}_t${t}.log" 2>&1 ) &
+        taskset -c "$ON_CPUS" \
+          "$EXPERIMENTS_DIR/test-one.sh" "$alg" "run_${r}" "1" "true" $BASE_OUT "1" \
+          >> "$ON_META/${alg}_t${t}.log" 2>&1 ) &
       PID_A1=$!
-      # WorkerA iter 2 — t A-domain CPUs, DRM pins to second t/2
       ( export OMP_NUM_THREADS="$t"
-        numactl --cpunodebind="$NODE_A" --membind="$NODE_A" \
-          taskset -c "$CPU_A_T" \
-          ./test-one.sh "$alg" "run_${r}" "1" "true" $BASE_OUT "2" \
-          >> "$META_A/${alg}_t${t}.log" 2>&1 ) &
+        taskset -c "$ON_CPUS" \
+          "$EXPERIMENTS_DIR/test-one.sh" "$alg" "run_${r}" "1" "true" $BASE_OUT "2" \
+          >> "$ON_META/${alg}_t${t}.log" 2>&1 ) &
       PID_A2=$!
 
-      # WorkerB iter 1 — t B-domain CPUs, no DRM → 2× oversubscribed
+      # Unmanaged pair — t CPUs of the other domain, no DRM → 2× oversubscribed
       ( export OMP_NUM_THREADS="$t"
-        numactl --cpunodebind="$NODE_B" --membind="$NODE_B" \
-          taskset -c "$CPU_B_T" \
-          ./test-one.sh "$alg" "run_${r}" "1" "false" $BASE_OUT "1" \
-          >> "$META_B/${alg}_t${t}.log" 2>&1 ) &
+        taskset -c "$OFF_CPUS" \
+          "$EXPERIMENTS_DIR/test-one.sh" "$alg" "run_${r}" "1" "false" $BASE_OUT "1" \
+          >> "$OFF_META/${alg}_t${t}.log" 2>&1 ) &
       PID_B1=$!
-      # WorkerB iter 2 — t B-domain CPUs, no DRM → 2× oversubscribed
       ( export OMP_NUM_THREADS="$t"
-        numactl --cpunodebind="$NODE_B" --membind="$NODE_B" \
-          taskset -c "$CPU_B_T" \
-          ./test-one.sh "$alg" "run_${r}" "1" "false" $BASE_OUT "2" \
-          >> "$META_B/${alg}_t${t}.log" 2>&1 ) &
+        taskset -c "$OFF_CPUS" \
+          "$EXPERIMENTS_DIR/test-one.sh" "$alg" "run_${r}" "1" "false" $BASE_OUT "2" \
+          >> "$OFF_META/${alg}_t${t}.log" 2>&1 ) &
       PID_B2=$!
 
       wait "$PID_A1" "$PID_A2" "$PID_B1" "$PID_B2"
       sleep 5
     done
-  done
 
-  # Stop DRM before next thread count
-  kill "$POMP_PID" 2>/dev/null || true
-  wait "$POMP_PID" 2>/dev/null || true
-  echo "DRM stopped at $(date), was capacity=$t" >> "$RM_LOG"
-  sleep 1
+    kill "$POMP_PID" 2>/dev/null || true
+    wait "$POMP_PID" 2>/dev/null || true
+    echo "DRM stopped at $(date), was capacity=$t" >> "$RM_LOG"
+    sleep 1
+  done
 done
 
 echo "All done."

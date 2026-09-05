@@ -1,0 +1,63 @@
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - CG Benchmark
+
+ Size:      150000
+ Iterations:                     75
+ Number of available threads:     8
+
+ Initialization time =           1.458 seconds
+
+   iteration           ||r||                 zeta
+        1       0.35330801243554E-12   109.9994423237398
+        5       0.89221968431719E-15    28.6471670038896
+       10       0.91178827044902E-15    28.9496695449000
+       15       0.90732455460746E-15    28.9716336228371
+       20       0.91360473743715E-15    28.9734210663752
+       25       0.90862555504798E-15    28.9735863059386
+       30       0.90805097963086E-15    28.9736033967633
+       35       0.91040617538271E-15    28.9736053266247
+       40       0.90692097369817E-15    28.9736055590700
+       45       0.90772363324937E-15    28.9736055884130
+       50       0.90936465069874E-15    28.9736055922483
+       55       0.90327782315357E-15    28.9736055927634
+       60       0.90885803177089E-15    28.9736055928340
+       65       0.90543885376261E-15    28.9736055928440
+       70       0.90255940711914E-15    28.9736055928452
+       75       0.90227195561330E-15    28.9736055928456
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ Zeta is     0.2897360559285E+02
+ Error is    0.2023213007175E-13
+
+
+ CG Benchmark Completed.
+ Class           =                        C
+ Size            =                   150000
+ Iterations      =                       75
+ Time in seconds =                    13.62
+ Total threads   =                        8
+ Avail threads   =                        8
+ Mop/s total     =                 10525.20
+ Mop/s/thread    =                  1315.65
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              03 Sep 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L$(LLVM_BUILD)/lib -lomp
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

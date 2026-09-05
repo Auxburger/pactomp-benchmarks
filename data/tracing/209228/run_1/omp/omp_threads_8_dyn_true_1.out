@@ -1,0 +1,42 @@
+PID: 201079
+native_threads_start = 1
+OMP: pid 201079 tid 201081 thread 1 bound to OS proc set {0-7}
+OMP: pid 201079 tid 201088 thread 4 bound to OS proc set {0-7}
+OMP: pid 201079 tid 201079 thread 0 bound to OS proc set {0-7}
+OMP: pid 201079 tid 201084 thread 3 bound to OS proc set {0-7}
+OMP: pid 201079 tid 201083 thread 2 bound to OS proc set {0-7}
+OMP: pid 201079 tid 201094 thread 7 bound to OS proc set {0-7}
+OMP: pid 201079 tid 201091 thread 6 bound to OS proc set {0-7}
+OMP: pid 201079 tid 201090 thread 5 bound to OS proc set {0-7}
+[DRM-pin] pid=201079 tid=201081 assigned=0-7 running_on=1
+[DRM-pin] pid=201079 tid=201083 assigned=0-7 running_on=3
+[DRM-pin] pid=201079 tid=201084 assigned=0-7 running_on=4
+[DRM-pin] pid=201079 tid=201088 assigned=0-7 running_on=2
+[DRM-pin] pid=201079 tid=201091 assigned=0-7 running_on=4
+[DRM-pin] pid=201079 tid=201094 assigned=0-7 running_on=2
+[DRM-pin] pid=201079 tid=201090 assigned=0-7 running_on=1
+[REGION 1] pthread id: 23112703740736, omp tid: 1/8
+[REGION 1] pthread id: 23112707400512, omp tid: 0/8
+[REGION 1] pthread id: 23112359865408, omp tid: 3/8
+[REGION 1] pthread id: 23112561191872, omp tid: 2/8
+[REGION 1] pthread id: 23111554559552, omp tid: 7/8
+[REGION 1] pthread id: 23111755886016, omp tid: 6/8
+[REGION 1] pthread id: 23112158538944, omp tid: 4/8
+[REGION 1] pthread id: 23111957212480, omp tid: 5/8
+[REGION 2] pthread id: 23112707400512, omp tid: 0/8
+[REGION 2] pthread id: 23112703740736, omp tid: 1/8
+[REGION 2] pthread id: 23112561191872, omp tid: 2/8
+[REGION 2] pthread id: 23112359865408, omp tid: 3/8
+[REGION 2] pthread id: 23112158538944, omp tid: 4/8
+[REGION 2] pthread id: 23111755886016, omp tid: 6/8
+[REGION 2] pthread id: 23111554559552, omp tid: 7/8
+[REGION 2] pthread id: 23111957212480, omp tid: 5/8
+native_threads_end = 8
+ Iterations      =                        2
+ Time in seconds =                     4.04
+ Total threads   =                        8
+ Avail threads   =                        8
+ Mop/s total     =                     0.00
+ Mop/s/thread    =                     0.00
+ Operation type  =           floating point
+done

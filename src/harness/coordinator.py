@@ -14,14 +14,29 @@ from .logging_utils import fmt_cpus, log, now
 class Coordinator:
     """Start the coordinator with POMP_CAPACITY=<threads> and stop it on exit."""
 
-    def __init__(self, binary: Path, capacity: int, cpus: "list[int]", log_path: Path, socket: Path):
+    def __init__(
+        self,
+        binary: Path,
+        capacity: int,
+        cpus: "list[int]",
+        log_path: Path,
+        socket: Path,
+        pin_cpu: "int | None" = None,
+    ):
         self.binary = binary
         self.capacity = capacity
         self.cpus = cpus
         self.log_path = log_path
         self.socket = socket
+        self.pin_cpu = pin_cpu
         self.proc: "subprocess.Popen | None" = None
         self._log_file = None
+
+    def _child_setup(self) -> None:
+        """Keep the coordinator off the workload's CPUs and out of its way."""
+        if self.pin_cpu is not None:
+            os.sched_setaffinity(0, {self.pin_cpu})
+        os.nice(15)
 
     def __enter__(self) -> "Coordinator":
         if self.socket.exists():
@@ -44,7 +59,7 @@ class Coordinator:
                 env=env,
                 stdout=self._log_file,
                 stderr=subprocess.STDOUT,
-                preexec_fn=lambda: os.nice(15),
+                preexec_fn=self._child_setup,
             )
         )
         self._await_socket()

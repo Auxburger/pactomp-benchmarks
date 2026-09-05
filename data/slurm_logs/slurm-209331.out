@@ -1,0 +1,13 @@
+/dss/lrzsys/sys/spack/release/24.4.0/opt/x86_64/ninja/1.12.1-gcc-ggmzzs5/bin/ninja
+/dss/lrzsys/sys/spack/release/24.4.0/opt/x86_64/cmake/3.30.0-gcc-jo2m272/bin/cmake
+/dss/lrzsys/sys/spack/release/24.4.0/opt/x86_64/gcc/13.2.0-gcc-j6fttbw/bin/gcc
+/lrz/sys/spack/release/24.4.0/views/python/3.10.12-base/bin/python3
+Cpus_allowed_list: 0-88,112-200
+Running on cm4r15c02s07
+RM_CPU=0
+WorkerA: NUMA node 0 CPUs=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32
+WorkerB: NUMA node 1 CPUs=56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87
+t=32 alg=ft iters1=15 iters2=15 offset=10s
+=== Thu Sep  3 15:54:11 CEST 2026 : starting A1 and B1 (15 iters each) ===
+=== sleeping 10s before A2/B2 ===
+=== Thu Sep  3 15:54:21 CEST 2026 : starting A2 and B2 (15 iters each) ===

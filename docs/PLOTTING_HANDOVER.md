@@ -11,7 +11,7 @@ This document tells a plotting agent exactly what data exists, where it lives, h
 Two experiments were run on LRZ CoolMUC-4 (SLURM, cm4 cluster):
 
 - **Main dual experiment** (job 172930, May 2026): Compares DRM thread count coordination vs uncoordinated oversubscription across thread counts t ∈ {2,4,8,16,32} for three benchmarks (FT, CG, EP).
-- **Staggered experiment** (job 187129, June 2026): Shows DRM dynamic rebalancing. A1/B1 start first with full resources; A2/B2 join after 10 seconds. Per-iteration timing logged with epoch timestamps.
+- **Staggered experiment** (job 209445, September 2026): Shows DRM dynamic rebalancing. A1/B1 start first with full resources; A2/B2 join after 10 seconds. Per-iteration timing logged with epoch timestamps.
 
 All measurement paths below are relative to the repository root, under `data/`.
 (They were originally written as absolute paths under the cluster home
@@ -153,7 +153,7 @@ Fields: pid, tid, assigned range (base-top), running_on (CPU at time of pinning 
 - For each unique assigned range, count how many pin events occur
 - Stacked bar or pie chart showing: `1-32` (solo), `1-16` (correct A1), `17-32` (correct A2), other (3-client windows)
 - Shows that the 2-client ideal split dominates, with brief non-ideal windows at iteration boundaries
-- Only use entries from job 187129 (filter by pid ranges from that job, or just use the CG drm logs which have no `0--1` entries)
+- Only use entries from job 209445 (filter by pid ranges from that job, or just use the CG drm logs which have no `0--1` entries)
 
 ---
 

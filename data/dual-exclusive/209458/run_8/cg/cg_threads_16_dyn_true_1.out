@@ -1,0 +1,85 @@
+[DRM-pin] pid=110516 tid=110525 assigned=80-87 running_on=86
+[DRM-pin] pid=110516 tid=110522 assigned=80-87 running_on=82
+[DRM-pin] pid=110516 tid=110523 assigned=80-87 running_on=83
+[DRM-pin] pid=110516 tid=110521 assigned=80-87 running_on=81
+[DRM-pin] pid=110516 tid=110524 assigned=80-87 running_on=85
+[DRM-pin] pid=110516 tid=110520 assigned=80-87 running_on=80
+[DRM-pin] pid=110516 tid=110519 assigned=80-87 running_on=80
+[DRM-pin] pid=110516 tid=110520 assigned=56-71 running_on=59
+[DRM-pin] pid=110516 tid=110519 assigned=56-71 running_on=58
+[DRM-pin] pid=110516 tid=110525 assigned=56-71 running_on=57
+[DRM-pin] pid=110516 tid=110530 assigned=56-71 running_on=63
+[DRM-pin] pid=110516 tid=110534 assigned=56-71 running_on=60
+[DRM-pin] pid=110516 tid=110522 assigned=56-71 running_on=57
+[DRM-pin] pid=110516 tid=110529 assigned=56-71 running_on=61
+[DRM-pin] pid=110516 tid=110521 assigned=56-71 running_on=57
+[DRM-pin] pid=110516 tid=110524 assigned=56-71 running_on=58
+[DRM-pin] pid=110516 tid=110532 assigned=56-71 running_on=62
+[DRM-pin] pid=110516 tid=110523 assigned=56-71 running_on=63
+[DRM-pin] pid=110516 tid=110526 assigned=56-71 running_on=62
+[DRM-pin] pid=110516 tid=110528 assigned=56-71 running_on=66
+[DRM-pin] pid=110516 tid=110527 assigned=56-71 running_on=65
+[DRM-pin] pid=110516 tid=110531 assigned=56-71 running_on=67
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - CG Benchmark
+
+ Size:      150000
+ Iterations:                     75
+ Number of available threads:    16
+
+ Initialization time =           0.939 seconds
+
+   iteration           ||r||                 zeta
+        1       0.35329766820887E-12   109.9994423237398
+        5       0.89283369547230E-15    28.6471670038896
+       10       0.91202546225665E-15    28.9496695449001
+       15       0.90699539688926E-15    28.9716336228370
+       20       0.91472811626738E-15    28.9734210663750
+       25       0.90928561355706E-15    28.9735863059385
+       30       0.90830024092581E-15    28.9736033967630
+       35       0.91095238625481E-15    28.9736053266249
+       40       0.90600597770653E-15    28.9736055590700
+       45       0.91004844095040E-15    28.9736055884129
+       50       0.91047030461171E-15    28.9736055922482
+       55       0.90376461811579E-15    28.9736055927636
+       60       0.90757050094747E-15    28.9736055928341
+       65       0.90776053206693E-15    28.9736055928438
+       70       0.90248405193066E-15    28.9736055928452
+       75       0.90133127912364E-15    28.9736055928454
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ Zeta is     0.2897360559285E+02
+ Error is    0.1483689538595E-13
+
+
+ CG Benchmark Completed.
+ Class           =                        C
+ Size            =                   150000
+ Iterations      =                       75
+ Time in seconds =                     7.15
+ Total threads   =                       16
+ Avail threads   =                       16
+ Mop/s total     =                 20056.16
+ Mop/s/thread    =                  1253.51
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              03 Sep 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L$(LLVM_BUILD)/lib -lomp
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

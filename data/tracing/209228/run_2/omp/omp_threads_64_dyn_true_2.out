@@ -1,0 +1,203 @@
+PID: 202211
+native_threads_start = 1
+OMP: pid 202211 tid 202215 thread 1 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202216 thread 2 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202327 thread 51 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202218 thread 3 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202324 thread 48 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202328 thread 52 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202322 thread 46 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202331 thread 55 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202330 thread 54 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202332 thread 56 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202335 thread 59 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202333 thread 57 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202329 thread 53 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202334 thread 58 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202321 thread 45 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202326 thread 50 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202211 thread 0 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202323 thread 47 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202325 thread 49 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202241 thread 11 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202254 thread 15 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202228 thread 7 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202238 thread 10 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202233 thread 8 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202226 thread 6 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202244 thread 12 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202251 thread 14 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202246 thread 13 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202237 thread 9 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202222 thread 5 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202219 thread 4 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202320 thread 44 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202336 thread 60 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202338 thread 62 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202337 thread 61 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202318 thread 42 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202315 thread 39 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202312 thread 36 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202310 thread 35 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202314 thread 38 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202313 thread 37 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202316 thread 40 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202317 thread 41 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202319 thread 43 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202300 thread 31 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202296 thread 30 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202288 thread 27 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202291 thread 28 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202266 thread 19 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202258 thread 16 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202285 thread 26 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202293 thread 29 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202280 thread 24 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202277 thread 23 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202263 thread 18 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202262 thread 17 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202282 thread 25 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202274 thread 22 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202268 thread 20 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202271 thread 21 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202307 thread 34 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202302 thread 32 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202303 thread 33 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202339 thread 63 bound to OS proc set {0-63}
+[REGION 1] pthread id: 22808625138880, omp tid: 4/64
+[REGION 1] pthread id: 22808222494144, omp tid: 6/64
+[REGION 1] pthread id: 22809051110208, omp tid: 1/64
+[REGION 1] pthread id: 22800102310720, omp tid: 49/64
+[REGION 1] pthread id: 22800035189696, omp tid: 50/64
+[REGION 1] pthread id: 22808021167680, omp tid: 7/64
+[REGION 1] pthread id: 22807618514752, omp tid: 9/64
+[REGION 1] pthread id: 22807819841216, omp tid: 8/64
+[REGION 1] pthread id: 22798021913024, omp tid: 62/64
+[REGION 1] pthread id: 22798089038144, omp tid: 61/64
+[REGION 1] pthread id: 22809054769984, omp tid: 0/64
+[REGION 1] pthread id: 22807551397824, omp tid: 10/64
+[REGION 1] pthread id: 22798156163264, omp tid: 60/64
+[REGION 1] pthread id: 22808692255808, omp tid: 3/64
+[REGION 1] pthread id: 22800169431744, omp tid: 48/64
+[REGION 1] pthread id: 22807215861824, omp tid: 11/64
+[REGION 1] pthread id: 22808983993280, omp tid: 2/64
+[REGION 1] pthread id: 22807148744896, omp tid: 12/64
+[REGION 1] pthread id: 22799162799680, omp tid: 55/64
+[REGION 1] pthread id: 22799431222592, omp tid: 53/64
+[REGION 1] pthread id: 22799364101568, omp tid: 54/64
+[REGION 1] pthread id: 22806947426624, omp tid: 13/64
+[REGION 1] pthread id: 22806746100160, omp tid: 14/64
+[REGION 1] pthread id: 22808423820608, omp tid: 5/64
+[REGION 1] pthread id: 22806544773696, omp tid: 15/64
+[REGION 1] pthread id: 22799833887808, omp tid: 51/64
+[REGION 1] pthread id: 22806343447232, omp tid: 16/64
+[REGION 1] pthread id: 22806075003840, omp tid: 18/64
+[REGION 1] pthread id: 22797820619328, omp tid: 63/64
+[REGION 1] pthread id: 22805873685568, omp tid: 19/64
+[REGION 1] pthread id: 22805068379712, omp tid: 23/64
+[REGION 1] pthread id: 22804061743296, omp tid: 28/64
+[REGION 1] pthread id: 22805471032640, omp tid: 21/64
+[REGION 1] pthread id: 22804263069760, omp tid: 27/64
+[REGION 1] pthread id: 22804867053248, omp tid: 24/64
+[REGION 1] pthread id: 22798491707456, omp tid: 59/64
+[REGION 1] pthread id: 22798693005248, omp tid: 58/64
+[REGION 1] pthread id: 22805672359104, omp tid: 20/64
+[REGION 1] pthread id: 22804464396224, omp tid: 26/64
+[REGION 1] pthread id: 22798760130368, omp tid: 57/64
+[REGION 1] pthread id: 22806142120768, omp tid: 17/64
+[REGION 1] pthread id: 22804665722688, omp tid: 25/64
+[REGION 1] pthread id: 22798827255488, omp tid: 56/64
+[REGION 1] pthread id: 22805269706176, omp tid: 22/64
+[REGION 1] pthread id: 22803323546176, omp tid: 31/64
+[REGION 1] pthread id: 22803659090368, omp tid: 30/64
+[REGION 1] pthread id: 22799498343616, omp tid: 52/64
+[REGION 1] pthread id: 22803256425152, omp tid: 32/64
+[REGION 1] pthread id: 22802786675776, omp tid: 35/64
+[REGION 1] pthread id: 22801377390528, omp tid: 42/64
+[REGION 1] pthread id: 22801780043456, omp tid: 40/64
+[REGION 1] pthread id: 22800840519872, omp tid: 44/64
+[REGION 1] pthread id: 22802988002240, omp tid: 34/64
+[REGION 1] pthread id: 22803189304128, omp tid: 33/64
+[REGION 1] pthread id: 22803860416832, omp tid: 29/64
+[REGION 1] pthread id: 22801578716992, omp tid: 41/64
+[REGION 1] pthread id: 22802384022848, omp tid: 37/64
+[REGION 1] pthread id: 22802585349312, omp tid: 36/64
+[REGION 1] pthread id: 22801981369920, omp tid: 39/64
+[REGION 1] pthread id: 22800773398848, omp tid: 45/64
+[REGION 1] pthread id: 22802182696384, omp tid: 38/64
+[REGION 1] pthread id: 22800504975936, omp tid: 47/64
+[REGION 1] pthread id: 22800706277824, omp tid: 46/64
+[REGION 1] pthread id: 22801176064064, omp tid: 43/64
+OMP: pid 202211 tid 202241 thread 11 bound to OS proc set {0-63}
+[REGION 2] pthread id: 22807215861824, omp tid: 11/32
+OMP: pid 202211 tid 202237 thread 9 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202238 thread 10 bound to OS proc set {0-63}
+[REGION 2] pthread id: 22807618514752, omp tid: 9/32
+[REGION 2] pthread id: 22807551397824, omp tid: 10/32
+OMP: pid 202211 tid 202211 thread 0 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202218 thread 3 bound to OS proc set {0-63}
+[REGION 2] pthread id: 22808692255808, omp tid: 3/32
+OMP: pid 202211 tid 202215 thread 1 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202288 thread 27 bound to OS proc set {0-63}
+[REGION 2] pthread id: 22804263069760, omp tid: 27/32
+OMP: pid 202211 tid 202291 thread 28 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202263 thread 18 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202282 thread 25 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202271 thread 21 bound to OS proc set {0-63}
+[REGION 2] pthread id: 22804665722688, omp tid: 25/32
+[REGION 2] pthread id: 22809051110208, omp tid: 1/32
+[REGION 2] pthread id: 22806075003840, omp tid: 18/32
+[REGION 2] pthread id: 22804061743296, omp tid: 28/32
+[REGION 2] pthread id: 22805471032640, omp tid: 21/32
+OMP: pid 202211 tid 202300 thread 31 bound to OS proc set {0-63}
+[REGION 2] pthread id: 22803323546176, omp tid: 31/32
+OMP: pid 202211 tid 202268 thread 20 bound to OS proc set {0-63}
+[REGION 2] pthread id: 22805672359104, omp tid: 20/32
+OMP: pid 202211 tid 202233 thread 8 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202280 thread 24 bound to OS proc set {0-63}
+[REGION 2] pthread id: 22804867053248, omp tid: 24/32
+[REGION 2] pthread id: 22807819841216, omp tid: 8/32
+OMP: pid 202211 tid 202258 thread 16 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202293 thread 29 bound to OS proc set {0-63}
+[REGION 2] pthread id: 22806343447232, omp tid: 16/32
+OMP: pid 202211 tid 202266 thread 19 bound to OS proc set {0-63}
+[REGION 2] pthread id: 22803860416832, omp tid: 29/32
+OMP: pid 202211 tid 202262 thread 17 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202296 thread 30 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202277 thread 23 bound to OS proc set {0-63}
+[REGION 2] pthread id: 22805068379712, omp tid: 23/32
+[REGION 2] pthread id: 22803659090368, omp tid: 30/32
+[REGION 2] pthread id: 22806142120768, omp tid: 17/32
+OMP: pid 202211 tid 202228 thread 7 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202226 thread 6 bound to OS proc set {0-63}
+[REGION 2] pthread id: 22808021167680, omp tid: 7/32
+[REGION 2] pthread id: 22808222494144, omp tid: 6/32
+OMP: pid 202211 tid 202219 thread 4 bound to OS proc set {0-63}
+[REGION 2] pthread id: 22809054769984, omp tid: 0/32
+OMP: pid 202211 tid 202216 thread 2 bound to OS proc set {0-63}
+[REGION 2] pthread id: 22808983993280, omp tid: 2/32
+[REGION 2] pthread id: 22808625138880, omp tid: 4/32
+[REGION 2] pthread id: 22805873685568, omp tid: 19/32
+OMP: pid 202211 tid 202244 thread 12 bound to OS proc set {0-63}
+[REGION 2] pthread id: 22807148744896, omp tid: 12/32
+OMP: pid 202211 tid 202246 thread 13 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202251 thread 14 bound to OS proc set {0-63}
+[REGION 2] pthread id: 22806947426624, omp tid: 13/32
+OMP: pid 202211 tid 202285 thread 26 bound to OS proc set {0-63}
+[REGION 2] pthread id: 22804464396224, omp tid: 26/32
+[REGION 2] pthread id: 22806746100160, omp tid: 14/32
+OMP: pid 202211 tid 202222 thread 5 bound to OS proc set {0-63}
+[REGION 2] pthread id: 22808423820608, omp tid: 5/32
+OMP: pid 202211 tid 202254 thread 15 bound to OS proc set {0-63}
+OMP: pid 202211 tid 202274 thread 22 bound to OS proc set {0-63}
+[REGION 2] pthread id: 22805269706176, omp tid: 22/32
+[REGION 2] pthread id: 22806544773696, omp tid: 15/32
+native_threads_end = 64
+ Iterations      =                        2
+ Time in seconds =                     4.18
+ Total threads   =                       64
+ Avail threads   =                       64
+ Mop/s total     =                     0.00
+ Mop/s/thread    =                     0.00
+ Operation type  =           floating point
+done

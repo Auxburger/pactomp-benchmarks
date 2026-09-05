@@ -1,0 +1,232 @@
+/dss/lrzsys/sys/spack/release/24.4.0/opt/x86_64/ninja/1.12.1-gcc-ggmzzs5/bin/ninja
+/dss/lrzsys/sys/spack/release/24.4.0/opt/x86_64/cmake/3.30.0-gcc-jo2m272/bin/cmake
+/dss/lrzsys/sys/spack/release/24.4.0/opt/x86_64/gcc/13.2.0-gcc-j6fttbw/bin/gcc
+/lrz/sys/spack/release/24.4.0/views/python/3.10.12-base/bin/python3
+Cpus_allowed_list: 0-88,112-200
+Running on cm4r15c01s08
+[03:25:09] output dir  : /dss/dsshome1/09/ga27qam2/pactomp-benchmarks/data/mix/209466
+[03:25:09] workload    : 32 CPUs (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32), coordinator on CPU 0
+[03:25:09] arms        : drm, nodrm × 3 repeats, alternating
+[03:25:09] seed        : 16   jobs: 6   span: 106.8s
+[03:25:09]   job        alg    start   until  window threads
+[03:25:09]   J01_ft     ft       0.0    48.1    48.1      32
+[03:25:09]   J02_ep     ep       9.0    86.4    77.4      32
+[03:25:09]   J03_ft     ft      13.1    67.7    54.6      32
+[03:25:09]   J04_cg     cg      13.8    60.9    47.1      32
+[03:25:09]   J05_cg     cg      19.7   106.8    87.1      32
+[03:25:09]   J06_ep     ep      21.0    65.3    44.3      32
+[03:25:09] === repeat 1/3: drm then nodrm ===
+[03:25:09] DRM up: capacity=32 cpu_pool=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32
+[03:25:09] === arm drm (repeat 1): 6 jobs on CPUs 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32 ===
+[03:25:09] drm: J01_ft joins (alg=ft window=48.1s)
+[03:25:14] drm: J01_ft iter=1 4683ms tis=4.24 threads=32/32
+[03:25:18] drm: J02_ep joins (alg=ep window=77.4s)
+[03:25:22] drm: J03_ft joins (alg=ft window=54.6s)
+[03:25:23] drm: J04_cg joins (alg=cg window=47.1s)
+[03:25:24] drm: J01_ft iter=2 10083ms tis=9.31 threads=10/32
+[03:25:29] drm: J05_cg joins (alg=cg window=87.1s)
+[03:25:30] drm: J06_ep joins (alg=ep window=44.3s)
+[03:25:37] drm: J02_ep iter=1 19352ms tis=19.21 threads=10/32
+[03:25:44] drm: J03_ft iter=1 21806ms tis=19.87 threads=8/32
+[03:25:46] drm: J04_cg iter=1 23206ms tis=21.46 threads=6/32
+[03:25:51] drm: J01_ft iter=3 26161ms tis=23.91 threads=8/32
+[03:25:58] drm: J05_cg iter=1 29012ms tis=26.55 threads=8/32
+[03:26:06] drm: J03_ft iter=2 21854ms tis=18.62 threads=8/32
+[03:26:07] drm: J04_cg iter=2 20850ms tis=18.39 threads=6/32
+[03:26:16] drm: J01_ft iter=4 24865ms tis=21.42 threads=8/32
+[03:26:16] drm: J01_ft done after 4 iteration(s)
+[03:26:18] drm: J06_ep iter=1 48252ms tis=48.1 threads=6/32
+[03:26:18] drm: J06_ep done after 1 iteration(s)
+[03:26:19] drm: J05_cg iter=2 20799ms tis=18.88 threads=8/32
+[03:26:25] drm: J03_ft iter=3 18300ms tis=15.83 threads=10/32
+[03:26:25] drm: J03_ft done after 3 iteration(s)
+[03:26:28] drm: J04_cg iter=3 20248ms tis=17.97 threads=10/32
+[03:26:28] drm: J04_cg done after 3 iteration(s)
+[03:26:29] drm: J02_ep iter=2 51307ms tis=51.19 threads=5/32
+[03:26:37] drm: J05_cg iter=3 17193ms tis=15.69 threads=32/32
+[03:26:47] drm: J02_ep iter=3 17294ms tis=17.18 threads=8/32
+[03:26:47] drm: J02_ep done after 3 iteration(s)
+[03:26:48] drm: J05_cg iter=4 11034ms tis=10.07 threads=16/32
+[03:26:54] drm: J05_cg iter=5 5675ms tis=4.94 threads=32/32
+[03:26:59] drm: J05_cg iter=6 4323ms tis=3.79 threads=32/32
+[03:26:59] drm: J05_cg done after 6 iteration(s)
+[03:26:59] === arm drm (repeat 1) finished: 20 iterations in 110.2s ===
+[03:26:59] settling 10s before arm nodrm
+[03:27:09] === arm nodrm (repeat 1): 6 jobs on CPUs 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32 ===
+[03:27:09] nodrm: J01_ft joins (alg=ft window=48.1s)
+[03:27:14] nodrm: J01_ft iter=1 4578ms tis=4.24 threads=32/32
+[03:27:18] nodrm: J02_ep joins (alg=ep window=77.4s)
+[03:27:20] nodrm: J01_ft iter=2 5576ms tis=5.21 threads=32/32
+[03:27:22] nodrm: J03_ft joins (alg=ft window=54.6s)
+[03:27:23] nodrm: J04_cg joins (alg=cg window=47.1s)
+[03:27:28] nodrm: J02_ep iter=1 9736ms tis=9.55 threads=32/32
+[03:27:29] nodrm: J05_cg joins (alg=cg window=87.1s)
+[03:27:30] nodrm: J06_ep joins (alg=ep window=44.3s)
+[03:27:45] nodrm: J01_ft iter=3 24257ms tis=23.45 threads=32/32
+[03:27:47] nodrm: J03_ft iter=1 24959ms tis=23.81 threads=32/32
+[03:27:52] nodrm: J06_ep iter=1 21603ms tis=21.39 threads=32/32
+[03:27:53] nodrm: J02_ep iter=2 25107ms tis=24.95 threads=32/32
+[03:28:13] nodrm: J01_ft iter=4 27611ms tis=25.74 threads=32/32
+[03:28:13] nodrm: J01_ft done after 4 iteration(s)
+[03:28:15] nodrm: J03_ft iter=2 26862ms tis=24.85 threads=32/32
+[03:28:15] nodrm: J06_ep iter=2 22803ms tis=22.63 threads=32/32
+[03:28:15] nodrm: J06_ep done after 2 iteration(s)
+[03:28:16] nodrm: J02_ep iter=3 22402ms tis=22.18 threads=32/32
+[03:28:35] nodrm: J03_ft iter=3 19599ms tis=18.43 threads=32/32
+[03:28:35] nodrm: J03_ft done after 3 iteration(s)
+[03:28:35] nodrm: J02_ep iter=4 17896ms tis=17.74 threads=32/32
+[03:28:47] nodrm: J02_ep iter=5 11285ms tis=11.17 threads=32/32
+[03:28:47] nodrm: J02_ep done after 5 iteration(s)
+[03:28:47] nodrm: J05_cg iter=1 78393ms tis=73.85 threads=32/32
+[03:28:47] nodrm: J04_cg iter=1 84559ms tis=80.69 threads=32/32
+[03:28:47] nodrm: J04_cg done after 1 iteration(s)
+[03:28:52] nodrm: J05_cg iter=2 4073ms tis=3.58 threads=32/32
+[03:28:57] nodrm: J05_cg iter=3 4223ms tis=3.7 threads=32/32
+[03:28:57] nodrm: J05_cg done after 3 iteration(s)
+[03:28:57] === arm nodrm (repeat 1) finished: 18 iterations in 107.4s ===
+[03:28:57] === repeat 2/3: nodrm then drm ===
+[03:28:57] settling 10s before arm nodrm
+[03:29:07] === arm nodrm (repeat 2): 6 jobs on CPUs 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32 ===
+[03:29:07] nodrm: J01_ft joins (alg=ft window=48.1s)
+[03:29:11] nodrm: J01_ft iter=1 4578ms tis=4.22 threads=32/32
+[03:29:16] nodrm: J02_ep joins (alg=ep window=77.4s)
+[03:29:17] nodrm: J01_ft iter=2 5526ms tis=5.14 threads=32/32
+[03:29:20] nodrm: J03_ft joins (alg=ft window=54.6s)
+[03:29:20] nodrm: J04_cg joins (alg=cg window=47.1s)
+[03:29:26] nodrm: J02_ep iter=1 10287ms tis=10.12 threads=32/32
+[03:29:26] nodrm: J05_cg joins (alg=cg window=87.1s)
+[03:29:28] nodrm: J06_ep joins (alg=ep window=44.3s)
+[03:29:40] nodrm: J01_ft iter=3 22304ms tis=21.55 threads=32/32
+[03:29:44] nodrm: J03_ft iter=1 24707ms tis=23.5 threads=32/32
+[03:29:49] nodrm: J02_ep iter=2 23154ms tis=22.98 threads=32/32
+[03:29:51] nodrm: J06_ep iter=1 22956ms tis=22.76 threads=32/32
+[03:30:09] nodrm: J01_ft iter=4 28362ms tis=26.33 threads=32/32
+[03:30:09] nodrm: J01_ft done after 4 iteration(s)
+[03:30:10] nodrm: J03_ft iter=2 24956ms tis=23.11 threads=32/32
+[03:30:12] nodrm: J02_ep iter=3 21654ms tis=21.48 threads=32/32
+[03:30:13] nodrm: J06_ep iter=2 22152ms tis=22.01 threads=32/32
+[03:30:13] nodrm: J06_ep done after 2 iteration(s)
+[03:30:30] nodrm: J02_ep iter=4 17747ms tis=17.55 threads=32/32
+[03:30:30] nodrm: J03_ft iter=3 19948ms tis=18.2 threads=32/32
+[03:30:30] nodrm: J03_ft done after 3 iteration(s)
+[03:30:42] nodrm: J02_ep iter=5 11283ms tis=11.17 threads=32/32
+[03:30:42] nodrm: J02_ep done after 5 iteration(s)
+[03:30:44] nodrm: J05_cg iter=1 78239ms tis=73.92 threads=32/32
+[03:30:45] nodrm: J04_cg iter=1 84259ms tis=79.81 threads=32/32
+[03:30:45] nodrm: J04_cg done after 1 iteration(s)
+[03:30:49] nodrm: J05_cg iter=2 4373ms tis=3.87 threads=32/32
+[03:30:54] nodrm: J05_cg iter=3 4122ms tis=3.62 threads=32/32
+[03:30:54] nodrm: J05_cg done after 3 iteration(s)
+[03:30:54] === arm nodrm (repeat 2) finished: 18 iterations in 107.4s ===
+[03:30:54] settling 10s before arm drm
+[03:31:04] DRM up: capacity=32 cpu_pool=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32
+[03:31:04] === arm drm (repeat 2): 6 jobs on CPUs 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32 ===
+[03:31:04] drm: J01_ft joins (alg=ft window=48.1s)
+[03:31:09] drm: J01_ft iter=1 4579ms tis=4.25 threads=32/32
+[03:31:13] drm: J02_ep joins (alg=ep window=77.4s)
+[03:31:17] drm: J03_ft joins (alg=ft window=54.6s)
+[03:31:18] drm: J04_cg joins (alg=cg window=47.1s)
+[03:31:19] drm: J01_ft iter=2 9532ms tis=8.86 threads=10/32
+[03:31:24] drm: J05_cg joins (alg=cg window=87.1s)
+[03:31:25] drm: J06_ep joins (alg=ep window=44.3s)
+[03:31:32] drm: J02_ep iter=1 18499ms tis=18.4 threads=10/32
+[03:31:40] drm: J03_ft iter=1 22608ms tis=20.71 threads=8/32
+[03:31:40] drm: J04_cg iter=1 22357ms tis=20.51 threads=8/32
+[03:31:44] drm: J01_ft iter=3 24658ms tis=22.77 threads=6/32
+[03:31:53] drm: J05_cg iter=1 29313ms tis=27.25 threads=8/32
+[03:31:59] drm: J03_ft iter=2 19000ms tis=16.83 threads=8/32
+[03:32:00] drm: J04_cg iter=2 19752ms tis=17.6 threads=6/32
+[03:32:09] drm: J01_ft iter=4 25160ms tis=22.33 threads=8/32
+[03:32:09] drm: J01_ft done after 4 iteration(s)
+[03:32:13] drm: J06_ep iter=1 47748ms tis=47.61 threads=6/32
+[03:32:13] drm: J06_ep done after 1 iteration(s)
+[03:32:16] drm: J05_cg iter=2 22652ms tis=20.5 threads=8/32
+[03:32:19] drm: J03_ft iter=3 19701ms tis=17.04 threads=10/32
+[03:32:19] drm: J03_ft done after 3 iteration(s)
+[03:32:21] drm: J02_ep iter=2 49051ms tis=48.91 threads=5/32
+[03:32:26] drm: J04_cg iter=3 25111ms tis=23.18 threads=8/32
+[03:32:26] drm: J04_cg done after 3 iteration(s)
+[03:32:32] drm: J05_cg iter=3 15591ms tis=14.19 threads=32/32
+[03:32:44] drm: J05_cg iter=4 11684ms tis=10.83 threads=16/32
+[03:32:44] drm: J02_ep iter=3 22904ms tis=22.79 threads=6/32
+[03:32:44] drm: J02_ep done after 3 iteration(s)
+[03:32:51] drm: J05_cg iter=5 6126ms tis=5.42 threads=32/32
+[03:32:51] drm: J05_cg done after 5 iteration(s)
+[03:32:51] === arm drm (repeat 2) finished: 19 iterations in 107.1s ===
+[03:32:51] === repeat 3/3: drm then nodrm ===
+[03:32:51] settling 10s before arm drm
+[03:33:01] DRM up: capacity=32 cpu_pool=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32
+[03:33:01] === arm drm (repeat 3): 6 jobs on CPUs 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32 ===
+[03:33:01] drm: J01_ft joins (alg=ft window=48.1s)
+[03:33:06] drm: J01_ft iter=1 4629ms tis=4.28 threads=32/32
+[03:33:10] drm: J02_ep joins (alg=ep window=77.4s)
+[03:33:14] drm: J03_ft joins (alg=ft window=54.6s)
+[03:33:15] drm: J04_cg joins (alg=cg window=47.1s)
+[03:33:16] drm: J01_ft iter=2 10083ms tis=9.28 threads=10/32
+[03:33:21] drm: J05_cg joins (alg=cg window=87.1s)
+[03:33:22] drm: J06_ep joins (alg=ep window=44.3s)
+[03:33:29] drm: J02_ep iter=1 18953ms tis=18.86 threads=10/32
+[03:33:36] drm: J03_ft iter=1 22002ms tis=20.1 threads=8/32
+[03:33:38] drm: J04_cg iter=1 23459ms tis=21.76 threads=6/32
+[03:33:42] drm: J01_ft iter=3 25409ms tis=23.4 threads=8/32
+[03:33:50] drm: J05_cg iter=1 28812ms tis=26.34 threads=8/32
+[03:33:58] drm: J04_cg iter=2 18798ms tis=16.52 threads=8/32
+[03:33:59] drm: J03_ft iter=2 22153ms tis=18.43 threads=8/32
+[03:34:08] drm: J01_ft iter=4 25005ms tis=21.59 threads=8/32
+[03:34:08] drm: J01_ft done after 4 iteration(s)
+[03:34:10] drm: J06_ep iter=1 48193ms tis=48.03 threads=6/32
+[03:34:10] drm: J06_ep done after 1 iteration(s)
+[03:34:13] drm: J04_cg iter=3 15040ms tis=12.84 threads=10/32
+[03:34:13] drm: J04_cg done after 3 iteration(s)
+[03:34:13] drm: J05_cg iter=2 23202ms tis=21.06 threads=16/32
+[03:34:20] drm: J03_ft iter=3 20598ms tis=16.99 threads=16/32
+[03:34:20] drm: J03_ft done after 3 iteration(s)
+[03:34:24] drm: J02_ep iter=2 54705ms tis=54.53 threads=5/32
+[03:34:28] drm: J05_cg iter=3 13987ms tis=12.58 threads=10/32
+[03:34:40] drm: J05_cg iter=4 11184ms tis=9.81 threads=32/32
+[03:34:43] drm: J02_ep iter=3 18245ms tis=18.2 threads=8/32
+[03:34:43] drm: J02_ep done after 3 iteration(s)
+[03:34:47] drm: J05_cg iter=5 7127ms tis=6.17 threads=16/32
+[03:34:52] drm: J05_cg iter=6 4423ms tis=3.63 threads=32/32
+[03:34:52] drm: J05_cg done after 6 iteration(s)
+[03:34:52] === arm drm (repeat 3) finished: 20 iterations in 110.9s ===
+[03:34:52] settling 10s before arm nodrm
+[03:35:02] === arm nodrm (repeat 3): 6 jobs on CPUs 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32 ===
+[03:35:02] nodrm: J01_ft joins (alg=ft window=48.1s)
+[03:35:07] nodrm: J01_ft iter=1 4629ms tis=4.26 threads=32/32
+[03:35:11] nodrm: J02_ep joins (alg=ep window=77.4s)
+[03:35:13] nodrm: J01_ft iter=2 5576ms tis=5.23 threads=32/32
+[03:35:15] nodrm: J03_ft joins (alg=ft window=54.6s)
+[03:35:16] nodrm: J04_cg joins (alg=cg window=47.1s)
+[03:35:22] nodrm: J02_ep iter=1 10437ms tis=10.23 threads=32/32
+[03:35:22] nodrm: J05_cg joins (alg=cg window=87.1s)
+[03:35:23] nodrm: J06_ep joins (alg=ep window=44.3s)
+[03:35:36] nodrm: J01_ft iter=3 22604ms tis=21.77 threads=32/32
+[03:35:39] nodrm: J03_ft iter=1 24259ms tis=23.08 threads=32/32
+[03:35:43] nodrm: J02_ep iter=2 21151ms tis=20.95 threads=32/32
+[03:35:45] nodrm: J06_ep iter=1 22004ms tis=21.71 threads=32/32
+[03:36:02] nodrm: J01_ft iter=4 25661ms tis=24.03 threads=32/32
+[03:36:02] nodrm: J01_ft done after 4 iteration(s)
+[03:36:06] nodrm: J02_ep iter=3 21901ms tis=21.69 threads=32/32
+[03:36:06] nodrm: J03_ft iter=2 25761ms tis=23.8 threads=32/32
+[03:36:09] nodrm: J06_ep iter=2 23107ms tis=22.87 threads=32/32
+[03:36:09] nodrm: J06_ep done after 2 iteration(s)
+[03:36:26] nodrm: J02_ep iter=4 20298ms tis=20.16 threads=32/32
+[03:36:29] nodrm: J03_ft iter=3 22400ms tis=20.49 threads=32/32
+[03:36:29] nodrm: J03_ft done after 3 iteration(s)
+[03:36:37] nodrm: J04_cg iter=1 81049ms tis=77.29 threads=32/32
+[03:36:37] nodrm: J04_cg done after 1 iteration(s)
+[03:36:38] nodrm: J05_cg iter=1 75836ms tis=69.05 threads=32/32
+[03:36:38] nodrm: J02_ep iter=5 11085ms tis=10.94 threads=32/32
+[03:36:38] nodrm: J02_ep done after 5 iteration(s)
+[03:36:42] nodrm: J05_cg iter=2 4273ms tis=3.76 threads=32/32
+[03:36:47] nodrm: J05_cg iter=3 4473ms tis=3.96 threads=32/32
+[03:36:52] nodrm: J05_cg iter=4 4423ms tis=3.92 threads=32/32
+[03:36:52] nodrm: J05_cg done after 4 iteration(s)
+[03:36:52] === arm nodrm (repeat 3) finished: 19 iterations in 110.2s ===
+[03:36:52] arm drm: 59 iterations over 3 repeat(s), mean 19.678s, mean threads 12.661, makespan 109.417s
+[03:36:52] arm nodrm: 55 iterations over 3 repeat(s), mean 22.503s, mean threads 32.0, makespan 108.344s
+[03:36:52] DRM vs none: +7.27% iterations completed, 1.144× per iteration
+[03:36:52] done — results in /dss/dsshome1/09/ga27qam2/pactomp-benchmarks/data/mix/209466
+[03:36:52] total wall time: 11.7 min
+Results in /dss/dsshome1/09/ga27qam2/pactomp-benchmarks/data/mix/209466/

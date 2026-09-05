@@ -1,0 +1,63 @@
+[DRM-pin] pid=108377 tid=108386 assigned=56-63 running_on=58
+[DRM-pin] pid=108377 tid=108382 assigned=56-63 running_on=56
+[DRM-pin] pid=108377 tid=108383 assigned=56-63 running_on=59
+[DRM-pin] pid=108377 tid=108381 assigned=56-63 running_on=60
+[DRM-pin] pid=108377 tid=108388 assigned=56-63 running_on=57
+[DRM-pin] pid=108377 tid=108380 assigned=56-63 running_on=62
+[DRM-pin] pid=108377 tid=108384 assigned=56-63 running_on=61
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - EP Benchmark
+
+ Number of random numbers generated:      8589934592
+ Number of available threads:                      8
+
+EP Benchmark Results:
+
+CPU Time =    14.437
+N = 2^   32
+No. Gaussian Pairs =    3373275903.
+Sums =     2.691444083862810D+09    2.691519118724568D+09
+Counts:
+  0    1572172634.
+  1    1501108549.
+  2     281805648.
+  3      17761221.
+  4        424017.
+  5          3821.
+  6            13.
+  7             0.
+  8             0.
+  9             0.
+
+
+ EP Benchmark Completed.
+ Class           =                        C
+ Size            =               8589934592
+ Iterations      =                        0
+ Time in seconds =                    14.44
+ Total threads   =                        8
+ Avail threads   =                        8
+ Mop/s total     =                   595.01
+ Mop/s/thread    =                    74.38
+ Operation type  = Random numbers generated
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              03 Sep 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L$(LLVM_BUILD)/lib -lomp
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

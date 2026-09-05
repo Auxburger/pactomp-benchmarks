@@ -1,0 +1,4 @@
+/var/slurmd-cm4/job209457/slurm_script: line 36: mpstat: command not found
+/var/slurmd-cm4/job209457/slurm_script: line 41: pidstat: command not found
+slurmstepd: error: execve(): /dss/dsshome1/09/ga27qam2/pactomp-benchmarks/./test_all.sh: No such file or directory
+srun: error: cm4r13c02s02: task 0: Exited with exit code 2

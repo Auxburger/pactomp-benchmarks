@@ -1,0 +1,172 @@
+{
+  "started": "Fri 04 Sep 2026 03:25:09",
+  "host": "cm4r15c01s08",
+  "argv": [
+    "/dss/dsshome1/09/ga27qam2/pactomp-benchmarks/src/run_mix.py",
+    "--out",
+    "/dss/dsshome1/09/ga27qam2/pactomp-benchmarks/data/mix/209466",
+    "--repeats",
+    "3",
+    "--seed",
+    "16"
+  ],
+  "git_revision": null,
+  "slurm_job_id": "209466",
+  "repo_root": "/dss/dsshome1/09/ga27qam2/pactomp-benchmarks",
+  "llvm_build": "/dss/dsshome1/09/ga27qam2/llvm-project/build",
+  "toolchain": {
+    "llvm": {
+      "source_root": "/dss/dsshome1/09/ga27qam2/llvm-project",
+      "revision": null,
+      "runtime_source_clean": null,
+      "build_config": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_CXX_COMPILER": "/dss/lrzsys/sys/spack/release/24.4.0/opt/x86_64/gcc/13.2.0-gcc-j6fttbw/bin/g++",
+        "CMAKE_CXX_FLAGS": "",
+        "CMAKE_C_COMPILER": "/dss/lrzsys/sys/spack/release/24.4.0/opt/x86_64/gcc/13.2.0-gcc-j6fttbw/bin/gcc",
+        "LLVM_ENABLE_PROJECTS": "clang;openmp"
+      },
+      "libomp": {
+        "path": "/dss/dsshome1/09/ga27qam2/llvm-project/build/lib/libomp.so",
+        "sha256": "62a657218922b71d3b60beeb71ae9bd50b42f229cd47e030de9ad5199764d99d",
+        "mtime": "2026-09-03T12:33:59"
+      }
+    },
+    "coordinator": {
+      "source_root": "/dss/dsshome1/09/ga27qam2/pactomp-coordinator",
+      "revision": null,
+      "binary": {
+        "path": "/dss/dsshome1/09/ga27qam2/pactomp-coordinator/target/release/pactomp-coordinator",
+        "sha256": "431e534c8421cc8f36d08e2d384299ad902707661901cbe401b891b2b3d6c413",
+        "mtime": "2026-09-03T15:41:57"
+      }
+    }
+  },
+  "experiment": "mix",
+  "seed": 16,
+  "schedule": {
+    "version": 1,
+    "seed": 16,
+    "jobs": [
+      {
+        "job_id": 1,
+        "algorithm": "ft",
+        "start_offset": 0.0,
+        "duration": 48.123,
+        "threads": 32
+      },
+      {
+        "job_id": 2,
+        "algorithm": "ep",
+        "start_offset": 8.999,
+        "duration": 77.355,
+        "threads": 32
+      },
+      {
+        "job_id": 3,
+        "algorithm": "ft",
+        "start_offset": 13.099,
+        "duration": 54.571,
+        "threads": 32
+      },
+      {
+        "job_id": 4,
+        "algorithm": "cg",
+        "start_offset": 13.773,
+        "duration": 47.096,
+        "threads": 32
+      },
+      {
+        "job_id": 5,
+        "algorithm": "cg",
+        "start_offset": 19.698,
+        "duration": 87.101,
+        "threads": 32
+      },
+      {
+        "job_id": 6,
+        "algorithm": "ep",
+        "start_offset": 21.026,
+        "duration": 44.272,
+        "threads": 32
+      }
+    ]
+  },
+  "workload_cpus": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "domain_cpus_requested": 32,
+  "domain_cpus_actual": 32,
+  "coordinator_cpu": 0,
+  "paths": {
+    "npb_bin": "/dss/dsshome1/09/ga27qam2/pactomp-benchmarks/NPB3.4-OMP/bin",
+    "pomp_bin": "/dss/dsshome1/09/ga27qam2/pactomp-coordinator/target/release/pactomp-coordinator"
+  },
+  "config": {
+    "out_dir": "/dss/dsshome1/09/ga27qam2/pactomp-benchmarks/data/mix/209466",
+    "npb_bin": "/dss/dsshome1/09/ga27qam2/pactomp-benchmarks/NPB3.4-OMP/bin",
+    "npb_class": "C",
+    "algorithms": [
+      "ft",
+      "cg",
+      "ep"
+    ],
+    "arms": [
+      "drm",
+      "nodrm"
+    ],
+    "repeats": 3,
+    "jobs": 6,
+    "seed": 16,
+    "threads": null,
+    "domain_cpus": 32,
+    "strict_domain": false,
+    "offset_range": [
+      0.0,
+      30.0
+    ],
+    "duration_range": [
+      30.0,
+      90.0
+    ],
+    "gap_seconds": 0.5,
+    "settle_seconds": 10.0,
+    "timeout": 900.0,
+    "schedule_file": null,
+    "display_affinity": false,
+    "drm_binary": "/dss/dsshome1/09/ga27qam2/pactomp-coordinator/target/release/pactomp-coordinator",
+    "drm_socket": "/tmp/omp-rm.sock",
+    "capacity": null
+  }
+}

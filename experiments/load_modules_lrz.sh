@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# /etc/profile and the module functions read unset variables (PS1 and friends).
+# Under a caller's `set -u` that kills the shell outright, so drop nounset for
+# the duration and restore the caller's setting afterwards.
+case $- in *u*) _pomp_restore_u=1 ;; *) _pomp_restore_u=0 ;; esac
+set +u
+
 # Ensure 'module' works in non-interactive shells
 source /etc/profile 2>/dev/null || true
 source /etc/profile.d/modules.sh 2>/dev/null || true
@@ -18,3 +24,6 @@ command -v ninja
 command -v cmake
 command -v gcc
 command -v python3
+
+[ "$_pomp_restore_u" = 1 ] && set -u
+unset _pomp_restore_u

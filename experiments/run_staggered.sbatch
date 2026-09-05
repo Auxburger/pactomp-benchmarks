@@ -15,6 +15,8 @@ set -euo pipefail
 cd "${SLURM_SUBMIT_DIR:?submit this job from the repository root}"
 source experiments/paths.sh
 module load slurm_setup
+# src/pick_cpus.py needs a current Python; the system one is too old.
+source experiments/load_modules_lrz.sh || true
 
 echo "Cpus_allowed_list: $(grep Cpus_allowed_list /proc/$$/status | awk '{print $2}')"
 echo "Running on $(hostname)"

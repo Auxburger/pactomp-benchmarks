@@ -28,12 +28,14 @@ SLURM_LOG_DIR="${SLURM_LOG_DIR:-$DATA_DIR/slurm_logs}"
 #
 #     LLVM_BUILD=/path/to/llvm-project/build ./test_all.sh 89
 #
-# Note the coordinator was named dynamic-resource-manager when these runs were
-# made; it is now pactomp-coordinator. The default keeps the original name so
-# existing cluster checkouts keep working.
+# The coordinator was named dynamic-resource-manager when the dual and staggered
+# runs were made. It is now pactomp-coordinator, and the rename went with a
+# rename of its environment variables (DRM_CAPACITY/DRM_CPU_LIST became
+# POMP_CAPACITY/POMP_CPU_LIST). An old checkout therefore silently ignores the
+# settings the harness passes, so the default points at the current name.
 LLVM_BUILD="${LLVM_BUILD:-$HOME/llvm-project/build}"
-POMP_DIR="${POMP_DIR:-$HOME/dynamic-resource-manager}"
-POMP_BIN="${POMP_BIN:-$POMP_DIR/target/release/dynamic-resource-manager}"
+POMP_DIR="${POMP_DIR:-$HOME/pactomp-coordinator}"
+POMP_BIN="${POMP_BIN:-$POMP_DIR/target/release/pactomp-coordinator}"
 
 export EXPERIMENTS_DIR REPO_ROOT NPB_DIR NPB_BIN DATA_DIR SLURM_LOG_DIR
 export LLVM_BUILD POMP_DIR POMP_BIN

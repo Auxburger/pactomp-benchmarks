@@ -29,6 +29,6 @@ SLURM_LOG_DIR = env_path("SLURM_LOG_DIR", DATA_DIR / "slurm_logs")
 
 # ── External dependencies ────────────────────────────────────────────────────
 LLVM_BUILD = env_path("LLVM_BUILD", Path.home() / "llvm-project" / "build")
-POMP_DIR = env_path("POMP_DIR", Path.home() / "dynamic-resource-manager")
-POMP_BIN = env_path("POMP_BIN", POMP_DIR / "target" / "release" / "dynamic-resource-manager")
+POMP_DIR = env_path("POMP_DIR", Path.home() / "pactomp-coordinator")
+POMP_BIN = env_path("POMP_BIN", POMP_DIR / "target" / "release" / "pactomp-coordinator")
 DRM_SOCKET = Path(os.environ.get("POMP_SOCKET", "/tmp/omp-rm.sock"))

@@ -1,0 +1,6 @@
+Batch run started: Thu 03 Sep 2026 13:53:55
+dyn=true num_threads=4 cpus=0,1,2,3
+dyn true finished: Thu 03 Sep 2026 13:53:59 (Duration: 4107ms)
+Batch run started: Thu 03 Sep 2026 13:54:04
+dyn=false num_threads=4 cpus=0,1,2,3
+dyn false finished: Thu 03 Sep 2026 13:54:08 (Duration: 4087ms)

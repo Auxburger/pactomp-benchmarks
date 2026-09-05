@@ -1,0 +1,6 @@
+/var/slurmd-cm4/job209333/slurm_script: line 27: mpstat: command not found
+/var/slurmd-cm4/job209333/slurm_script: line 29: pidstat: command not found
+ERROR: 'numactl' not found on cm4r15c04s07. The workers need it for
+       NUMA and CPU placement; running without it would silently
+       change what is measured. Resubmit excluding this node.
+srun: error: cm4r15c04s07: task 0: Exited with exit code 2

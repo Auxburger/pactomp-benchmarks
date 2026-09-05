@@ -1,0 +1,8 @@
+/var/slurmd-cm4/job209328/slurm_script: line 25: mpstat: command not found
+/var/slurmd-cm4/job209328/slurm_script: line 27: pidstat: command not found
+  File "/dss/dsshome1/09/ga27qam2/pactomp-benchmarks/src/pick_cpus.py", line 10
+    from __future__ import annotations
+    ^
+SyntaxError: future feature annotations is not defined
+<empty>
+srun: error: cm4r15c02s07: task 0: Exited with exit code 1

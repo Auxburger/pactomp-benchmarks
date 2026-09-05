@@ -29,6 +29,7 @@ have a home of their own.
 | `src/analysis/` | Everything that reads the results — `datasets/`, `plots/`, `reports/`, `model/` |
 | `src/main.py` | Entry point: the analysis pipeline |
 | `src/run_llvm_tracing.py` | Entry point: a tracing microbenchmark sweep |
+| `src/run_mix.py` | Entry point: the seeded mixed workload experiment |
 | `src/analyze_cpu_util.py` | Entry point: the annotated CPU-utilisation figure |
 | `src/pick_cpus.py` | Entry point: the NUMA layout picker the shell scripts call |
 | `export_*.py` | Standalone thesis figure exports |
@@ -59,6 +60,7 @@ The primary measurement data lives in `data/`:
 - `staggered/<jobid>/` — the staggered-launch jobs
 - `dual-exclusive/` — exclusive-node comparison runs
 - `tracing/<jobid>/` — the LLVM OpenMP tracing microbenchmark runs
+- `mix/<jobid>/` — the seeded mixed workload runs, one directory per arm
 
 plus `slurm_logs/` for the per-job SLURM stdout and stderr.
 
@@ -72,7 +74,7 @@ swallow them.
 The scripts in `experiments/` resolve every path from their own location, so a
 checkout works wherever it lives. The two external dependencies — the patched
 LLVM OpenMP runtime and the DRM coordinator — default to `$HOME/llvm-project`
-and `$HOME/dynamic-resource-manager`, and are overridable:
+and `$HOME/pactomp-coordinator`, and are overridable:
 
 ```sh
 ./experiments/build_omp.sh --runtime-only    # build the patched libomp.so
@@ -88,6 +90,7 @@ themselves through `SLURM_SUBMIT_DIR`:
 sbatch --clusters=cm4 experiments/run_staggered.sbatch
 sbatch --clusters=cm4 experiments/run_npb_tiny.sbatch
 sbatch --clusters=cm4 experiments/run_llvm_tracing.sbatch
+sbatch --clusters=cm4 experiments/run_mix.sbatch
 ```
 
 The tracing job wraps `src/run_llvm_tracing.py`, the entry point of the
@@ -109,6 +112,36 @@ the cluster `python3` runs it — and its per-process `.out` files carry the sam
 names as the NPB runs, so `src/main.py` picks them up as the `output/tracing/`
 figure group. The shell scripts it replaces are kept in
 `src/harness/tracing/legacy/`.
+
+The mix job wraps `src/run_mix.py`, the entry point of the `src/harness/mix/`
+driver package. It draws a schedule of concurrent NPB kernels from a seed —
+random algorithm, random start offset, random time window per job — and replays
+that same schedule twice on one NUMA node: once with the DRM coordinating the
+runtime, once without it. Each job re-runs its kernel until its window closes,
+so the number of competing processes rises and falls as the schedule dictates,
+and the arm that completes more iterations in the identical windows wins:
+
+```sh
+sbatch --clusters=cm4 experiments/run_mix.sbatch --seed 7 --jobs 8
+python3 src/run_mix.py --seed 42 --dry-run      # print the schedule and stop
+python3 src/run_mix.py --seed 42 --arms nodrm   # baseline only, no coordinator needed
+python3 src/run_mix.py --help
+```
+
+The job asks for 89 cores, the same allocation as the other three experiments.
+`cm4_tiny` shares nodes between jobs, so the request size is what guarantees a
+NUMA node large enough for the workload domain — with 23 cores at most in
+foreign hands, the better node always keeps 45. The domain is always taken from
+a single NUMA node with SMT siblings filtered out; if the allocated node is too
+small it shrinks with a warning (`--strict-domain` to abort instead). Since these two arms run sequentially, a co-tenant appearing between them is
+the one confound 89 cores does not remove; the job therefore runs `--repeats 3`
+with the arm order alternating each time, so each arm goes first equally often
+and drift cancels. `--cpus-per-task=112` reserves the node instead.
+
+It writes `data/mix/<jobid>/` — `iterations.csv`, `summary.json` with the
+`drm`/`nodrm` comparison, and the `schedule.json` that makes the run
+reproducible (replay it verbatim with `--schedule`). Standard library only, so
+the cluster `python3` runs this one too.
 
 See [experiments/CLAUDE.md](experiments/CLAUDE.md) for the DRM protocol, the
 experiment designs, and the known runtime limitations.

@@ -1,0 +1,4 @@
+run_name,benchmark,threads,dynamic,program_id,cpus,drm,wall_ms,time_seconds,total_threads,avail_threads,pid,exit_code
+run_1,omp,16,false,1,"0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",false,3051,3.01,16,16,200542,0
+run_2,omp,16,false,1,"0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",false,3031,3.01,16,16,200564,0
+run_3,omp,16,false,1,"0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",false,3031,3.01,16,16,200587,0

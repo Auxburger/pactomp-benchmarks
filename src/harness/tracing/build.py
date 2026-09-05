@@ -28,9 +28,29 @@ def resolve_compiler(explicit: "str | None") -> Path:
     raise SystemExit(f"no compiler found (looked for {patched}, clang, gcc)")
 
 
+def gcc_toolchain() -> "Path | None":
+    """Prefix of the GCC installation clang should link against.
+
+    Compute nodes carry no system GCC, so clang finds neither crtbeginS.o nor
+    libgcc and the link fails. The module-provided GCC is not picked up on its
+    own, so point clang at it explicitly.
+    """
+    found = shutil.which("gcc")
+    if not found:
+        return None
+    prefix = Path(found).resolve().parent.parent
+    return prefix if (prefix / "lib" / "gcc").is_dir() else None
+
+
 def compile_microbench(source: Path, binary: Path, compiler: "str | None") -> "list[str]":
     cc = resolve_compiler(compiler)
     cmd = [str(cc), "-O2", "-fopenmp"]
+    if cc.name.startswith("clang"):
+        toolchain = gcc_toolchain()
+        if toolchain:
+            cmd += [f"--gcc-toolchain={toolchain}"]
+        else:
+            log("WARNING: no GCC toolchain found for clang — the link may fail")
     include = LLVM_BUILD / "projects" / "openmp" / "runtime" / "src"
     if include.is_dir():
         cmd += ["-I", str(include)]

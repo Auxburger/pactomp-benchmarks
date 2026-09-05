@@ -27,6 +27,8 @@ fi
 echo "Installing build config into $NPB_DIR/config …"
 install -m 644 "$EXPERIMENTS_DIR/make.def" "$NPB_DIR/config/make.def"
 
+mkdir -p "$NPB_BIN"
+
 for bench in "${BENCHMARKS[@]}"; do
   echo "Building $bench class $CLASS …"
   make -C "$NPB_DIR" "$bench" CLASS="$CLASS"

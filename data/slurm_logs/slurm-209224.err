@@ -1,0 +1,17 @@
+/var/slurmd-cm4/job209224/slurm_script: line 35: pidstat: command not found
+/var/slurmd-cm4/job209224/slurm_script: line 33: mpstat: command not found
+/usr/bin/ld: cannot find crtbeginS.o: No such file or directory
+/usr/bin/ld: cannot find -lgcc: No such file or directory
+/usr/bin/ld: cannot find -lgcc_s: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+Traceback (most recent call last):
+  File "/dss/dsshome1/09/ga27qam2/pactomp-benchmarks/src/run_llvm_tracing.py", line 22, in <module>
+    sys.exit(main())
+  File "/dss/dsshome1/09/ga27qam2/pactomp-benchmarks/src/harness/tracing/sweep.py", line 80, in main
+    compile_cmd = compile_microbench(cfg.source, cfg.binary, args.compiler)
+  File "/dss/dsshome1/09/ga27qam2/pactomp-benchmarks/src/harness/tracing/build.py", line 44, in compile_microbench
+    subprocess.run(cmd, check=True)
+  File "/dss/lrzsys/sys/spack/release/24.4.0/opt/x86_64/python/3.10.12-gcc-kvtzwjq/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/dss/dsshome1/09/ga27qam2/llvm-project/build/bin/clang', '-O2', '-fopenmp', '-I', '/dss/dsshome1/09/ga27qam2/llvm-project/build/projects/openmp/runtime/src', '-Wl,-rpath,/dss/dsshome1/09/ga27qam2/llvm-project/build/lib', '/dss/dsshome1/09/ga27qam2/pactomp-benchmarks/src/harness/tracing/omp_dyn.c', '-o', '/dss/dsshome1/09/ga27qam2/pactomp-benchmarks/data/tracing/209224/omp']' returned non-zero exit status 1.
+srun: error: cm4r13c02s01: task 0: Exited with exit code 1

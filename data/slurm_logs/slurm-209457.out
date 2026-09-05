@@ -1,0 +1,6 @@
+/dss/lrzsys/sys/spack/release/24.4.0/opt/x86_64/ninja/1.12.1-gcc-ggmzzs5/bin/ninja
+/dss/lrzsys/sys/spack/release/24.4.0/opt/x86_64/cmake/3.30.0-gcc-jo2m272/bin/cmake
+/dss/lrzsys/sys/spack/release/24.4.0/opt/x86_64/gcc/13.2.0-gcc-j6fttbw/bin/gcc
+/lrz/sys/spack/release/24.4.0/views/python/3.10.12-base/bin/python3
+Cpus_allowed_list: 0-88,112-200
+Running on cm4r13c02s02
