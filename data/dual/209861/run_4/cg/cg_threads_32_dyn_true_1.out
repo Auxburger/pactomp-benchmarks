@@ -1,0 +1,158 @@
+OMP: pid 30668 tid 30675 thread 2 bound to OS proc set {64-95}
+OMP: pid 30668 tid 30668 thread 0 bound to OS proc set {64-95}
+OMP: pid 30668 tid 30720 thread 15 bound to OS proc set {64-95}
+OMP: pid 30668 tid 30708 thread 12 bound to OS proc set {64-95}
+OMP: pid 30668 tid 30677 thread 3 bound to OS proc set {64-95}
+OMP: pid 30668 tid 30672 thread 1 bound to OS proc set {64-95}
+OMP: pid 30668 tid 30725 thread 16 bound to OS proc set {64-95}
+OMP: pid 30668 tid 30691 thread 8 bound to OS proc set {64-95}
+OMP: pid 30668 tid 30706 thread 11 bound to OS proc set {64-95}
+OMP: pid 30668 tid 30709 thread 13 bound to OS proc set {64-95}
+OMP: pid 30668 tid 30714 thread 14 bound to OS proc set {64-95}
+OMP: pid 30668 tid 30700 thread 10 bound to OS proc set {64-95}
+OMP: pid 30668 tid 30732 thread 19 bound to OS proc set {64-95}
+OMP: pid 30668 tid 30729 thread 17 bound to OS proc set {64-95}
+OMP: pid 30668 tid 30696 thread 9 bound to OS proc set {64-95}
+OMP: pid 30668 tid 30679 thread 4 bound to OS proc set {64-95}
+OMP: pid 30668 tid 30689 thread 7 bound to OS proc set {64-95}
+OMP: pid 30668 tid 30756 thread 28 bound to OS proc set {64-95}
+OMP: pid 30668 tid 30764 thread 30 bound to OS proc set {64-95}
+OMP: pid 30668 tid 30687 thread 6 bound to OS proc set {64-95}
+OMP: pid 30668 tid 30731 thread 18 bound to OS proc set {64-95}
+OMP: pid 30668 tid 30760 thread 29 bound to OS proc set {64-95}
+OMP: pid 30668 tid 30765 thread 31 bound to OS proc set {64-95}
+OMP: pid 30668 tid 30744 thread 24 bound to OS proc set {64-95}
+OMP: pid 30668 tid 30742 thread 23 bound to OS proc set {64-95}
+OMP: pid 30668 tid 30683 thread 5 bound to OS proc set {64-95}
+OMP: pid 30668 tid 30738 thread 21 bound to OS proc set {64-95}
+OMP: pid 30668 tid 30748 thread 25 bound to OS proc set {64-95}
+OMP: pid 30668 tid 30736 thread 20 bound to OS proc set {64-95}
+OMP: pid 30668 tid 30751 thread 27 bound to OS proc set {64-95}
+OMP: pid 30668 tid 30749 thread 26 bound to OS proc set {64-95}
+OMP: pid 30668 tid 30740 thread 22 bound to OS proc set {64-95}
+[DRM-pin] pid=30668 tid=30708 assigned=64-95 running_on=74
+[DRM-pin] pid=30668 tid=30720 assigned=64-95 running_on=76
+[DRM-pin] pid=30668 tid=30677 assigned=64-95 running_on=85
+[DRM-pin] pid=30668 tid=30679 assigned=64-95 running_on=84
+[DRM-pin] pid=30668 tid=30675 assigned=64-95 running_on=83
+[DRM-pin] pid=30668 tid=30672 assigned=64-95 running_on=77
+[DRM-pin] pid=30668 tid=30683 assigned=64-95 running_on=81
+[DRM-pin] pid=30668 tid=30706 assigned=64-95 running_on=72
+[DRM-pin] pid=30668 tid=30709 assigned=64-95 running_on=68
+[DRM-pin] pid=30668 tid=30696 assigned=64-95 running_on=66
+[DRM-pin] pid=30668 tid=30691 assigned=64-95 running_on=89
+[DRM-pin] pid=30668 tid=30714 assigned=64-95 running_on=67
+[DRM-pin] pid=30668 tid=30689 assigned=64-95 running_on=90
+[DRM-pin] pid=30668 tid=30700 assigned=64-95 running_on=82
+[DRM-pin] pid=30668 tid=30725 assigned=64-95 running_on=81
+[DRM-pin] pid=30668 tid=30738 assigned=64-95 running_on=83
+[DRM-pin] pid=30668 tid=30731 assigned=64-95 running_on=84
+[DRM-pin] pid=30668 tid=30756 assigned=64-95 running_on=76
+[DRM-pin] pid=30668 tid=30736 assigned=64-95 running_on=78
+[DRM-pin] pid=30668 tid=30765 assigned=64-95 running_on=75
+[DRM-pin] pid=30668 tid=30687 assigned=64-95 running_on=90
+[DRM-pin] pid=30668 tid=30760 assigned=64-95 running_on=69
+[DRM-pin] pid=30668 tid=30744 assigned=64-95 running_on=88
+[DRM-pin] pid=30668 tid=30751 assigned=64-95 running_on=93
+[DRM-pin] pid=30668 tid=30749 assigned=64-95 running_on=65
+[DRM-pin] pid=30668 tid=30742 assigned=64-95 running_on=87
+[DRM-pin] pid=30668 tid=30748 assigned=64-95 running_on=80
+[DRM-pin] pid=30668 tid=30729 assigned=64-95 running_on=73
+[DRM-pin] pid=30668 tid=30764 assigned=64-95 running_on=92
+[DRM-pin] pid=30668 tid=30740 assigned=64-95 running_on=79
+[DRM-pin] pid=30668 tid=30732 assigned=64-95 running_on=80
+OMP: pid 30668 tid 30668 thread 0 bound to OS proc set {64-95}
+[DRM-pin] pid=30668 tid=30696 assigned=64-79 running_on=66
+OMP: pid 30668 tid 30696 thread 9 bound to OS proc set {64-95}
+[DRM-pin] pid=30668 tid=30700 assigned=64-79 running_on=68
+OMP: pid 30668 tid 30700 thread 10 bound to OS proc set {64-95}
+[DRM-pin] pid=30668 tid=30708 assigned=64-79 running_on=74
+[DRM-pin] pid=30668 tid=30714 assigned=64-79 running_on=67
+OMP: pid 30668 tid 30708 thread 12 bound to OS proc set {64-95}
+[DRM-pin] pid=30668 tid=30720 assigned=64-79 running_on=76
+OMP: pid 30668 tid 30714 thread 14 bound to OS proc set {64-95}
+[DRM-pin] pid=30668 tid=30672 assigned=64-79 running_on=71
+OMP: pid 30668 tid 30672 thread 1 bound to OS proc set {64-95}
+[DRM-pin] pid=30668 tid=30709 assigned=64-79 running_on=68
+[DRM-pin] pid=30668 tid=30706 assigned=64-79 running_on=72
+[DRM-pin] pid=30668 tid=30683 assigned=64-79 running_on=71
+OMP: pid 30668 tid 30720 thread 15 bound to OS proc set {64-95}
+OMP: pid 30668 tid 30706 thread 11 bound to OS proc set {64-95}
+[DRM-pin] pid=30668 tid=30687 assigned=64-79 running_on=65
+OMP: pid 30668 tid 30683 thread 5 bound to OS proc set {64-95}
+OMP: pid 30668 tid 30687 thread 6 bound to OS proc set {64-95}
+[DRM-pin] pid=30668 tid=30675 assigned=64-79 running_on=71
+OMP: pid 30668 tid 30675 thread 2 bound to OS proc set {64-95}
+[DRM-pin] pid=30668 tid=30691 assigned=64-79 running_on=72
+OMP: pid 30668 tid 30691 thread 8 bound to OS proc set {64-95}
+OMP: pid 30668 tid 30709 thread 13 bound to OS proc set {64-95}
+[DRM-pin] pid=30668 tid=30677 assigned=64-79 running_on=71
+[DRM-pin] pid=30668 tid=30679 assigned=64-79 running_on=72
+OMP: pid 30668 tid 30677 thread 3 bound to OS proc set {64-95}
+[DRM-pin] pid=30668 tid=30689 assigned=64-79 running_on=64
+OMP: pid 30668 tid 30679 thread 4 bound to OS proc set {64-95}
+OMP: pid 30668 tid 30689 thread 7 bound to OS proc set {64-95}
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - CG Benchmark
+
+ Size:      150000
+ Iterations:                     75
+ Number of available threads:    32
+
+ Initialization time =           1.266 seconds
+
+   iteration           ||r||                 zeta
+        1       0.35313074063645E-12   109.9994423237398
+        5       0.89279667882636E-15    28.6471670038897
+       10       0.91075881876743E-15    28.9496695449000
+       15       0.90650055503847E-15    28.9716336228373
+       20       0.91379287129580E-15    28.9734210663751
+       25       0.90941450015107E-15    28.9735863059385
+       30       0.90982722379740E-15    28.9736033967630
+       35       0.90979794505163E-15    28.9736053266249
+       40       0.90673254351497E-15    28.9736055590700
+       45       0.91156128252126E-15    28.9736055884129
+       50       0.90978763452265E-15    28.9736055922482
+       55       0.90366654189502E-15    28.9736055927636
+       60       0.90815038397197E-15    28.9736055928341
+       65       0.90846858584076E-15    28.9736055928438
+       70       0.90144966075141E-15    28.9736055928452
+       75       0.90367483936960E-15    28.9736055928455
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ Zeta is     0.2897360559285E+02
+ Error is    0.1630832302753E-13
+
+
+ CG Benchmark Completed.
+ Class           =                        C
+ Size            =                   150000
+ Iterations      =                       75
+ Time in seconds =                     7.70
+ Total threads   =                       16
+ Avail threads   =                       32
+ Warning: Threads used differ from threads available
+ Mop/s total     =                 18620.72
+ Mop/s/thread    =                  1163.80
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              03 Sep 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L$(LLVM_BUILD)/lib -lomp
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

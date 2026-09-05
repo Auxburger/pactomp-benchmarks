@@ -1,0 +1,88 @@
+OMP: pid 33435 tid 33435 thread 0 bound to OS proc set {1-32}
+OMP: pid 33435 tid 33439 thread 1 bound to OS proc set {1-32}
+OMP: pid 33435 tid 33440 thread 2 bound to OS proc set {1-32}
+OMP: pid 33435 tid 33446 thread 8 bound to OS proc set {1-32}
+OMP: pid 33435 tid 33442 thread 4 bound to OS proc set {1-32}
+OMP: pid 33435 tid 33450 thread 12 bound to OS proc set {1-32}
+OMP: pid 33435 tid 33441 thread 3 bound to OS proc set {1-32}
+OMP: pid 33435 tid 33453 thread 15 bound to OS proc set {1-32}
+OMP: pid 33435 tid 33445 thread 7 bound to OS proc set {1-32}
+OMP: pid 33435 tid 33444 thread 6 bound to OS proc set {1-32}
+OMP: pid 33435 tid 33447 thread 9 bound to OS proc set {1-32}
+OMP: pid 33435 tid 33448 thread 10 bound to OS proc set {1-32}
+OMP: pid 33435 tid 33469 thread 31 bound to OS proc set {1-32}
+OMP: pid 33435 tid 33454 thread 16 bound to OS proc set {1-32}
+OMP: pid 33435 tid 33451 thread 13 bound to OS proc set {1-32}
+OMP: pid 33435 tid 33443 thread 5 bound to OS proc set {1-32}
+OMP: pid 33435 tid 33457 thread 19 bound to OS proc set {1-32}
+OMP: pid 33435 tid 33466 thread 28 bound to OS proc set {1-32}
+OMP: pid 33435 tid 33452 thread 14 bound to OS proc set {1-32}
+OMP: pid 33435 tid 33449 thread 11 bound to OS proc set {1-32}
+OMP: pid 33435 tid 33456 thread 18 bound to OS proc set {1-32}
+OMP: pid 33435 tid 33462 thread 24 bound to OS proc set {1-32}
+OMP: pid 33435 tid 33455 thread 17 bound to OS proc set {1-32}
+OMP: pid 33435 tid 33468 thread 30 bound to OS proc set {1-32}
+OMP: pid 33435 tid 33465 thread 27 bound to OS proc set {1-32}
+OMP: pid 33435 tid 33467 thread 29 bound to OS proc set {1-32}
+OMP: pid 33435 tid 33464 thread 26 bound to OS proc set {1-32}
+OMP: pid 33435 tid 33463 thread 25 bound to OS proc set {1-32}
+OMP: pid 33435 tid 33458 thread 20 bound to OS proc set {1-32}
+OMP: pid 33435 tid 33461 thread 23 bound to OS proc set {1-32}
+OMP: pid 33435 tid 33460 thread 22 bound to OS proc set {1-32}
+OMP: pid 33435 tid 33459 thread 21 bound to OS proc set {1-32}
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - EP Benchmark
+
+ Number of random numbers generated:      8589934592
+ Number of available threads:                     32
+
+EP Benchmark Results:
+
+CPU Time =     6.564
+N = 2^   32
+No. Gaussian Pairs =    3373275903.
+Sums =     2.691444083863086D+09    2.691519118724448D+09
+Counts:
+  0    1572172634.
+  1    1501108549.
+  2     281805648.
+  3      17761221.
+  4        424017.
+  5          3821.
+  6            13.
+  7             0.
+  8             0.
+  9             0.
+
+
+ EP Benchmark Completed.
+ Class           =                        C
+ Size            =               8589934592
+ Iterations      =                        0
+ Time in seconds =                     6.56
+ Total threads   =                       32
+ Avail threads   =                       32
+ Mop/s total     =                  1308.60
+ Mop/s/thread    =                    40.89
+ Operation type  = Random numbers generated
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              03 Sep 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L$(LLVM_BUILD)/lib -lomp
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

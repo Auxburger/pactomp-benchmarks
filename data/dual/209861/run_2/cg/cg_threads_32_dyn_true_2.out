@@ -1,0 +1,204 @@
+OMP: pid 12347 tid 12362 thread 4 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12372 thread 6 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12396 thread 11 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12376 thread 7 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12398 thread 12 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12382 thread 8 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12366 thread 5 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12388 thread 10 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12386 thread 9 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12403 thread 13 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12347 thread 0 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12353 thread 2 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12350 thread 1 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12357 thread 3 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12413 thread 16 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12449 thread 28 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12459 thread 30 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12452 thread 29 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12405 thread 14 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12416 thread 18 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12463 thread 31 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12433 thread 24 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12438 thread 26 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12436 thread 25 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12443 thread 27 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12414 thread 17 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12418 thread 19 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12406 thread 15 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12422 thread 20 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12428 thread 23 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12427 thread 22 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12426 thread 21 bound to OS proc set {64-95}
+[DRM-pin] pid=12347 tid=12357 assigned=64-95 running_on=86
+[DRM-pin] pid=12347 tid=12428 assigned=64-95 running_on=72
+[DRM-pin] pid=12347 tid=12350 assigned=64-95 running_on=81
+[DRM-pin] pid=12347 tid=12406 assigned=64-95 running_on=86
+[DRM-pin] pid=12347 tid=12382 assigned=64-95 running_on=71
+[DRM-pin] pid=12347 tid=12386 assigned=64-95 running_on=93
+[DRM-pin] pid=12347 tid=12398 assigned=64-95 running_on=76
+[DRM-pin] pid=12347 tid=12403 assigned=64-95 running_on=82
+[DRM-pin] pid=12347 tid=12396 assigned=64-95 running_on=75
+[DRM-pin] pid=12347 tid=12438 assigned=64-95 running_on=66
+[DRM-pin] pid=12347 tid=12433 assigned=64-95 running_on=79
+[DRM-pin] pid=12347 tid=12449 assigned=64-95 running_on=68
+[DRM-pin] pid=12347 tid=12436 assigned=64-95 running_on=69
+[DRM-pin] pid=12347 tid=12452 assigned=64-95 running_on=84
+[DRM-pin] pid=12347 tid=12459 assigned=64-95 running_on=64
+[DRM-pin] pid=12347 tid=12413 assigned=64-95 running_on=73
+[DRM-pin] pid=12347 tid=12443 assigned=64-95 running_on=74
+[DRM-pin] pid=12347 tid=12414 assigned=64-95 running_on=90
+[DRM-pin] pid=12347 tid=12416 assigned=64-95 running_on=91
+[DRM-pin] pid=12347 tid=12422 assigned=64-95 running_on=83
+[DRM-pin] pid=12347 tid=12427 assigned=64-95 running_on=70
+[DRM-pin] pid=12347 tid=12426 assigned=64-95 running_on=87
+[DRM-pin] pid=12347 tid=12418 assigned=64-95 running_on=94
+[DRM-pin] pid=12347 tid=12388 assigned=64-95 running_on=73
+[DRM-pin] pid=12347 tid=12376 assigned=64-95 running_on=73
+[DRM-pin] pid=12347 tid=12372 assigned=64-95 running_on=83
+[DRM-pin] pid=12347 tid=12362 assigned=64-95 running_on=65
+[DRM-pin] pid=12347 tid=12366 assigned=64-95 running_on=89
+[DRM-pin] pid=12347 tid=12463 assigned=64-95 running_on=69
+[DRM-pin] pid=12347 tid=12353 assigned=64-95 running_on=82
+[DRM-pin] pid=12347 tid=12405 assigned=64-95 running_on=85
+OMP: pid 12347 tid 12347 thread 0 bound to OS proc set {64-95}
+[DRM-pin] pid=12347 tid=12388 assigned=64-79 running_on=76
+[DRM-pin] pid=12347 tid=12382 assigned=64-79 running_on=73
+OMP: pid 12347 tid 12388 thread 10 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12382 thread 8 bound to OS proc set {64-95}
+[DRM-pin] pid=12347 tid=12396 assigned=64-79 running_on=75
+OMP: pid 12347 tid 12396 thread 11 bound to OS proc set {64-95}
+[DRM-pin] pid=12347 tid=12398 assigned=64-79 running_on=79
+OMP: pid 12347 tid 12398 thread 12 bound to OS proc set {64-95}
+[DRM-pin] pid=12347 tid=12403 assigned=64-79 running_on=78
+[DRM-pin] pid=12347 tid=12405 assigned=64-79 running_on=70
+OMP: pid 12347 tid 12403 thread 13 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12405 thread 14 bound to OS proc set {64-95}
+[DRM-pin] pid=12347 tid=12357 assigned=64-79 running_on=75
+OMP: pid 12347 tid 12357 thread 3 bound to OS proc set {64-95}
+[DRM-pin] pid=12347 tid=12353 assigned=64-79 running_on=78
+OMP: pid 12347 tid 12353 thread 2 bound to OS proc set {64-95}
+[DRM-pin] pid=12347 tid=12386 assigned=64-79 running_on=64
+OMP: pid 12347 tid 12386 thread 9 bound to OS proc set {64-95}
+[DRM-pin] pid=12347 tid=12350 assigned=64-79 running_on=64
+OMP: pid 12347 tid 12350 thread 1 bound to OS proc set {64-95}
+[DRM-pin] pid=12347 tid=12406 assigned=64-79 running_on=75
+[DRM-pin] pid=12347 tid=12362 assigned=64-79 running_on=65
+OMP: pid 12347 tid 12406 thread 15 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12362 thread 4 bound to OS proc set {64-95}
+[DRM-pin] pid=12347 tid=12372 assigned=64-79 running_on=73
+OMP: pid 12347 tid 12372 thread 6 bound to OS proc set {64-95}
+[DRM-pin] pid=12347 tid=12376 assigned=64-79 running_on=78
+OMP: pid 12347 tid 12376 thread 7 bound to OS proc set {64-95}
+[DRM-pin] pid=12347 tid=12366 assigned=64-79 running_on=75
+OMP: pid 12347 tid 12366 thread 5 bound to OS proc set {64-95}
+[DRM-pin] pid=12347 tid=12372 assigned=64-95 running_on=73
+OMP: pid 12347 tid 12347 thread 0 bound to OS proc set {64-95}
+[DRM-pin] pid=12347 tid=12357 assigned=64-95 running_on=70
+OMP: pid 12347 tid 12372 thread 6 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12357 thread 3 bound to OS proc set {64-95}
+[DRM-pin] pid=12347 tid=12366 assigned=64-95 running_on=71
+OMP: pid 12347 tid 12366 thread 5 bound to OS proc set {64-95}
+[DRM-pin] pid=12347 tid=12396 assigned=64-95 running_on=64
+OMP: pid 12347 tid 12449 thread 28 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12463 thread 31 bound to OS proc set {64-95}
+[DRM-pin] pid=12347 tid=12405 assigned=64-95 running_on=67
+OMP: pid 12347 tid 12459 thread 30 bound to OS proc set {64-95}
+[DRM-pin] pid=12347 tid=12398 assigned=64-95 running_on=79
+OMP: pid 12347 tid 12422 thread 20 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12428 thread 23 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12396 thread 11 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12413 thread 16 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12443 thread 27 bound to OS proc set {64-95}
+[DRM-pin] pid=12347 tid=12403 assigned=64-95 running_on=78
+OMP: pid 12347 tid 12452 thread 29 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12438 thread 26 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12436 thread 25 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12418 thread 19 bound to OS proc set {64-95}
+[DRM-pin] pid=12347 tid=12353 assigned=64-95 running_on=68
+OMP: pid 12347 tid 12414 thread 17 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12405 thread 14 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12433 thread 24 bound to OS proc set {64-95}
+[DRM-pin] pid=12347 tid=12388 assigned=64-95 running_on=76
+OMP: pid 12347 tid 12426 thread 21 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12427 thread 22 bound to OS proc set {64-95}
+[DRM-pin] pid=12347 tid=12406 assigned=64-95 running_on=75
+OMP: pid 12347 tid 12416 thread 18 bound to OS proc set {64-95}
+[DRM-pin] pid=12347 tid=12386 assigned=64-95 running_on=65
+OMP: pid 12347 tid 12398 thread 12 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12403 thread 13 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12353 thread 2 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12388 thread 10 bound to OS proc set {64-95}
+[DRM-pin] pid=12347 tid=12362 assigned=64-95 running_on=66
+OMP: pid 12347 tid 12406 thread 15 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12386 thread 9 bound to OS proc set {64-95}
+OMP: pid 12347 tid 12362 thread 4 bound to OS proc set {64-95}
+[DRM-pin] pid=12347 tid=12376 assigned=64-95 running_on=72
+OMP: pid 12347 tid 12376 thread 7 bound to OS proc set {64-95}
+[DRM-pin] pid=12347 tid=12382 assigned=64-95 running_on=74
+OMP: pid 12347 tid 12382 thread 8 bound to OS proc set {64-95}
+[DRM-pin] pid=12347 tid=12350 assigned=64-95 running_on=77
+OMP: pid 12347 tid 12350 thread 1 bound to OS proc set {64-95}
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - CG Benchmark
+
+ Size:      150000
+ Iterations:                     75
+ Number of available threads:    32
+
+ Initialization time =           1.155 seconds
+
+   iteration           ||r||                 zeta
+        1       0.35306389165086E-12   109.9994423237398
+        5       0.89314596850989E-15    28.6471670038896
+       10       0.91174810557201E-15    28.9496695449000
+       15       0.90693345258186E-15    28.9716336228373
+       20       0.91460607658904E-15    28.9734210663751
+       25       0.90990395470620E-15    28.9735863059385
+       30       0.90839187360580E-15    28.9736033967630
+       35       0.91078029334260E-15    28.9736053266248
+       40       0.90547051328901E-15    28.9736055590700
+       45       0.90972691122789E-15    28.9736055884129
+       50       0.91043527075570E-15    28.9736055922482
+       55       0.90499548989389E-15    28.9736055927636
+       60       0.90892448457101E-15    28.9736055928341
+       65       0.90778560578285E-15    28.9736055928438
+       70       0.90174991359528E-15    28.9736055928452
+       75       0.90056963538326E-15    28.9736055928455
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ Zeta is     0.2897360559285E+02
+ Error is    0.1777975066912E-13
+
+
+ CG Benchmark Completed.
+ Class           =                        C
+ Size            =                   150000
+ Iterations      =                       75
+ Time in seconds =                     8.71
+ Total threads   =                       32
+ Avail threads   =                       32
+ Mop/s total     =                 16451.78
+ Mop/s/thread    =                   514.12
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              03 Sep 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L$(LLVM_BUILD)/lib -lomp
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

@@ -1,0 +1,132 @@
+OMP: pid 87411 tid 87411 thread 0 bound to OS proc set {64-79}
+OMP: pid 87411 tid 87445 thread 2 bound to OS proc set {64-79}
+OMP: pid 87411 tid 87443 thread 1 bound to OS proc set {64-79}
+OMP: pid 87411 tid 87458 thread 7 bound to OS proc set {64-79}
+OMP: pid 87411 tid 87451 thread 4 bound to OS proc set {64-79}
+OMP: pid 87411 tid 87456 thread 6 bound to OS proc set {64-79}
+OMP: pid 87411 tid 87449 thread 3 bound to OS proc set {64-79}
+OMP: pid 87411 tid 87452 thread 5 bound to OS proc set {64-79}
+OMP: pid 87411 tid 87474 thread 15 bound to OS proc set {64-79}
+OMP: pid 87411 tid 87469 thread 12 bound to OS proc set {64-79}
+OMP: pid 87411 tid 87470 thread 13 bound to OS proc set {64-79}
+OMP: pid 87411 tid 87472 thread 14 bound to OS proc set {64-79}
+OMP: pid 87411 tid 87467 thread 11 bound to OS proc set {64-79}
+OMP: pid 87411 tid 87461 thread 8 bound to OS proc set {64-79}
+OMP: pid 87411 tid 87463 thread 9 bound to OS proc set {64-79}
+OMP: pid 87411 tid 87465 thread 10 bound to OS proc set {64-79}
+[DRM-pin] pid=87411 tid=87461 assigned=64-79 running_on=68
+[DRM-pin] pid=87411 tid=87451 assigned=64-79 running_on=79
+[DRM-pin] pid=87411 tid=87445 assigned=64-79 running_on=64
+[DRM-pin] pid=87411 tid=87472 assigned=64-79 running_on=65
+[DRM-pin] pid=87411 tid=87467 assigned=64-79 running_on=70
+[DRM-pin] pid=87411 tid=87452 assigned=64-79 running_on=72
+[DRM-pin] pid=87411 tid=87443 assigned=64-79 running_on=77
+[DRM-pin] pid=87411 tid=87470 assigned=64-79 running_on=74
+[DRM-pin] pid=87411 tid=87469 assigned=64-79 running_on=76
+[DRM-pin] pid=87411 tid=87458 assigned=64-79 running_on=75
+[DRM-pin] pid=87411 tid=87463 assigned=64-79 running_on=71
+[DRM-pin] pid=87411 tid=87465 assigned=64-79 running_on=64
+[DRM-pin] pid=87411 tid=87456 assigned=64-79 running_on=76
+[DRM-pin] pid=87411 tid=87474 assigned=64-79 running_on=67
+[DRM-pin] pid=87411 tid=87449 assigned=64-79 running_on=68
+OMP: pid 87411 tid 87411 thread 0 bound to OS proc set {64-79}
+[DRM-pin] pid=87411 tid=87445 assigned=64-71 running_on=64
+OMP: pid 87411 tid 87445 thread 2 bound to OS proc set {64-79}
+[DRM-pin] pid=87411 tid=87452 assigned=64-71 running_on=69
+[DRM-pin] pid=87411 tid=87449 assigned=64-71 running_on=68
+OMP: pid 87411 tid 87452 thread 5 bound to OS proc set {64-79}
+[DRM-pin] pid=87411 tid=87451 assigned=64-71 running_on=64
+OMP: pid 87411 tid 87449 thread 3 bound to OS proc set {64-79}
+OMP: pid 87411 tid 87451 thread 4 bound to OS proc set {64-79}
+[DRM-pin] pid=87411 tid=87458 assigned=64-71 running_on=64
+OMP: pid 87411 tid 87458 thread 7 bound to OS proc set {64-79}
+[DRM-pin] pid=87411 tid=87443 assigned=64-71 running_on=69
+OMP: pid 87411 tid 87443 thread 1 bound to OS proc set {64-79}
+[DRM-pin] pid=87411 tid=87456 assigned=64-71 running_on=65
+OMP: pid 87411 tid 87456 thread 6 bound to OS proc set {64-79}
+OMP: pid 87411 tid 87411 thread 0 bound to OS proc set {64-79}
+[DRM-pin] pid=87411 tid=87449 assigned=64-79 running_on=68
+OMP: pid 87411 tid 87472 thread 14 bound to OS proc set {64-79}
+OMP: pid 87411 tid 87467 thread 11 bound to OS proc set {64-79}
+[DRM-pin] pid=87411 tid=87445 assigned=64-79 running_on=71
+OMP: pid 87411 tid 87469 thread 12 bound to OS proc set {64-79}
+[DRM-pin] pid=87411 tid=87458 assigned=64-79 running_on=64
+OMP: pid 87411 tid 87461 thread 8 bound to OS proc set {64-79}
+[DRM-pin] pid=87411 tid=87443 assigned=64-79 running_on=69
+OMP: pid 87411 tid 87449 thread 3 bound to OS proc set {64-79}
+OMP: pid 87411 tid 87465 thread 10 bound to OS proc set {64-79}
+[DRM-pin] pid=87411 tid=87451 assigned=64-79 running_on=66
+OMP: pid 87411 tid 87463 thread 9 bound to OS proc set {64-79}
+OMP: pid 87411 tid 87445 thread 2 bound to OS proc set {64-79}
+OMP: pid 87411 tid 87474 thread 15 bound to OS proc set {64-79}
+[DRM-pin] pid=87411 tid=87452 assigned=64-79 running_on=70
+OMP: pid 87411 tid 87470 thread 13 bound to OS proc set {64-79}
+[DRM-pin] pid=87411 tid=87456 assigned=64-79 running_on=65
+OMP: pid 87411 tid 87458 thread 7 bound to OS proc set {64-79}
+OMP: pid 87411 tid 87443 thread 1 bound to OS proc set {64-79}
+OMP: pid 87411 tid 87451 thread 4 bound to OS proc set {64-79}
+OMP: pid 87411 tid 87452 thread 5 bound to OS proc set {64-79}
+OMP: pid 87411 tid 87456 thread 6 bound to OS proc set {64-79}
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - CG Benchmark
+
+ Size:      150000
+ Iterations:                     75
+ Number of available threads:    16
+
+ Initialization time =           1.815 seconds
+
+   iteration           ||r||                 zeta
+        1       0.35329229537130E-12   109.9994423237398
+        5       0.89182415731983E-15    28.6471670038896
+       10       0.91266525538478E-15    28.9496695449001
+       15       0.90749945994838E-15    28.9716336228370
+       20       0.91342824395863E-15    28.9734210663752
+       25       0.90867801897244E-15    28.9735863059386
+       30       0.90993606806247E-15    28.9736033967633
+       35       0.91107340497550E-15    28.9736053266247
+       40       0.90691819671917E-15    28.9736055590699
+       45       0.90850639165388E-15    28.9736055884130
+       50       0.91095591468965E-15    28.9736055922483
+       55       0.90259316309601E-15    28.9736055927634
+       60       0.90874807045117E-15    28.9736055928341
+       65       0.90608003860621E-15    28.9736055928440
+       70       0.90220899035407E-15    28.9736055928451
+       75       0.90221330744444E-15    28.9736055928456
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ Zeta is     0.2897360559285E+02
+ Error is    0.1974165419122E-13
+
+
+ CG Benchmark Completed.
+ Class           =                        C
+ Size            =                   150000
+ Iterations      =                       75
+ Time in seconds =                    12.05
+ Total threads   =                       16
+ Avail threads   =                       16
+ Mop/s total     =                 11900.21
+ Mop/s/thread    =                   743.76
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              03 Sep 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L$(LLVM_BUILD)/lib -lomp
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

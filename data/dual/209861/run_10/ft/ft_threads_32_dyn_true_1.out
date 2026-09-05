@@ -1,0 +1,126 @@
+OMP: pid 84204 tid 84204 thread 0 bound to OS proc set {64-95}
+OMP: pid 84204 tid 84286 thread 15 bound to OS proc set {64-95}
+OMP: pid 84204 tid 84274 thread 12 bound to OS proc set {64-95}
+OMP: pid 84204 tid 84239 thread 3 bound to OS proc set {64-95}
+OMP: pid 84204 tid 84262 thread 8 bound to OS proc set {64-95}
+OMP: pid 84204 tid 84235 thread 2 bound to OS proc set {64-95}
+OMP: pid 84204 tid 84234 thread 1 bound to OS proc set {64-95}
+OMP: pid 84204 tid 84265 thread 10 bound to OS proc set {64-95}
+OMP: pid 84204 tid 84264 thread 9 bound to OS proc set {64-95}
+OMP: pid 84204 tid 84271 thread 11 bound to OS proc set {64-95}
+OMP: pid 84204 tid 84247 thread 4 bound to OS proc set {64-95}
+OMP: pid 84204 tid 84281 thread 14 bound to OS proc set {64-95}
+OMP: pid 84204 tid 84319 thread 28 bound to OS proc set {64-95}
+OMP: pid 84204 tid 84290 thread 16 bound to OS proc set {64-95}
+OMP: pid 84204 tid 84278 thread 13 bound to OS proc set {64-95}
+OMP: pid 84204 tid 84254 thread 7 bound to OS proc set {64-95}
+OMP: pid 84204 tid 84323 thread 31 bound to OS proc set {64-95}
+OMP: pid 84204 tid 84321 thread 30 bound to OS proc set {64-95}
+OMP: pid 84204 tid 84320 thread 29 bound to OS proc set {64-95}
+OMP: pid 84204 tid 84251 thread 6 bound to OS proc set {64-95}
+OMP: pid 84204 tid 84299 thread 19 bound to OS proc set {64-95}
+OMP: pid 84204 tid 84312 thread 24 bound to OS proc set {64-95}
+OMP: pid 84204 tid 84249 thread 5 bound to OS proc set {64-95}
+OMP: pid 84204 tid 84308 thread 21 bound to OS proc set {64-95}
+OMP: pid 84204 tid 84296 thread 17 bound to OS proc set {64-95}
+OMP: pid 84204 tid 84317 thread 27 bound to OS proc set {64-95}
+OMP: pid 84204 tid 84315 thread 26 bound to OS proc set {64-95}
+OMP: pid 84204 tid 84309 thread 22 bound to OS proc set {64-95}
+OMP: pid 84204 tid 84303 thread 20 bound to OS proc set {64-95}
+OMP: pid 84204 tid 84313 thread 25 bound to OS proc set {64-95}
+OMP: pid 84204 tid 84310 thread 23 bound to OS proc set {64-95}
+OMP: pid 84204 tid 84298 thread 18 bound to OS proc set {64-95}
+OMP: pid 84204 tid 84204 thread 0 bound to OS proc set {64-95}
+[DRM-pin] pid=84204 tid=84262 assigned=64-79 running_on=66
+[DRM-pin] pid=84204 tid=84247 assigned=64-79 running_on=68
+OMP: pid 84204 tid 84262 thread 8 bound to OS proc set {64-95}
+[DRM-pin] pid=84204 tid=84251 assigned=64-79 running_on=75
+OMP: pid 84204 tid 84247 thread 4 bound to OS proc set {64-95}
+OMP: pid 84204 tid 84251 thread 6 bound to OS proc set {64-95}
+[DRM-pin] pid=84204 tid=84234 assigned=64-79 running_on=79
+[DRM-pin] pid=84204 tid=84254 assigned=64-79 running_on=70
+OMP: pid 84204 tid 84234 thread 1 bound to OS proc set {64-95}
+OMP: pid 84204 tid 84254 thread 7 bound to OS proc set {64-95}
+[DRM-pin] pid=84204 tid=84281 assigned=64-79 running_on=75
+OMP: pid 84204 tid 84281 thread 14 bound to OS proc set {64-95}
+[DRM-pin] pid=84204 tid=84278 assigned=64-79 running_on=70
+OMP: pid 84204 tid 84278 thread 13 bound to OS proc set {64-95}
+[DRM-pin] pid=84204 tid=84274 assigned=64-79 running_on=79
+OMP: pid 84204 tid 84274 thread 12 bound to OS proc set {64-95}
+[DRM-pin] pid=84204 tid=84286 assigned=64-79 running_on=65
+[DRM-pin] pid=84204 tid=84239 assigned=64-79 running_on=75
+OMP: pid 84204 tid 84286 thread 15 bound to OS proc set {64-95}
+OMP: pid 84204 tid 84239 thread 3 bound to OS proc set {64-95}
+[DRM-pin] pid=84204 tid=84271 assigned=64-79 running_on=73
+OMP: pid 84204 tid 84271 thread 11 bound to OS proc set {64-95}
+[DRM-pin] pid=84204 tid=84265 assigned=64-79 running_on=68
+OMP: pid 84204 tid 84265 thread 10 bound to OS proc set {64-95}
+[DRM-pin] pid=84204 tid=84249 assigned=64-79 running_on=77
+OMP: pid 84204 tid 84249 thread 5 bound to OS proc set {64-95}
+[DRM-pin] pid=84204 tid=84264 assigned=64-79 running_on=67
+OMP: pid 84204 tid 84264 thread 9 bound to OS proc set {64-95}
+[DRM-pin] pid=84204 tid=84235 assigned=64-79 running_on=70
+OMP: pid 84204 tid 84235 thread 2 bound to OS proc set {64-95}
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - FT Benchmark
+
+ Size                :  512x 512x 512
+ Iterations                  :     20
+ Number of available threads :     32
+
+ T =    1     Checksum =    5.195078707457D+02    5.149019699238D+02
+ T =    2     Checksum =    5.155422171134D+02    5.127578201997D+02
+ T =    3     Checksum =    5.144678022222D+02    5.122251847514D+02
+ T =    4     Checksum =    5.140150594328D+02    5.121090289018D+02
+ T =    5     Checksum =    5.137550426810D+02    5.121143685824D+02
+ T =    6     Checksum =    5.135811056728D+02    5.121496764568D+02
+ T =    7     Checksum =    5.134569343165D+02    5.121870921893D+02
+ T =    8     Checksum =    5.133651975661D+02    5.122193250322D+02
+ T =    9     Checksum =    5.132955192805D+02    5.122454735794D+02
+ T =   10     Checksum =    5.132410471738D+02    5.122663649603D+02
+ T =   11     Checksum =    5.131971141679D+02    5.122830879827D+02
+ T =   12     Checksum =    5.131605205716D+02    5.122965869718D+02
+ T =   13     Checksum =    5.131290734194D+02    5.123075927445D+02
+ T =   14     Checksum =    5.131012720314D+02    5.123166486553D+02
+ T =   15     Checksum =    5.130760908195D+02    5.123241541685D+02
+ T =   16     Checksum =    5.130528295923D+02    5.123304037599D+02
+ T =   17     Checksum =    5.130310107773D+02    5.123356167976D+02
+ T =   18     Checksum =    5.130103090133D+02    5.123399592211D+02
+ T =   19     Checksum =    5.129905029333D+02    5.123435588985D+02
+ T =   20     Checksum =    5.129714421109D+02    5.123465164008D+02
+ Result verification successful
+ class = C
+
+
+ FT Benchmark Completed.
+ Class           =                        C
+ Size            =            512x 512x 512
+ Iterations      =                       20
+ Time in seconds =                     9.33
+ Total threads   =                       16
+ Avail threads   =                       32
+ Warning: Threads used differ from threads available
+ Mop/s total     =                 42470.42
+ Mop/s/thread    =                  2654.40
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              03 Sep 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L$(LLVM_BUILD)/lib -lomp
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

@@ -1,0 +1,119 @@
+OMP: pid 90358 tid 90358 thread 0 bound to OS proc set {64-95}
+OMP: pid 90358 tid 90363 thread 2 bound to OS proc set {64-95}
+OMP: pid 90358 tid 90365 thread 3 bound to OS proc set {64-95}
+OMP: pid 90358 tid 90361 thread 1 bound to OS proc set {64-95}
+OMP: pid 90358 tid 90381 thread 7 bound to OS proc set {64-95}
+OMP: pid 90358 tid 90413 thread 14 bound to OS proc set {64-95}
+OMP: pid 90358 tid 90405 thread 12 bound to OS proc set {64-95}
+OMP: pid 90358 tid 90385 thread 8 bound to OS proc set {64-95}
+OMP: pid 90358 tid 90395 thread 10 bound to OS proc set {64-95}
+OMP: pid 90358 tid 90410 thread 13 bound to OS proc set {64-95}
+OMP: pid 90358 tid 90367 thread 4 bound to OS proc set {64-95}
+OMP: pid 90358 tid 90377 thread 6 bound to OS proc set {64-95}
+OMP: pid 90358 tid 90390 thread 9 bound to OS proc set {64-95}
+OMP: pid 90358 tid 90373 thread 5 bound to OS proc set {64-95}
+OMP: pid 90358 tid 90399 thread 11 bound to OS proc set {64-95}
+OMP: pid 90358 tid 90418 thread 15 bound to OS proc set {64-95}
+OMP: pid 90358 tid 90483 thread 31 bound to OS proc set {64-95}
+OMP: pid 90358 tid 90470 thread 28 bound to OS proc set {64-95}
+OMP: pid 90358 tid 90474 thread 29 bound to OS proc set {64-95}
+OMP: pid 90358 tid 90421 thread 16 bound to OS proc set {64-95}
+OMP: pid 90358 tid 90433 thread 19 bound to OS proc set {64-95}
+OMP: pid 90358 tid 90430 thread 18 bound to OS proc set {64-95}
+OMP: pid 90358 tid 90426 thread 17 bound to OS proc set {64-95}
+OMP: pid 90358 tid 90450 thread 23 bound to OS proc set {64-95}
+OMP: pid 90358 tid 90445 thread 22 bound to OS proc set {64-95}
+OMP: pid 90358 tid 90437 thread 20 bound to OS proc set {64-95}
+OMP: pid 90358 tid 90441 thread 21 bound to OS proc set {64-95}
+OMP: pid 90358 tid 90454 thread 24 bound to OS proc set {64-95}
+OMP: pid 90358 tid 90458 thread 25 bound to OS proc set {64-95}
+OMP: pid 90358 tid 90462 thread 26 bound to OS proc set {64-95}
+OMP: pid 90358 tid 90466 thread 27 bound to OS proc set {64-95}
+OMP: pid 90358 tid 90478 thread 30 bound to OS proc set {64-95}
+[DRM-pin] pid=90358 tid=90365 assigned=64-95 running_on=80
+[DRM-pin] pid=90358 tid=90377 assigned=64-95 running_on=85
+[DRM-pin] pid=90358 tid=90361 assigned=64-95 running_on=76
+[DRM-pin] pid=90358 tid=90405 assigned=64-95 running_on=72
+[DRM-pin] pid=90358 tid=90410 assigned=64-95 running_on=75
+[DRM-pin] pid=90358 tid=90399 assigned=64-95 running_on=67
+[DRM-pin] pid=90358 tid=90363 assigned=64-95 running_on=77
+[DRM-pin] pid=90358 tid=90373 assigned=64-95 running_on=83
+[DRM-pin] pid=90358 tid=90381 assigned=64-95 running_on=87
+[DRM-pin] pid=90358 tid=90385 assigned=64-95 running_on=89
+[DRM-pin] pid=90358 tid=90418 assigned=64-95 running_on=76
+[DRM-pin] pid=90358 tid=90390 assigned=64-95 running_on=91
+[DRM-pin] pid=90358 tid=90413 assigned=64-95 running_on=69
+[DRM-pin] pid=90358 tid=90395 assigned=64-95 running_on=93
+[DRM-pin] pid=90358 tid=90367 assigned=64-95 running_on=81
+[DRM-pin] pid=90358 tid=90433 assigned=64-95 running_on=86
+[DRM-pin] pid=90358 tid=90437 assigned=64-95 running_on=89
+[DRM-pin] pid=90358 tid=90430 assigned=64-95 running_on=84
+[DRM-pin] pid=90358 tid=90470 assigned=64-95 running_on=75
+[DRM-pin] pid=90358 tid=90450 assigned=64-95 running_on=85
+[DRM-pin] pid=90358 tid=90421 assigned=64-95 running_on=80
+[DRM-pin] pid=90358 tid=90478 assigned=64-95 running_on=65
+[DRM-pin] pid=90358 tid=90483 assigned=64-95 running_on=65
+[DRM-pin] pid=90358 tid=90441 assigned=64-95 running_on=91
+[DRM-pin] pid=90358 tid=90474 assigned=64-95 running_on=69
+[DRM-pin] pid=90358 tid=90426 assigned=64-95 running_on=82
+[DRM-pin] pid=90358 tid=90454 assigned=64-95 running_on=67
+[DRM-pin] pid=90358 tid=90462 assigned=64-95 running_on=92
+[DRM-pin] pid=90358 tid=90466 assigned=64-95 running_on=90
+[DRM-pin] pid=90358 tid=90458 assigned=64-95 running_on=95
+[DRM-pin] pid=90358 tid=90445 assigned=64-95 running_on=93
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - EP Benchmark
+
+ Number of random numbers generated:      8589934592
+ Number of available threads:                     32
+
+EP Benchmark Results:
+
+CPU Time =     6.684
+N = 2^   32
+No. Gaussian Pairs =    3373275903.
+Sums =     2.691444083863086D+09    2.691519118724446D+09
+Counts:
+  0    1572172634.
+  1    1501108549.
+  2     281805648.
+  3      17761221.
+  4        424017.
+  5          3821.
+  6            13.
+  7             0.
+  8             0.
+  9             0.
+
+
+ EP Benchmark Completed.
+ Class           =                        C
+ Size            =               8589934592
+ Iterations      =                        0
+ Time in seconds =                     6.68
+ Total threads   =                       32
+ Avail threads   =                       32
+ Mop/s total     =                  1285.11
+ Mop/s/thread    =                    40.16
+ Operation type  = Random numbers generated
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              03 Sep 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L$(LLVM_BUILD)/lib -lomp
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

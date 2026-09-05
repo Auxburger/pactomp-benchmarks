@@ -1,0 +1,120 @@
+OMP: pid 52370 tid 52370 thread 0 bound to OS proc set {64-95}
+OMP: pid 52370 tid 52378 thread 2 bound to OS proc set {64-95}
+OMP: pid 52370 tid 52382 thread 3 bound to OS proc set {64-95}
+OMP: pid 52370 tid 52376 thread 1 bound to OS proc set {64-95}
+OMP: pid 52370 tid 52399 thread 7 bound to OS proc set {64-95}
+OMP: pid 52370 tid 52401 thread 8 bound to OS proc set {64-95}
+OMP: pid 52370 tid 52413 thread 10 bound to OS proc set {64-95}
+OMP: pid 52370 tid 52396 thread 6 bound to OS proc set {64-95}
+OMP: pid 52370 tid 52386 thread 4 bound to OS proc set {64-95}
+OMP: pid 52370 tid 52418 thread 11 bound to OS proc set {64-95}
+OMP: pid 52370 tid 52406 thread 9 bound to OS proc set {64-95}
+OMP: pid 52370 tid 52391 thread 5 bound to OS proc set {64-95}
+OMP: pid 52370 tid 52429 thread 12 bound to OS proc set {64-95}
+OMP: pid 52370 tid 52433 thread 13 bound to OS proc set {64-95}
+OMP: pid 52370 tid 52449 thread 16 bound to OS proc set {64-95}
+OMP: pid 52370 tid 52491 thread 27 bound to OS proc set {64-95}
+OMP: pid 52370 tid 52483 thread 24 bound to OS proc set {64-95}
+OMP: pid 52370 tid 52486 thread 25 bound to OS proc set {64-95}
+OMP: pid 52370 tid 52472 thread 22 bound to OS proc set {64-95}
+OMP: pid 52370 tid 52446 thread 15 bound to OS proc set {64-95}
+OMP: pid 52370 tid 52461 thread 19 bound to OS proc set {64-95}
+OMP: pid 52370 tid 52465 thread 20 bound to OS proc set {64-95}
+OMP: pid 52370 tid 52469 thread 21 bound to OS proc set {64-95}
+OMP: pid 52370 tid 52453 thread 17 bound to OS proc set {64-95}
+OMP: pid 52370 tid 52442 thread 14 bound to OS proc set {64-95}
+OMP: pid 52370 tid 52457 thread 18 bound to OS proc set {64-95}
+OMP: pid 52370 tid 52489 thread 26 bound to OS proc set {64-95}
+OMP: pid 52370 tid 52479 thread 23 bound to OS proc set {64-95}
+OMP: pid 52370 tid 52494 thread 28 bound to OS proc set {64-95}
+OMP: pid 52370 tid 52497 thread 31 bound to OS proc set {64-95}
+OMP: pid 52370 tid 52496 thread 30 bound to OS proc set {64-95}
+OMP: pid 52370 tid 52495 thread 29 bound to OS proc set {64-95}
+[DRM-pin] pid=52370 tid=52378 assigned=80-95 running_on=83
+OMP: pid 52370 tid 52370 thread 0 bound to OS proc set {64-95}
+[DRM-pin] pid=52370 tid=52418 assigned=80-95 running_on=81
+OMP: pid 52370 tid 52378 thread 2 bound to OS proc set {64-95}
+OMP: pid 52370 tid 52418 thread 11 bound to OS proc set {64-95}
+[DRM-pin] pid=52370 tid=52382 assigned=80-95 running_on=85
+[DRM-pin] pid=52370 tid=52413 assigned=80-95 running_on=80
+OMP: pid 52370 tid 52382 thread 3 bound to OS proc set {64-95}
+[DRM-pin] pid=52370 tid=52401 assigned=80-95 running_on=94
+OMP: pid 52370 tid 52413 thread 10 bound to OS proc set {64-95}
+[DRM-pin] pid=52370 tid=52399 assigned=80-95 running_on=92
+OMP: pid 52370 tid 52401 thread 8 bound to OS proc set {64-95}
+OMP: pid 52370 tid 52399 thread 7 bound to OS proc set {64-95}
+[DRM-pin] pid=52370 tid=52446 assigned=80-95 running_on=85
+[DRM-pin] pid=52370 tid=52391 assigned=80-95 running_on=89
+OMP: pid 52370 tid 52446 thread 15 bound to OS proc set {64-95}
+[DRM-pin] pid=52370 tid=52376 assigned=80-95 running_on=82
+OMP: pid 52370 tid 52391 thread 5 bound to OS proc set {64-95}
+OMP: pid 52370 tid 52376 thread 1 bound to OS proc set {64-95}
+[DRM-pin] pid=52370 tid=52406 assigned=80-95 running_on=80
+OMP: pid 52370 tid 52406 thread 9 bound to OS proc set {64-95}
+[DRM-pin] pid=52370 tid=52386 assigned=80-95 running_on=82
+OMP: pid 52370 tid 52386 thread 4 bound to OS proc set {64-95}
+[DRM-pin] pid=52370 tid=52433 assigned=80-95 running_on=80
+[DRM-pin] pid=52370 tid=52396 assigned=80-95 running_on=91
+OMP: pid 52370 tid 52433 thread 13 bound to OS proc set {64-95}
+[DRM-pin] pid=52370 tid=52429 assigned=80-95 running_on=81
+OMP: pid 52370 tid 52396 thread 6 bound to OS proc set {64-95}
+OMP: pid 52370 tid 52429 thread 12 bound to OS proc set {64-95}
+[DRM-pin] pid=52370 tid=52442 assigned=80-95 running_on=83
+OMP: pid 52370 tid 52442 thread 14 bound to OS proc set {64-95}
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - EP Benchmark
+
+ Number of random numbers generated:      8589934592
+ Number of available threads:                     32
+
+EP Benchmark Results:
+
+CPU Time =    10.046
+N = 2^   32
+No. Gaussian Pairs =    3373275903.
+Sums =     2.691444083862576D+09    2.691519118725088D+09
+Counts:
+  0    1572172634.
+  1    1501108549.
+  2     281805648.
+  3      17761221.
+  4        424017.
+  5          3821.
+  6            13.
+  7             0.
+  8             0.
+  9             0.
+
+
+ EP Benchmark Completed.
+ Class           =                        C
+ Size            =               8589934592
+ Iterations      =                        0
+ Time in seconds =                    10.05
+ Total threads   =                       16
+ Avail threads   =                       32
+ Warning: Threads used differ from threads available
+ Mop/s total     =                   855.05
+ Mop/s/thread    =                    53.44
+ Operation type  = Random numbers generated
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              03 Sep 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L$(LLVM_BUILD)/lib -lomp
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

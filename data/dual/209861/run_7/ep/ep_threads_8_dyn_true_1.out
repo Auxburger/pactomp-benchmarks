@@ -1,0 +1,71 @@
+OMP: pid 183244 tid 183251 thread 2 bound to OS proc set {1-8}
+OMP: pid 183244 tid 183250 thread 1 bound to OS proc set {1-8}
+OMP: pid 183244 tid 183265 thread 7 bound to OS proc set {1-8}
+OMP: pid 183244 tid 183244 thread 0 bound to OS proc set {1-8}
+OMP: pid 183244 tid 183262 thread 6 bound to OS proc set {1-8}
+OMP: pid 183244 tid 183254 thread 3 bound to OS proc set {1-8}
+OMP: pid 183244 tid 183256 thread 4 bound to OS proc set {1-8}
+OMP: pid 183244 tid 183258 thread 5 bound to OS proc set {1-8}
+[DRM-pin] pid=183244 tid=183251 assigned=1-8 running_on=7
+[DRM-pin] pid=183244 tid=183265 assigned=1-8 running_on=4
+[DRM-pin] pid=183244 tid=183254 assigned=1-8 running_on=1
+[DRM-pin] pid=183244 tid=183250 assigned=1-8 running_on=3
+[DRM-pin] pid=183244 tid=183262 assigned=1-8 running_on=2
+[DRM-pin] pid=183244 tid=183256 assigned=1-8 running_on=5
+[DRM-pin] pid=183244 tid=183258 assigned=1-8 running_on=4
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - EP Benchmark
+
+ Number of random numbers generated:      8589934592
+ Number of available threads:                      8
+
+EP Benchmark Results:
+
+CPU Time =    23.944
+N = 2^   32
+No. Gaussian Pairs =    3373275903.
+Sums =     2.691444083862810D+09    2.691519118724568D+09
+Counts:
+  0    1572172634.
+  1    1501108549.
+  2     281805648.
+  3      17761221.
+  4        424017.
+  5          3821.
+  6            13.
+  7             0.
+  8             0.
+  9             0.
+
+
+ EP Benchmark Completed.
+ Class           =                        C
+ Size            =               8589934592
+ Iterations      =                        0
+ Time in seconds =                    23.94
+ Total threads   =                        8
+ Avail threads   =                        8
+ Mop/s total     =                   358.75
+ Mop/s/thread    =                    44.84
+ Operation type  = Random numbers generated
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              03 Sep 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L$(LLVM_BUILD)/lib -lomp
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

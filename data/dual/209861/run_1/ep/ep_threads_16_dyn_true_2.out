@@ -1,0 +1,88 @@
+OMP: pid 77424 tid 77424 thread 0 bound to OS proc set {1-16}
+OMP: pid 77424 tid 77453 thread 3 bound to OS proc set {1-16}
+OMP: pid 77424 tid 77477 thread 12 bound to OS proc set {1-16}
+OMP: pid 77424 tid 77484 thread 14 bound to OS proc set {1-16}
+OMP: pid 77424 tid 77465 thread 8 bound to OS proc set {1-16}
+OMP: pid 77424 tid 77481 thread 13 bound to OS proc set {1-16}
+OMP: pid 77424 tid 77455 thread 4 bound to OS proc set {1-16}
+OMP: pid 77424 tid 77474 thread 11 bound to OS proc set {1-16}
+OMP: pid 77424 tid 77472 thread 10 bound to OS proc set {1-16}
+OMP: pid 77424 tid 77468 thread 9 bound to OS proc set {1-16}
+OMP: pid 77424 tid 77462 thread 7 bound to OS proc set {1-16}
+OMP: pid 77424 tid 77459 thread 6 bound to OS proc set {1-16}
+OMP: pid 77424 tid 77458 thread 5 bound to OS proc set {1-16}
+OMP: pid 77424 tid 77450 thread 2 bound to OS proc set {1-16}
+OMP: pid 77424 tid 77448 thread 1 bound to OS proc set {1-16}
+OMP: pid 77424 tid 77486 thread 15 bound to OS proc set {1-16}
+OMP: pid 77424 tid 77424 thread 0 bound to OS proc set {1-16}
+[DRM-pin] pid=77424 tid=77453 assigned=9-16 running_on=14
+OMP: pid 77424 tid 77453 thread 3 bound to OS proc set {1-16}
+[DRM-pin] pid=77424 tid=77448 assigned=9-16 running_on=16
+OMP: pid 77424 tid 77448 thread 1 bound to OS proc set {1-16}
+[DRM-pin] pid=77424 tid=77450 assigned=9-16 running_on=16
+OMP: pid 77424 tid 77450 thread 2 bound to OS proc set {1-16}
+[DRM-pin] pid=77424 tid=77455 assigned=9-16 running_on=16
+[DRM-pin] pid=77424 tid=77459 assigned=9-16 running_on=14
+[DRM-pin] pid=77424 tid=77458 assigned=9-16 running_on=14
+OMP: pid 77424 tid 77459 thread 6 bound to OS proc set {1-16}
+OMP: pid 77424 tid 77458 thread 5 bound to OS proc set {1-16}
+[DRM-pin] pid=77424 tid=77462 assigned=9-16 running_on=14
+OMP: pid 77424 tid 77462 thread 7 bound to OS proc set {1-16}
+OMP: pid 77424 tid 77455 thread 4 bound to OS proc set {1-16}
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - EP Benchmark
+
+ Number of random numbers generated:      8589934592
+ Number of available threads:                     16
+
+EP Benchmark Results:
+
+CPU Time =    19.644
+N = 2^   32
+No. Gaussian Pairs =    3373275903.
+Sums =     2.691444083862810D+09    2.691519118724568D+09
+Counts:
+  0    1572172634.
+  1    1501108549.
+  2     281805648.
+  3      17761221.
+  4        424017.
+  5          3821.
+  6            13.
+  7             0.
+  8             0.
+  9             0.
+
+
+ EP Benchmark Completed.
+ Class           =                        C
+ Size            =               8589934592
+ Iterations      =                        0
+ Time in seconds =                    19.64
+ Total threads   =                        8
+ Avail threads   =                       16
+ Warning: Threads used differ from threads available
+ Mop/s total     =                   437.27
+ Mop/s/thread    =                    54.66
+ Operation type  = Random numbers generated
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              03 Sep 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L$(LLVM_BUILD)/lib -lomp
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

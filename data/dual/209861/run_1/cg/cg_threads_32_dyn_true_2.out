@@ -1,0 +1,158 @@
+OMP: pid 229242 tid 229250 thread 4 bound to OS proc set {1-32}
+OMP: pid 229242 tid 229242 thread 0 bound to OS proc set {1-32}
+OMP: pid 229242 tid 229249 thread 3 bound to OS proc set {1-32}
+OMP: pid 229242 tid 229248 thread 2 bound to OS proc set {1-32}
+OMP: pid 229242 tid 229252 thread 6 bound to OS proc set {1-32}
+OMP: pid 229242 tid 229256 thread 7 bound to OS proc set {1-32}
+OMP: pid 229242 tid 229279 thread 15 bound to OS proc set {1-32}
+OMP: pid 229242 tid 229251 thread 5 bound to OS proc set {1-32}
+OMP: pid 229242 tid 229274 thread 14 bound to OS proc set {1-32}
+OMP: pid 229242 tid 229257 thread 8 bound to OS proc set {1-32}
+OMP: pid 229242 tid 229290 thread 19 bound to OS proc set {1-32}
+OMP: pid 229242 tid 229246 thread 1 bound to OS proc set {1-32}
+OMP: pid 229242 tid 229266 thread 11 bound to OS proc set {1-32}
+OMP: pid 229242 tid 229280 thread 16 bound to OS proc set {1-32}
+OMP: pid 229242 tid 229258 thread 9 bound to OS proc set {1-32}
+OMP: pid 229242 tid 229269 thread 12 bound to OS proc set {1-32}
+OMP: pid 229242 tid 229262 thread 10 bound to OS proc set {1-32}
+OMP: pid 229242 tid 229286 thread 18 bound to OS proc set {1-32}
+OMP: pid 229242 tid 229317 thread 27 bound to OS proc set {1-32}
+OMP: pid 229242 tid 229284 thread 17 bound to OS proc set {1-32}
+OMP: pid 229242 tid 229271 thread 13 bound to OS proc set {1-32}
+OMP: pid 229242 tid 229295 thread 20 bound to OS proc set {1-32}
+OMP: pid 229242 tid 229316 thread 26 bound to OS proc set {1-32}
+OMP: pid 229242 tid 229308 thread 24 bound to OS proc set {1-32}
+OMP: pid 229242 tid 229328 thread 31 bound to OS proc set {1-32}
+OMP: pid 229242 tid 229323 thread 29 bound to OS proc set {1-32}
+OMP: pid 229242 tid 229307 thread 23 bound to OS proc set {1-32}
+OMP: pid 229242 tid 229319 thread 28 bound to OS proc set {1-32}
+OMP: pid 229242 tid 229310 thread 25 bound to OS proc set {1-32}
+OMP: pid 229242 tid 229301 thread 22 bound to OS proc set {1-32}
+OMP: pid 229242 tid 229298 thread 21 bound to OS proc set {1-32}
+OMP: pid 229242 tid 229327 thread 30 bound to OS proc set {1-32}
+[DRM-pin] pid=229242 tid=229249 assigned=1-32 running_on=10
+[DRM-pin] pid=229242 tid=229274 assigned=1-32 running_on=18
+[DRM-pin] pid=229242 tid=229301 assigned=1-32 running_on=10
+[DRM-pin] pid=229242 tid=229295 assigned=1-32 running_on=31
+[DRM-pin] pid=229242 tid=229269 assigned=1-32 running_on=26
+[DRM-pin] pid=229242 tid=229248 assigned=1-32 running_on=7
+[DRM-pin] pid=229242 tid=229284 assigned=1-32 running_on=28
+[DRM-pin] pid=229242 tid=229317 assigned=1-32 running_on=4
+[DRM-pin] pid=229242 tid=229290 assigned=1-32 running_on=30
+[DRM-pin] pid=229242 tid=229308 assigned=1-32 running_on=5
+[DRM-pin] pid=229242 tid=229307 assigned=1-32 running_on=23
+[DRM-pin] pid=229242 tid=229246 assigned=1-32 running_on=2
+[DRM-pin] pid=229242 tid=229279 assigned=1-32 running_on=12
+[DRM-pin] pid=229242 tid=229252 assigned=1-32 running_on=16
+[DRM-pin] pid=229242 tid=229256 assigned=1-32 running_on=19
+[DRM-pin] pid=229242 tid=229286 assigned=1-32 running_on=29
+[DRM-pin] pid=229242 tid=229251 assigned=1-32 running_on=15
+[DRM-pin] pid=229242 tid=229316 assigned=1-32 running_on=6
+[DRM-pin] pid=229242 tid=229250 assigned=1-32 running_on=14
+[DRM-pin] pid=229242 tid=229298 assigned=1-32 running_on=18
+[DRM-pin] pid=229242 tid=229310 assigned=1-32 running_on=25
+[DRM-pin] pid=229242 tid=229319 assigned=1-32 running_on=9
+[DRM-pin] pid=229242 tid=229328 assigned=1-32 running_on=8
+[DRM-pin] pid=229242 tid=229327 assigned=1-32 running_on=21
+[DRM-pin] pid=229242 tid=229323 assigned=1-32 running_on=28
+[DRM-pin] pid=229242 tid=229257 assigned=1-32 running_on=19
+[DRM-pin] pid=229242 tid=229262 assigned=1-32 running_on=3
+[DRM-pin] pid=229242 tid=229271 assigned=1-32 running_on=14
+[DRM-pin] pid=229242 tid=229266 assigned=1-32 running_on=11
+[DRM-pin] pid=229242 tid=229258 assigned=1-32 running_on=24
+[DRM-pin] pid=229242 tid=229280 assigned=1-32 running_on=13
+[DRM-pin] pid=229242 tid=229246 assigned=1-16 running_on=2
+OMP: pid 229242 tid 229242 thread 0 bound to OS proc set {1-32}
+[DRM-pin] pid=229242 tid=229271 assigned=1-16 running_on=14
+OMP: pid 229242 tid 229246 thread 1 bound to OS proc set {1-32}
+OMP: pid 229242 tid 229271 thread 13 bound to OS proc set {1-32}
+[DRM-pin] pid=229242 tid=229262 assigned=1-16 running_on=3
+OMP: pid 229242 tid 229262 thread 10 bound to OS proc set {1-32}
+[DRM-pin] pid=229242 tid=229249 assigned=1-16 running_on=10
+OMP: pid 229242 tid 229249 thread 3 bound to OS proc set {1-32}
+[DRM-pin] pid=229242 tid=229269 assigned=1-16 running_on=7
+OMP: pid 229242 tid 229269 thread 12 bound to OS proc set {1-32}
+[DRM-pin] pid=229242 tid=229266 assigned=1-16 running_on=11
+OMP: pid 229242 tid 229266 thread 11 bound to OS proc set {1-32}
+[DRM-pin] pid=229242 tid=229279 assigned=1-16 running_on=12
+[DRM-pin] pid=229242 tid=229252 assigned=1-16 running_on=16
+OMP: pid 229242 tid 229279 thread 15 bound to OS proc set {1-32}
+OMP: pid 229242 tid 229252 thread 6 bound to OS proc set {1-32}
+[DRM-pin] pid=229242 tid=229250 assigned=1-16 running_on=6
+OMP: pid 229242 tid 229250 thread 4 bound to OS proc set {1-32}
+[DRM-pin] pid=229242 tid=229251 assigned=1-16 running_on=15
+OMP: pid 229242 tid 229251 thread 5 bound to OS proc set {1-32}
+[DRM-pin] pid=229242 tid=229256 assigned=1-16 running_on=16
+OMP: pid 229242 tid 229256 thread 7 bound to OS proc set {1-32}
+[DRM-pin] pid=229242 tid=229274 assigned=1-16 running_on=3
+[DRM-pin] pid=229242 tid=229258 assigned=1-16 running_on=7
+OMP: pid 229242 tid 229274 thread 14 bound to OS proc set {1-32}
+OMP: pid 229242 tid 229258 thread 9 bound to OS proc set {1-32}
+[DRM-pin] pid=229242 tid=229257 assigned=1-16 running_on=12
+OMP: pid 229242 tid 229257 thread 8 bound to OS proc set {1-32}
+[DRM-pin] pid=229242 tid=229248 assigned=1-16 running_on=1
+OMP: pid 229242 tid 229248 thread 2 bound to OS proc set {1-32}
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - CG Benchmark
+
+ Size:      150000
+ Iterations:                     75
+ Number of available threads:    32
+
+ Initialization time =           1.343 seconds
+
+   iteration           ||r||                 zeta
+        1       0.35332215893987E-12   109.9994423237398
+        5       0.89303382078908E-15    28.6471670038897
+       10       0.91154367288228E-15    28.9496695449000
+       15       0.90731499696035E-15    28.9716336228373
+       20       0.91463858793052E-15    28.9734210663751
+       25       0.90936876294672E-15    28.9735863059385
+       30       0.90851049161327E-15    28.9736033967630
+       35       0.91029449514805E-15    28.9736053266249
+       40       0.90569703219529E-15    28.9736055590700
+       45       0.90957769237674E-15    28.9736055884129
+       50       0.90961505188405E-15    28.9736055922482
+       55       0.90395219467761E-15    28.9736055927636
+       60       0.90898854900645E-15    28.9736055928341
+       65       0.90774146227385E-15    28.9736055928438
+       70       0.90362439075079E-15    28.9736055928452
+       75       0.90266731884295E-15    28.9736055928455
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ Zeta is     0.2897360559285E+02
+ Error is    0.1581784714701E-13
+
+
+ CG Benchmark Completed.
+ Class           =                        C
+ Size            =                   150000
+ Iterations      =                       75
+ Time in seconds =                     7.56
+ Total threads   =                       16
+ Avail threads   =                       32
+ Warning: Threads used differ from threads available
+ Mop/s total     =                 18964.55
+ Mop/s/thread    =                  1185.28
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              03 Sep 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L$(LLVM_BUILD)/lib -lomp
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

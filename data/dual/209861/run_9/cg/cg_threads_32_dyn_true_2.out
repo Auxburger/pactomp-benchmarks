@@ -1,0 +1,204 @@
+OMP: pid 76679 tid 76679 thread 0 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76688 thread 3 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76687 thread 2 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76685 thread 1 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76777 thread 31 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76706 thread 8 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76717 thread 11 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76723 thread 12 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76713 thread 10 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76729 thread 15 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76711 thread 9 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76727 thread 14 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76690 thread 4 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76725 thread 13 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76697 thread 6 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76701 thread 7 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76770 thread 28 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76736 thread 16 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76750 thread 19 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76739 thread 17 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76694 thread 5 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76760 thread 24 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76757 thread 22 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76772 thread 29 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76743 thread 18 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76767 thread 26 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76768 thread 27 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76751 thread 20 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76764 thread 25 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76758 thread 23 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76754 thread 21 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76775 thread 30 bound to OS proc set {1-32}
+[DRM-pin] pid=76679 tid=76725 assigned=1-32 running_on=14
+[DRM-pin] pid=76679 tid=76723 assigned=1-32 running_on=8
+[DRM-pin] pid=76679 tid=76711 assigned=1-32 running_on=28
+[DRM-pin] pid=76679 tid=76729 assigned=1-32 running_on=3
+[DRM-pin] pid=76679 tid=76706 assigned=1-32 running_on=10
+[DRM-pin] pid=76679 tid=76713 assigned=1-32 running_on=17
+[DRM-pin] pid=76679 tid=76717 assigned=1-32 running_on=11
+[DRM-pin] pid=76679 tid=76688 assigned=1-32 running_on=15
+[DRM-pin] pid=76679 tid=76687 assigned=1-32 running_on=13
+[DRM-pin] pid=76679 tid=76727 assigned=1-32 running_on=5
+[DRM-pin] pid=76679 tid=76685 assigned=1-32 running_on=2
+[DRM-pin] pid=76679 tid=76690 assigned=1-32 running_on=30
+[DRM-pin] pid=76679 tid=76701 assigned=1-32 running_on=21
+[DRM-pin] pid=76679 tid=76736 assigned=1-32 running_on=8
+[DRM-pin] pid=76679 tid=76751 assigned=1-32 running_on=24
+[DRM-pin] pid=76679 tid=76777 assigned=1-32 running_on=23
+[DRM-pin] pid=76679 tid=76743 assigned=1-32 running_on=28
+[DRM-pin] pid=76679 tid=76775 assigned=1-32 running_on=19
+[DRM-pin] pid=76679 tid=76770 assigned=1-32 running_on=20
+[DRM-pin] pid=76679 tid=76758 assigned=1-32 running_on=4
+[DRM-pin] pid=76679 tid=76768 assigned=1-32 running_on=29
+[DRM-pin] pid=76679 tid=76750 assigned=1-32 running_on=26
+[DRM-pin] pid=76679 tid=76760 assigned=1-32 running_on=16
+[DRM-pin] pid=76679 tid=76694 assigned=1-32 running_on=30
+[DRM-pin] pid=76679 tid=76764 assigned=1-32 running_on=31
+[DRM-pin] pid=76679 tid=76754 assigned=1-32 running_on=7
+[DRM-pin] pid=76679 tid=76772 assigned=1-32 running_on=11
+[DRM-pin] pid=76679 tid=76767 assigned=1-32 running_on=13
+[DRM-pin] pid=76679 tid=76697 assigned=1-32 running_on=15
+[DRM-pin] pid=76679 tid=76757 assigned=1-32 running_on=9
+[DRM-pin] pid=76679 tid=76739 assigned=1-32 running_on=22
+OMP: pid 76679 tid 76679 thread 0 bound to OS proc set {1-32}
+[DRM-pin] pid=76679 tid=76706 assigned=1-16 running_on=10
+[DRM-pin] pid=76679 tid=76694 assigned=1-16 running_on=2
+OMP: pid 76679 tid 76706 thread 8 bound to OS proc set {1-32}
+[DRM-pin] pid=76679 tid=76725 assigned=1-16 running_on=14
+OMP: pid 76679 tid 76694 thread 5 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76725 thread 13 bound to OS proc set {1-32}
+[DRM-pin] pid=76679 tid=76729 assigned=1-16 running_on=11
+OMP: pid 76679 tid 76729 thread 15 bound to OS proc set {1-32}
+[DRM-pin] pid=76679 tid=76685 assigned=1-16 running_on=2
+OMP: pid 76679 tid 76685 thread 1 bound to OS proc set {1-32}
+[DRM-pin] pid=76679 tid=76723 assigned=1-16 running_on=8
+OMP: pid 76679 tid 76723 thread 12 bound to OS proc set {1-32}
+[DRM-pin] pid=76679 tid=76727 assigned=1-16 running_on=5
+OMP: pid 76679 tid 76727 thread 14 bound to OS proc set {1-32}
+[DRM-pin] pid=76679 tid=76688 assigned=1-16 running_on=15
+OMP: pid 76679 tid 76688 thread 3 bound to OS proc set {1-32}
+[DRM-pin] pid=76679 tid=76711 assigned=1-16 running_on=12
+[DRM-pin] pid=76679 tid=76697 assigned=1-16 running_on=6
+OMP: pid 76679 tid 76711 thread 9 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76697 thread 6 bound to OS proc set {1-32}
+[DRM-pin] pid=76679 tid=76717 assigned=1-16 running_on=15
+OMP: pid 76679 tid 76717 thread 11 bound to OS proc set {1-32}
+[DRM-pin] pid=76679 tid=76690 assigned=1-16 running_on=13
+OMP: pid 76679 tid 76690 thread 4 bound to OS proc set {1-32}
+[DRM-pin] pid=76679 tid=76701 assigned=1-16 running_on=1
+OMP: pid 76679 tid 76701 thread 7 bound to OS proc set {1-32}
+[DRM-pin] pid=76679 tid=76713 assigned=1-16 running_on=15
+OMP: pid 76679 tid 76713 thread 10 bound to OS proc set {1-32}
+[DRM-pin] pid=76679 tid=76687 assigned=1-16 running_on=13
+OMP: pid 76679 tid 76687 thread 2 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76679 thread 0 bound to OS proc set {1-32}
+[DRM-pin] pid=76679 tid=76717 assigned=1-32 running_on=15
+OMP: pid 76679 tid 76717 thread 11 bound to OS proc set {1-32}
+[DRM-pin] pid=76679 tid=76729 assigned=1-32 running_on=11
+OMP: pid 76679 tid 76729 thread 15 bound to OS proc set {1-32}
+[DRM-pin] pid=76679 tid=76694 assigned=1-32 running_on=6
+OMP: pid 76679 tid 76694 thread 5 bound to OS proc set {1-32}
+[DRM-pin] pid=76679 tid=76701 assigned=1-32 running_on=9
+OMP: pid 76679 tid 76760 thread 24 bound to OS proc set {1-32}
+[DRM-pin] pid=76679 tid=76690 assigned=1-32 running_on=13
+OMP: pid 76679 tid 76767 thread 26 bound to OS proc set {1-32}
+[DRM-pin] pid=76679 tid=76706 assigned=1-32 running_on=10
+OMP: pid 76679 tid 76739 thread 17 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76701 thread 7 bound to OS proc set {1-32}
+[DRM-pin] pid=76679 tid=76685 assigned=1-32 running_on=4
+OMP: pid 76679 tid 76736 thread 16 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76750 thread 19 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76758 thread 23 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76764 thread 25 bound to OS proc set {1-32}
+[DRM-pin] pid=76679 tid=76725 assigned=1-32 running_on=14
+OMP: pid 76679 tid 76743 thread 18 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76757 thread 22 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76768 thread 27 bound to OS proc set {1-32}
+[DRM-pin] pid=76679 tid=76727 assigned=1-32 running_on=8
+OMP: pid 76679 tid 76690 thread 4 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76754 thread 21 bound to OS proc set {1-32}
+[DRM-pin] pid=76679 tid=76723 assigned=1-32 running_on=1
+OMP: pid 76679 tid 76751 thread 20 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76706 thread 8 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76772 thread 29 bound to OS proc set {1-32}
+[DRM-pin] pid=76679 tid=76697 assigned=1-32 running_on=3
+OMP: pid 76679 tid 76685 thread 1 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76770 thread 28 bound to OS proc set {1-32}
+[DRM-pin] pid=76679 tid=76688 assigned=1-32 running_on=16
+OMP: pid 76679 tid 76777 thread 31 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76775 thread 30 bound to OS proc set {1-32}
+[DRM-pin] pid=76679 tid=76687 assigned=1-32 running_on=12
+OMP: pid 76679 tid 76725 thread 13 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76727 thread 14 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76723 thread 12 bound to OS proc set {1-32}
+[DRM-pin] pid=76679 tid=76713 assigned=1-32 running_on=7
+OMP: pid 76679 tid 76697 thread 6 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76688 thread 3 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76687 thread 2 bound to OS proc set {1-32}
+OMP: pid 76679 tid 76713 thread 10 bound to OS proc set {1-32}
+[DRM-pin] pid=76679 tid=76711 assigned=1-32 running_on=2
+OMP: pid 76679 tid 76711 thread 9 bound to OS proc set {1-32}
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - CG Benchmark
+
+ Size:      150000
+ Iterations:                     75
+ Number of available threads:    32
+
+ Initialization time =           1.233 seconds
+
+   iteration           ||r||                 zeta
+        1       0.35322221422352E-12   109.9994423237398
+        5       0.89238315720942E-15    28.6471670038896
+       10       0.91072891493197E-15    28.9496695449000
+       15       0.90594209445592E-15    28.9716336228372
+       20       0.91564749615745E-15    28.9734210663751
+       25       0.90975730507865E-15    28.9735863059385
+       30       0.90791789355613E-15    28.9736033967630
+       35       0.91069388779763E-15    28.9736053266249
+       40       0.90530498157360E-15    28.9736055590700
+       45       0.90950818058007E-15    28.9736055884130
+       50       0.91029406618290E-15    28.9736055922482
+       55       0.90333738345641E-15    28.9736055927636
+       60       0.90923860976135E-15    28.9736055928341
+       65       0.90787678382553E-15    28.9736055928438
+       70       0.90203564269814E-15    28.9736055928452
+       75       0.90126055538390E-15    28.9736055928455
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ Zeta is     0.2897360559285E+02
+ Error is    0.1777975066912E-13
+
+
+ CG Benchmark Completed.
+ Class           =                        C
+ Size            =                   150000
+ Iterations      =                       75
+ Time in seconds =                     7.73
+ Total threads   =                       32
+ Avail threads   =                       32
+ Mop/s total     =                 18539.84
+ Mop/s/thread    =                   579.37
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              03 Sep 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L$(LLVM_BUILD)/lib -lomp
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

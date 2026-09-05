@@ -1,0 +1,132 @@
+OMP: pid 119419 tid 119446 thread 11 bound to OS proc set {64-79}
+OMP: pid 119419 tid 119434 thread 8 bound to OS proc set {64-79}
+OMP: pid 119419 tid 119439 thread 9 bound to OS proc set {64-79}
+OMP: pid 119419 tid 119445 thread 10 bound to OS proc set {64-79}
+OMP: pid 119419 tid 119419 thread 0 bound to OS proc set {64-79}
+OMP: pid 119419 tid 119423 thread 2 bound to OS proc set {64-79}
+OMP: pid 119419 tid 119421 thread 1 bound to OS proc set {64-79}
+OMP: pid 119419 tid 119424 thread 3 bound to OS proc set {64-79}
+OMP: pid 119419 tid 119431 thread 6 bound to OS proc set {64-79}
+OMP: pid 119419 tid 119426 thread 5 bound to OS proc set {64-79}
+OMP: pid 119419 tid 119432 thread 7 bound to OS proc set {64-79}
+OMP: pid 119419 tid 119425 thread 4 bound to OS proc set {64-79}
+OMP: pid 119419 tid 119452 thread 12 bound to OS proc set {64-79}
+OMP: pid 119419 tid 119460 thread 13 bound to OS proc set {64-79}
+OMP: pid 119419 tid 119470 thread 15 bound to OS proc set {64-79}
+OMP: pid 119419 tid 119469 thread 14 bound to OS proc set {64-79}
+[DRM-pin] pid=119419 tid=119470 assigned=64-79 running_on=79
+[DRM-pin] pid=119419 tid=119439 assigned=64-79 running_on=78
+[DRM-pin] pid=119419 tid=119469 assigned=64-79 running_on=65
+[DRM-pin] pid=119419 tid=119452 assigned=64-79 running_on=77
+[DRM-pin] pid=119419 tid=119421 assigned=64-79 running_on=71
+[DRM-pin] pid=119419 tid=119424 assigned=64-79 running_on=69
+[DRM-pin] pid=119419 tid=119425 assigned=64-79 running_on=66
+[DRM-pin] pid=119419 tid=119431 assigned=64-79 running_on=73
+[DRM-pin] pid=119419 tid=119460 assigned=64-79 running_on=68
+[DRM-pin] pid=119419 tid=119426 assigned=64-79 running_on=78
+[DRM-pin] pid=119419 tid=119432 assigned=64-79 running_on=74
+[DRM-pin] pid=119419 tid=119434 assigned=64-79 running_on=64
+[DRM-pin] pid=119419 tid=119445 assigned=64-79 running_on=75
+[DRM-pin] pid=119419 tid=119423 assigned=64-79 running_on=67
+[DRM-pin] pid=119419 tid=119446 assigned=64-79 running_on=75
+[DRM-pin] pid=119419 tid=119424 assigned=64-71 running_on=69
+OMP: pid 119419 tid 119419 thread 0 bound to OS proc set {64-79}
+[DRM-pin] pid=119419 tid=119423 assigned=64-71 running_on=67
+OMP: pid 119419 tid 119424 thread 3 bound to OS proc set {64-79}
+OMP: pid 119419 tid 119423 thread 2 bound to OS proc set {64-79}
+[DRM-pin] pid=119419 tid=119421 assigned=64-71 running_on=71
+OMP: pid 119419 tid 119421 thread 1 bound to OS proc set {64-79}
+[DRM-pin] pid=119419 tid=119425 assigned=64-71 running_on=66
+OMP: pid 119419 tid 119425 thread 4 bound to OS proc set {64-79}
+[DRM-pin] pid=119419 tid=119431 assigned=64-71 running_on=64
+OMP: pid 119419 tid 119431 thread 6 bound to OS proc set {64-79}
+[DRM-pin] pid=119419 tid=119426 assigned=64-71 running_on=64
+OMP: pid 119419 tid 119426 thread 5 bound to OS proc set {64-79}
+[DRM-pin] pid=119419 tid=119432 assigned=64-71 running_on=64
+OMP: pid 119419 tid 119432 thread 7 bound to OS proc set {64-79}
+[DRM-pin] pid=119419 tid=119423 assigned=64-79 running_on=67
+OMP: pid 119419 tid 119419 thread 0 bound to OS proc set {64-79}
+[DRM-pin] pid=119419 tid=119424 assigned=64-79 running_on=68
+OMP: pid 119419 tid 119470 thread 15 bound to OS proc set {64-79}
+[DRM-pin] pid=119419 tid=119421 assigned=64-79 running_on=71
+OMP: pid 119419 tid 119469 thread 14 bound to OS proc set {64-79}
+OMP: pid 119419 tid 119423 thread 2 bound to OS proc set {64-79}
+OMP: pid 119419 tid 119460 thread 13 bound to OS proc set {64-79}
+OMP: pid 119419 tid 119452 thread 12 bound to OS proc set {64-79}
+OMP: pid 119419 tid 119424 thread 3 bound to OS proc set {64-79}
+OMP: pid 119419 tid 119421 thread 1 bound to OS proc set {64-79}
+OMP: pid 119419 tid 119434 thread 8 bound to OS proc set {64-79}
+[DRM-pin] pid=119419 tid=119425 assigned=64-79 running_on=66
+OMP: pid 119419 tid 119446 thread 11 bound to OS proc set {64-79}
+[DRM-pin] pid=119419 tid=119432 assigned=64-79 running_on=64
+OMP: pid 119419 tid 119445 thread 10 bound to OS proc set {64-79}
+OMP: pid 119419 tid 119439 thread 9 bound to OS proc set {64-79}
+OMP: pid 119419 tid 119425 thread 4 bound to OS proc set {64-79}
+[DRM-pin] pid=119419 tid=119431 assigned=64-79 running_on=65
+OMP: pid 119419 tid 119432 thread 7 bound to OS proc set {64-79}
+OMP: pid 119419 tid 119431 thread 6 bound to OS proc set {64-79}
+[DRM-pin] pid=119419 tid=119426 assigned=64-79 running_on=69
+OMP: pid 119419 tid 119426 thread 5 bound to OS proc set {64-79}
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - CG Benchmark
+
+ Size:      150000
+ Iterations:                     75
+ Number of available threads:    16
+
+ Initialization time =           1.915 seconds
+
+   iteration           ||r||                 zeta
+        1       0.35331921107138E-12   109.9994423237398
+        5       0.89246538293693E-15    28.6471670038896
+       10       0.91189913167003E-15    28.9496695449000
+       15       0.90699795654731E-15    28.9716336228371
+       20       0.91432856621400E-15    28.9734210663752
+       25       0.90898270942934E-15    28.9735863059386
+       30       0.90824545465752E-15    28.9736033967633
+       35       0.91034422750588E-15    28.9736053266247
+       40       0.90559259395689E-15    28.9736055590700
+       45       0.90832865760967E-15    28.9736055884130
+       50       0.90876999231364E-15    28.9736055922483
+       55       0.90377617403752E-15    28.9736055927634
+       60       0.90896095192586E-15    28.9736055928341
+       65       0.90668702876643E-15    28.9736055928440
+       70       0.90217806003471E-15    28.9736055928451
+       75       0.90054499546358E-15    28.9736055928455
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ Zeta is     0.2897360559285E+02
+ Error is    0.1777975066912E-13
+
+
+ CG Benchmark Completed.
+ Class           =                        C
+ Size            =                   150000
+ Iterations      =                       75
+ Time in seconds =                    13.47
+ Total threads   =                       16
+ Avail threads   =                       16
+ Mop/s total     =                 10642.24
+ Mop/s/thread    =                   665.14
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              03 Sep 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L$(LLVM_BUILD)/lib -lomp
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

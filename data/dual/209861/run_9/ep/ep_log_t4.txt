@@ -1,0 +1,12 @@
+Batch run started: Sat Sep  5 18:46:31 CEST 2026
+Batch run started: Sat Sep  5 18:46:31 CEST 2026
+Batch run started: Sat Sep  5 18:46:31 CEST 2026
+Batch run started: Sat Sep  5 18:46:31 CEST 2026
+dyn=false num_threads=4
+dyn=true num_threads=4
+dyn=true num_threads=4
+dyn=false num_threads=4
+dyn true finished: Sat Sep  5 18:47:15 CEST 2026 (Duration: 43898ms)
+dyn false finished: Sat Sep  5 18:47:29 CEST 2026 (Duration: 57983ms)
+dyn false finished: Sat Sep  5 18:47:29 CEST 2026 (Duration: 58004ms)
+dyn true finished: Sat Sep  5 18:47:46 CEST 2026 (Duration: 75288ms)

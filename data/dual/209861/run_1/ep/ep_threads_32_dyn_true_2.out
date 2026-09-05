@@ -1,0 +1,119 @@
+OMP: pid 4947 tid 4947 thread 0 bound to OS proc set {1-32}
+OMP: pid 4947 tid 4958 thread 3 bound to OS proc set {1-32}
+OMP: pid 4947 tid 4955 thread 2 bound to OS proc set {1-32}
+OMP: pid 4947 tid 4951 thread 1 bound to OS proc set {1-32}
+OMP: pid 4947 tid 4978 thread 8 bound to OS proc set {1-32}
+OMP: pid 4947 tid 4994 thread 12 bound to OS proc set {1-32}
+OMP: pid 4947 tid 5007 thread 15 bound to OS proc set {1-32}
+OMP: pid 4947 tid 4961 thread 4 bound to OS proc set {1-32}
+OMP: pid 4947 tid 4973 thread 7 bound to OS proc set {1-32}
+OMP: pid 4947 tid 4987 thread 10 bound to OS proc set {1-32}
+OMP: pid 4947 tid 4991 thread 11 bound to OS proc set {1-32}
+OMP: pid 4947 tid 4971 thread 6 bound to OS proc set {1-32}
+OMP: pid 4947 tid 4981 thread 9 bound to OS proc set {1-32}
+OMP: pid 4947 tid 5067 thread 31 bound to OS proc set {1-32}
+OMP: pid 4947 tid 4966 thread 5 bound to OS proc set {1-32}
+OMP: pid 4947 tid 4999 thread 13 bound to OS proc set {1-32}
+OMP: pid 4947 tid 5003 thread 14 bound to OS proc set {1-32}
+OMP: pid 4947 tid 5059 thread 28 bound to OS proc set {1-32}
+OMP: pid 4947 tid 5043 thread 24 bound to OS proc set {1-32}
+OMP: pid 4947 tid 5061 thread 29 bound to OS proc set {1-32}
+OMP: pid 4947 tid 5022 thread 19 bound to OS proc set {1-32}
+OMP: pid 4947 tid 5055 thread 27 bound to OS proc set {1-32}
+OMP: pid 4947 tid 5064 thread 30 bound to OS proc set {1-32}
+OMP: pid 4947 tid 5039 thread 23 bound to OS proc set {1-32}
+OMP: pid 4947 tid 5011 thread 16 bound to OS proc set {1-32}
+OMP: pid 4947 tid 5050 thread 26 bound to OS proc set {1-32}
+OMP: pid 4947 tid 5018 thread 18 bound to OS proc set {1-32}
+OMP: pid 4947 tid 5047 thread 25 bound to OS proc set {1-32}
+OMP: pid 4947 tid 5016 thread 17 bound to OS proc set {1-32}
+OMP: pid 4947 tid 5027 thread 20 bound to OS proc set {1-32}
+OMP: pid 4947 tid 5036 thread 22 bound to OS proc set {1-32}
+OMP: pid 4947 tid 5032 thread 21 bound to OS proc set {1-32}
+[DRM-pin] pid=4947 tid=4958 assigned=1-32 running_on=21
+[DRM-pin] pid=4947 tid=5007 assigned=1-32 running_on=15
+[DRM-pin] pid=4947 tid=5011 assigned=1-32 running_on=10
+[DRM-pin] pid=4947 tid=5018 assigned=1-32 running_on=1
+[DRM-pin] pid=4947 tid=5050 assigned=1-32 running_on=16
+[DRM-pin] pid=4947 tid=5059 assigned=1-32 running_on=7
+[DRM-pin] pid=4947 tid=4981 assigned=1-32 running_on=31
+[DRM-pin] pid=4947 tid=4966 assigned=1-32 running_on=24
+[DRM-pin] pid=4947 tid=5064 assigned=1-32 running_on=11
+[DRM-pin] pid=4947 tid=5067 assigned=1-32 running_on=14
+[DRM-pin] pid=4947 tid=5043 assigned=1-32 running_on=25
+[DRM-pin] pid=4947 tid=4991 assigned=1-32 running_on=6
+[DRM-pin] pid=4947 tid=5027 assigned=1-32 running_on=28
+[DRM-pin] pid=4947 tid=4961 assigned=1-32 running_on=22
+[DRM-pin] pid=4947 tid=4951 assigned=1-32 running_on=18
+[DRM-pin] pid=4947 tid=4955 assigned=1-32 running_on=20
+[DRM-pin] pid=4947 tid=4978 assigned=1-32 running_on=29
+[DRM-pin] pid=4947 tid=5003 assigned=1-32 running_on=8
+[DRM-pin] pid=4947 tid=4999 assigned=1-32 running_on=13
+[DRM-pin] pid=4947 tid=5032 assigned=1-32 running_on=30
+[DRM-pin] pid=4947 tid=4987 assigned=1-32 running_on=3
+[DRM-pin] pid=4947 tid=5022 assigned=1-32 running_on=23
+[DRM-pin] pid=4947 tid=5061 assigned=1-32 running_on=17
+[DRM-pin] pid=4947 tid=5036 assigned=1-32 running_on=5
+[DRM-pin] pid=4947 tid=5047 assigned=1-32 running_on=12
+[DRM-pin] pid=4947 tid=5016 assigned=1-32 running_on=2
+[DRM-pin] pid=4947 tid=4994 assigned=1-32 running_on=9
+[DRM-pin] pid=4947 tid=4971 assigned=1-32 running_on=26
+[DRM-pin] pid=4947 tid=5055 assigned=1-32 running_on=30
+[DRM-pin] pid=4947 tid=5039 assigned=1-32 running_on=4
+[DRM-pin] pid=4947 tid=4973 assigned=1-32 running_on=27
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - EP Benchmark
+
+ Number of random numbers generated:      8589934592
+ Number of available threads:                     32
+
+EP Benchmark Results:
+
+CPU Time =     6.115
+N = 2^   32
+No. Gaussian Pairs =    3373275903.
+Sums =     2.691444083863086D+09    2.691519118724447D+09
+Counts:
+  0    1572172634.
+  1    1501108549.
+  2     281805648.
+  3      17761221.
+  4        424017.
+  5          3821.
+  6            13.
+  7             0.
+  8             0.
+  9             0.
+
+
+ EP Benchmark Completed.
+ Class           =                        C
+ Size            =               8589934592
+ Iterations      =                        0
+ Time in seconds =                     6.12
+ Total threads   =                       32
+ Avail threads   =                       32
+ Mop/s total     =                  1404.66
+ Mop/s/thread    =                    43.90
+ Operation type  = Random numbers generated
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              03 Sep 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L$(LLVM_BUILD)/lib -lomp
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

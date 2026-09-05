@@ -1,0 +1,189 @@
+OMP: pid 229243 tid 229243 thread 0 bound to OS proc set {1-32}
+OMP: pid 229243 tid 229259 thread 3 bound to OS proc set {1-32}
+OMP: pid 229243 tid 229255 thread 2 bound to OS proc set {1-32}
+OMP: pid 229243 tid 229289 thread 12 bound to OS proc set {1-32}
+OMP: pid 229243 tid 229268 thread 7 bound to OS proc set {1-32}
+OMP: pid 229243 tid 229261 thread 4 bound to OS proc set {1-32}
+OMP: pid 229243 tid 229272 thread 8 bound to OS proc set {1-32}
+OMP: pid 229243 tid 229264 thread 6 bound to OS proc set {1-32}
+OMP: pid 229243 tid 229282 thread 11 bound to OS proc set {1-32}
+OMP: pid 229243 tid 229276 thread 9 bound to OS proc set {1-32}
+OMP: pid 229243 tid 229277 thread 10 bound to OS proc set {1-32}
+OMP: pid 229243 tid 229263 thread 5 bound to OS proc set {1-32}
+OMP: pid 229243 tid 229254 thread 1 bound to OS proc set {1-32}
+OMP: pid 229243 tid 229291 thread 13 bound to OS proc set {1-32}
+OMP: pid 229243 tid 229293 thread 14 bound to OS proc set {1-32}
+OMP: pid 229243 tid 229341 thread 28 bound to OS proc set {1-32}
+OMP: pid 229243 tid 229344 thread 31 bound to OS proc set {1-32}
+OMP: pid 229243 tid 229343 thread 30 bound to OS proc set {1-32}
+OMP: pid 229243 tid 229342 thread 29 bound to OS proc set {1-32}
+OMP: pid 229243 tid 229296 thread 15 bound to OS proc set {1-32}
+OMP: pid 229243 tid 229332 thread 24 bound to OS proc set {1-32}
+OMP: pid 229243 tid 229311 thread 19 bound to OS proc set {1-32}
+OMP: pid 229243 tid 229314 thread 20 bound to OS proc set {1-32}
+OMP: pid 229243 tid 229338 thread 27 bound to OS proc set {1-32}
+OMP: pid 229243 tid 229321 thread 21 bound to OS proc set {1-32}
+OMP: pid 229243 tid 229326 thread 22 bound to OS proc set {1-32}
+OMP: pid 229243 tid 229336 thread 26 bound to OS proc set {1-32}
+OMP: pid 229243 tid 229331 thread 23 bound to OS proc set {1-32}
+OMP: pid 229243 tid 229334 thread 25 bound to OS proc set {1-32}
+OMP: pid 229243 tid 229299 thread 16 bound to OS proc set {1-32}
+OMP: pid 229243 tid 229309 thread 18 bound to OS proc set {1-32}
+OMP: pid 229243 tid 229304 thread 17 bound to OS proc set {1-32}
+OMP: pid 229243 tid 229243 thread 0 bound to OS proc set {1-32}
+[DRM-pin] pid=229243 tid=229272 assigned=17-32 running_on=17
+OMP: pid 229243 tid 229272 thread 8 bound to OS proc set {1-32}
+[DRM-pin] pid=229243 tid=229255 assigned=17-32 running_on=20
+OMP: pid 229243 tid 229255 thread 2 bound to OS proc set {1-32}
+[DRM-pin] pid=229243 tid=229261 assigned=17-32 running_on=30
+[DRM-pin] pid=229243 tid=229276 assigned=17-32 running_on=17
+OMP: pid 229243 tid 229261 thread 4 bound to OS proc set {1-32}
+[DRM-pin] pid=229243 tid=229282 assigned=17-32 running_on=27
+OMP: pid 229243 tid 229276 thread 9 bound to OS proc set {1-32}
+[DRM-pin] pid=229243 tid=229289 assigned=17-32 running_on=31
+OMP: pid 229243 tid 229282 thread 11 bound to OS proc set {1-32}
+OMP: pid 229243 tid 229289 thread 12 bound to OS proc set {1-32}
+[DRM-pin] pid=229243 tid=229263 assigned=17-32 running_on=17
+OMP: pid 229243 tid 229263 thread 5 bound to OS proc set {1-32}
+[DRM-pin] pid=229243 tid=229293 assigned=17-32 running_on=27
+OMP: pid 229243 tid 229293 thread 14 bound to OS proc set {1-32}
+[DRM-pin] pid=229243 tid=229296 assigned=17-32 running_on=22
+[DRM-pin] pid=229243 tid=229259 assigned=17-32 running_on=31
+OMP: pid 229243 tid 229259 thread 3 bound to OS proc set {1-32}
+[DRM-pin] pid=229243 tid=229268 assigned=17-32 running_on=17
+OMP: pid 229243 tid 229268 thread 7 bound to OS proc set {1-32}
+[DRM-pin] pid=229243 tid=229264 assigned=17-32 running_on=17
+OMP: pid 229243 tid 229264 thread 6 bound to OS proc set {1-32}
+[DRM-pin] pid=229243 tid=229291 assigned=17-32 running_on=17
+OMP: pid 229243 tid 229291 thread 13 bound to OS proc set {1-32}
+[DRM-pin] pid=229243 tid=229254 assigned=17-32 running_on=17
+OMP: pid 229243 tid 229254 thread 1 bound to OS proc set {1-32}
+[DRM-pin] pid=229243 tid=229277 assigned=17-32 running_on=28
+OMP: pid 229243 tid 229277 thread 10 bound to OS proc set {1-32}
+OMP: pid 229243 tid 229296 thread 15 bound to OS proc set {1-32}
+OMP: pid 229243 tid 229243 thread 0 bound to OS proc set {1-32}
+[DRM-pin] pid=229243 tid=229293 assigned=1-32 running_on=27
+OMP: pid 229243 tid 229293 thread 14 bound to OS proc set {1-32}
+[DRM-pin] pid=229243 tid=229289 assigned=1-32 running_on=31
+[DRM-pin] pid=229243 tid=229304 assigned=1-32 running_on=25
+OMP: pid 229243 tid 229289 thread 12 bound to OS proc set {1-32}
+OMP: pid 229243 tid 229304 thread 17 bound to OS proc set {1-32}
+[DRM-pin] pid=229243 tid=229314 assigned=1-32 running_on=12
+[DRM-pin] pid=229243 tid=229336 assigned=1-32 running_on=32
+OMP: pid 229243 tid 229314 thread 20 bound to OS proc set {1-32}
+[DRM-pin] pid=229243 tid=229334 assigned=1-32 running_on=29
+OMP: pid 229243 tid 229336 thread 26 bound to OS proc set {1-32}
+OMP: pid 229243 tid 229334 thread 25 bound to OS proc set {1-32}
+[DRM-pin] pid=229243 tid=229261 assigned=1-32 running_on=21
+OMP: pid 229243 tid 229261 thread 4 bound to OS proc set {1-32}
+[DRM-pin] pid=229243 tid=229291 assigned=1-32 running_on=17
+OMP: pid 229243 tid 229291 thread 13 bound to OS proc set {1-32}
+[DRM-pin] pid=229243 tid=229268 assigned=1-32 running_on=26
+OMP: pid 229243 tid 229268 thread 7 bound to OS proc set {1-32}
+[DRM-pin] pid=229243 tid=229259 assigned=1-32 running_on=22
+OMP: pid 229243 tid 229259 thread 3 bound to OS proc set {1-32}
+[DRM-pin] pid=229243 tid=229264 assigned=1-32 running_on=32
+[DRM-pin] pid=229243 tid=229277 assigned=1-32 running_on=28
+OMP: pid 229243 tid 229264 thread 6 bound to OS proc set {1-32}
+OMP: pid 229243 tid 229277 thread 10 bound to OS proc set {1-32}
+[DRM-pin] pid=229243 tid=229254 assigned=1-32 running_on=18
+OMP: pid 229243 tid 229254 thread 1 bound to OS proc set {1-32}
+[DRM-pin] pid=229243 tid=229255 assigned=1-32 running_on=20
+OMP: pid 229243 tid 229255 thread 2 bound to OS proc set {1-32}
+[DRM-pin] pid=229243 tid=229276 assigned=1-32 running_on=24
+OMP: pid 229243 tid 229276 thread 9 bound to OS proc set {1-32}
+[DRM-pin] pid=229243 tid=229311 assigned=1-32 running_on=24
+OMP: pid 229243 tid 229311 thread 19 bound to OS proc set {1-32}
+[DRM-pin] pid=229243 tid=229299 assigned=1-32 running_on=1
+[DRM-pin] pid=229243 tid=229272 assigned=1-32 running_on=19
+OMP: pid 229243 tid 229299 thread 16 bound to OS proc set {1-32}
+[DRM-pin] pid=229243 tid=229331 assigned=1-32 running_on=26
+OMP: pid 229243 tid 229272 thread 8 bound to OS proc set {1-32}
+OMP: pid 229243 tid 229331 thread 23 bound to OS proc set {1-32}
+[DRM-pin] pid=229243 tid=229309 assigned=1-32 running_on=8
+[DRM-pin] pid=229243 tid=229282 assigned=1-32 running_on=25
+OMP: pid 229243 tid 229309 thread 18 bound to OS proc set {1-32}
+[DRM-pin] pid=229243 tid=229326 assigned=1-32 running_on=11
+OMP: pid 229243 tid 229282 thread 11 bound to OS proc set {1-32}
+OMP: pid 229243 tid 229326 thread 22 bound to OS proc set {1-32}
+[DRM-pin] pid=229243 tid=229321 assigned=1-32 running_on=9
+[DRM-pin] pid=229243 tid=229338 assigned=1-32 running_on=22
+OMP: pid 229243 tid 229321 thread 21 bound to OS proc set {1-32}
+OMP: pid 229243 tid 229338 thread 27 bound to OS proc set {1-32}
+[DRM-pin] pid=229243 tid=229342 assigned=1-32 running_on=20
+OMP: pid 229243 tid 229342 thread 29 bound to OS proc set {1-32}
+[DRM-pin] pid=229243 tid=229263 assigned=1-32 running_on=30
+OMP: pid 229243 tid 229263 thread 5 bound to OS proc set {1-32}
+[DRM-pin] pid=229243 tid=229341 assigned=1-32 running_on=2
+OMP: pid 229243 tid 229341 thread 28 bound to OS proc set {1-32}
+[DRM-pin] pid=229243 tid=229332 assigned=1-32 running_on=3
+OMP: pid 229243 tid 229332 thread 24 bound to OS proc set {1-32}
+[DRM-pin] pid=229243 tid=229344 assigned=1-32 running_on=16
+OMP: pid 229243 tid 229344 thread 31 bound to OS proc set {1-32}
+[DRM-pin] pid=229243 tid=229343 assigned=1-32 running_on=13
+OMP: pid 229243 tid 229343 thread 30 bound to OS proc set {1-32}
+[DRM-pin] pid=229243 tid=229296 assigned=1-32 running_on=29
+OMP: pid 229243 tid 229296 thread 15 bound to OS proc set {1-32}
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - CG Benchmark
+
+ Size:      150000
+ Iterations:                     75
+ Number of available threads:    32
+
+ Initialization time =           1.401 seconds
+
+   iteration           ||r||                 zeta
+        1       0.35304095412174E-12   109.9994423237398
+        5       0.89209402603683E-15    28.6471670038897
+       10       0.91268156106253E-15    28.9496695448999
+       15       0.90694710264519E-15    28.9716336228373
+       20       0.91567715110644E-15    28.9734210663751
+       25       0.90864835350059E-15    28.9735863059385
+       30       0.90919952332524E-15    28.9736033967630
+       35       0.90964307010377E-15    28.9736053266249
+       40       0.90551407299521E-15    28.9736055590700
+       45       0.91125551485267E-15    28.9736055884129
+       50       0.91007261488548E-15    28.9736055922483
+       55       0.90436668894438E-15    28.9736055927636
+       60       0.90806159952512E-15    28.9736055928341
+       65       0.90769491716895E-15    28.9736055928438
+       70       0.90208295014070E-15    28.9736055928452
+       75       0.90120217604599E-15    28.9736055928455
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ Zeta is     0.2897360559285E+02
+ Error is    0.1728927478859E-13
+
+
+ CG Benchmark Completed.
+ Class           =                        C
+ Size            =                   150000
+ Iterations      =                       75
+ Time in seconds =                     7.91
+ Total threads   =                       32
+ Avail threads   =                       32
+ Mop/s total     =                 18113.05
+ Mop/s/thread    =                   566.03
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              03 Sep 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L$(LLVM_BUILD)/lib -lomp
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

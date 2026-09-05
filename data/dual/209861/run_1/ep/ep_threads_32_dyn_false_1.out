@@ -1,0 +1,88 @@
+OMP: pid 4946 tid 4946 thread 0 bound to OS proc set {64-95}
+OMP: pid 4946 tid 4957 thread 2 bound to OS proc set {64-95}
+OMP: pid 4946 tid 4960 thread 3 bound to OS proc set {64-95}
+OMP: pid 4946 tid 4953 thread 1 bound to OS proc set {64-95}
+OMP: pid 4946 tid 4982 thread 7 bound to OS proc set {64-95}
+OMP: pid 4946 tid 4993 thread 11 bound to OS proc set {64-95}
+OMP: pid 4946 tid 4995 thread 12 bound to OS proc set {64-95}
+OMP: pid 4946 tid 4984 thread 8 bound to OS proc set {64-95}
+OMP: pid 4946 tid 4963 thread 4 bound to OS proc set {64-95}
+OMP: pid 4946 tid 4990 thread 10 bound to OS proc set {64-95}
+OMP: pid 4946 tid 4976 thread 6 bound to OS proc set {64-95}
+OMP: pid 4946 tid 4986 thread 9 bound to OS proc set {64-95}
+OMP: pid 4946 tid 4969 thread 5 bound to OS proc set {64-95}
+OMP: pid 4946 tid 5041 thread 24 bound to OS proc set {64-95}
+OMP: pid 4946 tid 5058 thread 28 bound to OS proc set {64-95}
+OMP: pid 4946 tid 5054 thread 27 bound to OS proc set {64-95}
+OMP: pid 4946 tid 5069 thread 31 bound to OS proc set {64-95}
+OMP: pid 4946 tid 5046 thread 25 bound to OS proc set {64-95}
+OMP: pid 4946 tid 5006 thread 15 bound to OS proc set {64-95}
+OMP: pid 4946 tid 5019 thread 18 bound to OS proc set {64-95}
+OMP: pid 4946 tid 4998 thread 13 bound to OS proc set {64-95}
+OMP: pid 4946 tid 5023 thread 19 bound to OS proc set {64-95}
+OMP: pid 4946 tid 5001 thread 14 bound to OS proc set {64-95}
+OMP: pid 4946 tid 5013 thread 17 bound to OS proc set {64-95}
+OMP: pid 4946 tid 5026 thread 20 bound to OS proc set {64-95}
+OMP: pid 4946 tid 5051 thread 26 bound to OS proc set {64-95}
+OMP: pid 4946 tid 5029 thread 21 bound to OS proc set {64-95}
+OMP: pid 4946 tid 5033 thread 22 bound to OS proc set {64-95}
+OMP: pid 4946 tid 5037 thread 23 bound to OS proc set {64-95}
+OMP: pid 4946 tid 5010 thread 16 bound to OS proc set {64-95}
+OMP: pid 4946 tid 5066 thread 30 bound to OS proc set {64-95}
+OMP: pid 4946 tid 5062 thread 29 bound to OS proc set {64-95}
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - EP Benchmark
+
+ Number of random numbers generated:      8589934592
+ Number of available threads:                     32
+
+EP Benchmark Results:
+
+CPU Time =     7.506
+N = 2^   32
+No. Gaussian Pairs =    3373275903.
+Sums =     2.691444083863085D+09    2.691519118724447D+09
+Counts:
+  0    1572172634.
+  1    1501108549.
+  2     281805648.
+  3      17761221.
+  4        424017.
+  5          3821.
+  6            13.
+  7             0.
+  8             0.
+  9             0.
+
+
+ EP Benchmark Completed.
+ Class           =                        C
+ Size            =               8589934592
+ Iterations      =                        0
+ Time in seconds =                     7.51
+ Total threads   =                       32
+ Avail threads   =                       32
+ Mop/s total     =                  1144.44
+ Mop/s/thread    =                    35.76
+ Operation type  = Random numbers generated
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              03 Sep 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L$(LLVM_BUILD)/lib -lomp
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

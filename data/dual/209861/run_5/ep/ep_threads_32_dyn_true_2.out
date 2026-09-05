@@ -1,0 +1,119 @@
+OMP: pid 42247 tid 42247 thread 0 bound to OS proc set {1-32}
+OMP: pid 42247 tid 42301 thread 20 bound to OS proc set {1-32}
+OMP: pid 42247 tid 42250 thread 1 bound to OS proc set {1-32}
+OMP: pid 42247 tid 42254 thread 2 bound to OS proc set {1-32}
+OMP: pid 42247 tid 42256 thread 3 bound to OS proc set {1-32}
+OMP: pid 42247 tid 42280 thread 12 bound to OS proc set {1-32}
+OMP: pid 42247 tid 42272 thread 8 bound to OS proc set {1-32}
+OMP: pid 42247 tid 42288 thread 15 bound to OS proc set {1-32}
+OMP: pid 42247 tid 42285 thread 14 bound to OS proc set {1-32}
+OMP: pid 42247 tid 42279 thread 11 bound to OS proc set {1-32}
+OMP: pid 42247 tid 42310 thread 23 bound to OS proc set {1-32}
+OMP: pid 42247 tid 42276 thread 10 bound to OS proc set {1-32}
+OMP: pid 42247 tid 42296 thread 18 bound to OS proc set {1-32}
+OMP: pid 42247 tid 42267 thread 7 bound to OS proc set {1-32}
+OMP: pid 42247 tid 42258 thread 4 bound to OS proc set {1-32}
+OMP: pid 42247 tid 42291 thread 16 bound to OS proc set {1-32}
+OMP: pid 42247 tid 42283 thread 13 bound to OS proc set {1-32}
+OMP: pid 42247 tid 42299 thread 19 bound to OS proc set {1-32}
+OMP: pid 42247 tid 42305 thread 21 bound to OS proc set {1-32}
+OMP: pid 42247 tid 42293 thread 17 bound to OS proc set {1-32}
+OMP: pid 42247 tid 42263 thread 6 bound to OS proc set {1-32}
+OMP: pid 42247 tid 42333 thread 31 bound to OS proc set {1-32}
+OMP: pid 42247 tid 42325 thread 28 bound to OS proc set {1-32}
+OMP: pid 42247 tid 42274 thread 9 bound to OS proc set {1-32}
+OMP: pid 42247 tid 42307 thread 22 bound to OS proc set {1-32}
+OMP: pid 42247 tid 42260 thread 5 bound to OS proc set {1-32}
+OMP: pid 42247 tid 42313 thread 24 bound to OS proc set {1-32}
+OMP: pid 42247 tid 42328 thread 29 bound to OS proc set {1-32}
+OMP: pid 42247 tid 42331 thread 30 bound to OS proc set {1-32}
+OMP: pid 42247 tid 42320 thread 26 bound to OS proc set {1-32}
+OMP: pid 42247 tid 42316 thread 25 bound to OS proc set {1-32}
+OMP: pid 42247 tid 42322 thread 27 bound to OS proc set {1-32}
+[DRM-pin] pid=42247 tid=42283 assigned=1-32 running_on=13
+[DRM-pin] pid=42247 tid=42313 assigned=1-32 running_on=11
+[DRM-pin] pid=42247 tid=42328 assigned=1-32 running_on=18
+[DRM-pin] pid=42247 tid=42296 assigned=1-32 running_on=22
+[DRM-pin] pid=42247 tid=42267 assigned=1-32 running_on=8
+[DRM-pin] pid=42247 tid=42263 assigned=1-32 running_on=5
+[DRM-pin] pid=42247 tid=42254 assigned=1-32 running_on=23
+[DRM-pin] pid=42247 tid=42301 assigned=1-32 running_on=1
+[DRM-pin] pid=42247 tid=42256 assigned=1-32 running_on=25
+[DRM-pin] pid=42247 tid=42293 assigned=1-32 running_on=29
+[DRM-pin] pid=42247 tid=42299 assigned=1-32 running_on=24
+[DRM-pin] pid=42247 tid=42279 assigned=1-32 running_on=15
+[DRM-pin] pid=42247 tid=42272 assigned=1-32 running_on=12
+[DRM-pin] pid=42247 tid=42333 assigned=1-32 running_on=26
+[DRM-pin] pid=42247 tid=42322 assigned=1-32 running_on=30
+[DRM-pin] pid=42247 tid=42325 assigned=1-32 running_on=19
+[DRM-pin] pid=42247 tid=42291 assigned=1-32 running_on=28
+[DRM-pin] pid=42247 tid=42258 assigned=1-32 running_on=27
+[DRM-pin] pid=42247 tid=42331 assigned=1-32 running_on=16
+[DRM-pin] pid=42247 tid=42276 assigned=1-32 running_on=3
+[DRM-pin] pid=42247 tid=42274 assigned=1-32 running_on=14
+[DRM-pin] pid=42247 tid=42250 assigned=1-32 running_on=20
+[DRM-pin] pid=42247 tid=42285 assigned=1-32 running_on=17
+[DRM-pin] pid=42247 tid=42320 assigned=1-32 running_on=10
+[DRM-pin] pid=42247 tid=42305 assigned=1-32 running_on=9
+[DRM-pin] pid=42247 tid=42288 assigned=1-32 running_on=21
+[DRM-pin] pid=42247 tid=42307 assigned=1-32 running_on=4
+[DRM-pin] pid=42247 tid=42260 assigned=1-32 running_on=30
+[DRM-pin] pid=42247 tid=42280 assigned=1-32 running_on=7
+[DRM-pin] pid=42247 tid=42316 assigned=1-32 running_on=31
+[DRM-pin] pid=42247 tid=42310 assigned=1-32 running_on=6
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - EP Benchmark
+
+ Number of random numbers generated:      8589934592
+ Number of available threads:                     32
+
+EP Benchmark Results:
+
+CPU Time =     5.947
+N = 2^   32
+No. Gaussian Pairs =    3373275903.
+Sums =     2.691444083863085D+09    2.691519118724448D+09
+Counts:
+  0    1572172634.
+  1    1501108549.
+  2     281805648.
+  3      17761221.
+  4        424017.
+  5          3821.
+  6            13.
+  7             0.
+  8             0.
+  9             0.
+
+
+ EP Benchmark Completed.
+ Class           =                        C
+ Size            =               8589934592
+ Iterations      =                        0
+ Time in seconds =                     5.95
+ Total threads   =                       32
+ Avail threads   =                       32
+ Mop/s total     =                  1444.52
+ Mop/s/thread    =                    45.14
+ Operation type  = Random numbers generated
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              03 Sep 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L$(LLVM_BUILD)/lib -lomp
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

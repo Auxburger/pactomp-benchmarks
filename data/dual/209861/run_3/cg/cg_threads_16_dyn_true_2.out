@@ -1,0 +1,110 @@
+OMP: pid 103295 tid 103303 thread 3 bound to OS proc set {1-16}
+OMP: pid 103295 tid 103298 thread 2 bound to OS proc set {1-16}
+OMP: pid 103295 tid 103310 thread 7 bound to OS proc set {1-16}
+OMP: pid 103295 tid 103309 thread 6 bound to OS proc set {1-16}
+OMP: pid 103295 tid 103305 thread 4 bound to OS proc set {1-16}
+OMP: pid 103295 tid 103295 thread 0 bound to OS proc set {1-16}
+OMP: pid 103295 tid 103308 thread 5 bound to OS proc set {1-16}
+OMP: pid 103295 tid 103297 thread 1 bound to OS proc set {1-16}
+OMP: pid 103295 tid 103316 thread 10 bound to OS proc set {1-16}
+OMP: pid 103295 tid 103318 thread 11 bound to OS proc set {1-16}
+OMP: pid 103295 tid 103313 thread 8 bound to OS proc set {1-16}
+OMP: pid 103295 tid 103315 thread 9 bound to OS proc set {1-16}
+OMP: pid 103295 tid 103328 thread 15 bound to OS proc set {1-16}
+OMP: pid 103295 tid 103320 thread 12 bound to OS proc set {1-16}
+OMP: pid 103295 tid 103326 thread 14 bound to OS proc set {1-16}
+OMP: pid 103295 tid 103324 thread 13 bound to OS proc set {1-16}
+[DRM-pin] pid=103295 tid=103297 assigned=1-16 running_on=5
+[DRM-pin] pid=103295 tid=103313 assigned=1-16 running_on=15
+[DRM-pin] pid=103295 tid=103318 assigned=1-16 running_on=11
+[DRM-pin] pid=103295 tid=103328 assigned=1-16 running_on=2
+[DRM-pin] pid=103295 tid=103310 assigned=1-16 running_on=6
+[DRM-pin] pid=103295 tid=103298 assigned=1-16 running_on=14
+[DRM-pin] pid=103295 tid=103320 assigned=1-16 running_on=12
+[DRM-pin] pid=103295 tid=103305 assigned=1-16 running_on=8
+[DRM-pin] pid=103295 tid=103315 assigned=1-16 running_on=7
+[DRM-pin] pid=103295 tid=103308 assigned=1-16 running_on=9
+[DRM-pin] pid=103295 tid=103309 assigned=1-16 running_on=16
+[DRM-pin] pid=103295 tid=103303 assigned=1-16 running_on=2
+[DRM-pin] pid=103295 tid=103326 assigned=1-16 running_on=12
+[DRM-pin] pid=103295 tid=103324 assigned=1-16 running_on=13
+[DRM-pin] pid=103295 tid=103316 assigned=1-16 running_on=5
+[DRM-pin] pid=103295 tid=103298 assigned=9-16 running_on=14
+OMP: pid 103295 tid 103295 thread 0 bound to OS proc set {1-16}
+[DRM-pin] pid=103295 tid=103305 assigned=9-16 running_on=10
+OMP: pid 103295 tid 103298 thread 2 bound to OS proc set {1-16}
+OMP: pid 103295 tid 103305 thread 4 bound to OS proc set {1-16}
+[DRM-pin] pid=103295 tid=103308 assigned=9-16 running_on=9
+OMP: pid 103295 tid 103308 thread 5 bound to OS proc set {1-16}
+[DRM-pin] pid=103295 tid=103310 assigned=9-16 running_on=10
+OMP: pid 103295 tid 103310 thread 7 bound to OS proc set {1-16}
+[DRM-pin] pid=103295 tid=103297 assigned=9-16 running_on=9
+OMP: pid 103295 tid 103297 thread 1 bound to OS proc set {1-16}
+[DRM-pin] pid=103295 tid=103303 assigned=9-16 running_on=9
+OMP: pid 103295 tid 103303 thread 3 bound to OS proc set {1-16}
+[DRM-pin] pid=103295 tid=103309 assigned=9-16 running_on=16
+OMP: pid 103295 tid 103309 thread 6 bound to OS proc set {1-16}
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - CG Benchmark
+
+ Size:      150000
+ Iterations:                     75
+ Number of available threads:    16
+
+ Initialization time =           1.974 seconds
+
+   iteration           ||r||                 zeta
+        1       0.35329934284284E-12   109.9994423237398
+        5       0.89223688403953E-15    28.6471670038896
+       10       0.91035890703689E-15    28.9496695449000
+       15       0.90584011722740E-15    28.9716336228371
+       20       0.91511612947251E-15    28.9734210663752
+       25       0.90739598822194E-15    28.9735863059386
+       30       0.90826901410427E-15    28.9736033967633
+       35       0.91067324980004E-15    28.9736053266247
+       40       0.90695740212821E-15    28.9736055590700
+       45       0.90886046169612E-15    28.9736055884130
+       50       0.91047897017011E-15    28.9736055922483
+       55       0.90381289667121E-15    28.9736055927634
+       60       0.90861101610170E-15    28.9736055928341
+       65       0.90556637440988E-15    28.9736055928440
+       70       0.90184233443332E-15    28.9736055928451
+       75       0.90304338757262E-15    28.9736055928456
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ Zeta is     0.2897360559285E+02
+ Error is    0.1974165419122E-13
+
+
+ CG Benchmark Completed.
+ Class           =                        C
+ Size            =                   150000
+ Iterations      =                       75
+ Time in seconds =                    12.22
+ Total threads   =                        8
+ Avail threads   =                       16
+ Warning: Threads used differ from threads available
+ Mop/s total     =                 11727.57
+ Mop/s/thread    =                  1465.95
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              03 Sep 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L$(LLVM_BUILD)/lib -lomp
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

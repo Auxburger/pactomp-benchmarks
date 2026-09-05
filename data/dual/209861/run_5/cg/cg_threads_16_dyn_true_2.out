@@ -1,0 +1,125 @@
+OMP: pid 137297 tid 137297 thread 0 bound to OS proc set {1-16}
+OMP: pid 137297 tid 137310 thread 2 bound to OS proc set {1-16}
+OMP: pid 137297 tid 137341 thread 12 bound to OS proc set {1-16}
+OMP: pid 137297 tid 137336 thread 11 bound to OS proc set {1-16}
+OMP: pid 137297 tid 137313 thread 3 bound to OS proc set {1-16}
+OMP: pid 137297 tid 137326 thread 7 bound to OS proc set {1-16}
+OMP: pid 137297 tid 137342 thread 13 bound to OS proc set {1-16}
+OMP: pid 137297 tid 137306 thread 1 bound to OS proc set {1-16}
+OMP: pid 137297 tid 137328 thread 8 bound to OS proc set {1-16}
+OMP: pid 137297 tid 137330 thread 9 bound to OS proc set {1-16}
+OMP: pid 137297 tid 137356 thread 15 bound to OS proc set {1-16}
+OMP: pid 137297 tid 137317 thread 4 bound to OS proc set {1-16}
+OMP: pid 137297 tid 137324 thread 6 bound to OS proc set {1-16}
+OMP: pid 137297 tid 137321 thread 5 bound to OS proc set {1-16}
+OMP: pid 137297 tid 137334 thread 10 bound to OS proc set {1-16}
+OMP: pid 137297 tid 137343 thread 14 bound to OS proc set {1-16}
+OMP: pid 137297 tid 137297 thread 0 bound to OS proc set {1-16}
+[DRM-pin] pid=137297 tid=137317 assigned=9-16 running_on=14
+[DRM-pin] pid=137297 tid=137306 assigned=9-16 running_on=10
+OMP: pid 137297 tid 137317 thread 4 bound to OS proc set {1-16}
+[DRM-pin] pid=137297 tid=137324 assigned=9-16 running_on=9
+OMP: pid 137297 tid 137324 thread 6 bound to OS proc set {1-16}
+[DRM-pin] pid=137297 tid=137313 assigned=9-16 running_on=9
+OMP: pid 137297 tid 137313 thread 3 bound to OS proc set {1-16}
+[DRM-pin] pid=137297 tid=137321 assigned=9-16 running_on=14
+OMP: pid 137297 tid 137321 thread 5 bound to OS proc set {1-16}
+[DRM-pin] pid=137297 tid=137310 assigned=9-16 running_on=9
+OMP: pid 137297 tid 137310 thread 2 bound to OS proc set {1-16}
+OMP: pid 137297 tid 137306 thread 1 bound to OS proc set {1-16}
+[DRM-pin] pid=137297 tid=137326 assigned=9-16 running_on=9
+OMP: pid 137297 tid 137326 thread 7 bound to OS proc set {1-16}
+OMP: pid 137297 tid 137297 thread 0 bound to OS proc set {1-16}
+[DRM-pin] pid=137297 tid=137306 assigned=1-16 running_on=14
+OMP: pid 137297 tid 137306 thread 1 bound to OS proc set {1-16}
+[DRM-pin] pid=137297 tid=137342 assigned=1-16 running_on=3
+[DRM-pin] pid=137297 tid=137334 assigned=1-16 running_on=6
+OMP: pid 137297 tid 137342 thread 13 bound to OS proc set {1-16}
+[DRM-pin] pid=137297 tid=137317 assigned=1-16 running_on=11
+OMP: pid 137297 tid 137334 thread 10 bound to OS proc set {1-16}
+[DRM-pin] pid=137297 tid=137310 assigned=1-16 running_on=12
+OMP: pid 137297 tid 137317 thread 4 bound to OS proc set {1-16}
+OMP: pid 137297 tid 137310 thread 2 bound to OS proc set {1-16}
+[DRM-pin] pid=137297 tid=137321 assigned=1-16 running_on=13
+OMP: pid 137297 tid 137321 thread 5 bound to OS proc set {1-16}
+[DRM-pin] pid=137297 tid=137324 assigned=1-16 running_on=10
+OMP: pid 137297 tid 137324 thread 6 bound to OS proc set {1-16}
+[DRM-pin] pid=137297 tid=137336 assigned=1-16 running_on=10
+[DRM-pin] pid=137297 tid=137341 assigned=1-16 running_on=1
+OMP: pid 137297 tid 137336 thread 11 bound to OS proc set {1-16}
+OMP: pid 137297 tid 137341 thread 12 bound to OS proc set {1-16}
+[DRM-pin] pid=137297 tid=137328 assigned=1-16 running_on=2
+[DRM-pin] pid=137297 tid=137343 assigned=1-16 running_on=5
+OMP: pid 137297 tid 137328 thread 8 bound to OS proc set {1-16}
+[DRM-pin] pid=137297 tid=137326 assigned=1-16 running_on=9
+OMP: pid 137297 tid 137343 thread 14 bound to OS proc set {1-16}
+OMP: pid 137297 tid 137326 thread 7 bound to OS proc set {1-16}
+[DRM-pin] pid=137297 tid=137356 assigned=1-16 running_on=7
+[DRM-pin] pid=137297 tid=137313 assigned=1-16 running_on=16
+OMP: pid 137297 tid 137356 thread 15 bound to OS proc set {1-16}
+OMP: pid 137297 tid 137313 thread 3 bound to OS proc set {1-16}
+[DRM-pin] pid=137297 tid=137330 assigned=1-16 running_on=8
+OMP: pid 137297 tid 137330 thread 9 bound to OS proc set {1-16}
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - CG Benchmark
+
+ Size:      150000
+ Iterations:                     75
+ Number of available threads:    16
+
+ Initialization time =           2.109 seconds
+
+   iteration           ||r||                 zeta
+        1       0.35317068690048E-12   109.9994423237398
+        5       0.89089382692030E-15    28.6471670038896
+       10       0.91158465432051E-15    28.9496695449000
+       15       0.90718177942920E-15    28.9716336228371
+       20       0.91326378736978E-15    28.9734210663752
+       25       0.90872390534256E-15    28.9735863059386
+       30       0.90952656752278E-15    28.9736033967633
+       35       0.91046472186332E-15    28.9736053266247
+       40       0.90767627053397E-15    28.9736055590699
+       45       0.90804944561789E-15    28.9736055884130
+       50       0.90883420385151E-15    28.9736055922483
+       55       0.90354686922023E-15    28.9736055927634
+       60       0.90865414833112E-15    28.9736055928341
+       65       0.90562802120560E-15    28.9736055928440
+       70       0.90276132182180E-15    28.9736055928452
+       75       0.90243199765918E-15    28.9736055928455
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ Zeta is     0.2897360559285E+02
+ Error is    0.1728927478859E-13
+
+
+ CG Benchmark Completed.
+ Class           =                        C
+ Size            =                   150000
+ Iterations      =                       75
+ Time in seconds =                    12.47
+ Total threads   =                       16
+ Avail threads   =                       16
+ Mop/s total     =                 11494.46
+ Mop/s/thread    =                   718.40
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              03 Sep 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L$(LLVM_BUILD)/lib -lomp
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

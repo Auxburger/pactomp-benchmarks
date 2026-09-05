@@ -1,0 +1,88 @@
+OMP: pid 219042 tid 219042 thread 0 bound to OS proc set {64-79}
+OMP: pid 219042 tid 219058 thread 1 bound to OS proc set {64-79}
+OMP: pid 219042 tid 219065 thread 3 bound to OS proc set {64-79}
+OMP: pid 219042 tid 219061 thread 2 bound to OS proc set {64-79}
+OMP: pid 219042 tid 219068 thread 4 bound to OS proc set {64-79}
+OMP: pid 219042 tid 219071 thread 5 bound to OS proc set {64-79}
+OMP: pid 219042 tid 219075 thread 6 bound to OS proc set {64-79}
+OMP: pid 219042 tid 219078 thread 7 bound to OS proc set {64-79}
+OMP: pid 219042 tid 219082 thread 8 bound to OS proc set {64-79}
+OMP: pid 219042 tid 219086 thread 9 bound to OS proc set {64-79}
+OMP: pid 219042 tid 219089 thread 10 bound to OS proc set {64-79}
+OMP: pid 219042 tid 219103 thread 14 bound to OS proc set {64-79}
+OMP: pid 219042 tid 219097 thread 12 bound to OS proc set {64-79}
+OMP: pid 219042 tid 219105 thread 15 bound to OS proc set {64-79}
+OMP: pid 219042 tid 219100 thread 13 bound to OS proc set {64-79}
+OMP: pid 219042 tid 219093 thread 11 bound to OS proc set {64-79}
+OMP: pid 219042 tid 219042 thread 0 bound to OS proc set {64-79}
+[DRM-pin] pid=219042 tid=219058 assigned=64-71 running_on=68
+[DRM-pin] pid=219042 tid=219065 assigned=64-71 running_on=69
+OMP: pid 219042 tid 219058 thread 1 bound to OS proc set {64-79}
+[DRM-pin] pid=219042 tid=219075 assigned=64-71 running_on=66
+OMP: pid 219042 tid 219065 thread 3 bound to OS proc set {64-79}
+OMP: pid 219042 tid 219075 thread 6 bound to OS proc set {64-79}
+[DRM-pin] pid=219042 tid=219078 assigned=64-71 running_on=64
+OMP: pid 219042 tid 219078 thread 7 bound to OS proc set {64-79}
+[DRM-pin] pid=219042 tid=219071 assigned=64-71 running_on=64
+OMP: pid 219042 tid 219071 thread 5 bound to OS proc set {64-79}
+[DRM-pin] pid=219042 tid=219061 assigned=64-71 running_on=70
+OMP: pid 219042 tid 219061 thread 2 bound to OS proc set {64-79}
+[DRM-pin] pid=219042 tid=219068 assigned=64-71 running_on=64
+OMP: pid 219042 tid 219068 thread 4 bound to OS proc set {64-79}
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - EP Benchmark
+
+ Number of random numbers generated:      8589934592
+ Number of available threads:                     16
+
+EP Benchmark Results:
+
+CPU Time =    23.430
+N = 2^   32
+No. Gaussian Pairs =    3373275903.
+Sums =     2.691444083862811D+09    2.691519118724567D+09
+Counts:
+  0    1572172634.
+  1    1501108549.
+  2     281805648.
+  3      17761221.
+  4        424017.
+  5          3821.
+  6            13.
+  7             0.
+  8             0.
+  9             0.
+
+
+ EP Benchmark Completed.
+ Class           =                        C
+ Size            =               8589934592
+ Iterations      =                        0
+ Time in seconds =                    23.43
+ Total threads   =                        8
+ Avail threads   =                       16
+ Warning: Threads used differ from threads available
+ Mop/s total     =                   366.63
+ Mop/s/thread    =                    45.83
+ Operation type  = Random numbers generated
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              03 Sep 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L$(LLVM_BUILD)/lib -lomp
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

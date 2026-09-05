@@ -1,0 +1,204 @@
+OMP: pid 49162 tid 49162 thread 0 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49185 thread 3 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49172 thread 1 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49178 thread 2 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49209 thread 8 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49205 thread 7 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49240 thread 15 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49225 thread 11 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49217 thread 10 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49190 thread 4 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49202 thread 6 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49228 thread 12 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49278 thread 28 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49242 thread 16 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49283 thread 30 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49229 thread 13 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49214 thread 9 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49236 thread 14 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49259 thread 19 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49284 thread 31 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49196 thread 5 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49276 thread 27 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49255 thread 18 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49250 thread 17 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49266 thread 22 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49281 thread 29 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49262 thread 20 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49267 thread 23 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49270 thread 24 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49275 thread 26 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49265 thread 21 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49272 thread 25 bound to OS proc set {64-95}
+[DRM-pin] pid=49162 tid=49196 assigned=64-95 running_on=85
+[DRM-pin] pid=49162 tid=49228 assigned=64-95 running_on=72
+[DRM-pin] pid=49162 tid=49225 assigned=64-95 running_on=80
+[DRM-pin] pid=49162 tid=49178 assigned=64-95 running_on=78
+[DRM-pin] pid=49162 tid=49217 assigned=64-95 running_on=93
+[DRM-pin] pid=49162 tid=49202 assigned=64-95 running_on=86
+[DRM-pin] pid=49162 tid=49190 assigned=64-95 running_on=82
+[DRM-pin] pid=49162 tid=49209 assigned=64-95 running_on=90
+[DRM-pin] pid=49162 tid=49242 assigned=64-95 running_on=66
+[DRM-pin] pid=49162 tid=49240 assigned=64-95 running_on=70
+[DRM-pin] pid=49162 tid=49172 assigned=64-95 running_on=73
+[DRM-pin] pid=49162 tid=49229 assigned=64-95 running_on=74
+[DRM-pin] pid=49162 tid=49262 assigned=64-95 running_on=84
+[DRM-pin] pid=49162 tid=49205 assigned=64-95 running_on=88
+[DRM-pin] pid=49162 tid=49236 assigned=64-95 running_on=69
+[DRM-pin] pid=49162 tid=49259 assigned=64-95 running_on=83
+[DRM-pin] pid=49162 tid=49265 assigned=64-95 running_on=76
+[DRM-pin] pid=49162 tid=49270 assigned=64-95 running_on=91
+[DRM-pin] pid=49162 tid=49278 assigned=64-95 running_on=65
+[DRM-pin] pid=49162 tid=49281 assigned=64-95 running_on=67
+[DRM-pin] pid=49162 tid=49266 assigned=64-95 running_on=87
+[DRM-pin] pid=49162 tid=49267 assigned=64-95 running_on=89
+[DRM-pin] pid=49162 tid=49255 assigned=64-95 running_on=79
+[DRM-pin] pid=49162 tid=49283 assigned=64-95 running_on=71
+[DRM-pin] pid=49162 tid=49276 assigned=64-95 running_on=94
+[DRM-pin] pid=49162 tid=49185 assigned=64-95 running_on=80
+[DRM-pin] pid=49162 tid=49275 assigned=64-95 running_on=84
+[DRM-pin] pid=49162 tid=49250 assigned=64-95 running_on=74
+[DRM-pin] pid=49162 tid=49214 assigned=64-95 running_on=88
+[DRM-pin] pid=49162 tid=49272 assigned=64-95 running_on=91
+[DRM-pin] pid=49162 tid=49284 assigned=64-95 running_on=67
+[DRM-pin] pid=49162 tid=49240 assigned=64-79 running_on=70
+OMP: pid 49162 tid 49162 thread 0 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49240 thread 15 bound to OS proc set {64-95}
+[DRM-pin] pid=49162 tid=49217 assigned=64-79 running_on=72
+OMP: pid 49162 tid 49217 thread 10 bound to OS proc set {64-95}
+[DRM-pin] pid=49162 tid=49225 assigned=64-79 running_on=68
+OMP: pid 49162 tid 49225 thread 11 bound to OS proc set {64-95}
+[DRM-pin] pid=49162 tid=49172 assigned=64-79 running_on=73
+OMP: pid 49162 tid 49172 thread 1 bound to OS proc set {64-95}
+[DRM-pin] pid=49162 tid=49178 assigned=64-79 running_on=78
+OMP: pid 49162 tid 49178 thread 2 bound to OS proc set {64-95}
+[DRM-pin] pid=49162 tid=49185 assigned=64-79 running_on=69
+OMP: pid 49162 tid 49185 thread 3 bound to OS proc set {64-95}
+[DRM-pin] pid=49162 tid=49236 assigned=64-79 running_on=67
+[DRM-pin] pid=49162 tid=49229 assigned=64-79 running_on=73
+OMP: pid 49162 tid 49236 thread 14 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49229 thread 13 bound to OS proc set {64-95}
+[DRM-pin] pid=49162 tid=49190 assigned=64-79 running_on=68
+[DRM-pin] pid=49162 tid=49209 assigned=64-79 running_on=69
+OMP: pid 49162 tid 49190 thread 4 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49209 thread 8 bound to OS proc set {64-95}
+[DRM-pin] pid=49162 tid=49214 assigned=64-79 running_on=65
+[DRM-pin] pid=49162 tid=49196 assigned=64-79 running_on=67
+OMP: pid 49162 tid 49214 thread 9 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49196 thread 5 bound to OS proc set {64-95}
+[DRM-pin] pid=49162 tid=49205 assigned=64-79 running_on=78
+OMP: pid 49162 tid 49205 thread 7 bound to OS proc set {64-95}
+[DRM-pin] pid=49162 tid=49202 assigned=64-79 running_on=73
+[DRM-pin] pid=49162 tid=49228 assigned=64-79 running_on=72
+OMP: pid 49162 tid 49202 thread 6 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49228 thread 12 bound to OS proc set {64-95}
+[DRM-pin] pid=49162 tid=49202 assigned=64-95 running_on=71
+OMP: pid 49162 tid 49162 thread 0 bound to OS proc set {64-95}
+[DRM-pin] pid=49162 tid=49217 assigned=64-95 running_on=72
+OMP: pid 49162 tid 49202 thread 6 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49217 thread 10 bound to OS proc set {64-95}
+[DRM-pin] pid=49162 tid=49196 assigned=64-95 running_on=67
+OMP: pid 49162 tid 49196 thread 5 bound to OS proc set {64-95}
+[DRM-pin] pid=49162 tid=49214 assigned=64-95 running_on=65
+OMP: pid 49162 tid 49270 thread 24 bound to OS proc set {64-95}
+[DRM-pin] pid=49162 tid=49228 assigned=64-95 running_on=70
+OMP: pid 49162 tid 49214 thread 9 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49259 thread 19 bound to OS proc set {64-95}
+[DRM-pin] pid=49162 tid=49225 assigned=64-95 running_on=68
+OMP: pid 49162 tid 49255 thread 18 bound to OS proc set {64-95}
+[DRM-pin] pid=49162 tid=49240 assigned=64-95 running_on=74
+OMP: pid 49162 tid 49250 thread 17 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49284 thread 31 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49283 thread 30 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49228 thread 12 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49242 thread 16 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49278 thread 28 bound to OS proc set {64-95}
+[DRM-pin] pid=49162 tid=49185 assigned=64-95 running_on=79
+OMP: pid 49162 tid 49272 thread 25 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49275 thread 26 bound to OS proc set {64-95}
+[DRM-pin] pid=49162 tid=49229 assigned=64-95 running_on=73
+OMP: pid 49162 tid 49276 thread 27 bound to OS proc set {64-95}
+[DRM-pin] pid=49162 tid=49209 assigned=64-95 running_on=69
+OMP: pid 49162 tid 49225 thread 11 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49281 thread 29 bound to OS proc set {64-95}
+[DRM-pin] pid=49162 tid=49190 assigned=64-95 running_on=76
+OMP: pid 49162 tid 49240 thread 15 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49262 thread 20 bound to OS proc set {64-95}
+[DRM-pin] pid=49162 tid=49172 assigned=64-95 running_on=66
+OMP: pid 49162 tid 49267 thread 23 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49266 thread 22 bound to OS proc set {64-95}
+[DRM-pin] pid=49162 tid=49236 assigned=64-95 running_on=78
+OMP: pid 49162 tid 49265 thread 21 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49185 thread 3 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49229 thread 13 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49209 thread 8 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49190 thread 4 bound to OS proc set {64-95}
+[DRM-pin] pid=49162 tid=49178 assigned=64-95 running_on=75
+OMP: pid 49162 tid 49172 thread 1 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49236 thread 14 bound to OS proc set {64-95}
+OMP: pid 49162 tid 49178 thread 2 bound to OS proc set {64-95}
+[DRM-pin] pid=49162 tid=49205 assigned=64-95 running_on=77
+OMP: pid 49162 tid 49205 thread 7 bound to OS proc set {64-95}
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - CG Benchmark
+
+ Size:      150000
+ Iterations:                     75
+ Number of available threads:    32
+
+ Initialization time =           1.278 seconds
+
+   iteration           ||r||                 zeta
+        1       0.35311225807051E-12   109.9994423237398
+        5       0.89273100884974E-15    28.6471670038897
+       10       0.91238457915211E-15    28.9496695449000
+       15       0.90639149923761E-15    28.9716336228373
+       20       0.91533761469278E-15    28.9734210663750
+       25       0.90995193296476E-15    28.9735863059385
+       30       0.90812283261347E-15    28.9736033967630
+       35       0.91021455684480E-15    28.9736053266248
+       40       0.90596146203190E-15    28.9736055590700
+       45       0.91045096193895E-15    28.9736055884130
+       50       0.90936611947628E-15    28.9736055922482
+       55       0.90344807854804E-15    28.9736055927636
+       60       0.90825774952049E-15    28.9736055928341
+       65       0.90899482378221E-15    28.9736055928438
+       70       0.90264134884771E-15    28.9736055928452
+       75       0.90130819532573E-15    28.9736055928455
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ Zeta is     0.2897360559285E+02
+ Error is    0.1630832302753E-13
+
+
+ CG Benchmark Completed.
+ Class           =                        C
+ Size            =                   150000
+ Iterations      =                       75
+ Time in seconds =                     7.69
+ Total threads   =                       32
+ Avail threads   =                       32
+ Mop/s total     =                 18628.74
+ Mop/s/thread    =                   582.15
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              03 Sep 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L$(LLVM_BUILD)/lib -lomp
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

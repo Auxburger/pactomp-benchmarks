@@ -1,0 +1,64 @@
+OMP: pid 135689 tid 135689 thread 0 bound to OS proc set {64-67}
+OMP: pid 135689 tid 135701 thread 3 bound to OS proc set {64-67}
+OMP: pid 135689 tid 135700 thread 2 bound to OS proc set {64-67}
+OMP: pid 135689 tid 135699 thread 1 bound to OS proc set {64-67}
+OMP: pid 135689 tid 135689 thread 0 bound to OS proc set {64-67}
+[DRM-pin] pid=135689 tid=135699 assigned=66-67 running_on=67
+OMP: pid 135689 tid 135699 thread 1 bound to OS proc set {64-67}
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - EP Benchmark
+
+ Number of random numbers generated:      8589934592
+ Number of available threads:                      4
+
+EP Benchmark Results:
+
+CPU Time =    71.501
+N = 2^   32
+No. Gaussian Pairs =    3373275903.
+Sums =     2.691444083864452D+09    2.691519118720204D+09
+Counts:
+  0    1572172634.
+  1    1501108549.
+  2     281805648.
+  3      17761221.
+  4        424017.
+  5          3821.
+  6            13.
+  7             0.
+  8             0.
+  9             0.
+
+
+ EP Benchmark Completed.
+ Class           =                        C
+ Size            =               8589934592
+ Iterations      =                        0
+ Time in seconds =                    71.50
+ Total threads   =                        2
+ Avail threads   =                        4
+ Warning: Threads used differ from threads available
+ Mop/s total     =                   120.14
+ Mop/s/thread    =                    60.07
+ Operation type  = Random numbers generated
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              03 Sep 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L$(LLVM_BUILD)/lib -lomp
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

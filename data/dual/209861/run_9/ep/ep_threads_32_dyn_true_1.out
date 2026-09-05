@@ -1,0 +1,119 @@
+OMP: pid 79718 tid 79740 thread 2 bound to OS proc set {1-32}
+OMP: pid 79718 tid 79718 thread 0 bound to OS proc set {1-32}
+OMP: pid 79718 tid 79743 thread 3 bound to OS proc set {1-32}
+OMP: pid 79718 tid 79781 thread 12 bound to OS proc set {1-32}
+OMP: pid 79718 tid 79792 thread 15 bound to OS proc set {1-32}
+OMP: pid 79718 tid 79748 thread 4 bound to OS proc set {1-32}
+OMP: pid 79718 tid 79736 thread 1 bound to OS proc set {1-32}
+OMP: pid 79718 tid 79766 thread 7 bound to OS proc set {1-32}
+OMP: pid 79718 tid 79761 thread 6 bound to OS proc set {1-32}
+OMP: pid 79718 tid 79790 thread 14 bound to OS proc set {1-32}
+OMP: pid 79718 tid 79756 thread 5 bound to OS proc set {1-32}
+OMP: pid 79718 tid 79769 thread 8 bound to OS proc set {1-32}
+OMP: pid 79718 tid 79785 thread 13 bound to OS proc set {1-32}
+OMP: pid 79718 tid 79779 thread 11 bound to OS proc set {1-32}
+OMP: pid 79718 tid 79776 thread 10 bound to OS proc set {1-32}
+OMP: pid 79718 tid 79772 thread 9 bound to OS proc set {1-32}
+OMP: pid 79718 tid 79795 thread 16 bound to OS proc set {1-32}
+OMP: pid 79718 tid 79798 thread 17 bound to OS proc set {1-32}
+OMP: pid 79718 tid 79801 thread 18 bound to OS proc set {1-32}
+OMP: pid 79718 tid 79837 thread 31 bound to OS proc set {1-32}
+OMP: pid 79718 tid 79830 thread 27 bound to OS proc set {1-32}
+OMP: pid 79718 tid 79804 thread 19 bound to OS proc set {1-32}
+OMP: pid 79718 tid 79832 thread 28 bound to OS proc set {1-32}
+OMP: pid 79718 tid 79834 thread 29 bound to OS proc set {1-32}
+OMP: pid 79718 tid 79822 thread 24 bound to OS proc set {1-32}
+OMP: pid 79718 tid 79808 thread 20 bound to OS proc set {1-32}
+OMP: pid 79718 tid 79836 thread 30 bound to OS proc set {1-32}
+OMP: pid 79718 tid 79817 thread 22 bound to OS proc set {1-32}
+OMP: pid 79718 tid 79819 thread 23 bound to OS proc set {1-32}
+OMP: pid 79718 tid 79827 thread 26 bound to OS proc set {1-32}
+OMP: pid 79718 tid 79812 thread 21 bound to OS proc set {1-32}
+OMP: pid 79718 tid 79824 thread 25 bound to OS proc set {1-32}
+[DRM-pin] pid=79718 tid=79740 assigned=1-32 running_on=27
+[DRM-pin] pid=79718 tid=79830 assigned=1-32 running_on=5
+[DRM-pin] pid=79718 tid=79798 assigned=1-32 running_on=19
+[DRM-pin] pid=79718 tid=79801 assigned=1-32 running_on=12
+[DRM-pin] pid=79718 tid=79781 assigned=1-32 running_on=22
+[DRM-pin] pid=79718 tid=79832 assigned=1-32 running_on=23
+[DRM-pin] pid=79718 tid=79804 assigned=1-32 running_on=24
+[DRM-pin] pid=79718 tid=79785 assigned=1-32 running_on=28
+[DRM-pin] pid=79718 tid=79795 assigned=1-32 running_on=10
+[DRM-pin] pid=79718 tid=79743 assigned=1-32 running_on=2
+[DRM-pin] pid=79718 tid=79772 assigned=1-32 running_on=30
+[DRM-pin] pid=79718 tid=79792 assigned=1-32 running_on=8
+[DRM-pin] pid=79718 tid=79790 assigned=1-32 running_on=31
+[DRM-pin] pid=79718 tid=79837 assigned=1-32 running_on=9
+[DRM-pin] pid=79718 tid=79812 assigned=1-32 running_on=14
+[DRM-pin] pid=79718 tid=79819 assigned=1-32 running_on=18
+[DRM-pin] pid=79718 tid=79824 assigned=1-32 running_on=17
+[DRM-pin] pid=79718 tid=79766 assigned=1-32 running_on=20
+[DRM-pin] pid=79718 tid=79822 assigned=1-32 running_on=16
+[DRM-pin] pid=79718 tid=79769 assigned=1-32 running_on=21
+[DRM-pin] pid=79718 tid=79776 assigned=1-32 running_on=4
+[DRM-pin] pid=79718 tid=79827 assigned=1-32 running_on=3
+[DRM-pin] pid=79718 tid=79779 assigned=1-32 running_on=13
+[DRM-pin] pid=79718 tid=79817 assigned=1-32 running_on=7
+[DRM-pin] pid=79718 tid=79756 assigned=1-32 running_on=29
+[DRM-pin] pid=79718 tid=79834 assigned=1-32 running_on=6
+[DRM-pin] pid=79718 tid=79748 assigned=1-32 running_on=15
+[DRM-pin] pid=79718 tid=79761 assigned=1-32 running_on=17
+[DRM-pin] pid=79718 tid=79808 assigned=1-32 running_on=25
+[DRM-pin] pid=79718 tid=79736 assigned=1-32 running_on=1
+[DRM-pin] pid=79718 tid=79836 assigned=1-32 running_on=8
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - EP Benchmark
+
+ Number of random numbers generated:      8589934592
+ Number of available threads:                     32
+
+EP Benchmark Results:
+
+CPU Time =     6.683
+N = 2^   32
+No. Gaussian Pairs =    3373275903.
+Sums =     2.691444083863086D+09    2.691519118724447D+09
+Counts:
+  0    1572172634.
+  1    1501108549.
+  2     281805648.
+  3      17761221.
+  4        424017.
+  5          3821.
+  6            13.
+  7             0.
+  8             0.
+  9             0.
+
+
+ EP Benchmark Completed.
+ Class           =                        C
+ Size            =               8589934592
+ Iterations      =                        0
+ Time in seconds =                     6.68
+ Total threads   =                       32
+ Avail threads   =                       32
+ Mop/s total     =                  1285.42
+ Mop/s/thread    =                    40.17
+ Operation type  = Random numbers generated
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              03 Sep 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L$(LLVM_BUILD)/lib -lomp
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

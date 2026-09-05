@@ -1,0 +1,204 @@
+OMP: pid 20493 tid 20493 thread 0 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20555 thread 12 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20506 thread 1 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20565 thread 15 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20551 thread 11 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20560 thread 13 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20539 thread 8 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20561 thread 14 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20516 thread 3 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20548 thread 10 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20509 thread 2 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20567 thread 16 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20522 thread 4 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20545 thread 9 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20603 thread 31 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20533 thread 7 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20582 thread 23 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20594 thread 28 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20575 thread 19 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20570 thread 17 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20602 thread 30 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20526 thread 5 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20574 thread 18 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20592 thread 26 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20531 thread 6 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20583 thread 24 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20598 thread 29 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20576 thread 20 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20587 thread 25 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20581 thread 22 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20593 thread 27 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20579 thread 21 bound to OS proc set {1-32}
+[DRM-pin] pid=20493 tid=20533 assigned=1-32 running_on=29
+[DRM-pin] pid=20493 tid=20575 assigned=1-32 running_on=19
+[DRM-pin] pid=20493 tid=20570 assigned=1-32 running_on=2
+[DRM-pin] pid=20493 tid=20602 assigned=1-32 running_on=3
+[DRM-pin] pid=20493 tid=20522 assigned=1-32 running_on=25
+[DRM-pin] pid=20493 tid=20509 assigned=1-32 running_on=20
+[DRM-pin] pid=20493 tid=20574 assigned=1-32 running_on=8
+[DRM-pin] pid=20493 tid=20603 assigned=1-32 running_on=9
+[DRM-pin] pid=20493 tid=20516 assigned=1-32 running_on=14
+[DRM-pin] pid=20493 tid=20592 assigned=1-32 running_on=6
+[DRM-pin] pid=20493 tid=20579 assigned=1-32 running_on=25
+[DRM-pin] pid=20493 tid=20551 assigned=1-32 running_on=8
+[DRM-pin] pid=20493 tid=20545 assigned=1-32 running_on=16
+[DRM-pin] pid=20493 tid=20565 assigned=1-32 running_on=15
+[DRM-pin] pid=20493 tid=20582 assigned=1-32 running_on=3
+[DRM-pin] pid=20493 tid=20581 assigned=1-32 running_on=28
+[DRM-pin] pid=20493 tid=20506 assigned=1-32 running_on=1
+[DRM-pin] pid=20493 tid=20567 assigned=1-32 running_on=19
+[DRM-pin] pid=20493 tid=20587 assigned=1-32 running_on=5
+[DRM-pin] pid=20493 tid=20531 assigned=1-32 running_on=32
+[DRM-pin] pid=20493 tid=20539 assigned=1-32 running_on=7
+[DRM-pin] pid=20493 tid=20576 assigned=1-32 running_on=23
+[DRM-pin] pid=20493 tid=20594 assigned=1-32 running_on=12
+[DRM-pin] pid=20493 tid=20593 assigned=1-32 running_on=17
+[DRM-pin] pid=20493 tid=20548 assigned=1-32 running_on=18
+[DRM-pin] pid=20493 tid=20583 assigned=1-32 running_on=28
+[DRM-pin] pid=20493 tid=20555 assigned=1-32 running_on=14
+[DRM-pin] pid=20493 tid=20526 assigned=1-32 running_on=27
+[DRM-pin] pid=20493 tid=20561 assigned=1-32 running_on=11
+[DRM-pin] pid=20493 tid=20598 assigned=1-32 running_on=26
+[DRM-pin] pid=20493 tid=20560 assigned=1-32 running_on=13
+[DRM-pin] pid=20493 tid=20516 assigned=1-16 running_on=14
+OMP: pid 20493 tid 20493 thread 0 bound to OS proc set {1-32}
+[DRM-pin] pid=20493 tid=20522 assigned=1-16 running_on=1
+OMP: pid 20493 tid 20516 thread 3 bound to OS proc set {1-32}
+[DRM-pin] pid=20493 tid=20545 assigned=1-16 running_on=16
+OMP: pid 20493 tid 20522 thread 4 bound to OS proc set {1-32}
+[DRM-pin] pid=20493 tid=20551 assigned=1-16 running_on=8
+OMP: pid 20493 tid 20545 thread 9 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20551 thread 11 bound to OS proc set {1-32}
+[DRM-pin] pid=20493 tid=20506 assigned=1-16 running_on=1
+OMP: pid 20493 tid 20506 thread 1 bound to OS proc set {1-32}
+[DRM-pin] pid=20493 tid=20533 assigned=1-16 running_on=14
+OMP: pid 20493 tid 20533 thread 7 bound to OS proc set {1-32}
+[DRM-pin] pid=20493 tid=20526 assigned=1-16 running_on=1
+OMP: pid 20493 tid 20526 thread 5 bound to OS proc set {1-32}
+[DRM-pin] pid=20493 tid=20539 assigned=1-16 running_on=1
+OMP: pid 20493 tid 20539 thread 8 bound to OS proc set {1-32}
+[DRM-pin] pid=20493 tid=20555 assigned=1-16 running_on=14
+OMP: pid 20493 tid 20555 thread 12 bound to OS proc set {1-32}
+[DRM-pin] pid=20493 tid=20560 assigned=1-16 running_on=13
+[DRM-pin] pid=20493 tid=20509 assigned=1-16 running_on=1
+OMP: pid 20493 tid 20560 thread 13 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20509 thread 2 bound to OS proc set {1-32}
+[DRM-pin] pid=20493 tid=20548 assigned=1-16 running_on=1
+OMP: pid 20493 tid 20548 thread 10 bound to OS proc set {1-32}
+[DRM-pin] pid=20493 tid=20561 assigned=1-16 running_on=11
+[DRM-pin] pid=20493 tid=20531 assigned=1-16 running_on=14
+OMP: pid 20493 tid 20561 thread 14 bound to OS proc set {1-32}
+[DRM-pin] pid=20493 tid=20565 assigned=1-16 running_on=15
+OMP: pid 20493 tid 20531 thread 6 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20565 thread 15 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20493 thread 0 bound to OS proc set {1-32}
+[DRM-pin] pid=20493 tid=20565 assigned=1-32 running_on=15
+OMP: pid 20493 tid 20565 thread 15 bound to OS proc set {1-32}
+[DRM-pin] pid=20493 tid=20548 assigned=1-32 running_on=14
+OMP: pid 20493 tid 20548 thread 10 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20594 thread 28 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20570 thread 17 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20602 thread 30 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20603 thread 31 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20582 thread 23 bound to OS proc set {1-32}
+[DRM-pin] pid=20493 tid=20561 assigned=1-32 running_on=11
+OMP: pid 20493 tid 20576 thread 20 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20567 thread 16 bound to OS proc set {1-32}
+[DRM-pin] pid=20493 tid=20522 assigned=1-32 running_on=1
+OMP: pid 20493 tid 20593 thread 27 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20592 thread 26 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20587 thread 25 bound to OS proc set {1-32}
+[DRM-pin] pid=20493 tid=20516 assigned=1-32 running_on=12
+OMP: pid 20493 tid 20575 thread 19 bound to OS proc set {1-32}
+[DRM-pin] pid=20493 tid=20551 assigned=1-32 running_on=2
+OMP: pid 20493 tid 20583 thread 24 bound to OS proc set {1-32}
+[DRM-pin] pid=20493 tid=20545 assigned=1-32 running_on=16
+OMP: pid 20493 tid 20574 thread 18 bound to OS proc set {1-32}
+[DRM-pin] pid=20493 tid=20560 assigned=1-32 running_on=13
+OMP: pid 20493 tid 20598 thread 29 bound to OS proc set {1-32}
+[DRM-pin] pid=20493 tid=20531 assigned=1-32 running_on=9
+OMP: pid 20493 tid 20579 thread 21 bound to OS proc set {1-32}
+[DRM-pin] pid=20493 tid=20526 assigned=1-32 running_on=6
+OMP: pid 20493 tid 20581 thread 22 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20561 thread 14 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20522 thread 4 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20516 thread 3 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20551 thread 11 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20545 thread 9 bound to OS proc set {1-32}
+[DRM-pin] pid=20493 tid=20533 assigned=1-32 running_on=8
+OMP: pid 20493 tid 20560 thread 13 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20531 thread 6 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20526 thread 5 bound to OS proc set {1-32}
+OMP: pid 20493 tid 20533 thread 7 bound to OS proc set {1-32}
+[DRM-pin] pid=20493 tid=20509 assigned=1-32 running_on=5
+OMP: pid 20493 tid 20509 thread 2 bound to OS proc set {1-32}
+[DRM-pin] pid=20493 tid=20539 assigned=1-32 running_on=7
+OMP: pid 20493 tid 20539 thread 8 bound to OS proc set {1-32}
+[DRM-pin] pid=20493 tid=20506 assigned=1-32 running_on=4
+OMP: pid 20493 tid 20506 thread 1 bound to OS proc set {1-32}
+[DRM-pin] pid=20493 tid=20555 assigned=1-32 running_on=10
+OMP: pid 20493 tid 20555 thread 12 bound to OS proc set {1-32}
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - CG Benchmark
+
+ Size:      150000
+ Iterations:                     75
+ Number of available threads:    32
+
+ Initialization time =           1.164 seconds
+
+   iteration           ||r||                 zeta
+        1       0.35322758812707E-12   109.9994423237398
+        5       0.89259173301227E-15    28.6471670038896
+       10       0.91210623460490E-15    28.9496695448999
+       15       0.90538029388626E-15    28.9716336228373
+       20       0.91590138837852E-15    28.9734210663750
+       25       0.90839144535973E-15    28.9735863059385
+       30       0.90834844017630E-15    28.9736033967630
+       35       0.90984322585120E-15    28.9736053266249
+       40       0.90624190548741E-15    28.9736055590700
+       45       0.91007869772449E-15    28.9736055884129
+       50       0.90891649246627E-15    28.9736055922483
+       55       0.90373780330461E-15    28.9736055927636
+       60       0.90792217581384E-15    28.9736055928341
+       65       0.90910843349776E-15    28.9736055928438
+       70       0.90235128710676E-15    28.9736055928453
+       75       0.90243156007194E-15    28.9736055928455
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ Zeta is     0.2897360559285E+02
+ Error is    0.1827022654964E-13
+
+
+ CG Benchmark Completed.
+ Class           =                        C
+ Size            =                   150000
+ Iterations      =                       75
+ Time in seconds =                     8.14
+ Total threads   =                       32
+ Avail threads   =                       32
+ Mop/s total     =                 17609.29
+ Mop/s/thread    =                   550.29
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              03 Sep 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L$(LLVM_BUILD)/lib -lomp
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

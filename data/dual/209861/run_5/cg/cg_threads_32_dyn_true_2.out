@@ -1,0 +1,127 @@
+OMP: pid 38900 tid 38900 thread 0 bound to OS proc set {1-32}
+OMP: pid 38900 tid 38981 thread 3 bound to OS proc set {1-32}
+OMP: pid 38900 tid 38979 thread 2 bound to OS proc set {1-32}
+OMP: pid 38900 tid 39008 thread 16 bound to OS proc set {1-32}
+OMP: pid 38900 tid 39012 thread 18 bound to OS proc set {1-32}
+OMP: pid 38900 tid 38976 thread 1 bound to OS proc set {1-32}
+OMP: pid 38900 tid 39016 thread 20 bound to OS proc set {1-32}
+OMP: pid 38900 tid 38991 thread 8 bound to OS proc set {1-32}
+OMP: pid 38900 tid 38993 thread 9 bound to OS proc set {1-32}
+OMP: pid 38900 tid 39024 thread 28 bound to OS proc set {1-32}
+OMP: pid 38900 tid 39017 thread 21 bound to OS proc set {1-32}
+OMP: pid 38900 tid 39010 thread 17 bound to OS proc set {1-32}
+OMP: pid 38900 tid 39018 thread 22 bound to OS proc set {1-32}
+OMP: pid 38900 tid 39026 thread 30 bound to OS proc set {1-32}
+OMP: pid 38900 tid 39027 thread 31 bound to OS proc set {1-32}
+OMP: pid 38900 tid 39025 thread 29 bound to OS proc set {1-32}
+OMP: pid 38900 tid 39019 thread 23 bound to OS proc set {1-32}
+OMP: pid 38900 tid 38995 thread 10 bound to OS proc set {1-32}
+OMP: pid 38900 tid 38997 thread 11 bound to OS proc set {1-32}
+OMP: pid 38900 tid 39020 thread 24 bound to OS proc set {1-32}
+OMP: pid 38900 tid 38983 thread 4 bound to OS proc set {1-32}
+OMP: pid 38900 tid 38989 thread 7 bound to OS proc set {1-32}
+OMP: pid 38900 tid 38987 thread 6 bound to OS proc set {1-32}
+OMP: pid 38900 tid 39022 thread 26 bound to OS proc set {1-32}
+OMP: pid 38900 tid 39021 thread 25 bound to OS proc set {1-32}
+OMP: pid 38900 tid 39023 thread 27 bound to OS proc set {1-32}
+OMP: pid 38900 tid 38985 thread 5 bound to OS proc set {1-32}
+OMP: pid 38900 tid 38999 thread 12 bound to OS proc set {1-32}
+OMP: pid 38900 tid 39004 thread 14 bound to OS proc set {1-32}
+OMP: pid 38900 tid 39001 thread 13 bound to OS proc set {1-32}
+OMP: pid 38900 tid 39014 thread 19 bound to OS proc set {1-32}
+OMP: pid 38900 tid 39006 thread 15 bound to OS proc set {1-32}
+[DRM-pin] pid=38900 tid=38985 assigned=1-16 running_on=14
+OMP: pid 38900 tid 38900 thread 0 bound to OS proc set {1-32}
+OMP: pid 38900 tid 38985 thread 5 bound to OS proc set {1-32}
+[DRM-pin] pid=38900 tid=38987 assigned=1-16 running_on=3
+OMP: pid 38900 tid 38987 thread 6 bound to OS proc set {1-32}
+[DRM-pin] pid=38900 tid=38979 assigned=1-16 running_on=6
+OMP: pid 38900 tid 38979 thread 2 bound to OS proc set {1-32}
+[DRM-pin] pid=38900 tid=38983 assigned=1-16 running_on=16
+OMP: pid 38900 tid 38983 thread 4 bound to OS proc set {1-32}
+[DRM-pin] pid=38900 tid=38981 assigned=1-16 running_on=7
+OMP: pid 38900 tid 38981 thread 3 bound to OS proc set {1-32}
+[DRM-pin] pid=38900 tid=38999 assigned=1-16 running_on=15
+OMP: pid 38900 tid 38999 thread 12 bound to OS proc set {1-32}
+[DRM-pin] pid=38900 tid=39006 assigned=1-16 running_on=13
+OMP: pid 38900 tid 39006 thread 15 bound to OS proc set {1-32}
+[DRM-pin] pid=38900 tid=38995 assigned=1-16 running_on=3
+OMP: pid 38900 tid 38995 thread 10 bound to OS proc set {1-32}
+[DRM-pin] pid=38900 tid=39001 assigned=1-16 running_on=8
+OMP: pid 38900 tid 39001 thread 13 bound to OS proc set {1-32}
+[DRM-pin] pid=38900 tid=38976 assigned=1-16 running_on=6
+OMP: pid 38900 tid 38976 thread 1 bound to OS proc set {1-32}
+[DRM-pin] pid=38900 tid=38993 assigned=1-16 running_on=13
+OMP: pid 38900 tid 38993 thread 9 bound to OS proc set {1-32}
+[DRM-pin] pid=38900 tid=39004 assigned=1-16 running_on=4
+OMP: pid 38900 tid 39004 thread 14 bound to OS proc set {1-32}
+[DRM-pin] pid=38900 tid=38989 assigned=1-16 running_on=13
+[DRM-pin] pid=38900 tid=38997 assigned=1-16 running_on=14
+OMP: pid 38900 tid 38989 thread 7 bound to OS proc set {1-32}
+OMP: pid 38900 tid 38997 thread 11 bound to OS proc set {1-32}
+[DRM-pin] pid=38900 tid=38991 assigned=1-16 running_on=1
+OMP: pid 38900 tid 38991 thread 8 bound to OS proc set {1-32}
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - CG Benchmark
+
+ Size:      150000
+ Iterations:                     75
+ Number of available threads:    32
+
+ Initialization time =           1.244 seconds
+
+   iteration           ||r||                 zeta
+        1       0.35307904286955E-12   109.9994423237398
+        5       0.89210419846752E-15    28.6471670038897
+       10       0.91127918997068E-15    28.9496695448999
+       15       0.90637521738870E-15    28.9716336228373
+       20       0.91586769935347E-15    28.9734210663750
+       25       0.90888265649091E-15    28.9735863059385
+       30       0.90870296348037E-15    28.9736033967630
+       35       0.90988460524217E-15    28.9736053266249
+       40       0.90692323991088E-15    28.9736055590700
+       45       0.91088959436210E-15    28.9736055884130
+       50       0.90934137615576E-15    28.9736055922483
+       55       0.90343595406142E-15    28.9736055927636
+       60       0.90835333348138E-15    28.9736055928341
+       65       0.90771370749027E-15    28.9736055928438
+       70       0.90239804514340E-15    28.9736055928452
+       75       0.90107645159271E-15    28.9736055928455
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ Zeta is     0.2897360559285E+02
+ Error is    0.1581784714701E-13
+
+
+ CG Benchmark Completed.
+ Class           =                        C
+ Size            =                   150000
+ Iterations      =                       75
+ Time in seconds =                     7.55
+ Total threads   =                       16
+ Avail threads   =                       32
+ Warning: Threads used differ from threads available
+ Mop/s total     =                 18978.86
+ Mop/s/thread    =                  1186.18
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              03 Sep 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L$(LLVM_BUILD)/lib -lomp
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

@@ -1,0 +1,132 @@
+OMP: pid 169331 tid 169331 thread 0 bound to OS proc set {1-16}
+OMP: pid 169331 tid 169348 thread 2 bound to OS proc set {1-16}
+OMP: pid 169331 tid 169355 thread 3 bound to OS proc set {1-16}
+OMP: pid 169331 tid 169342 thread 1 bound to OS proc set {1-16}
+OMP: pid 169331 tid 169395 thread 12 bound to OS proc set {1-16}
+OMP: pid 169331 tid 169390 thread 8 bound to OS proc set {1-16}
+OMP: pid 169331 tid 169396 thread 13 bound to OS proc set {1-16}
+OMP: pid 169331 tid 169394 thread 11 bound to OS proc set {1-16}
+OMP: pid 169331 tid 169392 thread 9 bound to OS proc set {1-16}
+OMP: pid 169331 tid 169359 thread 4 bound to OS proc set {1-16}
+OMP: pid 169331 tid 169366 thread 5 bound to OS proc set {1-16}
+OMP: pid 169331 tid 169373 thread 6 bound to OS proc set {1-16}
+OMP: pid 169331 tid 169380 thread 7 bound to OS proc set {1-16}
+OMP: pid 169331 tid 169397 thread 14 bound to OS proc set {1-16}
+OMP: pid 169331 tid 169393 thread 10 bound to OS proc set {1-16}
+OMP: pid 169331 tid 169398 thread 15 bound to OS proc set {1-16}
+[DRM-pin] pid=169331 tid=169390 assigned=1-16 running_on=7
+[DRM-pin] pid=169331 tid=169398 assigned=1-16 running_on=8
+[DRM-pin] pid=169331 tid=169392 assigned=1-16 running_on=10
+[DRM-pin] pid=169331 tid=169359 assigned=1-16 running_on=13
+[DRM-pin] pid=169331 tid=169380 assigned=1-16 running_on=15
+[DRM-pin] pid=169331 tid=169342 assigned=1-16 running_on=2
+[DRM-pin] pid=169331 tid=169348 assigned=1-16 running_on=6
+[DRM-pin] pid=169331 tid=169366 assigned=1-16 running_on=14
+[DRM-pin] pid=169331 tid=169395 assigned=1-16 running_on=4
+[DRM-pin] pid=169331 tid=169397 assigned=1-16 running_on=14
+[DRM-pin] pid=169331 tid=169396 assigned=1-16 running_on=5
+[DRM-pin] pid=169331 tid=169355 assigned=1-16 running_on=12
+[DRM-pin] pid=169331 tid=169393 assigned=1-16 running_on=7
+[DRM-pin] pid=169331 tid=169373 assigned=1-16 running_on=9
+[DRM-pin] pid=169331 tid=169394 assigned=1-16 running_on=11
+OMP: pid 169331 tid 169331 thread 0 bound to OS proc set {1-16}
+[DRM-pin] pid=169331 tid=169342 assigned=1-8 running_on=2
+OMP: pid 169331 tid 169342 thread 1 bound to OS proc set {1-16}
+[DRM-pin] pid=169331 tid=169348 assigned=1-8 running_on=3
+[DRM-pin] pid=169331 tid=169366 assigned=1-8 running_on=6
+OMP: pid 169331 tid 169348 thread 2 bound to OS proc set {1-16}
+OMP: pid 169331 tid 169366 thread 5 bound to OS proc set {1-16}
+[DRM-pin] pid=169331 tid=169380 assigned=1-8 running_on=1
+OMP: pid 169331 tid 169380 thread 7 bound to OS proc set {1-16}
+[DRM-pin] pid=169331 tid=169355 assigned=1-8 running_on=3
+OMP: pid 169331 tid 169355 thread 3 bound to OS proc set {1-16}
+[DRM-pin] pid=169331 tid=169373 assigned=1-8 running_on=1
+[DRM-pin] pid=169331 tid=169359 assigned=1-8 running_on=6
+OMP: pid 169331 tid 169373 thread 6 bound to OS proc set {1-16}
+OMP: pid 169331 tid 169359 thread 4 bound to OS proc set {1-16}
+OMP: pid 169331 tid 169331 thread 0 bound to OS proc set {1-16}
+[DRM-pin] pid=169331 tid=169355 assigned=1-16 running_on=6
+OMP: pid 169331 tid 169398 thread 15 bound to OS proc set {1-16}
+[DRM-pin] pid=169331 tid=169380 assigned=1-16 running_on=3
+OMP: pid 169331 tid 169396 thread 13 bound to OS proc set {1-16}
+OMP: pid 169331 tid 169395 thread 12 bound to OS proc set {1-16}
+OMP: pid 169331 tid 169397 thread 14 bound to OS proc set {1-16}
+[DRM-pin] pid=169331 tid=169366 assigned=1-16 running_on=8
+OMP: pid 169331 tid 169355 thread 3 bound to OS proc set {1-16}
+OMP: pid 169331 tid 169380 thread 7 bound to OS proc set {1-16}
+OMP: pid 169331 tid 169393 thread 10 bound to OS proc set {1-16}
+[DRM-pin] pid=169331 tid=169342 assigned=1-16 running_on=2
+OMP: pid 169331 tid 169390 thread 8 bound to OS proc set {1-16}
+OMP: pid 169331 tid 169392 thread 9 bound to OS proc set {1-16}
+[DRM-pin] pid=169331 tid=169348 assigned=1-16 running_on=5
+OMP: pid 169331 tid 169394 thread 11 bound to OS proc set {1-16}
+[DRM-pin] pid=169331 tid=169373 assigned=1-16 running_on=1
+OMP: pid 169331 tid 169366 thread 5 bound to OS proc set {1-16}
+OMP: pid 169331 tid 169342 thread 1 bound to OS proc set {1-16}
+OMP: pid 169331 tid 169348 thread 2 bound to OS proc set {1-16}
+[DRM-pin] pid=169331 tid=169359 assigned=1-16 running_on=7
+OMP: pid 169331 tid 169373 thread 6 bound to OS proc set {1-16}
+OMP: pid 169331 tid 169359 thread 4 bound to OS proc set {1-16}
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - CG Benchmark
+
+ Size:      150000
+ Iterations:                     75
+ Number of available threads:    16
+
+ Initialization time =           1.983 seconds
+
+   iteration           ||r||                 zeta
+        1       0.35331457118122E-12   109.9994423237398
+        5       0.89165013419265E-15    28.6471670038896
+       10       0.91096451957762E-15    28.9496695449000
+       15       0.90630295631550E-15    28.9716336228371
+       20       0.91453924052046E-15    28.9734210663752
+       25       0.90850157357143E-15    28.9735863059386
+       30       0.90851071763614E-15    28.9736033967633
+       35       0.91053859720749E-15    28.9736053266247
+       40       0.90586501701061E-15    28.9736055590700
+       45       0.90778618606110E-15    28.9736055884131
+       50       0.91005246574586E-15    28.9736055922482
+       55       0.90262303246051E-15    28.9736055927634
+       60       0.90783490625918E-15    28.9736055928341
+       65       0.90590147046670E-15    28.9736055928440
+       70       0.90303705191748E-15    28.9736055928452
+       75       0.90237511890131E-15    28.9736055928455
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ Zeta is     0.2897360559285E+02
+ Error is    0.1630832302753E-13
+
+
+ CG Benchmark Completed.
+ Class           =                        C
+ Size            =                   150000
+ Iterations      =                       75
+ Time in seconds =                    14.56
+ Total threads   =                       16
+ Avail threads   =                       16
+ Mop/s total     =                  9845.08
+ Mop/s/thread    =                   615.32
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              03 Sep 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L$(LLVM_BUILD)/lib -lomp
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
