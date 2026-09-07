@@ -4,7 +4,6 @@ from __future__ import annotations
 
 import csv
 import math
-import os
 import sys
 from pathlib import Path
 
@@ -13,6 +12,7 @@ sys.path.insert(0, str(Path(__file__).parent / "src"))
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
+from analysis.figures import thesis_figures_dir
 from analysis.model.amdahl import KERNELS, MODES, fit_all, load_dual_observations
 from analysis.plots.style import (
     AXIS_COLOR,
@@ -35,9 +35,7 @@ from analysis.plots.style import (
 REPO_ROOT = Path(__file__).resolve().parent
 DATA_ROOT = REPO_ROOT / "data" / "dual"
 
-# See export_thesis_figs.py: THESIS_FIGURES_DIR redirects output into the
-# thesis repo's figures/ directory, which no longer sits alongside this one.
-FIGURE_DIR = Path(os.environ.get("THESIS_FIGURES_DIR", REPO_ROOT / "figures")).resolve()
+FIGURE_DIR = thesis_figures_dir()
 FIGURE_PATH = FIGURE_DIR / "amdahl_karp_flatt_capacity.pdf"
 OUTPUT_DIR = REPO_ROOT / "output" / "model"
 SUMMARY_PATH = OUTPUT_DIR / "amdahl_karp_flatt_summary.csv"

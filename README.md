@@ -179,16 +179,21 @@ plotting stack to keep in sync.
 ## Regenerating the thesis figures
 
 `export_thesis_figs.py` and `export_scalability_model.py` write the PDFs that
-the thesis includes. By default they write to `figures/` at the root of this
-repository. Because the thesis lives in a separate checkout, point
-`THESIS_FIGURES_DIR` at its `figures/` directory to write straight into it:
+the thesis includes. The thesis lives in a separate checkout, so by default
+they write straight into `../master-thesis/figures` when that directory exists,
+and fall back to `figures/` at the root of this repository when it does not:
 
 ```sh
-THESIS_FIGURES_DIR=../master-thesis/figures uv run python export_thesis_figs.py
-THESIS_FIGURES_DIR=../master-thesis/figures uv run python export_scalability_model.py
+uv run python export_thesis_figs.py
+uv run python export_scalability_model.py
 ```
 
-Adjust the relative path to wherever the thesis repository is checked out.
+Set `THESIS_FIGURES_DIR` to override the destination — for a thesis checkout
+elsewhere, or to keep the PDFs local:
+
+```sh
+THESIS_FIGURES_DIR=figures uv run python export_thesis_figs.py
+```
 `export_scalability_model.py` additionally writes its fitted summary and
 pointwise Karp--Flatt diagnostics to `output/model/`.
 

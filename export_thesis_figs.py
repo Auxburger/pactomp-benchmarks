@@ -1,7 +1,6 @@
 """Export thesis-quality PDFs for staggered job 209445 and aggregated benchmarks."""
 from __future__ import annotations
 
-import os
 import sys
 from pathlib import Path
 
@@ -11,6 +10,7 @@ import plotly.graph_objects as go
 
 sys.path.insert(0, str(Path(__file__).parent / "src"))
 
+from analysis.figures import thesis_figures_dir
 from analysis.datasets.staggered import (
     discover_staggered_groups,
     load_staggered_group,
@@ -38,10 +38,7 @@ from analysis.plots.npb import (
 REPO_ROOT = Path(__file__).resolve().parent
 JOB_DIR = REPO_ROOT / "data" / "staggered" / "209445"
 
-# Figures are consumed by the thesis repo, which lives outside this one. Point
-# THESIS_FIGURES_DIR at its figures/ directory to write straight into it.
-OUT_DIR = Path(os.environ.get("THESIS_FIGURES_DIR", REPO_ROOT / "figures")).resolve()
-OUT_DIR.mkdir(parents=True, exist_ok=True)
+OUT_DIR = thesis_figures_dir()
 
 groups = discover_staggered_groups(JOB_DIR)
 dfs = {}

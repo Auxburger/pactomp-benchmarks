@@ -44,10 +44,12 @@ rule to keep them tracked. Preserve that negation.
 
 ## Relationship to the thesis repository
 
-The figure export scripts write to `figures/` at this repo's root by default.
-The thesis consumes those PDFs from its own `figures/` directory, so set
-`THESIS_FIGURES_DIR` to write there directly (see `README.md`). The local
-`figures/` output is gitignored.
+The figure export scripts write straight into the thesis repo's `figures/`
+directory (`../master-thesis/figures`) when that checkout sits beside this one,
+and fall back to `figures/` at this repo's root otherwise; `THESIS_FIGURES_DIR`
+overrides both (see `README.md`). `src/analysis/figures.py` resolves this for
+every export script — do not re-derive the output directory in a script. The
+local `figures/` output is gitignored.
 
 The thesis chapters cite paths in this repository as prose references, for
 example `export_thesis_figs.py` and `data/dual`. If you
