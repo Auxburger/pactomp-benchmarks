@@ -179,7 +179,8 @@ plotting stack to keep in sync.
 ## Regenerating the thesis figures
 
 `export_thesis_figs.py` and `export_scalability_model.py` write the PDFs that
-the thesis includes. The thesis lives in a separate checkout, so by default
+the thesis includes — the staggered job 209445, the mixed workload job 209466,
+the aggregated `dual` runs, and the scalability model. The thesis lives in a separate checkout, so by default
 they write straight into `../master-thesis/figures` when that directory exists,
 and fall back to `figures/` at the root of this repository when it does not:
 

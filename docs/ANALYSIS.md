@@ -20,6 +20,18 @@ Flags can be combined: `--static --png` exports both. Outputs land in `output/<g
 
 **Scalability model export**: `export_scalability_model.py` fits the configuration-level Amdahl--Karp--Flatt model over `data/dual` and writes `amdahl_karp_flatt_capacity.pdf` to the same thesis figures directory plus two CSVs to `output/model/`. Run with `uv run python export_scalability_model.py` from the repository root. Same thesis styling and TUM colours as above — its axes take `AXIS_STYLE` from `plots/style.py`, the same grid every other thesis figure now uses. Its legend entries are empty proxy traces carrying line dash and observation marker together, which is why the figure needs no "circles are observations" caption.
 
+**The mixed workload figure shows one repeat, not an average.** Averaging three
+replays of a schedule destroys the thing the figure is for — an iteration
+boundary only exists in a single run. Repeat 1 is exported (`MIX_REPEAT` in
+`export_thesis_figs.py`); the three repeats differ by at most one iteration per
+job, which belongs in the caption rather than in a second figure. The per-lane
+`n×` tick labels are per-job counts and are comparable between the two arms
+because the windows are identical; they must not be summed across jobs, since
+an EP iteration is not an FT iteration. Each kernel carries a hatch as well as
+a colour (`ALGORITHM_PATTERNS`), so the three are separable without colour
+vision. `mix_concurrency()` is no longer drawn — the realised concurrency (up
+to six processes) belongs in the prose, not in a second panel.
+
 **Every figure in `figures/` must be produced through kaleido.** `main.tex` loads `\usepackage[a-2u]{pdfx}` for PDF/A-2u, which requires all fonts to be embedded; kaleido embeds a subsetted OpenSans, so figures written this way comply. Hand-written PDF (e.g. raw content streams using base-14 Helvetica) does **not** embed fonts and silently breaks PDF/A for the whole thesis. Verify with `pdffonts figures/<name>.pdf` — the `emb` column must read `yes` for every row.
 
 **Aggregated benchmark figures source from `dual`, not `dual-exclusive`.** `dual-exclusive` only ever launched one process per configuration (no `_2` output files exist anywhere in it) — it cannot represent the two-process oversubscription scenario the thesis tables describe, and using it previously produced figures that flatly contradicted the thesis text (near-identical dyn=true/false lines instead of the reported CG +60%/FT +21% gap). Do not switch the aggregated figures back to `dual-exclusive` without first verifying it actually contains two concurrent processes per run. The DRM-speedup aggregation also uses `.mean()` (not `.median()`) to match how the thesis table percentages are computed.
@@ -84,6 +96,7 @@ standard library.
 | `src/analysis/datasets/staggered.py` | Staggered worker logs, DRM grants, DRM pins |
 | `src/analysis/datasets/drm.py` | `rm.log` (grants) and `pidstat_*.log` |
 | `src/analysis/datasets/cpu_util.py` | `mpstat -P ALL` output (`cpu_util_*.log`) |
+| `src/analysis/datasets/mix.py` | Mixed workload `iterations.csv` and `schedule.json`, plus the realised concurrency |
 | `src/analysis/datasets/meta.py` | `meta.txt` benchmark start events and the SLURM log's CPU splits |
 | `src/analysis/plots/style.py` | Palettes, markers, figure note, thesis layout — the single source for all of them |
 | `src/analysis/plots/npb.py` | Runtime/MOPS/init/speedup figures |
@@ -91,6 +104,7 @@ standard library.
 | `src/analysis/plots/drm.py` | DRM allocation violin, slab assignment, CPU placement Gantt |
 | `src/analysis/plots/cpu_util.py` | Per-CPU utilisation heatmap, and the annotated composite (heatmap + thread placement + benchmark timeline) |
 | `src/analysis/plots/staggered/` | `threads.py`, `cpu.py`, `iterations.py` |
+| `src/analysis/plots/mix.py` | Mixed workload timeline: one Gantt lane per job and arm, kernels separated by colour **and** hatch |
 | `src/analysis/reports/npb.py` | Groups dual/dual-exclusive runs, writes the aggregated figures |
 | `src/analysis/reports/drm.py` | `output/monitoring/<jobid>/` |
 | `src/analysis/reports/staggered.py` | `output/staggered/<jobid>/` |

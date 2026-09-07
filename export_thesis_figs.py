@@ -22,6 +22,8 @@ from analysis.plots.staggered import (
     make_staggered_threads_figure,
     make_staggered_cpu_slab_figure,
 )
+from analysis.datasets.mix import load_mix_iterations, load_mix_schedule
+from analysis.plots.mix import make_mix_timeline_figure
 from analysis.datasets.npb import load_benchmark_dir, KNOWN_BENCHES
 from analysis.reports.npb import build_groups
 from analysis.plots.style import (
@@ -37,6 +39,8 @@ from analysis.plots.npb import (
 
 REPO_ROOT = Path(__file__).resolve().parent
 JOB_DIR = REPO_ROOT / "data" / "staggered" / "209445"
+MIX_JOB_DIR = REPO_ROOT / "data" / "mix" / "209466"
+MIX_REPEAT = 1
 
 OUT_DIR = thesis_figures_dir()
 
@@ -109,6 +113,19 @@ for alg_key, (df, t, offset) in dfs.items():
     out_slab = OUT_DIR / f"staggered_{alg_key.lower()}_cpu_slab.pdf"
     fig_slab.write_image(str(out_slab))
     print(f"Wrote {out_slab}")
+
+
+# ── Mixed workload timeline ──────────────────────────────────────────
+# One repeat is shown, not an average: a timeline of averaged runs is not a
+# timeline. The three repeats differ by at most one iteration per job.
+if MIX_JOB_DIR.exists():
+    df_mix = load_mix_iterations(MIX_JOB_DIR)
+    df_mix_schedule = load_mix_schedule(MIX_JOB_DIR)
+    fig_mix = make_mix_timeline_figure(df_mix, df_mix_schedule, repeat=MIX_REPEAT)
+    apply_thesis_style(fig_mix, h=500, grid="x")
+    out_mix = OUT_DIR / "mix_timeline.pdf"
+    fig_mix.write_image(str(out_mix))
+    print(f"Wrote {out_mix}")
 
 
 def _make_speedup_thesis_fig(df: pd.DataFrame) -> go.Figure:
