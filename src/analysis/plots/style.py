@@ -24,7 +24,10 @@ MODE_LABELS = {"dynamic=true": "Enabled", "dynamic=false": "Unmanaged"}
 MODE_DASHES = {"dynamic=true": "solid", "dynamic=false": "dash"}
 MODE_MARKERS = {"dynamic=true": "circle", "dynamic=false": "diamond"}
 
-BENCH_COLORS = {"FT": "#4C72B0", "CG": "#DD8452", "EP": "#55A868"}
+# Okabe-Ito: the previous seaborn trio put CG and EP at protanopic ΔE 4.5,
+# indistinguishable for a red-green colour blind reader. These three pass
+# every check of the palette validator, contrast against white included.
+BENCH_COLORS = {"FT": "#0072B2", "CG": "#D55E00", "EP": "#009E73"}
 BENCHMARK_MARKERS = {"CG": "circle", "EP": "diamond", "FT": "square"}
 SLAB_COLORS = ["#1f77b4", "#ff7f0e"]
 
@@ -47,12 +50,23 @@ WORKER_LABELS = {
 WORKER_DASH = {"A1": "solid", "A2": "dot", "B1": "solid", "B2": "dot"}
 WORKER_MARKERS = {"A1": "circle", "A2": "square", "B1": "diamond", "B2": "cross"}
 
-# ── Ink (export_scalability_model.py) ────────────────────────────────────────
+# ── Ink ──────────────────────────────────────────────────────────────────────
 INK_COLOR = "#333333"
 MUTED_COLOR = "#808080"
 GRID_COLOR = "#E6E6E1"
 GRID_LINE_COLOR = "#B8B8B2"
 AXIS_COLOR = "#808080"
+
+# White canvas, light grid, grey axis lines with outside ticks — the look of
+# the Amdahl capacity figure, applied to every exported thesis figure.
+AXIS_STYLE = dict(
+    gridcolor=GRID_COLOR,
+    zeroline=False,
+    showline=True,
+    linecolor=AXIS_COLOR,
+    ticks="outside",
+    tickcolor=AXIS_COLOR,
+)
 
 
 def add_figure_note(fig: go.Figure, text: str) -> None:
@@ -70,13 +84,26 @@ def add_figure_note(fig: go.Figure, text: str) -> None:
     fig.update_layout(margin=dict(b=max(current_b if current_b else 60, 80)))
 
 
-def apply_thesis_style(fig: go.Figure, w: int = THESIS_WIDTH, h: int = THESIS_HEIGHT) -> go.Figure:
-    """Thesis layout: fixed size, legend at the bottom, larger fonts."""
+def apply_thesis_style(
+    fig: go.Figure,
+    w: int = THESIS_WIDTH,
+    h: int = THESIS_HEIGHT,
+    grid: str = "both",
+) -> go.Figure:
+    """Thesis layout: fixed size, legend at the bottom, larger fonts, AXIS_STYLE grid.
+
+    `grid` selects which axes keep grid lines — "both", "x", "y" or "none". A
+    categorical axis (one row per job, say) has nothing to interpolate along,
+    so its grid is noise.
+    """
     fig.update_layout(
         width=w,
         height=h,
+        template="plotly_white",
+        plot_bgcolor="white",
+        paper_bgcolor="white",
         margin=dict(l=60, r=20, t=50, b=110),
-        font=dict(size=AXIS_FONT),
+        font=dict(size=AXIS_FONT, color=INK_COLOR),
         legend=dict(
             orientation="h",
             yanchor="top",
@@ -85,8 +112,10 @@ def apply_thesis_style(fig: go.Figure, w: int = THESIS_WIDTH, h: int = THESIS_HE
             x=0.5,
             font=dict(size=LEGEND_FONT),
         ),
-        title=dict(font=dict(size=TITLE_FONT)),
+        title=dict(font=dict(size=TITLE_FONT, color=INK_COLOR)),
     )
+    fig.update_xaxes(**AXIS_STYLE, showgrid=grid in ("both", "x"))
+    fig.update_yaxes(**AXIS_STYLE, showgrid=grid in ("both", "y"))
     # Remove the source note margin — it's for the interactive HTML
     for ann in fig.layout.annotations:
         if ann.yref == "paper" and ann.y < 0:

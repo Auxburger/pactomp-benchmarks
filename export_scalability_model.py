@@ -15,9 +15,8 @@ from plotly.subplots import make_subplots
 from analysis.figures import thesis_figures_dir
 from analysis.model.amdahl import KERNELS, MODES, fit_all, load_dual_observations
 from analysis.plots.style import (
-    AXIS_COLOR,
     AXIS_FONT,
-    GRID_COLOR,
+    AXIS_STYLE,
     GRID_LINE_COLOR,
     INK_COLOR,
     LEGEND_FONT,
@@ -25,7 +24,6 @@ from analysis.plots.style import (
     MODE_DASHES,
     MODE_LABELS,
     MODE_MARKERS,
-    MUTED_COLOR,
     THESIS_HEIGHT as FIGURE_HEIGHT,
     THESIS_WIDTH as FIGURE_WIDTH,
     TITLE_FONT,
@@ -110,6 +108,30 @@ def _write_model_pdf(path: Path, fits, points) -> None:
             label = MODE_LABELS[mode]
             color = MODE_COLORS[mode]
 
+            if column == 1:
+                # Empty proxy trace: the legend shows the fitted line and the
+                # observation symbol together, so no caption is needed.
+                figure.add_trace(
+                    go.Scatter(
+                        x=[None],
+                        y=[None],
+                        mode="lines+markers",
+                        name=label,
+                        legendgroup=mode,
+                        showlegend=True,
+                        line=dict(color=color, width=2, dash=MODE_DASHES[mode]),
+                        marker=dict(
+                            color=color,
+                            size=9,
+                            symbol=MODE_MARKERS[mode],
+                            line=dict(color="white", width=1),
+                        ),
+                        hoverinfo="skip",
+                    ),
+                    row=1,
+                    col=column,
+                )
+
             figure.add_trace(
                 go.Scatter(
                     x=curve_x,
@@ -121,7 +143,7 @@ def _write_model_pdf(path: Path, fits, points) -> None:
                     mode="lines",
                     name=label,
                     legendgroup=mode,
-                    showlegend=column == 1,
+                    showlegend=False,
                     line=dict(color=color, width=2, dash=MODE_DASHES[mode]),
                     hovertemplate=f"{label} model<br>P=%{{x:.2f}}<br>capacity=%{{y:.2f}}<extra></extra>",
                 ),
@@ -175,12 +197,8 @@ def _write_model_pdf(path: Path, fits, points) -> None:
             title_text="Pool multiplier P = t/2",
             title_font=dict(size=AXIS_FONT),
             range=[math.log10(0.9), math.log10(18.0)],
+            **AXIS_STYLE,
             showgrid=True,
-            gridcolor=GRID_COLOR,
-            zeroline=False,
-            linecolor=AXIS_COLOR,
-            ticks="outside",
-            tickcolor=AXIS_COLOR,
         )
         figure.update_yaxes(
             row=1,
@@ -189,20 +207,18 @@ def _write_model_pdf(path: Path, fits, points) -> None:
             tickvals=[0, 4, 8, 12, 16],
             title_text="Relative capacity" if column == 1 else None,
             title_font=dict(size=AXIS_FONT),
+            **AXIS_STYLE,
             showgrid=True,
-            gridcolor=GRID_COLOR,
-            zeroline=False,
-            linecolor=AXIS_COLOR,
-            ticks="outside",
-            tickcolor=AXIS_COLOR,
         )
 
     figure.update_layout(
         width=FIGURE_WIDTH,
         height=FIGURE_HEIGHT,
         template="plotly_white",
+        plot_bgcolor="white",
+        paper_bgcolor="white",
         font=dict(size=AXIS_FONT, color=INK_COLOR),
-        margin=dict(l=70, r=20, t=40, b=110),
+        margin=dict(l=70, r=20, t=40, b=90),
         legend=dict(
             orientation="h",
             yanchor="top",
@@ -211,16 +227,6 @@ def _write_model_pdf(path: Path, fits, points) -> None:
             x=0.5,
             font=dict(size=LEGEND_FONT),
         ),
-    )
-    figure.add_annotation(
-        xref="paper",
-        yref="paper",
-        x=0.5,
-        y=-0.38,
-        xanchor="center",
-        showarrow=False,
-        text="Circles and diamonds: observations. Lines: fitted Amdahl configuration model.",
-        font=dict(size=13, color=MUTED_COLOR),
     )
     for annotation in figure.layout.annotations:
         if annotation.text in KERNELS:

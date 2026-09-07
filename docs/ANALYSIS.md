@@ -18,7 +18,7 @@ Flags can be combined: `--static --png` exports both. Outputs land in `output/<g
 
 **Thesis figure export**: `export_thesis_figs.py` (at the repository root, not under `src/`) is a separate script that regenerates the thesis-quality PDFs for job 209445 (staggered) and job 172930 (aggregated `dual`) and writes them to `figures/`. It applies thesis styling (legend at bottom, suppressed title, 900×420 px). Run with `uv run python export_thesis_figs.py` (requires Chrome for kaleido rendering — run `uv run plotly_get_chrome` once if missing). Does **not** generate cpu_placement figures — see warning below.
 
-**Scalability model export**: `export_scalability_model.py` fits the configuration-level Amdahl--Karp--Flatt model over `data/dual` and writes `amdahl_karp_flatt_capacity.pdf` to `figures/` plus two CSVs to `output/model/`. Run with `uv run python export_scalability_model.py` from the repository root. Same thesis styling and TUM colours as above.
+**Scalability model export**: `export_scalability_model.py` fits the configuration-level Amdahl--Karp--Flatt model over `data/dual` and writes `amdahl_karp_flatt_capacity.pdf` to the same thesis figures directory plus two CSVs to `output/model/`. Run with `uv run python export_scalability_model.py` from the repository root. Same thesis styling and TUM colours as above — its axes take `AXIS_STYLE` from `plots/style.py`, the same grid every other thesis figure now uses. Its legend entries are empty proxy traces carrying line dash and observation marker together, which is why the figure needs no "circles are observations" caption.
 
 **Every figure in `figures/` must be produced through kaleido.** `main.tex` loads `\usepackage[a-2u]{pdfx}` for PDF/A-2u, which requires all fonts to be embedded; kaleido embeds a subsetted OpenSans, so figures written this way comply. Hand-written PDF (e.g. raw content streams using base-14 Helvetica) does **not** embed fonts and silently breaks PDF/A for the whole thesis. Verify with `pdffonts figures/<name>.pdf` — the `emb` column must read `yes` for every row.
 
@@ -103,7 +103,9 @@ standard library.
 | `export_scalability_model.py` | Standalone script: model CSVs to `output/model/`, `amdahl_karp_flatt_capacity.pdf` to `figures/` |
 
 Both export scripts take their styling from `plots/style.py`, so the thesis
-PDFs and the interactive HTML cannot drift apart.
+PDFs and the interactive HTML cannot drift apart. Grid, axis lines and canvas
+live in `AXIS_STYLE`, applied by `apply_thesis_style()` — change the look there,
+not in a single script.
 
 **Everything renders through Plotly.** `analyze_cpu_util.py` was the last
 matplotlib holdout; it now builds a Plotly composite and writes HTML through
