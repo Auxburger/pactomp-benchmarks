@@ -31,7 +31,7 @@ from analysis.plots.style import (
 
 
 REPO_ROOT = Path(__file__).resolve().parent
-DATA_ROOT = REPO_ROOT / "data" / "dual"
+DATA_ROOT = REPO_ROOT / "data" / "dual" / "209861"
 
 FIGURE_DIR = thesis_figures_dir()
 FIGURE_PATH = FIGURE_DIR / "amdahl_karp_flatt_capacity.pdf"

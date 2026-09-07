@@ -16,7 +16,7 @@ Flags can be combined: `--static --png` exports both. Outputs land in `output/<g
 
 **Incremental builds**: all three processing stages (aggregated benchmarks, monitoring, staggered) skip regenerating a plot if the output HTML is already newer than every input file. To force a rebuild: touch any input log file (`touch data/staggered/209445/cg_t32_off10_A1.log`) or delete the output directory.
 
-**Thesis figure export**: `export_thesis_figs.py` (at the repository root, not under `src/`) is a separate script that regenerates the thesis-quality PDFs for job 209445 (staggered) and job 172930 (aggregated `dual`) and writes them to `figures/`. It applies thesis styling (legend at bottom, suppressed title, 900×420 px). Run with `uv run python export_thesis_figs.py` (requires Chrome for kaleido rendering — run `uv run plotly_get_chrome` once if missing). Does **not** generate cpu_placement figures — see warning below.
+**Thesis figure export**: `export_thesis_figs.py` (at the repository root, not under `src/`) is a separate script that regenerates the thesis-quality PDFs for job 209445 (staggered), job 209466 (mixed workload) and job 209861 (aggregated `dual`, the re-measured run the scalability model also fits — the earlier campaign still lying in `data/dual/run_*` measures EP twice as slow) and writes them into the thesis repo's `figures/` directory (`../master-thesis/figures`, falling back to this repo's `figures/`; `THESIS_FIGURES_DIR` overrides — see `src/analysis/figures.py`). It writes runtime figures only: Mop/s is the NPB operation count over runtime, so a Mop/s figure is the runtime figure inverted, and the thesis reports runtime. It applies thesis styling via `apply_thesis_style()` (legend at bottom, suppressed title, 900×420 px, white canvas with the light `AXIS_STYLE` grid and grey outside ticks). Run with `uv run python export_thesis_figs.py` (requires Chrome for kaleido rendering — run `uv run plotly_get_chrome` once if missing). Does **not** generate cpu_placement figures — see warning below.
 
 **Scalability model export**: `export_scalability_model.py` fits the configuration-level Amdahl--Karp--Flatt model over `data/dual` and writes `amdahl_karp_flatt_capacity.pdf` to the same thesis figures directory plus two CSVs to `output/model/`. Run with `uv run python export_scalability_model.py` from the repository root. Same thesis styling and TUM colours as above — its axes take `AXIS_STYLE` from `plots/style.py`, the same grid every other thesis figure now uses. Its legend entries are empty proxy traces carrying line dash and observation marker together, which is why the figure needs no "circles are observations" caption.
 
@@ -96,8 +96,8 @@ standard library.
 | `src/analysis/datasets/staggered.py` | Staggered worker logs, DRM grants, DRM pins |
 | `src/analysis/datasets/drm.py` | `rm.log` (grants) and `pidstat_*.log` |
 | `src/analysis/datasets/cpu_util.py` | `mpstat -P ALL` output (`cpu_util_*.log`) |
-| `src/analysis/datasets/mix.py` | Mixed workload `iterations.csv` and `schedule.json`, plus the realised concurrency |
 | `src/analysis/datasets/meta.py` | `meta.txt` benchmark start events and the SLURM log's CPU splits |
+| `src/analysis/datasets/mix.py` | Mixed workload `iterations.csv` and `schedule.json`, plus the realised concurrency |
 | `src/analysis/plots/style.py` | Palettes, markers, figure note, thesis layout — the single source for all of them |
 | `src/analysis/plots/npb.py` | Runtime/MOPS/init/speedup figures |
 | `src/analysis/plots/_metrics.py` | The two generic metric builders behind them |
@@ -113,8 +113,8 @@ standard library.
 | `src/analysis/model/amdahl.py` | Amdahl–Karp–Flatt fit over `dual` (standard library only) |
 | `src/analysis/io.py` | `write_outputs()` — HTML, optionally PDF (`also_static=True`) and/or PNG (`also_png=True`, `scale=2`) |
 | `src/analyze_cpu_util.py` | Entry point for that composite figure — needs the job's `meta.txt` files, optionally `pidstat` and the SLURM log |
-| `export_thesis_figs.py` | Standalone script: thesis-quality PDFs for job 209445 into `figures/` |
-| `export_scalability_model.py` | Standalone script: model CSVs to `output/model/`, `amdahl_karp_flatt_capacity.pdf` to `figures/` |
+| `export_thesis_figs.py` | Standalone script: thesis-quality PDFs for job 209445 into the thesis figures dir |
+| `export_scalability_model.py` | Standalone script: model CSVs to `output/model/`, `amdahl_karp_flatt_capacity.pdf` to the thesis figures dir |
 
 Both export scripts take their styling from `plots/style.py`, so the thesis
 PDFs and the interactive HTML cannot drift apart. Grid, axis lines and canvas
@@ -205,5 +205,5 @@ Each staggered iteration is a fresh process (new pid per run). After A2 joins, A
 2. Run `cd src && python main.py` — only the newest staggered job is plotted; unchanged outputs are skipped
 3. Use `--all` to regenerate everything across all staggered jobs
 4. The `rm.log` DRM blocks are used for `t_inferred` correction in pidstat figures — keep it alongside `pidstat.log`
-5. If the new job should become the canonical thesis run, update `export_thesis_figs.py` (`JOB_DIR`) and re-run it to refresh `../figures/`
+5. If the new job should become the canonical thesis run, update `export_thesis_figs.py` (`JOB_DIR`) and re-run it to refresh the thesis figures
 6. Update `docs/STAGGERED_HANDOVER.md` with the new numbers

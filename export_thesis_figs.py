@@ -32,10 +32,9 @@ from analysis.plots.style import (
     THESIS_WIDTH,
     apply_thesis_style,
 )
-from analysis.plots.npb import (
-    make_figure,
-    make_mops_figure,
-)
+# Mop/s is work over runtime with a constant NPB operation count, so a Mop/s
+# figure is the runtime figure inverted. The thesis reports runtime.
+from analysis.plots.npb import make_figure
 
 REPO_ROOT = Path(__file__).resolve().parent
 JOB_DIR = REPO_ROOT / "data" / "staggered" / "209445"
@@ -115,7 +114,7 @@ for alg_key, (df, t, offset) in dfs.items():
     print(f"Wrote {out_slab}")
 
 
-# ── Mixed workload timeline ──────────────────────────────────────────
+# ── Mixed workload timeline ──────────────────────────────────────────────────
 # One repeat is shown, not an average: a timeline of averaged runs is not a
 # timeline. The three repeats differ by at most one iteration per job.
 if MIX_JOB_DIR.exists():
@@ -187,15 +186,18 @@ def _make_speedup_thesis_fig(df: pd.DataFrame) -> go.Figure:
 
 
 # ── Aggregated benchmark figures ─────────────────────────────────────────────
-# `dual` (job 172930): two concurrent processes per condition sharing one
-# taskset CPU pool per NUMA domain, no worker-thread pinning. This is the
-# genuine concurrent-contention experiment and what the thesis tables report.
+# `dual/209861` (the re-measured run): two concurrent processes per condition
+# sharing one taskset CPU pool per NUMA domain, no worker-thread pinning. This
+# is the genuine concurrent-contention experiment and what the thesis tables
+# report. It must stay the same directory the scalability model fits — the
+# earlier campaign still lying in `data/dual/run_*` measures EP twice as slow,
+# so mixing the two puts a figure next to a table that contradicts it.
 # `dual-exclusive` is excluded: it only ever launched one process per
 # configuration (no `_2` output files), so dyn=true/false are indistinguishable
 # there and it cannot represent the two-process oversubscription scenario.
 BENCH_ROOT = REPO_ROOT / "data"
 agg_sources = [
-    ("dual", BENCH_ROOT / "dual"),
+    ("dual", BENCH_ROOT / "dual" / "209861"),
 ]
 
 agg_run_dirs = []
@@ -229,15 +231,6 @@ for group_name, dirs in build_groups(agg_run_dirs):
         out = OUT_DIR / f"aggregated_{bench.lower()}_runtime.pdf"
         fig_rt.write_image(str(out))
         print(f"Wrote {out}")
-
-        df_mops = df_bench[df_bench["mops_total"].notna()].copy()
-        if not df_mops.empty:
-            fig_m = make_mops_figure(df_mops, title="", show_raw_points=True)
-            fig_m.update_layout(title=dict(text=""), xaxis_title="Threads", yaxis_title="Mop/s total")
-            apply_thesis_style(fig_m)
-            out = OUT_DIR / f"aggregated_{bench.lower()}_mops.pdf"
-            fig_m.write_image(str(out))
-            print(f"Wrote {out}")
 
     modes = set(df_group["mode"].unique())
     if "dynamic=true" in modes and "dynamic=false" in modes:
