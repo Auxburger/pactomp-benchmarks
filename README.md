@@ -56,13 +56,15 @@ produces or needs in place — `bin/`, object files, generated headers, and
 
 The primary measurement data lives in `data/`:
 
-- `dual/` — the main dual-launch experiment, SLURM job 172930 on LRZ CoolMUC-4
-- `staggered/<jobid>/` — the staggered-launch jobs
-- `dual-exclusive/` — exclusive-node comparison runs
-- `tracing/<jobid>/` — the LLVM OpenMP tracing microbenchmark runs
-- `mix/<jobid>/` — the seeded mixed workload runs, one directory per arm
+- `dual/209861/` — the main dual-launch experiment on LRZ CoolMUC-4
+- `dual-exclusive/209458/` — the solo process reference (one process per configuration)
+- `staggered/209445/` — the staggered-launch job
+- `tracing/209227/`, `tracing/209228/` — the LLVM OpenMP tracing microbenchmark runs
+- `mix/209466/` — the seeded mixed workload runs, one directory per arm
 
-plus `slurm_logs/` for the per-job SLURM stdout and stderr.
+plus `slurm_logs/` for the per-job SLURM stdout and stderr. Only the datasets
+the thesis evaluates are kept; superseded campaigns were removed on 2026-09-24
+and remain in the Git history (e.g. commit `1b6dbc9`, which the thesis links).
 
 Raw `.log` files here (`cpu_util`, `pidstat`, `rm.log`, per-node stdout) are
 primary research artifacts and are committed deliberately. The root
@@ -167,9 +169,9 @@ The annotated per-CPU utilisation figure is a separate entry point, since it
 needs the job's `meta.txt` files and optionally the SLURM log:
 
 ```sh
-uv run python src/analyze_cpu_util.py data/dual/cpu_util_172930.log \
-  data/dual/89/node0/meta.txt data/dual/89/node1/meta.txt \
-  --pidstat data/dual/pidstat_172930.log --out cpu_utilisation.html
+uv run python src/analyze_cpu_util.py data/dual/209861/cpu_util.log \
+  data/dual/209861/89/node0/meta.txt data/dual/209861/89/node1/meta.txt \
+  --pidstat data/dual/209861/pidstat.log --out cpu_utilisation.html
 ```
 
 It writes interactive HTML; add `--static` or `--png` for the kaleido exports.
@@ -201,9 +203,11 @@ pointwise Karp--Flatt diagnostics to `output/model/`.
 ### Scalability model
 
 The configuration-level Amdahl--Karp--Flatt analysis reads the 600 raw process
-outputs under `data/dual`, validates the expected two-process cells, fits one
+outputs under `data/dual/209861`, validates the expected two-process cells, fits one
 effective scaling-loss fraction per kernel and condition, performs launch-group
-bootstrap resampling and a `t=32` forward hold-out check, then writes:
+bootstrap resampling independently within each pool size (preserving both
+processes and both configurations per launch) and a `t=32` forward hold-out
+check, then writes:
 
 - `output/model/amdahl_karp_flatt_summary.csv`
 - `output/model/amdahl_karp_flatt_points.csv`

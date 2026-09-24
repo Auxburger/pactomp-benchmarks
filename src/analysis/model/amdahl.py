@@ -174,12 +174,21 @@ def fit_all(
     bootstrap_samples: int = 10_000,
     seed: int = 20260726,
 ) -> tuple[list[ModelFit], list[dict[str, float | int | str | None]]]:
+    # Each pool size contains separate four-process launches. Draw within that
+    # pool size, keeping both processes and both configurations together.
     rng = random.Random(seed)
     runs = sorted({observation.run for observation in observations})
     fits: list[ModelFit] = []
     points: list[dict[str, float | int | str | None]] = []
 
     for kernel in KERNELS:
+        selected_launches = [
+            {
+                threads: [rng.choice(runs) for _ in runs]
+                for threads in THREAD_COUNTS
+            }
+            for _ in range(bootstrap_samples)
+        ]
         for mode in MODES:
             means = _configuration_means(observations, kernel, mode)
             launch_means = {
@@ -219,11 +228,10 @@ def fit_all(
             )
 
             bootstrap_fractions = []
-            for _ in range(bootstrap_samples):
-                selected_runs = [rng.choice(runs) for _ in runs]
+            for selected_runs in selected_launches:
                 bootstrap_means = {
                     threads: mean(
-                        launch_means[threads][run] for run in selected_runs
+                        launch_means[threads][run] for run in selected_runs[threads]
                     )
                     for threads in THREAD_COUNTS
                 }

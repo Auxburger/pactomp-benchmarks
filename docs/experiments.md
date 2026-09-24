@@ -19,14 +19,15 @@ Beide Worker laufen auf getrennten NUMA-Knoten. Die Taskset-Größe wird pro Thr
 
 ```
 data/                             # Messdaten (unveränderlich)
-├── dual/                         # Hauptexperiment: 2 nebenläufige Prozesse
+├── dual/<JID>/                   # Hauptexperiment: 2 nebenläufige Prozesse (Job 209861)
 │   ├── run_1/ … run_10/          # Pro Run: Ausgabedateien pro Benchmark/Thread count
 │   ├── <RUNTAG>/
 │   │   ├── node0/meta.txt        # Zeitstempel Worker A (NUMA node 0)
-│   │   └── node1/meta.txt        # Zeitstempel Worker B (NUMA node 1)
-│   ├── rm.log                    # DRM-Log (Grants, Kapazität, Clients)
-│   ├── cpu_util_<JID>.log        # mpstat-Log (per-CPU Auslastung alle 5s)
-│   └── pidstat_<JID>.log         # pidstat-Log (Prozess→CPU Zuordnung alle 5s)
+│   │   ├── node1/meta.txt        # Zeitstempel Worker B (NUMA node 1)
+│   │   └── rm.log                # DRM-Log (Grants, Kapazität, Clients)
+│   ├── cpu_util.log              # mpstat-Log (per-CPU Auslastung alle 5s)
+│   └── pidstat.log               # pidstat-Log (Prozess→CPU Zuordnung alle 5s)
+├── dual-exclusive/<JID>/         # Solo Process Reference (Job 209458)
 ├── staggered/<JID>/              # Gestaffeltes Experiment (zeitversetzter Start)
 │   ├── <alg>_t<t>_off<s>_A1.log  # Worker A1: per-Iteration Zeiten
 │   ├── <alg>_t<t>_off<s>_A2.log  # Worker A2
@@ -250,7 +251,7 @@ LLVM_BUILD=/anderswo/llvm-project/build ./experiments/build_npb.sh
 
 ### Benchmark-Zeiten
 
-Alle Ausgabedateien liegen unter `data/dual/run_<N>/<alg>/`:
+Alle Ausgabedateien liegen unter `data/dual/<JOBID>/run_<N>/<alg>/` (ausgewertet: Job 209861):
 ```
 <alg>_threads_<t>_dyn_<true|false>_<iter>.out
 ```
@@ -261,7 +262,7 @@ for bench in ft cg ep; do
   for t in 2 4 8 16 32; do
     for dyn in true false; do
       avg=$(grep -h "Time in seconds" \
-        data/dual/run_{1..10}/${bench}/${bench}_threads_${t}_dyn_${dyn}_{1,2}.out \
+        data/dual/209861/run_{1..10}/${bench}/${bench}_threads_${t}_dyn_${dyn}_{1,2}.out \
         | awk '{s+=$NF; n++} END{printf "%.2f", s/n}')
       echo "$bench t=$t dyn=$dyn avg=${avg}s"
     done
@@ -273,10 +274,10 @@ done
 
 ```bash
 python3 experiments/analyze_cpu_util.py \
-  data/dual/cpu_util_<JOBID>.log \
-  data/dual/<RUNTAG>/node0/meta.txt \
-  data/dual/<RUNTAG>/node1/meta.txt \
-  --pidstat data/dual/pidstat_<JOBID>.log \
+  data/dual/<JOBID>/cpu_util.log \
+  data/dual/<JOBID>/<RUNTAG>/node0/meta.txt \
+  data/dual/<JOBID>/<RUNTAG>/node1/meta.txt \
+  --pidstat data/dual/<JOBID>/pidstat.log \
   --slurm-out data/slurm_logs/slurm-<JOBID>.out \
   --out cpu_utilisation.png
 ```

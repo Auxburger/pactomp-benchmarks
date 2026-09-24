@@ -94,7 +94,7 @@ EP is short enough that a 10 s offset would let A1/B1 finish before A2/B2 join.
 **Placement is `taskset` only.** `numactl --cpunodebind --membind` was dropped as
 redundant: `--cpunodebind` repeated the `taskset` after it, and `--membind`
 repeated first touch, since each worker is pinned to one node's CPUs from `exec`
-onwards. Runs up to and including 187303 used it, later ones do not.
+onwards. Runs up to and including 187303 (no longer retained in `data/`) used it, later ones do not.
 
 **Calling convention:**
 ```bash
@@ -114,10 +114,9 @@ solo → shared → solo restored.
 - `dyn=true` (A side): DRM grants t/2 threads each → t total threads on t CPUs (1:1, no oversubscription)
 - `dyn=false` (B side): t threads each → 2t total threads on t CPUs (always 2× oversubscribed)
 
-**Results (job 172930):**
-- CG: up to +60% for dyn=true at t=32
-- FT: up to +21% for dyn=true at t=32
-- EP: ~0% (compute-bound, expected negative control)
+**Canonical job:** `data/dual/209861` (per-kernel means in
+`output/aggregated/npb_all_kernels_stats_long.csv`). The earlier job 172930 was
+superseded and removed from `data/` on 2026-09-24.
 
 ## Tracing Microbenchmark
 

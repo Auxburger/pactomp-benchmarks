@@ -1,5 +1,31 @@
 # Analysis Pipeline — NPB DRM Benchmark Visualisation
 
+## September 23, 2026 correction
+
+The canonical model and aggregated figure dataset is `data/dual/209861`.
+`src/analysis/model/amdahl.py` now resamples ten four-process launch groups
+independently within every kernel/pool-size cell. Both processes and both
+configurations stay paired within a launch, and the baseline is resampled too.
+The default is 10,000 replicates with seed 20260726. Equal `run_N` labels at
+different pool sizes are separate launches, not a shared resampling unit.
+Parameter percentiles are conditional on this campaign/model and do not remove
+temporal drift between ordered pool sizes or estimate a configuration contrast.
+Point estimates, RMSE values, and hold-out errors are unchanged. Six targeted
+model tests pass against the canonical data and synthetic clustering checks.
+
+## September 24, 2026 data cleanup
+
+`data/` now holds only the evaluated jobs: `dual/209861`, `dual-exclusive/209458`,
+`staggered/209445`, `mix/209466`, `tracing/209227` and `tracing/209228`, plus
+their SLURM logs. The superseded `dual/run_*` and `dual-exclusive/run_*`
+campaigns, staggered jobs 177053/187202/187303 and the logs of unretained or
+failed jobs were removed; they remain in the Git history (commit `1b6dbc9`).
+`src/main.py` now reads the job directories directly.
+
+Figure legends use “Managed” and “Unmanaged”. Worker identifiers
+A1/A2/B1/B2 remain visible, while CPU-pool size labels avoid implying that EP
+realized symmetric half-sized teams. Export sources, not PDFs, carry these edits.
+
 ## What this directory is
 
 Python plotting pipeline for a master thesis evaluating a Dynamic Resource Manager (DRM) for OpenMP on LRZ CoolMUC-4. The DRM coordinates thread allocation across concurrent OpenMP processes. This pipeline reads benchmark output logs and produces interactive Plotly HTML figures.
@@ -16,9 +42,9 @@ Flags can be combined: `--static --png` exports both. Outputs land in `output/<g
 
 **Incremental builds**: all three processing stages (aggregated benchmarks, monitoring, staggered) skip regenerating a plot if the output HTML is already newer than every input file. To force a rebuild: touch any input log file (`touch data/staggered/209445/cg_t32_off10_A1.log`) or delete the output directory.
 
-**Thesis figure export**: `export_thesis_figs.py` (at the repository root, not under `src/`) is a separate script that regenerates the thesis-quality PDFs for job 209445 (staggered), job 209466 (mixed workload) and job 209861 (aggregated `dual`, the re-measured run the scalability model also fits — the earlier campaign still lying in `data/dual/run_*` measures EP twice as slow) and writes them into the thesis repo's `figures/` directory (`../master-thesis/figures`, falling back to this repo's `figures/`; `THESIS_FIGURES_DIR` overrides — see `src/analysis/figures.py`). It writes runtime figures only: Mop/s is the NPB operation count over runtime, so a Mop/s figure is the runtime figure inverted, and the thesis reports runtime. It applies thesis styling via `apply_thesis_style()` (legend at bottom, suppressed title, 900×420 px, white canvas with the light `AXIS_STYLE` grid and grey outside ticks). Run with `uv run python export_thesis_figs.py` (requires Chrome for kaleido rendering — run `uv run plotly_get_chrome` once if missing). Does **not** generate cpu_placement figures — see warning below.
+**Thesis figure export**: `export_thesis_figs.py` (at the repository root, not under `src/`) is a separate script that regenerates the thesis-quality PDFs for job 209445 (staggered), job 209466 (mixed workload) and job 209861 (aggregated `dual`, the re-measured run the scalability model also fits) and writes them into the thesis repo's `figures/` directory (`../master-thesis/figures`, falling back to this repo's `figures/`; `THESIS_FIGURES_DIR` overrides — see `src/analysis/figures.py`). It writes runtime figures only: Mop/s is the NPB operation count over runtime, so a Mop/s figure is the runtime figure inverted, and the thesis reports runtime. It applies thesis styling via `apply_thesis_style()` (legend at bottom, suppressed title, 900×420 px, white canvas with the light `AXIS_STYLE` grid and grey outside ticks). Run with `uv run python export_thesis_figs.py` (requires Chrome for kaleido rendering — run `uv run plotly_get_chrome` once if missing). Does **not** generate cpu_placement figures — see warning below.
 
-**Scalability model export**: `export_scalability_model.py` fits the configuration-level Amdahl--Karp--Flatt model over `data/dual` and writes `amdahl_karp_flatt_capacity.pdf` to the same thesis figures directory plus two CSVs to `output/model/`. Run with `uv run python export_scalability_model.py` from the repository root. Same thesis styling and TUM colours as above — its axes take `AXIS_STYLE` from `plots/style.py`, the same grid every other thesis figure now uses. Its legend entries are empty proxy traces carrying line dash and observation marker together, which is why the figure needs no "circles are observations" caption.
+**Scalability model export**: `export_scalability_model.py` fits the configuration-level Amdahl--Karp--Flatt model over `data/dual/209861` and writes `amdahl_karp_flatt_capacity.pdf` to the same thesis figures directory plus two CSVs to `output/model/`. Run with `uv run python export_scalability_model.py` from the repository root. Same thesis styling and TUM colours as above — its axes take `AXIS_STYLE` from `plots/style.py`, the same grid every other thesis figure now uses. Its legend entries are empty proxy traces carrying line dash and observation marker together, which is why the figure needs no "circles are observations" caption.
 
 **The mixed workload figure shows one repeat, not an average.** Averaging three
 replays of a schedule destroys the thing the figure is for — an iteration
@@ -45,7 +71,7 @@ Two concurrent processes per benchmark (FT, CG, EP from NPB suite):
 - **A-side (`dyn=true`)**: DRM-managed — grants `t/2` threads each → `t` total threads on `t` CPUs (no oversubscription)
 - **B-side (`dyn=false`)**: unmanaged — each uses `t` threads → `2t` total threads on `t` CPUs (2× oversubscription)
 
-Results (job 172930): CG +60%, FT +21% for DRM at t=32. EP ~0% (expected, compute-bound).
+Canonical job: `data/dual/209861`. Per-kernel means are in `output/aggregated/npb_all_kernels_stats_long.csv` and the thesis tables.
 
 ### Tracing microbenchmark (`data/tracing/<jobid>/`)
 Produced by the `src/harness/tracing/` driver package (entry point `src/run_llvm_tracing.py`, submitted via `experiments/run_llvm_tracing.sbatch`). The `omp_dyn.c` microbenchmark stands in for the NPB kernels: two concurrent processes per (thread count, `OMP_DYNAMIC`) cell, `OMP_DISPLAY_AFFINITY` on, and an NPB-shaped summary block so `datasets/npb.py` reads the `.out` files unchanged. `omp` is therefore part of `KNOWN_BENCHES`, and `reports/tracing.py` plots these runs as the separate `output/tracing/` group — the run directories sit one level deeper (`<jobid>/run_<n>/omp/`) than the dual experiment, so `reports/tracing.py` handles the discovery. Each job directory also carries `timings.csv` and `manifest.json` written by the driver.
@@ -170,7 +196,7 @@ Key design decisions, hard-won through iteration:
 
 Parses `mpstat -P ALL 5` output. Active CPUs (ever >10% usr) are auto-detected and grouped into contiguous domains. Only the top-2 domains by total utilisation are shown (to avoid system-process noise creating 20+ subplots). Colour scale: white=0% → rust=100% usr.
 
-**What the data says for the staggered run (job 177053):**
+**What the data said for the early staggered run (job 177053, no longer retained in `data/`):**
 - B-domain (no-DRM, CPUs 56–87): uniformly ~83% usr across all cores. The missing ~17% is context-switching overhead from 2× oversubscription (64 threads on 32 CPUs).
 - A-domain (DRM, CPUs 1–32): ~60–68% average, with a mild asymmetry (CPUs 1–16 slightly hotter than 17–32 reflecting the DRM slab split). Lower per-core load than B-side because total thread count is halved — less contention, less cache thrashing — which is why DRM is faster despite looking "less loaded".
 - DRM pins only the master thread (`sched_setaffinity`); OMP workers roam across the full taskset, which is why both slab halves show activity rather than a clean 50/50 split.

@@ -70,8 +70,8 @@ def main() -> None:
     out_dir = repo_root / "output"
 
     sources = [
-        ("dual-exclusive", data_root / "dual-exclusive"),
-        ("dual", data_root / "dual"),
+        ("dual-exclusive", data_root / "dual-exclusive" / "209458"),
+        ("dual", data_root / "dual" / "209861"),
     ]
     missing = [root for _, root in sources if not root.exists()]
     if missing:

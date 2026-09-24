@@ -48,8 +48,8 @@ def make_staggered_steadystate_figure(
 
     fig = go.Figure()
     for dyn, color, label, pattern in [
-        ("true", _WORKER_COLORS["A1"], "A – DRM", ""),
-        ("false", _WORKER_COLORS["B1"], "B – no DRM", "/"),
+        ("true", _WORKER_COLORS["A1"], "A – Managed", ""),
+        ("false", _WORKER_COLORS["B1"], "B – Unmanaged", "/"),
     ]:
         sub = agg[agg["dyn"] == dyn].set_index("alg")
         means = [float(sub.loc[a, "mean"]) if a in sub.index else 0.0 for a in algs]

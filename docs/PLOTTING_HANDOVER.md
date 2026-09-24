@@ -4,13 +4,26 @@
 
 This document tells a plotting agent exactly what data exists, where it lives, how to parse it, and what plots to produce for the master thesis.
 
+## September 23, 2026 update
+
+Thesis exports now consistently label conditions “Managed” and
+“Unmanaged”, including worker legends and the runtime-ratio axis. The main
+figures and model use job 209861. The corrected independent-within-pool
+launch-group resampling is documented in `docs/ANALYSIS.md`.
+
+## September 24, 2026 data cleanup
+
+`data/` keeps only the evaluated jobs (dual 209861, dual-exclusive 209458,
+staggered 209445, mix 209466, tracing 209227/209228). Superseded campaigns are
+in the Git history (commit `1b6dbc9`).
+
 ---
 
 ## 1. Context
 
 Two experiments were run on LRZ CoolMUC-4 (SLURM, cm4 cluster):
 
-- **Main dual experiment** (job 172930, May 2026): Compares DRM thread count coordination vs uncoordinated oversubscription across thread counts t ∈ {2,4,8,16,32} for three benchmarks (FT, CG, EP).
+- **Main dual experiment** (job 209861, September 2026): Compares DRM thread count coordination vs uncoordinated oversubscription across thread counts t ∈ {2,4,8,16,32} for three benchmarks (FT, CG, EP).
 - **Staggered experiment** (job 209445, September 2026): Shows DRM dynamic rebalancing. A1/B1 start first with full resources; A2/B2 join after 10 seconds. Per-iteration timing logged with epoch timestamps.
 
 All measurement paths below are relative to the repository root, under `data/`.
@@ -24,7 +37,7 @@ directory, before this repository was split out of the thesis repo.)
 ### Data location
 
 ```
-data/dual/run_1/ … run_10/
+data/dual/209861/run_1/ … run_10/
   └── {alg}/
       └── {alg}_threads_{t}_dyn_{true|false}_{1|2}.out
 ```
@@ -49,7 +62,7 @@ Extract with: `grep "Time in seconds" file.out | awk '{print $NF}'`
 - **dyn=false (B side):** t threads each → 2t total threads on t CPUs → 2× oversubscribed
 - Both sides get exactly t CPUs via `taskset` (separate NUMA nodes, so no cross-side interference)
 
-**Note:** a `dual-exclusive` directory also exists under `data/`, but it only ever launched one process per configuration (no `_2` output files) — it cannot represent the two-process oversubscription scenario and must not be used as a data source. `dual` (below) is the only valid source for the thesis figures/tables.
+**Note:** `data/dual-exclusive/209458` is the solo process reference; it only ever launched one process per configuration (no `_2` output files) — it cannot represent the two-process oversubscription scenario and must not be used as a data source. `dual` (below) is the only valid source for the thesis figures/tables.
 
 ### Key numbers (mean per configuration)
 

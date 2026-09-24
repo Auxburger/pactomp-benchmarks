@@ -14,7 +14,7 @@ from pathlib import Path
 import pandas as pd
 
 ARMS = ("drm", "nodrm")
-ARM_LABELS = {"drm": "Coordinator enabled", "nodrm": "Unmanaged"}
+ARM_LABELS = {"drm": "Managed", "nodrm": "Unmanaged"}
 
 
 def load_mix_schedule(job_dir: Path) -> pd.DataFrame:

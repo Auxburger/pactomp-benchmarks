@@ -28,6 +28,7 @@ from analysis.datasets.npb import load_benchmark_dir, KNOWN_BENCHES
 from analysis.reports.npb import build_groups
 from analysis.plots.style import (
     BENCHMARK_MARKERS,
+    MODE_LABELS,
     THESIS_HEIGHT,
     THESIS_WIDTH,
     apply_thesis_style,
@@ -178,9 +179,9 @@ def _make_speedup_thesis_fig(df: pd.DataFrame) -> go.Figure:
         type="category",
         categoryorder="array",
         categoryarray=[str(t) for t in threads_sorted],
-        title_text="Thread count (t)",
+        title_text="CPU-pool size (t)",
     )
-    fig.update_yaxes(title_text="Speedup (no-DRM time / DRM time)")
+    fig.update_yaxes(title_text="Runtime ratio<br>(unmanaged / managed)")
     fig.update_layout(title="")
     return fig
 
@@ -189,9 +190,7 @@ def _make_speedup_thesis_fig(df: pd.DataFrame) -> go.Figure:
 # `dual/209861` (the re-measured run): two concurrent processes per condition
 # sharing one taskset CPU pool per NUMA domain, no worker-thread pinning. This
 # is the genuine concurrent-contention experiment and what the thesis tables
-# report. It must stay the same directory the scalability model fits — the
-# earlier campaign still lying in `data/dual/run_*` measures EP twice as slow,
-# so mixing the two puts a figure next to a table that contradicts it.
+# report. It must stay the same directory the scalability model fits.
 # `dual-exclusive` is excluded: it only ever launched one process per
 # configuration (no `_2` output files), so dyn=true/false are indistinguishable
 # there and it cannot represent the two-process oversubscription scenario.
@@ -226,7 +225,11 @@ for group_name, dirs in build_groups(agg_run_dirs):
         df_bench = df_group[df_group["benchmark"] == bench].copy()
 
         fig_rt = make_figure(df_bench, title="", show_raw_points=True)
-        fig_rt.update_layout(title=dict(text=""), xaxis_title="Threads", yaxis_title="Time (ms)")
+        for trace in fig_rt.data:
+            mode = (trace.name or "").split(", ")[-1]
+            if mode in MODE_LABELS:
+                trace.name = MODE_LABELS[mode]
+        fig_rt.update_layout(title=dict(text=""), xaxis_title="CPU-pool size (t)", yaxis_title="Time (ms)")
         apply_thesis_style(fig_rt)
         out = OUT_DIR / f"aggregated_{bench.lower()}_runtime.pdf"
         fig_rt.write_image(str(out))

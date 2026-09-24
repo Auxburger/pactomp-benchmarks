@@ -20,7 +20,7 @@ TITLE_FONT = 16
 # ── Palettes ─────────────────────────────────────────────────────────────────
 # TUM corporate colours, as used by settings.tex in the thesis.
 MODE_COLORS = {"dynamic=true": "#0065BD", "dynamic=false": "#E37222"}
-MODE_LABELS = {"dynamic=true": "Enabled", "dynamic=false": "Unmanaged"}
+MODE_LABELS = {"dynamic=true": "Managed", "dynamic=false": "Unmanaged"}
 MODE_DASHES = {"dynamic=true": "solid", "dynamic=false": "dash"}
 MODE_MARKERS = {"dynamic=true": "circle", "dynamic=false": "diamond"}
 
@@ -42,10 +42,10 @@ PARTITION_LABELS = {
 
 WORKER_COLORS = {"A1": "#4C72B0", "A2": "#96B5D8", "B1": "#DD8452", "B2": "#EDB899"}
 WORKER_LABELS = {
-    "A1": "A1 – DRM (first)",
-    "A2": "A2 – DRM (joins later)",
-    "B1": "B1 – no-DRM (first)",
-    "B2": "B2 – no-DRM (joins later)",
+    "A1": "A1 – Managed",
+    "A2": "A2 – Managed",
+    "B1": "B1 – Unmanaged",
+    "B2": "B2 – Unmanaged",
 }
 WORKER_DASH = {"A1": "solid", "A2": "dot", "B1": "solid", "B2": "dot"}
 WORKER_MARKERS = {"A1": "circle", "A2": "square", "B1": "diamond", "B2": "cross"}
