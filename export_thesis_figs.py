@@ -28,14 +28,14 @@ from analysis.datasets.npb import load_benchmark_dir, KNOWN_BENCHES
 from analysis.reports.npb import build_groups
 from analysis.plots.style import (
     BENCHMARK_MARKERS,
+    MODE_COLORS,
+    MODE_DASHES,
     MODE_LABELS,
+    MODE_MARKERS,
     THESIS_HEIGHT,
     THESIS_WIDTH,
     apply_thesis_style,
 )
-# Mop/s is work over runtime with a constant NPB operation count, so a Mop/s
-# figure is the runtime figure inverted. The thesis reports runtime.
-from analysis.plots.npb import make_figure
 
 REPO_ROOT = Path(__file__).resolve().parent
 JOB_DIR = REPO_ROOT / "data" / "staggered" / "209445"
@@ -126,6 +126,43 @@ if MIX_JOB_DIR.exists():
     out_mix = OUT_DIR / "mix_timeline.pdf"
     fig_mix.write_image(str(out_mix))
     print(f"Wrote {out_mix}")
+
+
+def _make_runtime_thesis_fig(df: pd.DataFrame) -> go.Figure:
+    """Mean runtime per pool size, one line per configuration, in TUM colours."""
+    # Mop/s is work over runtime with a constant NPB operation count, so a Mop/s
+    # figure is the runtime figure inverted. The thesis reports runtime.
+    agg = df.groupby(["threads", "mode"])["duration_ms"].mean().reset_index()
+    threads_sorted = sorted(agg["threads"].unique())
+
+    fig = go.Figure()
+    for mode in ("dynamic=true", "dynamic=false"):
+        sub = agg[agg["mode"] == mode].sort_values("threads")
+        if sub.empty:
+            continue
+        fig.add_trace(go.Scatter(
+            x=sub["threads"].astype(str),
+            y=sub["duration_ms"] / 1000.0,
+            mode="lines+markers",
+            name=MODE_LABELS[mode],
+            line=dict(color=MODE_COLORS[mode], dash=MODE_DASHES[mode], width=2.5),
+            marker=dict(
+                size=9,
+                symbol=MODE_MARKERS[mode],
+                color=MODE_COLORS[mode],
+                line=dict(color="white", width=1),
+            ),
+        ))
+
+    fig.update_xaxes(
+        type="category",
+        categoryorder="array",
+        categoryarray=[str(t) for t in threads_sorted],
+        title_text="CPU-pool size (t)",
+    )
+    fig.update_yaxes(title_text="Time (s)", ticksuffix=" s", rangemode="tozero")
+    fig.update_layout(title="")
+    return fig
 
 
 def _make_speedup_thesis_fig(df: pd.DataFrame) -> go.Figure:
@@ -224,12 +261,7 @@ for group_name, dirs in build_groups(agg_run_dirs):
     for bench in sorted(df_group["benchmark"].unique()):
         df_bench = df_group[df_group["benchmark"] == bench].copy()
 
-        fig_rt = make_figure(df_bench, title="", show_raw_points=True)
-        for trace in fig_rt.data:
-            mode = (trace.name or "").split(", ")[-1]
-            if mode in MODE_LABELS:
-                trace.name = MODE_LABELS[mode]
-        fig_rt.update_layout(title=dict(text=""), xaxis_title="CPU-pool size (t)", yaxis_title="Time (ms)")
+        fig_rt = _make_runtime_thesis_fig(df_bench)
         apply_thesis_style(fig_rt)
         out = OUT_DIR / f"aggregated_{bench.lower()}_runtime.pdf"
         fig_rt.write_image(str(out))

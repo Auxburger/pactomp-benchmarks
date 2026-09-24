@@ -6,10 +6,11 @@ import pandas as pd
 import plotly.graph_objects as go
 
 from ..style import (
+    SLAB_WORKER_COLORS as _SLAB_WORKER_COLORS,
+    SLAB_WORKER_PATTERNS as _SLAB_WORKER_PATTERNS,
     WORKER_COLORS as _WORKER_COLORS,
     WORKER_DASH as _WORKER_DASH,
     WORKER_LABELS as _WORKER_LABELS,
-    WORKER_MARKERS as _WORKER_MARKERS,
     add_figure_note,
 )
 
@@ -99,21 +100,22 @@ def make_staggered_cpu_slab_figure(
         xl, yl = _expand_hv(xs_plot, lo_plot)
         cd_exp = _expand_hv_cd(xs_plot, cd_plot)
 
-        color = _WORKER_COLORS.get(worker, "#aaaaaa")
+        color = _SLAB_WORKER_COLORS.get(worker, "#aaaaaa")
         r = int(color[1:3], 16)
         g_val = int(color[3:5], 16)
         b = int(color[5:7], 16)
-        fill_color = f"rgba({r},{g_val},{b},0.25)"
+        fill_color = f"rgba({r},{g_val},{b},0.30)"
+        pattern = _SLAB_WORKER_PATTERNS.get(worker, "")
+        fill_pattern = (
+            dict(shape=pattern, fgcolor=color, bgcolor=fill_color, size=7, solidity=0.25)
+            if pattern else None
+        )
 
-        # Upper boundary — invisible, defines top of fill, no tooltip
+        # Upper boundary — defines top of fill, no tooltip
         fig.add_trace(go.Scatter(
             x=xu, y=yu,
-            mode="lines+markers",
+            mode="lines",
             line=dict(color=color, width=1.5),
-            marker=dict(
-                size=5,
-                symbol=_WORKER_MARKERS.get(worker, "circle"),
-            ),
             name=f"{worker} slab top",
             legendgroup=worker,
             showlegend=False,
@@ -126,6 +128,7 @@ def make_staggered_cpu_slab_figure(
             line=dict(color=color, width=1.5),
             fill="tonexty",
             fillcolor=fill_color,
+            fillpattern=fill_pattern,
             name=_WORKER_LABELS.get(worker, worker),
             legendgroup=worker,
             customdata=cd_exp,
@@ -153,10 +156,13 @@ def make_staggered_cpu_slab_figure(
             annotation_font_size=11,
         )
 
+    granted = df_grants[df_grants["cpu_count"] > 0]
+    y_top = float((granted["cpu_start"] + granted["cpu_count"]).max()) if not granted.empty else float(t)
+
     fig.update_layout(
         title=title or f"Staggered – DRM granted CPU slab: {alg} t={t} offset={offset_sec}s",
-        xaxis=dict(title="Elapsed time (s)"),
-        yaxis=dict(title="CPU core #"),
+        xaxis=dict(title="Elapsed time (s)", rangemode="tozero"),
+        yaxis=dict(title="CPU core #", range=[0, y_top + 2]),
         legend=dict(title=""),
         hovermode="x unified",
         hoverlabel=dict(font=dict(size=13)),

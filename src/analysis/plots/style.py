@@ -50,6 +50,12 @@ WORKER_LABELS = {
 WORKER_DASH = {"A1": "solid", "A2": "dot", "B1": "solid", "B2": "dot"}
 WORKER_MARKERS = {"A1": "circle", "A2": "square", "B1": "diamond", "B2": "cross"}
 
+# The slab figure shows only A1 and A2, so it needs two hues rather than two
+# shades of the managed blue. TUM blue and TUM green stay apart under
+# red-green colour blindness, and the A2 hatch survives greyscale printing.
+SLAB_WORKER_COLORS = {"A1": "#0065BD", "A2": "#A2AD00"}
+SLAB_WORKER_PATTERNS = {"A1": "", "A2": "/"}
+
 # ── Ink ──────────────────────────────────────────────────────────────────────
 INK_COLOR = "#333333"
 MUTED_COLOR = "#808080"
