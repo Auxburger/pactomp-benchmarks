@@ -1,0 +1,189 @@
+OMP: pid 164003 tid 164003 thread 0 bound to OS proc set {1-32}
+OMP: pid 164003 tid 164011 thread 2 bound to OS proc set {1-32}
+OMP: pid 164003 tid 164014 thread 3 bound to OS proc set {1-32}
+OMP: pid 164003 tid 164009 thread 1 bound to OS proc set {1-32}
+OMP: pid 164003 tid 164029 thread 8 bound to OS proc set {1-32}
+OMP: pid 164003 tid 164019 thread 4 bound to OS proc set {1-32}
+OMP: pid 164003 tid 164045 thread 12 bound to OS proc set {1-32}
+OMP: pid 164003 tid 164020 thread 5 bound to OS proc set {1-32}
+OMP: pid 164003 tid 164038 thread 10 bound to OS proc set {1-32}
+OMP: pid 164003 tid 164022 thread 6 bound to OS proc set {1-32}
+OMP: pid 164003 tid 164031 thread 9 bound to OS proc set {1-32}
+OMP: pid 164003 tid 164028 thread 7 bound to OS proc set {1-32}
+OMP: pid 164003 tid 164043 thread 11 bound to OS proc set {1-32}
+OMP: pid 164003 tid 164053 thread 13 bound to OS proc set {1-32}
+OMP: pid 164003 tid 164057 thread 14 bound to OS proc set {1-32}
+OMP: pid 164003 tid 164065 thread 15 bound to OS proc set {1-32}
+OMP: pid 164003 tid 164104 thread 28 bound to OS proc set {1-32}
+OMP: pid 164003 tid 164105 thread 29 bound to OS proc set {1-32}
+OMP: pid 164003 tid 164107 thread 31 bound to OS proc set {1-32}
+OMP: pid 164003 tid 164106 thread 30 bound to OS proc set {1-32}
+OMP: pid 164003 tid 164070 thread 16 bound to OS proc set {1-32}
+OMP: pid 164003 tid 164103 thread 27 bound to OS proc set {1-32}
+OMP: pid 164003 tid 164098 thread 24 bound to OS proc set {1-32}
+OMP: pid 164003 tid 164085 thread 18 bound to OS proc set {1-32}
+OMP: pid 164003 tid 164080 thread 17 bound to OS proc set {1-32}
+OMP: pid 164003 tid 164102 thread 26 bound to OS proc set {1-32}
+OMP: pid 164003 tid 164093 thread 20 bound to OS proc set {1-32}
+OMP: pid 164003 tid 164091 thread 19 bound to OS proc set {1-32}
+OMP: pid 164003 tid 164101 thread 25 bound to OS proc set {1-32}
+OMP: pid 164003 tid 164097 thread 23 bound to OS proc set {1-32}
+OMP: pid 164003 tid 164096 thread 22 bound to OS proc set {1-32}
+OMP: pid 164003 tid 164094 thread 21 bound to OS proc set {1-32}
+OMP: pid 164003 tid 164003 thread 0 bound to OS proc set {1-32}
+[DRM-pin] pid=164003 tid=164031 assigned=1-16 running_on=10
+[DRM-pin] pid=164003 tid=164014 assigned=1-16 running_on=1
+OMP: pid 164003 tid 164031 thread 9 bound to OS proc set {1-32}
+[DRM-pin] pid=164003 tid=164009 assigned=1-16 running_on=16
+OMP: pid 164003 tid 164014 thread 3 bound to OS proc set {1-32}
+OMP: pid 164003 tid 164009 thread 1 bound to OS proc set {1-32}
+[DRM-pin] pid=164003 tid=164022 assigned=1-16 running_on=4
+OMP: pid 164003 tid 164022 thread 6 bound to OS proc set {1-32}
+[DRM-pin] pid=164003 tid=164065 assigned=1-16 running_on=10
+OMP: pid 164003 tid 164065 thread 15 bound to OS proc set {1-32}
+[DRM-pin] pid=164003 tid=164045 assigned=1-16 running_on=14
+OMP: pid 164003 tid 164045 thread 12 bound to OS proc set {1-32}
+[DRM-pin] pid=164003 tid=164020 assigned=1-16 running_on=1
+OMP: pid 164003 tid 164020 thread 5 bound to OS proc set {1-32}
+[DRM-pin] pid=164003 tid=164029 assigned=1-16 running_on=1
+OMP: pid 164003 tid 164029 thread 8 bound to OS proc set {1-32}
+[DRM-pin] pid=164003 tid=164011 assigned=1-16 running_on=1
+OMP: pid 164003 tid 164011 thread 2 bound to OS proc set {1-32}
+[DRM-pin] pid=164003 tid=164053 assigned=1-16 running_on=1
+OMP: pid 164003 tid 164053 thread 13 bound to OS proc set {1-32}
+[DRM-pin] pid=164003 tid=164057 assigned=1-16 running_on=1
+OMP: pid 164003 tid 164057 thread 14 bound to OS proc set {1-32}
+[DRM-pin] pid=164003 tid=164038 assigned=1-16 running_on=1
+OMP: pid 164003 tid 164038 thread 10 bound to OS proc set {1-32}
+[DRM-pin] pid=164003 tid=164019 assigned=1-16 running_on=1
+OMP: pid 164003 tid 164019 thread 4 bound to OS proc set {1-32}
+[DRM-pin] pid=164003 tid=164028 assigned=1-16 running_on=15
+OMP: pid 164003 tid 164028 thread 7 bound to OS proc set {1-32}
+[DRM-pin] pid=164003 tid=164043 assigned=1-16 running_on=9
+OMP: pid 164003 tid 164043 thread 11 bound to OS proc set {1-32}
+OMP: pid 164003 tid 164003 thread 0 bound to OS proc set {1-32}
+[DRM-pin] pid=164003 tid=164038 assigned=1-32 running_on=14
+OMP: pid 164003 tid 164038 thread 10 bound to OS proc set {1-32}
+[DRM-pin] pid=164003 tid=164070 assigned=1-32 running_on=30
+[DRM-pin] pid=164003 tid=164105 assigned=1-32 running_on=2
+OMP: pid 164003 tid 164070 thread 16 bound to OS proc set {1-32}
+[DRM-pin] pid=164003 tid=164014 assigned=1-32 running_on=11
+OMP: pid 164003 tid 164105 thread 29 bound to OS proc set {1-32}
+OMP: pid 164003 tid 164014 thread 3 bound to OS proc set {1-32}
+[DRM-pin] pid=164003 tid=164022 assigned=1-32 running_on=8
+OMP: pid 164003 tid 164022 thread 6 bound to OS proc set {1-32}
+[DRM-pin] pid=164003 tid=164031 assigned=1-32 running_on=5
+OMP: pid 164003 tid 164031 thread 9 bound to OS proc set {1-32}
+[DRM-pin] pid=164003 tid=164043 assigned=1-32 running_on=9
+OMP: pid 164003 tid 164043 thread 11 bound to OS proc set {1-32}
+[DRM-pin] pid=164003 tid=164020 assigned=1-32 running_on=2
+[DRM-pin] pid=164003 tid=164053 assigned=1-32 running_on=4
+OMP: pid 164003 tid 164020 thread 5 bound to OS proc set {1-32}
+OMP: pid 164003 tid 164053 thread 13 bound to OS proc set {1-32}
+[DRM-pin] pid=164003 tid=164065 assigned=1-32 running_on=10
+[DRM-pin] pid=164003 tid=164019 assigned=1-32 running_on=1
+OMP: pid 164003 tid 164065 thread 15 bound to OS proc set {1-32}
+OMP: pid 164003 tid 164019 thread 4 bound to OS proc set {1-32}
+[DRM-pin] pid=164003 tid=164057 assigned=1-32 running_on=12
+OMP: pid 164003 tid 164057 thread 14 bound to OS proc set {1-32}
+[DRM-pin] pid=164003 tid=164028 assigned=1-32 running_on=15
+OMP: pid 164003 tid 164028 thread 7 bound to OS proc set {1-32}
+[DRM-pin] pid=164003 tid=164029 assigned=1-32 running_on=7
+OMP: pid 164003 tid 164029 thread 8 bound to OS proc set {1-32}
+[DRM-pin] pid=164003 tid=164011 assigned=1-32 running_on=3
+OMP: pid 164003 tid 164011 thread 2 bound to OS proc set {1-32}
+[DRM-pin] pid=164003 tid=164091 assigned=1-32 running_on=1
+[DRM-pin] pid=164003 tid=164103 assigned=1-32 running_on=3
+OMP: pid 164003 tid 164091 thread 19 bound to OS proc set {1-32}
+OMP: pid 164003 tid 164103 thread 27 bound to OS proc set {1-32}
+[DRM-pin] pid=164003 tid=164098 assigned=1-32 running_on=12
+OMP: pid 164003 tid 164098 thread 24 bound to OS proc set {1-32}
+[DRM-pin] pid=164003 tid=164102 assigned=1-32 running_on=7
+OMP: pid 164003 tid 164102 thread 26 bound to OS proc set {1-32}
+[DRM-pin] pid=164003 tid=164101 assigned=1-32 running_on=15
+OMP: pid 164003 tid 164101 thread 25 bound to OS proc set {1-32}
+[DRM-pin] pid=164003 tid=164045 assigned=1-32 running_on=6
+OMP: pid 164003 tid 164045 thread 12 bound to OS proc set {1-32}
+[DRM-pin] pid=164003 tid=164085 assigned=1-32 running_on=19
+OMP: pid 164003 tid 164085 thread 18 bound to OS proc set {1-32}
+[DRM-pin] pid=164003 tid=164107 assigned=1-32 running_on=3
+[DRM-pin] pid=164003 tid=164104 assigned=1-32 running_on=29
+OMP: pid 164003 tid 164107 thread 31 bound to OS proc set {1-32}
+OMP: pid 164003 tid 164104 thread 28 bound to OS proc set {1-32}
+[DRM-pin] pid=164003 tid=164106 assigned=1-32 running_on=8
+OMP: pid 164003 tid 164106 thread 30 bound to OS proc set {1-32}
+[DRM-pin] pid=164003 tid=164097 assigned=1-32 running_on=1
+OMP: pid 164003 tid 164097 thread 23 bound to OS proc set {1-32}
+[DRM-pin] pid=164003 tid=164009 assigned=1-32 running_on=16
+OMP: pid 164003 tid 164009 thread 1 bound to OS proc set {1-32}
+[DRM-pin] pid=164003 tid=164093 assigned=1-32 running_on=24
+OMP: pid 164003 tid 164093 thread 20 bound to OS proc set {1-32}
+[DRM-pin] pid=164003 tid=164096 assigned=1-32 running_on=3
+OMP: pid 164003 tid 164096 thread 22 bound to OS proc set {1-32}
+[DRM-pin] pid=164003 tid=164094 assigned=1-32 running_on=4
+OMP: pid 164003 tid 164094 thread 21 bound to OS proc set {1-32}
+[DRM-pin] pid=164003 tid=164080 assigned=1-32 running_on=21
+OMP: pid 164003 tid 164080 thread 17 bound to OS proc set {1-32}
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - CG Benchmark
+
+ Size:      150000
+ Iterations:                     75
+ Number of available threads:    32
+
+ Initialization time =           1.435 seconds
+
+   iteration           ||r||                 zeta
+        1       0.35311372414506E-12   109.9994423237398
+        5       0.89264273025625E-15    28.6471670038896
+       10       0.91112377295761E-15    28.9496695449000
+       15       0.90592649872512E-15    28.9716336228373
+       20       0.91551081623083E-15    28.9734210663751
+       25       0.90914078021351E-15    28.9735863059385
+       30       0.90881762543028E-15    28.9736033967630
+       35       0.91093880991982E-15    28.9736053266249
+       40       0.90571322605678E-15    28.9736055590700
+       45       0.90976440875594E-15    28.9736055884129
+       50       0.90881658785422E-15    28.9736055922482
+       55       0.90435076302459E-15    28.9736055927636
+       60       0.90878972808595E-15    28.9736055928341
+       65       0.90795648655311E-15    28.9736055928438
+       70       0.90299145788975E-15    28.9736055928452
+       75       0.90228847028363E-15    28.9736055928455
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ Zeta is     0.2897360559285E+02
+ Error is    0.1581784714701E-13
+
+
+ CG Benchmark Completed.
+ Class           =                        C
+ Size            =                   150000
+ Iterations      =                       75
+ Time in seconds =                     7.41
+ Total threads   =                       32
+ Avail threads   =                       32
+ Mop/s total     =                 19343.00
+ Mop/s/thread    =                   604.47
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              03 Sep 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L$(LLVM_BUILD)/lib -lomp
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

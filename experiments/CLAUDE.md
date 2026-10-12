@@ -114,9 +114,10 @@ solo → shared → solo restored.
 - `dyn=true` (A side): DRM grants t/2 threads each → t total threads on t CPUs (1:1, no oversubscription)
 - `dyn=false` (B side): t threads each → 2t total threads on t CPUs (always 2× oversubscribed)
 
-**Canonical job:** `data/dual/209861` (per-kernel means in
-`output/aggregated/npb_all_kernels_stats_long.csv`). The earlier job 172930 was
-superseded and removed from `data/` on 2026-09-24.
+**Canonical job:** `data/dual/224633` (per-kernel means in
+`output/aggregated/npb_all_kernels_stats_long.csv`), measured 2026-10-11 with
+coordinator `038e652`. It replaced 209861 on 2026-10-12 (see limitation 4);
+the earlier job 172930 was removed on 2026-09-24.
 
 ## Tracing Microbenchmark
 
@@ -395,6 +396,22 @@ is deliberately not committed inside the pristine NPB tree:
 2. **`OMP_PROC_BIND=spread` is incompatible with DRM CPU pinning.** It overrides `sched_setaffinity` on every worker via pre-computed OMP_PLACES. It is intentionally NOT set in the current setup.
 
 3. **First parallel region always uses fallback thread count.** The DRM reply is non-blocking; the first region forks before the reply arrives and uses `OMP_NUM_THREADS` as fallback.
+
+4. **Stale clients after a connection reset (fixed 2026-10-10 in coordinator `038e652`).** Before that, a client was removed from the active set only when its connection ended with EOF. FT and EP processes exit with an unread reply in the socket, which ends the connection with `Connection reset by peer`; the dead PID then counted as active for up to 5 s and shrank every grant issued meanwhile. Only experiments where a new managed process starts within 5 s of a dead one were affected:
+
+   | Old data | Affected | How | Rerun |
+   |----------|----------|-----|-------|
+   | `dual/209861` | no | grants are only t/2 and t | 224633, old job removed |
+   | `dual-exclusive/209458` | CG only | CG starts right after FT and gets t/2 for its first ~3 s | 224769, old job removed; 224608 discarded, see below |
+   | `staggered/209445` | FT, EP | FT gets 10-thread grants (third client), EP erratic sizes | 224607, old job removed |
+   | `mix/209466` | yes | ~13 % of grants below capacity / live processes | 224609 (same schedule), old job removed |
+   | `tracing/209228` | no | no resets | — |
+
+   Check any new coordinator log: `Accepted connection` must match the count of `removed from state` plus `before first request`.
+
+   Also check the absolute runtimes before accepting any rerun. Solo job 224608 (node `cm4r13c05s01`, 2026-10-11) was 1.5–6× slower than every other job on both sides, EP at t=2 included, with unchanged binaries and an identical `libomp.so`; it was discarded, and the reruns exclude that node (`sbatch --exclude=cm4r13c05s01`, `scontrol update ExcNodeList=` for pending jobs). Reference values for one uncontended process at t=32: EP ≈ 3.6 s, FT ≈ 4.3 s, CG ≈ 3.8 s.
+
+5. **Clients that stop requesting age out of the 5 s activity window.** Liveness is request recency, not connection state. EP requests only at start and in its final region, so during its timed region a partner process stops counting and the next process receives the full pool: one 32-thread and one 16-thread team on the same 32 CPUs. This explains the asymmetric EP teams in `dual` and the bimodal EP times in `staggered/224607`.
 
 ## Important Environment Variables
 

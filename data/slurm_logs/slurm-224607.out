@@ -1,0 +1,217 @@
+/dss/lrzsys/sys/spack/release/24.4.0/opt/x86_64/ninja/1.12.1-gcc-ggmzzs5/bin/ninja
+/dss/lrzsys/sys/spack/release/24.4.0/opt/x86_64/cmake/3.30.0-gcc-jo2m272/bin/cmake
+/dss/lrzsys/sys/spack/release/24.4.0/opt/x86_64/gcc/13.2.0-gcc-j6fttbw/bin/gcc
+/lrz/sys/spack/release/24.4.0/views/python/3.10.12-base/bin/python3
+Cpus_allowed_list: 0-88,112-200
+Running on cm4r15c01s07
+RM_CPU=0
+WorkerA: NUMA node 0 CPUs=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32
+WorkerB: NUMA node 1 CPUs=56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87
+t=32 alg=ft iters1=15 iters2=15 offset=10s
+=== Sat Oct 10 14:50:14 CEST 2026 : starting A1 and B1 (15 iters each) ===
+=== sleeping 10s before A2/B2 ===
+[B1] iter=1  4784ms  tis=4.23s
+[A1] iter=1  4826ms  tis=4.27s
+[B1] iter=2  4567ms  tis=4.24s
+[A1] iter=2  4570ms  tis=4.24s
+=== Sat Oct 10 14:50:24 CEST 2026 : starting A2 and B2 (15 iters each) ===
+[A2] iter=1  8516ms  tis=8.18s
+[A1] iter=3  8672ms  tis=7.76s
+[B2] iter=1  10239ms  tis=9.91s
+[B1] iter=3  10316ms  tis=9.47s
+[A2] iter=2  8902ms  tis=8.37s
+[A1] iter=4  8826ms  tis=7.90s
+[B2] iter=2  10382ms  tis=10.06s
+[B1] iter=4  10459ms  tis=9.66s
+[A2] iter=3  8458ms  tis=8.12s
+[A1] iter=5  8908ms  tis=7.98s
+[B2] iter=3  10283ms  tis=9.95s
+[B1] iter=5  10686ms  tis=9.92s
+[A2] iter=4  8840ms  tis=8.05s
+[A1] iter=6  9002ms  tis=8.12s
+[B2] iter=4  10589ms  tis=9.95s
+[B1] iter=6  10262ms  tis=9.54s
+[A2] iter=5  9289ms  tis=8.44s
+[A1] iter=7  9082ms  tis=8.14s
+[B2] iter=5  10426ms  tis=10.03s
+[B1] iter=7  10271ms  tis=9.49s
+[A2] iter=6  8891ms  tis=8.22s
+[A1] iter=8  8931ms  tis=8.09s
+[A2] iter=7  9194ms  tis=8.36s
+[B2] iter=6  10732ms  tis=10.38s
+[B1] iter=8  10761ms  tis=9.87s
+[A1] iter=9  8834ms  tis=7.77s
+[A2] iter=8  8733ms  tis=8.26s
+[A1] iter=10  8672ms  tis=7.73s
+[B2] iter=7  10188ms  tis=9.83s
+[B1] iter=9  10380ms  tis=9.50s
+[A2] iter=9  9024ms  tis=8.52s
+[A1] iter=11  8842ms  tis=7.92s
+[B2] iter=8  10122ms  tis=9.72s
+[B1] iter=10  10302ms  tis=9.46s
+[A2] iter=10  8945ms  tis=8.61s
+[A1] iter=12  8910ms  tis=7.90s
+[B2] iter=9  10574ms  tis=10.03s
+[B1] iter=11  10462ms  tis=9.60s
+[A2] iter=11  8900ms  tis=8.57s
+[A1] iter=13  8891ms  tis=8.05s
+[B2] iter=10  10348ms  tis=9.87s
+[B1] iter=12  10571ms  tis=9.78s
+[A2] iter=12  8646ms  tis=8.32s
+[A1] iter=14  8787ms  tis=7.88s
+[B2] iter=11  10650ms  tis=9.98s
+[B1] iter=13  10129ms  tis=9.35s
+[A2] iter=13  8561ms  tis=8.23s
+[A1] iter=15  8855ms  tis=7.88s
+[A2] iter=14  4828ms  tis=4.23s
+[B2] iter=12  10591ms  tis=10.23s
+[B1] iter=14  10634ms  tis=9.89s
+[A2] iter=15  4578ms  tis=4.25s
+[B2] iter=13  10257ms  tis=9.91s
+[B1] iter=15  10581ms  tis=9.74s
+[B2] iter=14  4795ms  tis=4.23s
+[B2] iter=15  4584ms  tis=4.26s
+=== done ===
+Results in /dss/dsshome1/09/ga27qam2/pactomp-benchmarks/data/staggered/224607/ft_t32_off10_*.log
+DRM log:  /dss/dsshome1/09/ga27qam2/pactomp-benchmarks/data/staggered/224607/ft_t32_off10_rm.log
+RM_CPU=0
+WorkerA: NUMA node 0 CPUs=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32
+WorkerB: NUMA node 1 CPUs=56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87
+t=32 alg=cg iters1=15 iters2=15 offset=10s
+=== Sat Oct 10 14:52:57 CEST 2026 : starting A1 and B1 (15 iters each) ===
+=== sleeping 10s before A2/B2 ===
+[A1] iter=1  4308ms  tis=3.79s
+[B1] iter=1  4435ms  tis=3.92s
+[A1] iter=2  4120ms  tis=3.63s
+[B1] iter=2  4261ms  tis=3.78s
+=== Sat Oct 10 14:53:07 CEST 2026 : starting A2 and B2 (15 iters each) ===
+[A1] iter=3  8484ms  tis=8.00s
+[A2] iter=1  8208ms  tis=7.00s
+[B1] iter=3  12910ms  tis=11.56s
+[B2] iter=1  12813ms  tis=11.64s
+[A2] iter=2  8330ms  tis=7.06s
+[A1] iter=4  9105ms  tis=7.70s
+[B1] iter=4  11887ms  tis=10.70s
+[B2] iter=2  11701ms  tis=10.64s
+[A1] iter=5  8264ms  tis=7.10s
+[A2] iter=3  8861ms  tis=8.38s
+[A1] iter=6  8531ms  tis=7.32s
+[A2] iter=4  8581ms  tis=7.33s
+[B2] iter=3  11801ms  tis=10.67s
+[B1] iter=5  12067ms  tis=10.99s
+[A2] iter=5  8461ms  tis=7.16s
+[A1] iter=7  8926ms  tis=7.72s
+[B2] iter=4  12562ms  tis=11.16s
+[B1] iter=6  12720ms  tis=11.48s
+[A2] iter=6  8638ms  tis=7.33s
+[A1] iter=8  9719ms  tis=8.32s
+[A2] iter=7  8852ms  tis=7.78s
+[B2] iter=5  12559ms  tis=11.60s
+[B1] iter=7  12460ms  tis=11.06s
+[A1] iter=9  9467ms  tis=8.19s
+[A2] iter=8  8937ms  tis=7.62s
+[A1] iter=10  10091ms  tis=8.79s
+[B2] iter=6  12394ms  tis=11.69s
+[B1] iter=8  12561ms  tis=11.37s
+[A2] iter=9  9219ms  tis=7.87s
+[A1] iter=11  10014ms  tis=8.73s
+[B2] iter=7  13199ms  tis=12.72s
+[B1] iter=9  13214ms  tis=12.06s
+[A2] iter=10  9472ms  tis=8.19s
+[A1] iter=12  9194ms  tis=7.80s
+[A2] iter=11  8652ms  tis=7.45s
+[B2] iter=8  12886ms  tis=12.40s
+[B1] iter=10  13900ms  tis=12.67s
+[A1] iter=13  9818ms  tis=8.50s
+[A2] iter=12  8517ms  tis=7.36s
+[A1] iter=14  8811ms  tis=7.64s
+[B2] iter=9  13074ms  tis=11.95s
+[B1] iter=11  13215ms  tis=12.16s
+[A2] iter=13  9223ms  tis=7.89s
+[A1] iter=15  9523ms  tis=8.24s
+[A2] iter=14  6726ms  tis=5.54s
+[B2] iter=10  12548ms  tis=11.44s
+[B1] iter=12  12705ms  tis=11.46s
+[A2] iter=15  4095ms  tis=3.61s
+[B2] iter=11  12694ms  tis=11.63s
+[B1] iter=13  13439ms  tis=12.25s
+[B2] iter=12  12493ms  tis=11.34s
+[B1] iter=14  11686ms  tis=10.48s
+[B2] iter=13  12811ms  tis=11.63s
+[B1] iter=15  13219ms  tis=12.01s
+[B2] iter=14  5300ms  tis=4.24s
+[B2] iter=15  4845ms  tis=4.35s
+=== done ===
+Results in /dss/dsshome1/09/ga27qam2/pactomp-benchmarks/data/staggered/224607/cg_t32_off10_*.log
+DRM log:  /dss/dsshome1/09/ga27qam2/pactomp-benchmarks/data/staggered/224607/cg_t32_off10_rm.log
+RM_CPU=0
+WorkerA: NUMA node 0 CPUs=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32
+WorkerB: NUMA node 1 CPUs=56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87
+t=32 alg=ep iters1=15 iters2=15 offset=5s
+=== Sat Oct 10 14:56:09 CEST 2026 : starting A1 and B1 (15 iters each) ===
+=== sleeping 5s before A2/B2 ===
+[B1] iter=1  3658ms  tis=3.62s
+[A1] iter=1  3665ms  tis=3.62s
+=== Sat Oct 10 14:56:14 CEST 2026 : starting A2 and B2 (15 iters each) ===
+[A1] iter=2  5552ms  tis=5.50s
+[B1] iter=2  6518ms  tis=6.47s
+[B2] iter=1  7029ms  tis=6.93s
+[A2] iter=1  11259ms  tis=11.15s
+[A1] iter=3  6162ms  tis=6.10s
+[B1] iter=3  6870ms  tis=6.74s
+[B2] iter=2  7095ms  tis=6.97s
+[A2] iter=2  5946ms  tis=5.89s
+[B1] iter=4  6932ms  tis=6.84s
+[B2] iter=3  6997ms  tis=6.87s
+[A1] iter=4  11301ms  tis=11.18s
+[A2] iter=3  6106ms  tis=6.02s
+[B1] iter=5  7090ms  tis=6.97s
+[B2] iter=4  6874ms  tis=6.77s
+[A1] iter=5  5919ms  tis=5.84s
+[B1] iter=6  6948ms  tis=6.78s
+[A2] iter=4  11340ms  tis=11.22s
+[A1] iter=6  6045ms  tis=5.98s
+[B2] iter=5  7124ms  tis=7.00s
+[A2] iter=5  6109ms  tis=6.02s
+[B1] iter=7  6891ms  tis=6.76s
+[B2] iter=6  6865ms  tis=6.72s
+[A1] iter=7  12293ms  tis=12.21s
+[A2] iter=6  5750ms  tis=5.68s
+[B1] iter=8  7065ms  tis=6.97s
+[B2] iter=7  6897ms  tis=6.82s
+[A1] iter=8  6066ms  tis=6.01s
+[B1] iter=9  7129ms  tis=6.99s
+[B2] iter=8  7003ms  tis=6.89s
+[A2] iter=7  11536ms  tis=11.39s
+[A1] iter=9  5855ms  tis=5.77s
+[B1] iter=10  7046ms  tis=6.93s
+[B2] iter=9  7017ms  tis=6.88s
+[A2] iter=8  5853ms  tis=5.77s
+[B1] iter=11  7159ms  tis=6.99s
+[A1] iter=10  11316ms  tis=11.25s
+[A2] iter=9  5989ms  tis=5.91s
+[B2] iter=10  6854ms  tis=6.75s
+[A1] iter=11  6151ms  tis=6.10s
+[B1] iter=12  7037ms  tis=6.88s
+[B2] iter=11  6930ms  tis=6.85s
+[A2] iter=10  11396ms  tis=11.28s
+[A1] iter=12  5789ms  tis=5.71s
+[B1] iter=13  7012ms  tis=6.89s
+[B2] iter=12  7305ms  tis=7.20s
+[A2] iter=11  5585ms  tis=5.53s
+[B1] iter=14  6868ms  tis=6.75s
+[B2] iter=13  6994ms  tis=6.89s
+[A2] iter=12  6203ms  tis=6.12s
+[A1] iter=13  11529ms  tis=11.45s
+[B1] iter=15  7120ms  tis=7.00s
+[B2] iter=14  6683ms  tis=6.58s
+[A2] iter=13  6327ms  tis=6.27s
+[B2] iter=15  3650ms  tis=3.62s
+[A1] iter=14  11269ms  tis=11.18s
+[A2] iter=14  6006ms  tis=5.89s
+[A1] iter=15  5945ms  tis=5.86s
+[A2] iter=15  9204ms  tis=9.09s
+=== done ===
+Results in /dss/dsshome1/09/ga27qam2/pactomp-benchmarks/data/staggered/224607/ep_t32_off5_*.log
+DRM log:  /dss/dsshome1/09/ga27qam2/pactomp-benchmarks/data/staggered/224607/ep_t32_off5_rm.log
+Results in /dss/dsshome1/09/ga27qam2/pactomp-benchmarks/data/staggered/224607/

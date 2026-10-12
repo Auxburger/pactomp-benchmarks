@@ -1,0 +1,67 @@
+OMP: pid 153111 tid 153111 thread 0 bound to OS proc set {1-4}
+OMP: pid 153111 tid 153121 thread 3 bound to OS proc set {1-4}
+OMP: pid 153111 tid 153120 thread 2 bound to OS proc set {1-4}
+OMP: pid 153111 tid 153119 thread 1 bound to OS proc set {1-4}
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - CG Benchmark
+
+ Size:      150000
+ Iterations:                     75
+ Number of available threads:     4
+
+ Initialization time =           5.614 seconds
+
+   iteration           ||r||                 zeta
+        1       0.35328997525708E-12   109.9994423237398
+        5       0.89244830616246E-15    28.6471670038893
+       10       0.91220821242662E-15    28.9496695449003
+       15       0.90667639074607E-15    28.9716336228371
+       20       0.91504670078866E-15    28.9734210663747
+       25       0.90874866951779E-15    28.9735863059382
+       30       0.91044064952527E-15    28.9736033967627
+       35       0.91125627351730E-15    28.9736053266246
+       40       0.90693328449132E-15    28.9736055590699
+       45       0.90953787131966E-15    28.9736055884132
+       50       0.91006324715315E-15    28.9736055922486
+       55       0.90407259464485E-15    28.9736055927632
+       60       0.90861904444911E-15    28.9736055928340
+       65       0.90515913265415E-15    28.9736055928440
+       70       0.90226158635965E-15    28.9736055928455
+       75       0.90128186336690E-15    28.9736055928458
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ Zeta is     0.2897360559285E+02
+ Error is    0.2709879239913E-13
+
+
+ CG Benchmark Completed.
+ Class           =                        C
+ Size            =                   150000
+ Iterations      =                       75
+ Time in seconds =                    54.23
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                  2643.29
+ Mop/s/thread    =                   660.82
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              03 Sep 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L$(LLVM_BUILD)/lib -lomp
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

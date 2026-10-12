@@ -1,0 +1,204 @@
+OMP: pid 162718 tid 162718 thread 0 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162736 thread 2 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162730 thread 1 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162743 thread 3 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162786 thread 11 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162768 thread 7 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162772 thread 8 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162749 thread 4 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162780 thread 10 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162761 thread 6 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162755 thread 5 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162777 thread 9 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162831 thread 24 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162805 thread 16 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162839 thread 25 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162814 thread 18 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162819 thread 20 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162826 thread 22 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162827 thread 23 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162792 thread 12 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162796 thread 14 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162794 thread 13 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162843 thread 28 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162845 thread 30 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162844 thread 29 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162825 thread 21 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162841 thread 27 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162815 thread 19 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162799 thread 15 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162812 thread 17 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162840 thread 26 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162846 thread 31 bound to OS proc set {1-32}
+[DRM-pin] pid=162718 tid=162799 assigned=1-32 running_on=22
+[DRM-pin] pid=162718 tid=162796 assigned=1-32 running_on=13
+[DRM-pin] pid=162718 tid=162761 assigned=1-32 running_on=6
+[DRM-pin] pid=162718 tid=162777 assigned=1-32 running_on=10
+[DRM-pin] pid=162718 tid=162730 assigned=1-32 running_on=11
+[DRM-pin] pid=162718 tid=162749 assigned=1-32 running_on=12
+[DRM-pin] pid=162718 tid=162768 assigned=1-32 running_on=31
+[DRM-pin] pid=162718 tid=162772 assigned=1-32 running_on=30
+[DRM-pin] pid=162718 tid=162794 assigned=1-32 running_on=24
+[DRM-pin] pid=162718 tid=162786 assigned=1-32 running_on=26
+[DRM-pin] pid=162718 tid=162780 assigned=1-32 running_on=19
+[DRM-pin] pid=162718 tid=162743 assigned=1-32 running_on=15
+[DRM-pin] pid=162718 tid=162755 assigned=1-32 running_on=25
+[DRM-pin] pid=162718 tid=162792 assigned=1-32 running_on=5
+[DRM-pin] pid=162718 tid=162736 assigned=1-32 running_on=13
+[DRM-pin] pid=162718 tid=162805 assigned=1-32 running_on=15
+[DRM-pin] pid=162718 tid=162819 assigned=1-32 running_on=6
+[DRM-pin] pid=162718 tid=162827 assigned=1-32 running_on=31
+[DRM-pin] pid=162718 tid=162814 assigned=1-32 running_on=25
+[DRM-pin] pid=162718 tid=162826 assigned=1-32 running_on=30
+[DRM-pin] pid=162718 tid=162831 assigned=1-32 running_on=4
+[DRM-pin] pid=162718 tid=162815 assigned=1-32 running_on=27
+[DRM-pin] pid=162718 tid=162839 assigned=1-32 running_on=16
+[DRM-pin] pid=162718 tid=162840 assigned=1-32 running_on=8
+[DRM-pin] pid=162718 tid=162812 assigned=1-32 running_on=20
+[DRM-pin] pid=162718 tid=162846 assigned=1-32 running_on=1
+[DRM-pin] pid=162718 tid=162845 assigned=1-32 running_on=14
+[DRM-pin] pid=162718 tid=162843 assigned=1-32 running_on=32
+[DRM-pin] pid=162718 tid=162841 assigned=1-32 running_on=23
+[DRM-pin] pid=162718 tid=162844 assigned=1-32 running_on=17
+[DRM-pin] pid=162718 tid=162825 assigned=1-32 running_on=1
+OMP: pid 162718 tid 162718 thread 0 bound to OS proc set {1-32}
+[DRM-pin] pid=162718 tid=162780 assigned=1-16 running_on=11
+[DRM-pin] pid=162718 tid=162743 assigned=1-16 running_on=15
+OMP: pid 162718 tid 162780 thread 10 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162743 thread 3 bound to OS proc set {1-32}
+[DRM-pin] pid=162718 tid=162772 assigned=1-16 running_on=8
+OMP: pid 162718 tid 162772 thread 8 bound to OS proc set {1-32}
+[DRM-pin] pid=162718 tid=162794 assigned=1-16 running_on=9
+OMP: pid 162718 tid 162794 thread 13 bound to OS proc set {1-32}
+[DRM-pin] pid=162718 tid=162796 assigned=1-16 running_on=13
+OMP: pid 162718 tid 162796 thread 14 bound to OS proc set {1-32}
+[DRM-pin] pid=162718 tid=162792 assigned=1-16 running_on=5
+OMP: pid 162718 tid 162792 thread 12 bound to OS proc set {1-32}
+[DRM-pin] pid=162718 tid=162730 assigned=1-16 running_on=14
+[DRM-pin] pid=162718 tid=162777 assigned=1-16 running_on=10
+OMP: pid 162718 tid 162730 thread 1 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162777 thread 9 bound to OS proc set {1-32}
+[DRM-pin] pid=162718 tid=162736 assigned=1-16 running_on=12
+OMP: pid 162718 tid 162736 thread 2 bound to OS proc set {1-32}
+[DRM-pin] pid=162718 tid=162749 assigned=1-16 running_on=15
+[DRM-pin] pid=162718 tid=162768 assigned=1-16 running_on=4
+OMP: pid 162718 tid 162749 thread 4 bound to OS proc set {1-32}
+[DRM-pin] pid=162718 tid=162761 assigned=1-16 running_on=6
+OMP: pid 162718 tid 162768 thread 7 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162761 thread 6 bound to OS proc set {1-32}
+[DRM-pin] pid=162718 tid=162755 assigned=1-16 running_on=7
+[DRM-pin] pid=162718 tid=162786 assigned=1-16 running_on=9
+OMP: pid 162718 tid 162755 thread 5 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162786 thread 11 bound to OS proc set {1-32}
+[DRM-pin] pid=162718 tid=162799 assigned=1-16 running_on=10
+OMP: pid 162718 tid 162799 thread 15 bound to OS proc set {1-32}
+[DRM-pin] pid=162718 tid=162743 assigned=1-32 running_on=15
+OMP: pid 162718 tid 162718 thread 0 bound to OS proc set {1-32}
+[DRM-pin] pid=162718 tid=162799 assigned=1-32 running_on=13
+OMP: pid 162718 tid 162743 thread 3 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162831 thread 24 bound to OS proc set {1-32}
+[DRM-pin] pid=162718 tid=162772 assigned=1-32 running_on=8
+OMP: pid 162718 tid 162819 thread 20 bound to OS proc set {1-32}
+[DRM-pin] pid=162718 tid=162736 assigned=1-32 running_on=16
+OMP: pid 162718 tid 162839 thread 25 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162815 thread 19 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162840 thread 26 bound to OS proc set {1-32}
+[DRM-pin] pid=162718 tid=162730 assigned=1-32 running_on=12
+OMP: pid 162718 tid 162825 thread 21 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162805 thread 16 bound to OS proc set {1-32}
+[DRM-pin] pid=162718 tid=162796 assigned=1-32 running_on=5
+OMP: pid 162718 tid 162846 thread 31 bound to OS proc set {1-32}
+[DRM-pin] pid=162718 tid=162792 assigned=1-32 running_on=6
+OMP: pid 162718 tid 162845 thread 30 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162799 thread 15 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162812 thread 17 bound to OS proc set {1-32}
+[DRM-pin] pid=162718 tid=162749 assigned=1-32 running_on=14
+OMP: pid 162718 tid 162841 thread 27 bound to OS proc set {1-32}
+[DRM-pin] pid=162718 tid=162768 assigned=1-32 running_on=4
+OMP: pid 162718 tid 162827 thread 23 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162826 thread 22 bound to OS proc set {1-32}
+[DRM-pin] pid=162718 tid=162777 assigned=1-32 running_on=11
+OMP: pid 162718 tid 162843 thread 28 bound to OS proc set {1-32}
+[DRM-pin] pid=162718 tid=162794 assigned=1-32 running_on=10
+OMP: pid 162718 tid 162772 thread 8 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162736 thread 2 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162814 thread 18 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162844 thread 29 bound to OS proc set {1-32}
+[DRM-pin] pid=162718 tid=162755 assigned=1-32 running_on=7
+OMP: pid 162718 tid 162730 thread 1 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162796 thread 14 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162792 thread 12 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162749 thread 4 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162768 thread 7 bound to OS proc set {1-32}
+[DRM-pin] pid=162718 tid=162761 assigned=1-32 running_on=1
+OMP: pid 162718 tid 162777 thread 9 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162794 thread 13 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162755 thread 5 bound to OS proc set {1-32}
+OMP: pid 162718 tid 162761 thread 6 bound to OS proc set {1-32}
+[DRM-pin] pid=162718 tid=162786 assigned=1-32 running_on=9
+OMP: pid 162718 tid 162786 thread 11 bound to OS proc set {1-32}
+[DRM-pin] pid=162718 tid=162780 assigned=1-32 running_on=2
+OMP: pid 162718 tid 162780 thread 10 bound to OS proc set {1-32}
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - CG Benchmark
+
+ Size:      150000
+ Iterations:                     75
+ Number of available threads:    32
+
+ Initialization time =           1.224 seconds
+
+   iteration           ||r||                 zeta
+        1       0.35330434925331E-12   109.9994423237398
+        5       0.89191948885088E-15    28.6471670038896
+       10       0.91106511883806E-15    28.9496695449000
+       15       0.90669233010599E-15    28.9716336228373
+       20       0.91627165137042E-15    28.9734210663750
+       25       0.90904303833312E-15    28.9735863059385
+       30       0.90856430368479E-15    28.9736033967630
+       35       0.91138888782258E-15    28.9736053266249
+       40       0.90571027219020E-15    28.9736055590700
+       45       0.91089540719662E-15    28.9736055884129
+       50       0.90996137773669E-15    28.9736055922482
+       55       0.90446305532956E-15    28.9736055927636
+       60       0.90929851366334E-15    28.9736055928341
+       65       0.90741256023059E-15    28.9736055928439
+       70       0.90144887997842E-15    28.9736055928452
+       75       0.90082878239131E-15    28.9736055928455
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ Zeta is     0.2897360559285E+02
+ Error is    0.1827022654964E-13
+
+
+ CG Benchmark Completed.
+ Class           =                        C
+ Size            =                   150000
+ Iterations      =                       75
+ Time in seconds =                     7.95
+ Total threads   =                       32
+ Avail threads   =                       32
+ Mop/s total     =                 18028.79
+ Mop/s/thread    =                   563.40
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              03 Sep 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L$(LLVM_BUILD)/lib -lomp
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

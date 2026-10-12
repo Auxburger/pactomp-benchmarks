@@ -1,0 +1,125 @@
+OMP: pid 158295 tid 158295 thread 0 bound to OS proc set {56-71}
+OMP: pid 158295 tid 158346 thread 1 bound to OS proc set {56-71}
+OMP: pid 158295 tid 158353 thread 8 bound to OS proc set {56-71}
+OMP: pid 158295 tid 158354 thread 9 bound to OS proc set {56-71}
+OMP: pid 158295 tid 158347 thread 2 bound to OS proc set {56-71}
+OMP: pid 158295 tid 158355 thread 10 bound to OS proc set {56-71}
+OMP: pid 158295 tid 158356 thread 11 bound to OS proc set {56-71}
+OMP: pid 158295 tid 158357 thread 12 bound to OS proc set {56-71}
+OMP: pid 158295 tid 158358 thread 13 bound to OS proc set {56-71}
+OMP: pid 158295 tid 158359 thread 14 bound to OS proc set {56-71}
+OMP: pid 158295 tid 158360 thread 15 bound to OS proc set {56-71}
+OMP: pid 158295 tid 158349 thread 4 bound to OS proc set {56-71}
+OMP: pid 158295 tid 158352 thread 7 bound to OS proc set {56-71}
+OMP: pid 158295 tid 158351 thread 6 bound to OS proc set {56-71}
+OMP: pid 158295 tid 158350 thread 5 bound to OS proc set {56-71}
+OMP: pid 158295 tid 158348 thread 3 bound to OS proc set {56-71}
+OMP: pid 158295 tid 158295 thread 0 bound to OS proc set {56-71}
+[DRM-pin] pid=158295 tid=158348 assigned=64-71 running_on=69
+OMP: pid 158295 tid 158348 thread 3 bound to OS proc set {56-71}
+[DRM-pin] pid=158295 tid=158349 assigned=64-71 running_on=70
+OMP: pid 158295 tid 158349 thread 4 bound to OS proc set {56-71}
+[DRM-pin] pid=158295 tid=158352 assigned=64-71 running_on=64
+OMP: pid 158295 tid 158352 thread 7 bound to OS proc set {56-71}
+[DRM-pin] pid=158295 tid=158351 assigned=64-71 running_on=64
+OMP: pid 158295 tid 158351 thread 6 bound to OS proc set {56-71}
+[DRM-pin] pid=158295 tid=158350 assigned=64-71 running_on=64
+OMP: pid 158295 tid 158350 thread 5 bound to OS proc set {56-71}
+[DRM-pin] pid=158295 tid=158346 assigned=64-71 running_on=64
+OMP: pid 158295 tid 158346 thread 1 bound to OS proc set {56-71}
+[DRM-pin] pid=158295 tid=158347 assigned=64-71 running_on=64
+OMP: pid 158295 tid 158347 thread 2 bound to OS proc set {56-71}
+[DRM-pin] pid=158295 tid=158349 assigned=56-71 running_on=70
+OMP: pid 158295 tid 158295 thread 0 bound to OS proc set {56-71}
+OMP: pid 158295 tid 158349 thread 4 bound to OS proc set {56-71}
+[DRM-pin] pid=158295 tid=158355 assigned=56-71 running_on=65
+OMP: pid 158295 tid 158355 thread 10 bound to OS proc set {56-71}
+[DRM-pin] pid=158295 tid=158356 assigned=56-71 running_on=63
+[DRM-pin] pid=158295 tid=158350 assigned=56-71 running_on=71
+OMP: pid 158295 tid 158356 thread 11 bound to OS proc set {56-71}
+[DRM-pin] pid=158295 tid=158348 assigned=56-71 running_on=68
+OMP: pid 158295 tid 158350 thread 5 bound to OS proc set {56-71}
+OMP: pid 158295 tid 158348 thread 3 bound to OS proc set {56-71}
+[DRM-pin] pid=158295 tid=158346 assigned=56-71 running_on=64
+OMP: pid 158295 tid 158346 thread 1 bound to OS proc set {56-71}
+[DRM-pin] pid=158295 tid=158352 assigned=56-71 running_on=67
+OMP: pid 158295 tid 158352 thread 7 bound to OS proc set {56-71}
+[DRM-pin] pid=158295 tid=158353 assigned=56-71 running_on=57
+OMP: pid 158295 tid 158353 thread 8 bound to OS proc set {56-71}
+[DRM-pin] pid=158295 tid=158354 assigned=56-71 running_on=71
+[DRM-pin] pid=158295 tid=158351 assigned=56-71 running_on=69
+OMP: pid 158295 tid 158354 thread 9 bound to OS proc set {56-71}
+OMP: pid 158295 tid 158351 thread 6 bound to OS proc set {56-71}
+[DRM-pin] pid=158295 tid=158360 assigned=56-71 running_on=68
+[DRM-pin] pid=158295 tid=158359 assigned=56-71 running_on=71
+OMP: pid 158295 tid 158360 thread 15 bound to OS proc set {56-71}
+OMP: pid 158295 tid 158359 thread 14 bound to OS proc set {56-71}
+[DRM-pin] pid=158295 tid=158357 assigned=56-71 running_on=56
+OMP: pid 158295 tid 158357 thread 12 bound to OS proc set {56-71}
+[DRM-pin] pid=158295 tid=158358 assigned=56-71 running_on=57
+OMP: pid 158295 tid 158358 thread 13 bound to OS proc set {56-71}
+[DRM-pin] pid=158295 tid=158347 assigned=56-71 running_on=65
+OMP: pid 158295 tid 158347 thread 2 bound to OS proc set {56-71}
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - CG Benchmark
+
+ Size:      150000
+ Iterations:                     75
+ Number of available threads:    16
+
+ Initialization time =           2.048 seconds
+
+   iteration           ||r||                 zeta
+        1       0.35334790377553E-12   109.9994423237398
+        5       0.89142689220920E-15    28.6471670038896
+       10       0.91204671247183E-15    28.9496695449000
+       15       0.90653387453224E-15    28.9716336228371
+       20       0.91364958592245E-15    28.9734210663752
+       25       0.90885636654892E-15    28.9735863059386
+       30       0.90924783125524E-15    28.9736033967633
+       35       0.91051944681370E-15    28.9736053266247
+       40       0.90688764736361E-15    28.9736055590699
+       45       0.90835296587781E-15    28.9736055884130
+       50       0.91085297232901E-15    28.9736055922483
+       55       0.90344504327397E-15    28.9736055927634
+       60       0.90819329984182E-15    28.9736055928341
+       65       0.90577252888286E-15    28.9736055928440
+       70       0.90242483626287E-15    28.9736055928452
+       75       0.90208658493720E-15    28.9736055928454
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ Zeta is     0.2897360559285E+02
+ Error is    0.1532737126648E-13
+
+
+ CG Benchmark Completed.
+ Class           =                        C
+ Size            =                   150000
+ Iterations      =                       75
+ Time in seconds =                    13.76
+ Total threads   =                       16
+ Avail threads   =                       16
+ Mop/s total     =                 10420.63
+ Mop/s/thread    =                   651.29
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              03 Sep 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L$(LLVM_BUILD)/lib -lomp
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

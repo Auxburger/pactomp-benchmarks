@@ -1,0 +1,282 @@
+# arm=drm repeat=1 job=J02_ep alg=ep threads=32 start_offset=8.999 window=77.355
+=== iteration 1 start_epoch_ms=1791636623248 ===
+[DRM-pin] pid=154421 tid=154423 assigned=17-32 running_on=17
+[DRM-pin] pid=154421 tid=154437 assigned=17-32 running_on=18
+[DRM-pin] pid=154421 tid=154425 assigned=17-32 running_on=18
+[DRM-pin] pid=154421 tid=154429 assigned=17-32 running_on=19
+[DRM-pin] pid=154421 tid=154427 assigned=17-32 running_on=20
+[DRM-pin] pid=154421 tid=154424 assigned=17-32 running_on=32
+[DRM-pin] pid=154421 tid=154435 assigned=17-32 running_on=32
+[DRM-pin] pid=154421 tid=154428 assigned=17-32 running_on=21
+[DRM-pin] pid=154421 tid=154434 assigned=17-32 running_on=32
+[DRM-pin] pid=154421 tid=154430 assigned=17-32 running_on=18
+[DRM-pin] pid=154421 tid=154433 assigned=17-32 running_on=20
+[DRM-pin] pid=154421 tid=154426 assigned=17-32 running_on=17
+[DRM-pin] pid=154421 tid=154431 assigned=17-32 running_on=21
+[DRM-pin] pid=154421 tid=154432 assigned=17-32 running_on=19
+[DRM-pin] pid=154421 tid=154436 assigned=17-32 running_on=17
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - EP Benchmark
+
+ Number of random numbers generated:      8589934592
+ Number of available threads:                     32
+
+EP Benchmark Results:
+
+CPU Time =    12.943
+N = 2^   32
+No. Gaussian Pairs =    3373275903.
+Sums =     2.691444083862575D+09    2.691519118725089D+09
+Counts:
+  0    1572172634.
+  1    1501108549.
+  2     281805648.
+  3      17761221.
+  4        424017.
+  5          3821.
+  6            13.
+  7             0.
+  8             0.
+  9             0.
+
+
+ EP Benchmark Completed.
+ Class           =                        C
+ Size            =               8589934592
+ Iterations      =                        0
+ Time in seconds =                    12.94
+ Total threads   =                       16
+ Avail threads   =                       32
+ Warning: Threads used differ from threads available
+ Mop/s total     =                   663.67
+ Mop/s/thread    =                    41.48
+ Operation type  = Random numbers generated
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              03 Sep 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L$(LLVM_BUILD)/lib -lomp
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+=== iteration 2 start_epoch_ms=1791636636886 ===
+[DRM-pin] pid=154646 tid=154649 assigned=26-30 running_on=26
+[DRM-pin] pid=154646 tid=154651 assigned=26-30 running_on=27
+[DRM-pin] pid=154646 tid=154648 assigned=26-30 running_on=28
+[DRM-pin] pid=154646 tid=154650 assigned=26-30 running_on=29
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - EP Benchmark
+
+ Number of random numbers generated:      8589934592
+ Number of available threads:                     32
+
+EP Benchmark Results:
+
+CPU Time =    52.855
+N = 2^   32
+No. Gaussian Pairs =    3373275903.
+Sums =     2.691444083863332D+09    2.691519118724687D+09
+Counts:
+  0    1572172634.
+  1    1501108549.
+  2     281805648.
+  3      17761221.
+  4        424017.
+  5          3821.
+  6            13.
+  7             0.
+  8             0.
+  9             0.
+
+
+ EP Benchmark Completed.
+ Class           =                        C
+ Size            =               8589934592
+ Iterations      =                        0
+ Time in seconds =                    52.86
+ Total threads   =                        5
+ Avail threads   =                       32
+ Warning: Threads used differ from threads available
+ Mop/s total     =                   162.52
+ Mop/s/thread    =                    32.50
+ Operation type  = Random numbers generated
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              03 Sep 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L$(LLVM_BUILD)/lib -lomp
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+=== iteration 3 start_epoch_ms=1791636690384 ===
+[DRM-pin] pid=155001 tid=155003 assigned=17-32 running_on=29
+[DRM-pin] pid=155001 tid=155008 assigned=17-32 running_on=18
+[DRM-pin] pid=155001 tid=155009 assigned=17-32 running_on=32
+[DRM-pin] pid=155001 tid=155006 assigned=17-32 running_on=17
+[DRM-pin] pid=155001 tid=155010 assigned=17-32 running_on=32
+[DRM-pin] pid=155001 tid=155018 assigned=17-32 running_on=32
+[DRM-pin] pid=155001 tid=155016 assigned=17-32 running_on=32
+[DRM-pin] pid=155001 tid=155015 assigned=17-32 running_on=32
+[DRM-pin] pid=155001 tid=155013 assigned=17-32 running_on=32
+[DRM-pin] pid=155001 tid=155004 assigned=17-32 running_on=29
+[DRM-pin] pid=155001 tid=155007 assigned=17-32 running_on=18
+[DRM-pin] pid=155001 tid=155012 assigned=17-32 running_on=32
+[DRM-pin] pid=155001 tid=155011 assigned=17-32 running_on=32
+[DRM-pin] pid=155001 tid=155017 assigned=17-32 running_on=32
+[DRM-pin] pid=155001 tid=155014 assigned=17-32 running_on=32
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - EP Benchmark
+
+ Number of random numbers generated:      8589934592
+ Number of available threads:                     32
+
+EP Benchmark Results:
+
+CPU Time =     9.397
+N = 2^   32
+No. Gaussian Pairs =    3373275903.
+Sums =     2.691444083862575D+09    2.691519118725088D+09
+Counts:
+  0    1572172634.
+  1    1501108549.
+  2     281805648.
+  3      17761221.
+  4        424017.
+  5          3821.
+  6            13.
+  7             0.
+  8             0.
+  9             0.
+
+
+ EP Benchmark Completed.
+ Class           =                        C
+ Size            =               8589934592
+ Iterations      =                        0
+ Time in seconds =                     9.40
+ Total threads   =                       16
+ Avail threads   =                       32
+ Warning: Threads used differ from threads available
+ Mop/s total     =                   914.13
+ Mop/s/thread    =                    57.13
+ Operation type  = Random numbers generated
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              03 Sep 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L$(LLVM_BUILD)/lib -lomp
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+=== iteration 4 start_epoch_ms=1791636700366 ===
+[DRM-pin] pid=155072 tid=155075 assigned=17-32 running_on=32
+[DRM-pin] pid=155072 tid=155082 assigned=17-32 running_on=20
+[DRM-pin] pid=155072 tid=155077 assigned=17-32 running_on=32
+[DRM-pin] pid=155072 tid=155083 assigned=17-32 running_on=19
+[DRM-pin] pid=155072 tid=155086 assigned=17-32 running_on=28
+[DRM-pin] pid=155072 tid=155088 assigned=17-32 running_on=28
+[DRM-pin] pid=155072 tid=155081 assigned=17-32 running_on=17
+[DRM-pin] pid=155072 tid=155085 assigned=17-32 running_on=28
+[DRM-pin] pid=155072 tid=155084 assigned=17-32 running_on=18
+[DRM-pin] pid=155072 tid=155080 assigned=17-32 running_on=30
+[DRM-pin] pid=155072 tid=155087 assigned=17-32 running_on=28
+[DRM-pin] pid=155072 tid=155074 assigned=17-32 running_on=32
+[DRM-pin] pid=155072 tid=155076 assigned=17-32 running_on=32
+[DRM-pin] pid=155072 tid=155078 assigned=17-32 running_on=32
+[DRM-pin] pid=155072 tid=155079 assigned=17-32 running_on=32
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - EP Benchmark
+
+ Number of random numbers generated:      8589934592
+ Number of available threads:                     32
+
+EP Benchmark Results:
+
+CPU Time =     8.841
+N = 2^   32
+No. Gaussian Pairs =    3373275903.
+Sums =     2.691444083862575D+09    2.691519118725088D+09
+Counts:
+  0    1572172634.
+  1    1501108549.
+  2     281805648.
+  3      17761221.
+  4        424017.
+  5          3821.
+  6            13.
+  7             0.
+  8             0.
+  9             0.
+
+
+ EP Benchmark Completed.
+ Class           =                        C
+ Size            =               8589934592
+ Iterations      =                        0
+ Time in seconds =                     8.84
+ Total threads   =                       16
+ Avail threads   =                       32
+ Warning: Threads used differ from threads available
+ Mop/s total     =                   971.63
+ Mop/s/thread    =                    60.73
+ Operation type  = Random numbers generated
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              03 Sep 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L$(LLVM_BUILD)/lib -lomp
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

@@ -1,0 +1,201 @@
+start Sun Oct 11 22:30:27 CEST 2026 host cm4r13c04s01 mask 0-88,112-200
+==== t=2 r=1 enabled_node=0 ====
+alg=ft start Sun Oct 11 22:30:29 CEST 2026
+alg=cg start Sun Oct 11 22:32:35 CEST 2026
+alg=ep start Sun Oct 11 22:34:36 CEST 2026
+==== t=2 r=2 enabled_node=1 ====
+alg=ft start Sun Oct 11 22:37:07 CEST 2026
+alg=cg start Sun Oct 11 22:39:12 CEST 2026
+alg=ep start Sun Oct 11 22:41:05 CEST 2026
+==== t=2 r=3 enabled_node=0 ====
+alg=ft start Sun Oct 11 22:43:32 CEST 2026
+alg=cg start Sun Oct 11 22:45:37 CEST 2026
+alg=ep start Sun Oct 11 22:47:37 CEST 2026
+==== t=2 r=4 enabled_node=1 ====
+alg=ft start Sun Oct 11 22:50:02 CEST 2026
+alg=cg start Sun Oct 11 22:52:08 CEST 2026
+alg=ep start Sun Oct 11 22:54:09 CEST 2026
+==== t=2 r=5 enabled_node=0 ====
+alg=ft start Sun Oct 11 22:56:31 CEST 2026
+alg=cg start Sun Oct 11 22:58:37 CEST 2026
+alg=ep start Sun Oct 11 23:00:28 CEST 2026
+==== t=2 r=6 enabled_node=1 ====
+alg=ft start Sun Oct 11 23:02:59 CEST 2026
+alg=cg start Sun Oct 11 23:05:05 CEST 2026
+alg=ep start Sun Oct 11 23:07:01 CEST 2026
+==== t=2 r=7 enabled_node=0 ====
+alg=ft start Sun Oct 11 23:09:29 CEST 2026
+alg=cg start Sun Oct 11 23:11:34 CEST 2026
+alg=ep start Sun Oct 11 23:13:33 CEST 2026
+==== t=2 r=8 enabled_node=1 ====
+alg=ft start Sun Oct 11 23:16:03 CEST 2026
+alg=cg start Sun Oct 11 23:18:08 CEST 2026
+alg=ep start Sun Oct 11 23:20:10 CEST 2026
+==== t=2 r=9 enabled_node=0 ====
+alg=ft start Sun Oct 11 23:22:37 CEST 2026
+alg=cg start Sun Oct 11 23:24:44 CEST 2026
+alg=ep start Sun Oct 11 23:26:44 CEST 2026
+==== t=2 r=10 enabled_node=1 ====
+alg=ft start Sun Oct 11 23:29:15 CEST 2026
+alg=cg start Sun Oct 11 23:31:19 CEST 2026
+alg=ep start Sun Oct 11 23:33:15 CEST 2026
+==== t=4 r=1 enabled_node=0 ====
+alg=ft start Sun Oct 11 23:35:38 CEST 2026
+alg=cg start Sun Oct 11 23:36:49 CEST 2026
+alg=ep start Sun Oct 11 23:38:02 CEST 2026
+==== t=4 r=2 enabled_node=1 ====
+alg=ft start Sun Oct 11 23:39:22 CEST 2026
+alg=cg start Sun Oct 11 23:40:30 CEST 2026
+alg=ep start Sun Oct 11 23:41:32 CEST 2026
+==== t=4 r=3 enabled_node=0 ====
+alg=ft start Sun Oct 11 23:42:51 CEST 2026
+alg=cg start Sun Oct 11 23:44:00 CEST 2026
+alg=ep start Sun Oct 11 23:45:14 CEST 2026
+==== t=4 r=4 enabled_node=1 ====
+alg=ft start Sun Oct 11 23:46:33 CEST 2026
+alg=cg start Sun Oct 11 23:47:41 CEST 2026
+alg=ep start Sun Oct 11 23:48:45 CEST 2026
+==== t=4 r=5 enabled_node=0 ====
+alg=ft start Sun Oct 11 23:50:06 CEST 2026
+alg=cg start Sun Oct 11 23:51:15 CEST 2026
+alg=ep start Sun Oct 11 23:52:25 CEST 2026
+==== t=4 r=6 enabled_node=1 ====
+alg=ft start Sun Oct 11 23:53:47 CEST 2026
+alg=cg start Sun Oct 11 23:54:54 CEST 2026
+alg=ep start Sun Oct 11 23:56:02 CEST 2026
+==== t=4 r=7 enabled_node=0 ====
+alg=ft start Sun Oct 11 23:57:22 CEST 2026
+alg=cg start Sun Oct 11 23:58:32 CEST 2026
+alg=ep start Sun Oct 11 23:59:40 CEST 2026
+==== t=4 r=8 enabled_node=1 ====
+alg=ft start Mon Oct 12 00:01:01 CEST 2026
+alg=cg start Mon Oct 12 00:02:08 CEST 2026
+alg=ep start Mon Oct 12 00:03:16 CEST 2026
+==== t=4 r=9 enabled_node=0 ====
+alg=ft start Mon Oct 12 00:04:37 CEST 2026
+alg=cg start Mon Oct 12 00:05:48 CEST 2026
+alg=ep start Mon Oct 12 00:07:04 CEST 2026
+==== t=4 r=10 enabled_node=1 ====
+alg=ft start Mon Oct 12 00:08:25 CEST 2026
+alg=cg start Mon Oct 12 00:09:33 CEST 2026
+alg=ep start Mon Oct 12 00:10:39 CEST 2026
+==== t=8 r=1 enabled_node=0 ====
+alg=ft start Mon Oct 12 00:12:01 CEST 2026
+alg=cg start Mon Oct 12 00:12:42 CEST 2026
+alg=ep start Mon Oct 12 00:13:21 CEST 2026
+==== t=8 r=2 enabled_node=1 ====
+alg=ft start Mon Oct 12 00:14:05 CEST 2026
+alg=cg start Mon Oct 12 00:14:42 CEST 2026
+alg=ep start Mon Oct 12 00:15:22 CEST 2026
+==== t=8 r=3 enabled_node=0 ====
+alg=ft start Mon Oct 12 00:16:05 CEST 2026
+alg=cg start Mon Oct 12 00:16:43 CEST 2026
+alg=ep start Mon Oct 12 00:17:22 CEST 2026
+==== t=8 r=4 enabled_node=1 ====
+alg=ft start Mon Oct 12 00:18:07 CEST 2026
+alg=cg start Mon Oct 12 00:18:44 CEST 2026
+alg=ep start Mon Oct 12 00:19:24 CEST 2026
+==== t=8 r=5 enabled_node=0 ====
+alg=ft start Mon Oct 12 00:20:08 CEST 2026
+alg=cg start Mon Oct 12 00:20:46 CEST 2026
+alg=ep start Mon Oct 12 00:21:27 CEST 2026
+==== t=8 r=6 enabled_node=1 ====
+alg=ft start Mon Oct 12 00:22:11 CEST 2026
+alg=cg start Mon Oct 12 00:22:49 CEST 2026
+alg=ep start Mon Oct 12 00:23:27 CEST 2026
+==== t=8 r=7 enabled_node=0 ====
+alg=ft start Mon Oct 12 00:24:12 CEST 2026
+alg=cg start Mon Oct 12 00:24:50 CEST 2026
+alg=ep start Mon Oct 12 00:25:31 CEST 2026
+==== t=8 r=8 enabled_node=1 ====
+alg=ft start Mon Oct 12 00:26:15 CEST 2026
+alg=cg start Mon Oct 12 00:26:54 CEST 2026
+alg=ep start Mon Oct 12 00:27:34 CEST 2026
+==== t=8 r=9 enabled_node=0 ====
+alg=ft start Mon Oct 12 00:28:22 CEST 2026
+alg=cg start Mon Oct 12 00:29:01 CEST 2026
+alg=ep start Mon Oct 12 00:29:38 CEST 2026
+==== t=8 r=10 enabled_node=1 ====
+alg=ft start Mon Oct 12 00:30:23 CEST 2026
+alg=cg start Mon Oct 12 00:31:01 CEST 2026
+alg=ep start Mon Oct 12 00:31:38 CEST 2026
+==== t=16 r=1 enabled_node=0 ====
+alg=ft start Mon Oct 12 00:32:24 CEST 2026
+alg=cg start Mon Oct 12 00:32:48 CEST 2026
+alg=ep start Mon Oct 12 00:33:12 CEST 2026
+==== t=16 r=2 enabled_node=1 ====
+alg=ft start Mon Oct 12 00:33:37 CEST 2026
+alg=cg start Mon Oct 12 00:34:02 CEST 2026
+alg=ep start Mon Oct 12 00:34:29 CEST 2026
+==== t=16 r=3 enabled_node=0 ====
+alg=ft start Mon Oct 12 00:34:56 CEST 2026
+alg=cg start Mon Oct 12 00:35:20 CEST 2026
+alg=ep start Mon Oct 12 00:35:45 CEST 2026
+==== t=16 r=4 enabled_node=1 ====
+alg=ft start Mon Oct 12 00:36:10 CEST 2026
+alg=cg start Mon Oct 12 00:36:35 CEST 2026
+alg=ep start Mon Oct 12 00:37:01 CEST 2026
+==== t=16 r=5 enabled_node=0 ====
+alg=ft start Mon Oct 12 00:37:27 CEST 2026
+alg=cg start Mon Oct 12 00:37:50 CEST 2026
+alg=ep start Mon Oct 12 00:38:16 CEST 2026
+==== t=16 r=6 enabled_node=1 ====
+alg=ft start Mon Oct 12 00:38:42 CEST 2026
+alg=cg start Mon Oct 12 00:39:08 CEST 2026
+alg=ep start Mon Oct 12 00:39:36 CEST 2026
+==== t=16 r=7 enabled_node=0 ====
+alg=ft start Mon Oct 12 00:40:02 CEST 2026
+alg=cg start Mon Oct 12 00:40:25 CEST 2026
+alg=ep start Mon Oct 12 00:40:51 CEST 2026
+==== t=16 r=8 enabled_node=1 ====
+alg=ft start Mon Oct 12 00:41:17 CEST 2026
+alg=cg start Mon Oct 12 00:41:41 CEST 2026
+alg=ep start Mon Oct 12 00:42:06 CEST 2026
+==== t=16 r=9 enabled_node=0 ====
+alg=ft start Mon Oct 12 00:42:32 CEST 2026
+alg=cg start Mon Oct 12 00:42:56 CEST 2026
+alg=ep start Mon Oct 12 00:43:23 CEST 2026
+==== t=16 r=10 enabled_node=1 ====
+alg=ft start Mon Oct 12 00:43:49 CEST 2026
+alg=cg start Mon Oct 12 00:44:14 CEST 2026
+alg=ep start Mon Oct 12 00:44:39 CEST 2026
+==== t=32 r=1 enabled_node=0 ====
+alg=ft start Mon Oct 12 00:45:04 CEST 2026
+alg=cg start Mon Oct 12 00:45:20 CEST 2026
+alg=ep start Mon Oct 12 00:45:38 CEST 2026
+==== t=32 r=2 enabled_node=1 ====
+alg=ft start Mon Oct 12 00:45:55 CEST 2026
+alg=cg start Mon Oct 12 00:46:11 CEST 2026
+alg=ep start Mon Oct 12 00:46:30 CEST 2026
+==== t=32 r=3 enabled_node=0 ====
+alg=ft start Mon Oct 12 00:46:47 CEST 2026
+alg=cg start Mon Oct 12 00:47:03 CEST 2026
+alg=ep start Mon Oct 12 00:47:23 CEST 2026
+==== t=32 r=4 enabled_node=1 ====
+alg=ft start Mon Oct 12 00:47:40 CEST 2026
+alg=cg start Mon Oct 12 00:47:56 CEST 2026
+alg=ep start Mon Oct 12 00:48:14 CEST 2026
+==== t=32 r=5 enabled_node=0 ====
+alg=ft start Mon Oct 12 00:48:30 CEST 2026
+alg=cg start Mon Oct 12 00:48:46 CEST 2026
+alg=ep start Mon Oct 12 00:49:04 CEST 2026
+==== t=32 r=6 enabled_node=1 ====
+alg=ft start Mon Oct 12 00:49:21 CEST 2026
+alg=cg start Mon Oct 12 00:49:37 CEST 2026
+alg=ep start Mon Oct 12 00:49:54 CEST 2026
+==== t=32 r=7 enabled_node=0 ====
+alg=ft start Mon Oct 12 00:50:11 CEST 2026
+alg=cg start Mon Oct 12 00:50:28 CEST 2026
+alg=ep start Mon Oct 12 00:50:47 CEST 2026
+==== t=32 r=8 enabled_node=1 ====
+alg=ft start Mon Oct 12 00:51:04 CEST 2026
+alg=cg start Mon Oct 12 00:51:20 CEST 2026
+alg=ep start Mon Oct 12 00:51:40 CEST 2026
+==== t=32 r=9 enabled_node=0 ====
+alg=ft start Mon Oct 12 00:51:57 CEST 2026
+alg=cg start Mon Oct 12 00:52:13 CEST 2026
+alg=ep start Mon Oct 12 00:52:32 CEST 2026
+==== t=32 r=10 enabled_node=1 ====
+alg=ft start Mon Oct 12 00:52:49 CEST 2026
+alg=cg start Mon Oct 12 00:53:05 CEST 2026
+alg=ep start Mon Oct 12 00:53:23 CEST 2026

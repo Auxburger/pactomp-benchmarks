@@ -1,0 +1,88 @@
+OMP: pid 162935 tid 162935 thread 0 bound to OS proc set {56-87}
+OMP: pid 162935 tid 162952 thread 3 bound to OS proc set {56-87}
+OMP: pid 162935 tid 162946 thread 1 bound to OS proc set {56-87}
+OMP: pid 162935 tid 162949 thread 2 bound to OS proc set {56-87}
+OMP: pid 162935 tid 162954 thread 4 bound to OS proc set {56-87}
+OMP: pid 162935 tid 162968 thread 8 bound to OS proc set {56-87}
+OMP: pid 162935 tid 162984 thread 12 bound to OS proc set {56-87}
+OMP: pid 162935 tid 162964 thread 7 bound to OS proc set {56-87}
+OMP: pid 162935 tid 162978 thread 10 bound to OS proc set {56-87}
+OMP: pid 162935 tid 162981 thread 11 bound to OS proc set {56-87}
+OMP: pid 162935 tid 163001 thread 15 bound to OS proc set {56-87}
+OMP: pid 162935 tid 162957 thread 5 bound to OS proc set {56-87}
+OMP: pid 162935 tid 163019 thread 19 bound to OS proc set {56-87}
+OMP: pid 162935 tid 162961 thread 6 bound to OS proc set {56-87}
+OMP: pid 162935 tid 162988 thread 13 bound to OS proc set {56-87}
+OMP: pid 162935 tid 162972 thread 9 bound to OS proc set {56-87}
+OMP: pid 162935 tid 162994 thread 14 bound to OS proc set {56-87}
+OMP: pid 162935 tid 163005 thread 16 bound to OS proc set {56-87}
+OMP: pid 162935 tid 163058 thread 31 bound to OS proc set {56-87}
+OMP: pid 162935 tid 163050 thread 27 bound to OS proc set {56-87}
+OMP: pid 162935 tid 163053 thread 28 bound to OS proc set {56-87}
+OMP: pid 162935 tid 163040 thread 24 bound to OS proc set {56-87}
+OMP: pid 162935 tid 163016 thread 18 bound to OS proc set {56-87}
+OMP: pid 162935 tid 163024 thread 20 bound to OS proc set {56-87}
+OMP: pid 162935 tid 163054 thread 29 bound to OS proc set {56-87}
+OMP: pid 162935 tid 163056 thread 30 bound to OS proc set {56-87}
+OMP: pid 162935 tid 163011 thread 17 bound to OS proc set {56-87}
+OMP: pid 162935 tid 163046 thread 26 bound to OS proc set {56-87}
+OMP: pid 162935 tid 163037 thread 23 bound to OS proc set {56-87}
+OMP: pid 162935 tid 163044 thread 25 bound to OS proc set {56-87}
+OMP: pid 162935 tid 163032 thread 22 bound to OS proc set {56-87}
+OMP: pid 162935 tid 163028 thread 21 bound to OS proc set {56-87}
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - EP Benchmark
+
+ Number of random numbers generated:      8589934592
+ Number of available threads:                     32
+
+EP Benchmark Results:
+
+CPU Time =     7.640
+N = 2^   32
+No. Gaussian Pairs =    3373275903.
+Sums =     2.691444083863085D+09    2.691519118724448D+09
+Counts:
+  0    1572172634.
+  1    1501108549.
+  2     281805648.
+  3      17761221.
+  4        424017.
+  5          3821.
+  6            13.
+  7             0.
+  8             0.
+  9             0.
+
+
+ EP Benchmark Completed.
+ Class           =                        C
+ Size            =               8589934592
+ Iterations      =                        0
+ Time in seconds =                     7.64
+ Total threads   =                       32
+ Avail threads   =                       32
+ Mop/s total     =                  1124.39
+ Mop/s/thread    =                    35.14
+ Operation type  = Random numbers generated
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              03 Sep 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L$(LLVM_BUILD)/lib -lomp
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

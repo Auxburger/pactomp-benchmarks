@@ -1,4 +1,4 @@
-"""Export thesis-quality PDFs for staggered job 209445 and aggregated benchmarks."""
+"""Export thesis-quality PDFs for staggered job 224607 and aggregated benchmarks."""
 from __future__ import annotations
 
 import sys
@@ -38,8 +38,8 @@ from analysis.plots.style import (
 )
 
 REPO_ROOT = Path(__file__).resolve().parent
-JOB_DIR = REPO_ROOT / "data" / "staggered" / "209445"
-MIX_JOB_DIR = REPO_ROOT / "data" / "mix" / "209466"
+JOB_DIR = REPO_ROOT / "data" / "staggered" / "224607"
+MIX_JOB_DIR = REPO_ROOT / "data" / "mix" / "224609"
 MIX_REPEAT = 1
 
 OUT_DIR = thesis_figures_dir()
@@ -224,7 +224,7 @@ def _make_speedup_thesis_fig(df: pd.DataFrame) -> go.Figure:
 
 
 # ── Aggregated benchmark figures ─────────────────────────────────────────────
-# `dual/209861` (the re-measured run): two concurrent processes per condition
+# `dual/224633` (the re-measured run): two concurrent processes per condition
 # sharing one taskset CPU pool per NUMA domain, no worker-thread pinning. This
 # is the genuine concurrent-contention experiment and what the thesis tables
 # report. It must stay the same directory the scalability model fits.
@@ -233,7 +233,7 @@ def _make_speedup_thesis_fig(df: pd.DataFrame) -> go.Figure:
 # there and it cannot represent the two-process oversubscription scenario.
 BENCH_ROOT = REPO_ROOT / "data"
 agg_sources = [
-    ("dual", BENCH_ROOT / "dual" / "209861"),
+    ("dual", BENCH_ROOT / "dual" / "224633"),
 ]
 
 agg_run_dirs = []

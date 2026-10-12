@@ -1,0 +1,66 @@
+[DRM-pin] pid=25343 tid=25350 assigned=1-4 running_on=3
+[DRM-pin] pid=25343 tid=25347 assigned=1-4 running_on=1
+[DRM-pin] pid=25343 tid=25351 assigned=1-4 running_on=2
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - CG Benchmark
+
+ Size:      150000
+ Iterations:                     75
+ Number of available threads:     4
+
+ Initialization time =           2.658 seconds
+
+   iteration           ||r||                 zeta
+        1       0.35321978896105E-12   109.9994423237398
+        5       0.89290338635131E-15    28.6471670038893
+       10       0.91129054781070E-15    28.9496695449003
+       15       0.90651486362663E-15    28.9716336228371
+       20       0.91576498461790E-15    28.9734210663747
+       25       0.90943353688206E-15    28.9735863059382
+       30       0.91129767017160E-15    28.9736033967627
+       35       0.90990144197982E-15    28.9736053266246
+       40       0.90826656561011E-15    28.9736055590700
+       45       0.90954760431419E-15    28.9736055884132
+       50       0.90978368123394E-15    28.9736055922486
+       55       0.90354904632252E-15    28.9736055927632
+       60       0.90731443459978E-15    28.9736055928339
+       65       0.90473171279990E-15    28.9736055928440
+       70       0.90303419750218E-15    28.9736055928455
+       75       0.90083099134504E-15    28.9736055928458
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ Zeta is     0.2897360559285E+02
+ Error is    0.2758926827966E-13
+
+
+ CG Benchmark Completed.
+ Class           =                        C
+ Size            =                   150000
+ Iterations      =                       75
+ Time in seconds =                    23.39
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                  6128.92
+ Mop/s/thread    =                  1532.23
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              03 Sep 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L$(LLVM_BUILD)/lib -lomp
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

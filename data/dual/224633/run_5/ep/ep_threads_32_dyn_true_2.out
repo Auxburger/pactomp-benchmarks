@@ -1,0 +1,119 @@
+OMP: pid 165484 tid 165484 thread 0 bound to OS proc set {1-32}
+OMP: pid 165484 tid 165492 thread 3 bound to OS proc set {1-32}
+OMP: pid 165484 tid 165489 thread 2 bound to OS proc set {1-32}
+OMP: pid 165484 tid 165488 thread 1 bound to OS proc set {1-32}
+OMP: pid 165484 tid 165526 thread 11 bound to OS proc set {1-32}
+OMP: pid 165484 tid 165534 thread 12 bound to OS proc set {1-32}
+OMP: pid 165484 tid 165508 thread 7 bound to OS proc set {1-32}
+OMP: pid 165484 tid 165494 thread 4 bound to OS proc set {1-32}
+OMP: pid 165484 tid 165502 thread 6 bound to OS proc set {1-32}
+OMP: pid 165484 tid 165537 thread 13 bound to OS proc set {1-32}
+OMP: pid 165484 tid 165512 thread 8 bound to OS proc set {1-32}
+OMP: pid 165484 tid 165523 thread 10 bound to OS proc set {1-32}
+OMP: pid 165484 tid 165497 thread 5 bound to OS proc set {1-32}
+OMP: pid 165484 tid 165515 thread 9 bound to OS proc set {1-32}
+OMP: pid 165484 tid 165548 thread 15 bound to OS proc set {1-32}
+OMP: pid 165484 tid 165542 thread 14 bound to OS proc set {1-32}
+OMP: pid 165484 tid 165567 thread 19 bound to OS proc set {1-32}
+OMP: pid 165484 tid 165553 thread 16 bound to OS proc set {1-32}
+OMP: pid 165484 tid 165610 thread 31 bound to OS proc set {1-32}
+OMP: pid 165484 tid 165572 thread 20 bound to OS proc set {1-32}
+OMP: pid 165484 tid 165558 thread 17 bound to OS proc set {1-32}
+OMP: pid 165484 tid 165600 thread 28 bound to OS proc set {1-32}
+OMP: pid 165484 tid 165563 thread 18 bound to OS proc set {1-32}
+OMP: pid 165484 tid 165576 thread 21 bound to OS proc set {1-32}
+OMP: pid 165484 tid 165596 thread 27 bound to OS proc set {1-32}
+OMP: pid 165484 tid 165604 thread 29 bound to OS proc set {1-32}
+OMP: pid 165484 tid 165586 thread 24 bound to OS proc set {1-32}
+OMP: pid 165484 tid 165580 thread 22 bound to OS proc set {1-32}
+OMP: pid 165484 tid 165589 thread 25 bound to OS proc set {1-32}
+OMP: pid 165484 tid 165593 thread 26 bound to OS proc set {1-32}
+OMP: pid 165484 tid 165584 thread 23 bound to OS proc set {1-32}
+OMP: pid 165484 tid 165608 thread 30 bound to OS proc set {1-32}
+[DRM-pin] pid=165484 tid=165567 assigned=1-32 running_on=23
+[DRM-pin] pid=165484 tid=165494 assigned=1-32 running_on=22
+[DRM-pin] pid=165484 tid=165537 assigned=1-32 running_on=16
+[DRM-pin] pid=165484 tid=165558 assigned=1-32 running_on=30
+[DRM-pin] pid=165484 tid=165492 assigned=1-32 running_on=20
+[DRM-pin] pid=165484 tid=165553 assigned=1-32 running_on=19
+[DRM-pin] pid=165484 tid=165534 assigned=1-32 running_on=11
+[DRM-pin] pid=165484 tid=165512 assigned=1-32 running_on=5
+[DRM-pin] pid=165484 tid=165542 assigned=1-32 running_on=24
+[DRM-pin] pid=165484 tid=165523 assigned=1-32 running_on=15
+[DRM-pin] pid=165484 tid=165515 assigned=1-32 running_on=12
+[DRM-pin] pid=165484 tid=165508 assigned=1-32 running_on=30
+[DRM-pin] pid=165484 tid=165593 assigned=1-32 running_on=13
+[DRM-pin] pid=165484 tid=165586 assigned=1-32 running_on=6
+[DRM-pin] pid=165484 tid=165488 assigned=1-32 running_on=18
+[DRM-pin] pid=165484 tid=165502 assigned=1-32 running_on=27
+[DRM-pin] pid=165484 tid=165563 assigned=1-32 running_on=21
+[DRM-pin] pid=165484 tid=165589 assigned=1-32 running_on=10
+[DRM-pin] pid=165484 tid=165596 assigned=1-32 running_on=32
+[DRM-pin] pid=165484 tid=165489 assigned=1-32 running_on=19
+[DRM-pin] pid=165484 tid=165548 assigned=1-32 running_on=27
+[DRM-pin] pid=165484 tid=165610 assigned=1-32 running_on=4
+[DRM-pin] pid=165484 tid=165600 assigned=1-32 running_on=31
+[DRM-pin] pid=165484 tid=165497 assigned=1-32 running_on=24
+[DRM-pin] pid=165484 tid=165584 assigned=1-32 running_on=3
+[DRM-pin] pid=165484 tid=165572 assigned=1-32 running_on=12
+[DRM-pin] pid=165484 tid=165526 assigned=1-32 running_on=3
+[DRM-pin] pid=165484 tid=165576 assigned=1-32 running_on=7
+[DRM-pin] pid=165484 tid=165580 assigned=1-32 running_on=17
+[DRM-pin] pid=165484 tid=165604 assigned=1-32 running_on=26
+[DRM-pin] pid=165484 tid=165608 assigned=1-32 running_on=4
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - EP Benchmark
+
+ Number of random numbers generated:      8589934592
+ Number of available threads:                     32
+
+EP Benchmark Results:
+
+CPU Time =     6.186
+N = 2^   32
+No. Gaussian Pairs =    3373275903.
+Sums =     2.691444083863085D+09    2.691519118724448D+09
+Counts:
+  0    1572172634.
+  1    1501108549.
+  2     281805648.
+  3      17761221.
+  4        424017.
+  5          3821.
+  6            13.
+  7             0.
+  8             0.
+  9             0.
+
+
+ EP Benchmark Completed.
+ Class           =                        C
+ Size            =               8589934592
+ Iterations      =                        0
+ Time in seconds =                     6.19
+ Total threads   =                       32
+ Avail threads   =                       32
+ Mop/s total     =                  1388.54
+ Mop/s/thread    =                    43.39
+ Operation type  = Random numbers generated
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              03 Sep 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L$(LLVM_BUILD)/lib -lomp
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

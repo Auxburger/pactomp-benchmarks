@@ -1,0 +1,242 @@
+CPU pool (32 cores): 1–32
+Listening on /tmp/omp-rm.sock (capacity=32, strategy=fair_share)
+Accepted connection
+Handling client
+Request from pid 178782: max_threads=65535, hint_threads=32
+[1791636969830] Granted 32 threads to pid 178782 (CPUs 1+32)
+Request from pid 178782: max_threads=65535, hint_threads=32
+[1791636973472] Granted 32 threads to pid 178782 (CPUs 1+32)
+Read error: Connection reset by peer (os error 104)
+[1791636973473] Client pid 178782 disconnected — removed from state
+Accepted connection
+Handling client
+Request from pid 178867: max_threads=65535, hint_threads=32
+[1791636973995] Granted 32 threads to pid 178867 (CPUs 1+32)
+Accepted connection
+Handling client
+Request from pid 178941: max_threads=65535, hint_threads=32
+[1791636974833] Granted 16 threads to pid 178941 (CPUs 17+16)
+Request from pid 178867: max_threads=65535, hint_threads=32
+[1791636979511] Granted 16 threads to pid 178867 (CPUs 1+16)
+Read error: Connection reset by peer (os error 104)
+[1791636979530] Client pid 178867 disconnected — removed from state
+Accepted connection
+Handling client
+Request from pid 179088: max_threads=65535, hint_threads=32
+[1791636980069] Granted 32 threads to pid 179088 (CPUs 1+32)
+Request from pid 178941: max_threads=65535, hint_threads=32
+[1791636986066] Granted 32 threads to pid 178941 (CPUs 1+32)
+Read error: Connection reset by peer (os error 104)
+[1791636986070] Client pid 178941 disconnected — removed from state
+Request from pid 179088: max_threads=65535, hint_threads=32
+[1791636986195] Granted 32 threads to pid 179088 (CPUs 1+32)
+Read error: Connection reset by peer (os error 104)
+[1791636986201] Client pid 179088 disconnected — removed from state
+Accepted connection
+Handling client
+Request from pid 179220: max_threads=65535, hint_threads=32
+[1791636986598] Granted 32 threads to pid 179220 (CPUs 1+32)
+Accepted connection
+Handling client
+Request from pid 179255: max_threads=65535, hint_threads=32
+[1791636986744] Granted 16 threads to pid 179255 (CPUs 17+16)
+Request from pid 179220: max_threads=65535, hint_threads=32
+[1791636992500] Granted 32 threads to pid 179220 (CPUs 1+32)
+Read error: Connection reset by peer (os error 104)
+[1791636992526] Client pid 179220 disconnected — removed from state
+Accepted connection
+Handling client
+Request from pid 179376: max_threads=65535, hint_threads=32
+[1791636993061] Granted 32 threads to pid 179376 (CPUs 1+32)
+Request from pid 179255: max_threads=65535, hint_threads=32
+[1791636997990] Granted 16 threads to pid 179255 (CPUs 1+16)
+Read error: Connection reset by peer (os error 104)
+[1791636998013] Client pid 179255 disconnected — removed from state
+Accepted connection
+Handling client
+Request from pid 179500: max_threads=65535, hint_threads=32
+[1791636998545] Granted 32 threads to pid 179500 (CPUs 1+32)
+Request from pid 179376: max_threads=65535, hint_threads=32
+[1791636999117] Granted 16 threads to pid 179376 (CPUs 1+16)
+Read error: Connection reset by peer (os error 104)
+[1791636999141] Client pid 179376 disconnected — removed from state
+Accepted connection
+Handling client
+Request from pid 179541: max_threads=65535, hint_threads=32
+[1791636999679] Granted 16 threads to pid 179541 (CPUs 17+16)
+Request from pid 179500: max_threads=65535, hint_threads=32
+[1791637004423] Granted 16 threads to pid 179500 (CPUs 1+16)
+Read error: Connection reset by peer (os error 104)
+[1791637004442] Client pid 179500 disconnected — removed from state
+Accepted connection
+Handling client
+Request from pid 179662: max_threads=65535, hint_threads=32
+[1791637004981] Granted 32 threads to pid 179662 (CPUs 1+32)
+Request from pid 179541: max_threads=65535, hint_threads=32
+[1791637010981] Granted 32 threads to pid 179541 (CPUs 1+32)
+Read error: Connection reset by peer (os error 104)
+[1791637010993] Client pid 179541 disconnected — removed from state
+Request from pid 179662: max_threads=65535, hint_threads=32
+[1791637010994] Granted 32 threads to pid 179662 (CPUs 1+32)
+Read error: Connection reset by peer (os error 104)
+[1791637011001] Client pid 179662 disconnected — removed from state
+Accepted connection
+Handling client
+Request from pid 179759: max_threads=65535, hint_threads=32
+[1791637011522] Granted 32 threads to pid 179759 (CPUs 1+32)
+Accepted connection
+Handling client
+Request from pid 179762: max_threads=65535, hint_threads=32
+[1791637011524] Granted 16 threads to pid 179762 (CPUs 17+16)
+Request from pid 179759: max_threads=65535, hint_threads=32
+[1791637017587] Granted 32 threads to pid 179759 (CPUs 1+32)
+Read error: Connection reset by peer (os error 104)
+[1791637017613] Client pid 179759 disconnected — removed from state
+Accepted connection
+Handling client
+Request from pid 179882: max_threads=65535, hint_threads=32
+[1791637018153] Granted 32 threads to pid 179882 (CPUs 1+32)
+Request from pid 179762: max_threads=65535, hint_threads=32
+[1791637023763] Granted 32 threads to pid 179762 (CPUs 1+32)
+Read error: Connection reset by peer (os error 104)
+[1791637023804] Client pid 179762 disconnected — removed from state
+Request from pid 179882: max_threads=65535, hint_threads=32
+[1791637023863] Granted 32 threads to pid 179882 (CPUs 1+32)
+Read error: Connection reset by peer (os error 104)
+[1791637023873] Client pid 179882 disconnected — removed from state
+Accepted connection
+Handling client
+Request from pid 180004: max_threads=65535, hint_threads=32
+[1791637024331] Granted 32 threads to pid 180004 (CPUs 1+32)
+Accepted connection
+Handling client
+Request from pid 180039: max_threads=65535, hint_threads=32
+[1791637024404] Granted 16 threads to pid 180039 (CPUs 17+16)
+Request from pid 180004: max_threads=65535, hint_threads=32
+[1791637030353] Granted 32 threads to pid 180004 (CPUs 1+32)
+Read error: Connection reset by peer (os error 104)
+[1791637030378] Client pid 180004 disconnected — removed from state
+Accepted connection
+Handling client
+Request from pid 180162: max_threads=65535, hint_threads=32
+[1791637030921] Granted 32 threads to pid 180162 (CPUs 1+32)
+Request from pid 180039: max_threads=65535, hint_threads=32
+[1791637035908] Granted 16 threads to pid 180039 (CPUs 1+16)
+Read error: Connection reset by peer (os error 104)
+[1791637035921] Client pid 180039 disconnected — removed from state
+Accepted connection
+Handling client
+Request from pid 180283: max_threads=65535, hint_threads=32
+[1791637036457] Granted 32 threads to pid 180283 (CPUs 1+32)
+Request from pid 180162: max_threads=65535, hint_threads=32
+[1791637036724] Granted 16 threads to pid 180162 (CPUs 1+16)
+Read error: Connection reset by peer (os error 104)
+[1791637036745] Client pid 180162 disconnected — removed from state
+Accepted connection
+Handling client
+Request from pid 180324: max_threads=65535, hint_threads=32
+[1791637037280] Granted 16 threads to pid 180324 (CPUs 17+16)
+Request from pid 180283: max_threads=65535, hint_threads=32
+[1791637042259] Granted 16 threads to pid 180283 (CPUs 1+16)
+Read error: Connection reset by peer (os error 104)
+[1791637042285] Client pid 180283 disconnected — removed from state
+Accepted connection
+Handling client
+Request from pid 180465: max_threads=65535, hint_threads=32
+[1791637042821] Granted 32 threads to pid 180465 (CPUs 1+32)
+Request from pid 180324: max_threads=65535, hint_threads=32
+[1791637048559] Granted 32 threads to pid 180324 (CPUs 1+32)
+Read error: Connection reset by peer (os error 104)
+[1791637048571] Client pid 180324 disconnected — removed from state
+Request from pid 180465: max_threads=65535, hint_threads=32
+[1791637048773] Granted 32 threads to pid 180465 (CPUs 1+32)
+Read error: Connection reset by peer (os error 104)
+[1791637048783] Client pid 180465 disconnected — removed from state
+Accepted connection
+Handling client
+Request from pid 180552: max_threads=65535, hint_threads=32
+[1791637049101] Granted 32 threads to pid 180552 (CPUs 1+32)
+Accepted connection
+Handling client
+Request from pid 180593: max_threads=65535, hint_threads=32
+[1791637049316] Granted 16 threads to pid 180593 (CPUs 17+16)
+Request from pid 180552: max_threads=65535, hint_threads=32
+[1791637055211] Granted 32 threads to pid 180552 (CPUs 1+32)
+Read error: Connection reset by peer (os error 104)
+[1791637055233] Client pid 180552 disconnected — removed from state
+Accepted connection
+Handling client
+Request from pid 180671: max_threads=65535, hint_threads=32
+[1791637055777] Granted 32 threads to pid 180671 (CPUs 1+32)
+Request from pid 180593: max_threads=65535, hint_threads=32
+[1791637060652] Granted 16 threads to pid 180593 (CPUs 1+16)
+Read error: Connection reset by peer (os error 104)
+[1791637060689] Client pid 180593 disconnected — removed from state
+Accepted connection
+Handling client
+Request from pid 180794: max_threads=65535, hint_threads=32
+[1791637061225] Granted 32 threads to pid 180794 (CPUs 1+32)
+Request from pid 180671: max_threads=65535, hint_threads=32
+[1791637061526] Granted 16 threads to pid 180671 (CPUs 1+16)
+Read error: Connection reset by peer (os error 104)
+[1791637061534] Client pid 180671 disconnected — removed from state
+Accepted connection
+Handling client
+Request from pid 180835: max_threads=65535, hint_threads=32
+[1791637062071] Granted 16 threads to pid 180835 (CPUs 17+16)
+Request from pid 180794: max_threads=65535, hint_threads=32
+[1791637066773] Granted 16 threads to pid 180794 (CPUs 1+16)
+Read error: Connection reset by peer (os error 104)
+[1791637066785] Client pid 180794 disconnected — removed from state
+Accepted connection
+Handling client
+Request from pid 180959: max_threads=65535, hint_threads=32
+[1791637067329] Granted 32 threads to pid 180959 (CPUs 1+32)
+Request from pid 180959: max_threads=65535, hint_threads=32
+[1791637073490] Granted 32 threads to pid 180959 (CPUs 1+32)
+Read error: Connection reset by peer (os error 104)
+[1791637073499] Client pid 180959 disconnected — removed from state
+Request from pid 180835: max_threads=65535, hint_threads=32
+[1791637073564] Granted 32 threads to pid 180835 (CPUs 1+32)
+Read error: Connection reset by peer (os error 104)
+[1791637073574] Client pid 180835 disconnected — removed from state
+Accepted connection
+Handling client
+Request from pid 181103: max_threads=65535, hint_threads=32
+[1791637074028] Granted 32 threads to pid 181103 (CPUs 1+32)
+Accepted connection
+Handling client
+Request from pid 181138: max_threads=65535, hint_threads=32
+[1791637074109] Granted 16 threads to pid 181138 (CPUs 17+16)
+Request from pid 181103: max_threads=65535, hint_threads=32
+[1791637080310] Granted 32 threads to pid 181103 (CPUs 1+32)
+Read error: Connection reset by peer (os error 104)
+[1791637080337] Client pid 181103 disconnected — removed from state
+Accepted connection
+Handling client
+Request from pid 181225: max_threads=65535, hint_threads=32
+[1791637080877] Granted 32 threads to pid 181225 (CPUs 1+32)
+Request from pid 181138: max_threads=65535, hint_threads=32
+[1791637085351] Granted 16 threads to pid 181138 (CPUs 1+16)
+Read error: Connection reset by peer (os error 104)
+[1791637085354] Client pid 181138 disconnected — removed from state
+Accepted connection
+Handling client
+Request from pid 181276: max_threads=65535, hint_threads=32
+[1791637085889] Granted 32 threads to pid 181276 (CPUs 1+32)
+Request from pid 181225: max_threads=65535, hint_threads=32
+[1791637086813] Granted 16 threads to pid 181225 (CPUs 1+16)
+Read error: Connection reset by peer (os error 104)
+[1791637086854] Client pid 181225 disconnected — removed from state
+Accepted connection
+Handling client
+Request from pid 181317: max_threads=65535, hint_threads=32
+[1791637087392] Granted 16 threads to pid 181317 (CPUs 17+16)
+Request from pid 181276: max_threads=65535, hint_threads=32
+[1791637091783] Granted 16 threads to pid 181276 (CPUs 1+16)
+Read error: Connection reset by peer (os error 104)
+[1791637091809] Client pid 181276 disconnected — removed from state
+Request from pid 181317: max_threads=65535, hint_threads=32
+[1791637096563] Granted 32 threads to pid 181317 (CPUs 1+32)
+Read error: Connection reset by peer (os error 104)
+[1791637096568] Client pid 181317 disconnected — removed from state

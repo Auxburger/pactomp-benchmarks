@@ -1,0 +1,93 @@
+[DRM-pin] pid=33127 tid=33130 assigned=56-87 running_on=65
+[DRM-pin] pid=33127 tid=33171 assigned=56-87 running_on=83
+[DRM-pin] pid=33127 tid=33137 assigned=56-87 running_on=68
+[DRM-pin] pid=33127 tid=33135 assigned=56-87 running_on=67
+[DRM-pin] pid=33127 tid=33161 assigned=56-87 running_on=79
+[DRM-pin] pid=33127 tid=33177 assigned=56-87 running_on=86
+[DRM-pin] pid=33127 tid=33153 assigned=56-87 running_on=75
+[DRM-pin] pid=33127 tid=33179 assigned=56-87 running_on=58
+[DRM-pin] pid=33127 tid=33149 assigned=56-87 running_on=73
+[DRM-pin] pid=33127 tid=33143 assigned=56-87 running_on=70
+[DRM-pin] pid=33127 tid=33169 assigned=56-87 running_on=82
+[DRM-pin] pid=33127 tid=33190 assigned=56-87 running_on=64
+[DRM-pin] pid=33127 tid=33163 assigned=56-87 running_on=80
+[DRM-pin] pid=33127 tid=33133 assigned=56-87 running_on=66
+[DRM-pin] pid=33127 tid=33184 assigned=56-87 running_on=59
+[DRM-pin] pid=33127 tid=33191 assigned=56-87 running_on=56
+[DRM-pin] pid=33127 tid=33186 assigned=56-87 running_on=57
+[DRM-pin] pid=33127 tid=33187 assigned=56-87 running_on=60
+[DRM-pin] pid=33127 tid=33139 assigned=56-87 running_on=69
+[DRM-pin] pid=33127 tid=33158 assigned=56-87 running_on=78
+[DRM-pin] pid=33127 tid=33185 assigned=56-87 running_on=63
+[DRM-pin] pid=33127 tid=33165 assigned=56-87 running_on=81
+[DRM-pin] pid=33127 tid=33145 assigned=56-87 running_on=71
+[DRM-pin] pid=33127 tid=33157 assigned=56-87 running_on=77
+[DRM-pin] pid=33127 tid=33188 assigned=56-87 running_on=62
+[DRM-pin] pid=33127 tid=33155 assigned=56-87 running_on=76
+[DRM-pin] pid=33127 tid=33147 assigned=56-87 running_on=72
+[DRM-pin] pid=33127 tid=33189 assigned=56-87 running_on=61
+[DRM-pin] pid=33127 tid=33151 assigned=56-87 running_on=74
+[DRM-pin] pid=33127 tid=33172 assigned=56-87 running_on=84
+[DRM-pin] pid=33127 tid=33175 assigned=56-87 running_on=85
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - FT Benchmark
+
+ Size                :  512x 512x 512
+ Iterations                  :     20
+ Number of available threads :     32
+
+ T =    1     Checksum =    5.195078707457D+02    5.149019699238D+02
+ T =    2     Checksum =    5.155422171134D+02    5.127578201997D+02
+ T =    3     Checksum =    5.144678022222D+02    5.122251847514D+02
+ T =    4     Checksum =    5.140150594328D+02    5.121090289018D+02
+ T =    5     Checksum =    5.137550426810D+02    5.121143685824D+02
+ T =    6     Checksum =    5.135811056728D+02    5.121496764568D+02
+ T =    7     Checksum =    5.134569343165D+02    5.121870921893D+02
+ T =    8     Checksum =    5.133651975661D+02    5.122193250322D+02
+ T =    9     Checksum =    5.132955192805D+02    5.122454735794D+02
+ T =   10     Checksum =    5.132410471738D+02    5.122663649603D+02
+ T =   11     Checksum =    5.131971141679D+02    5.122830879827D+02
+ T =   12     Checksum =    5.131605205716D+02    5.122965869718D+02
+ T =   13     Checksum =    5.131290734194D+02    5.123075927445D+02
+ T =   14     Checksum =    5.131012720314D+02    5.123166486553D+02
+ T =   15     Checksum =    5.130760908195D+02    5.123241541685D+02
+ T =   16     Checksum =    5.130528295923D+02    5.123304037599D+02
+ T =   17     Checksum =    5.130310107773D+02    5.123356167976D+02
+ T =   18     Checksum =    5.130103090133D+02    5.123399592211D+02
+ T =   19     Checksum =    5.129905029333D+02    5.123435588985D+02
+ T =   20     Checksum =    5.129714421109D+02    5.123465164008D+02
+ Result verification successful
+ class = C
+
+
+ FT Benchmark Completed.
+ Class           =                        C
+ Size            =            512x 512x 512
+ Iterations      =                       20
+ Time in seconds =                     4.28
+ Total threads   =                       32
+ Avail threads   =                       32
+ Mop/s total     =                 92509.79
+ Mop/s/thread    =                  2890.93
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              03 Sep 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L$(LLVM_BUILD)/lib -lomp
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

@@ -39,9 +39,9 @@ not for running the benchmarks themselves.
 
 `data/` holds retained run outputs. Do not edit, reformat, or
 regenerate these files — they are the measurement record. Only the datasets the
-thesis evaluates are kept (`dual/209861`, `dual-exclusive/209458`,
-`staggered/209445`, `mix/209466`, `tracing/209227`, `tracing/209228`);
-superseded campaigns were removed on 2026-09-24 and live on in the Git history. Raw `.log` files are
+thesis evaluates are kept (`dual/224633`, `dual-exclusive/224769`,
+`staggered/224607`, `mix/224609`, `tracing/209227`, `tracing/209228`);
+superseded campaigns were removed on 2026-09-24 and 2026-10-10 and live on in the Git history. Raw `.log` files are
 committed deliberately, and the root `.gitignore` negates the generic `*.log`
 rule to keep them tracked. Preserve that negation.
 

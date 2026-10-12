@@ -56,14 +56,14 @@ produces or needs in place — `bin/`, object files, generated headers, and
 
 The primary measurement data lives in `data/`:
 
-- `dual/209861/` — the main dual-launch experiment on LRZ CoolMUC-4
-- `dual-exclusive/209458/` — the solo process reference (one process per configuration)
-- `staggered/209445/` — the staggered-launch job
+- `dual/224633/` — the main dual-launch experiment on LRZ CoolMUC-4
+- `dual-exclusive/224769/` — the solo process reference (one process per configuration)
+- `staggered/224607/` — the staggered-launch job
 - `tracing/209227/`, `tracing/209228/` — the LLVM OpenMP tracing microbenchmark runs
-- `mix/209466/` — the seeded mixed workload runs, one directory per arm
+- `mix/224609/` — the seeded mixed workload runs, one directory per arm
 
 plus `slurm_logs/` for the per-job SLURM stdout and stderr. Only the datasets
-the thesis evaluates are kept; superseded campaigns were removed on 2026-09-24
+the thesis evaluates are kept; superseded campaigns were removed on 2026-09-24 and 2026-10-10
 and remain in the Git history (e.g. commit `1b6dbc9`, which the thesis links).
 
 Raw `.log` files here (`cpu_util`, `pidstat`, `rm.log`, per-node stdout) are
@@ -169,9 +169,9 @@ The annotated per-CPU utilisation figure is a separate entry point, since it
 needs the job's `meta.txt` files and optionally the SLURM log:
 
 ```sh
-uv run python src/analyze_cpu_util.py data/dual/209861/cpu_util.log \
-  data/dual/209861/89/node0/meta.txt data/dual/209861/89/node1/meta.txt \
-  --pidstat data/dual/209861/pidstat.log --out cpu_utilisation.html
+uv run python src/analyze_cpu_util.py data/dual/224633/cpu_util.log \
+  data/dual/224633/89/node0/meta.txt data/dual/224633/89/node1/meta.txt \
+  --pidstat data/dual/224633/pidstat.log --out cpu_utilisation.html
 ```
 
 It writes interactive HTML; add `--static` or `--png` for the kaleido exports.
@@ -181,7 +181,7 @@ plotting stack to keep in sync.
 ## Regenerating the thesis figures
 
 `export_thesis_figs.py` and `export_scalability_model.py` write the PDFs that
-the thesis includes — the staggered job 209445, the mixed workload job 209466,
+the thesis includes — the staggered job 224607, the mixed workload job 224609,
 the aggregated `dual` runs, and the scalability model. The thesis lives in a separate checkout, so by default
 they write straight into `../master-thesis/figures` when that directory exists,
 and fall back to `figures/` at the root of this repository when it does not:
@@ -203,7 +203,7 @@ pointwise Karp--Flatt diagnostics to `output/model/`.
 ### Scalability model
 
 The configuration-level Amdahl--Karp--Flatt analysis reads the 600 raw process
-outputs under `data/dual/209861`, validates the expected two-process cells, fits one
+outputs under `data/dual/224633`, validates the expected two-process cells, fits one
 effective scaling-loss fraction per kernel and condition, performs launch-group
 bootstrap resampling independently within each pool size (preserving both
 processes and both configurations per launch) and a `t=32` forward hold-out

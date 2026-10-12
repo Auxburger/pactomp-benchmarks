@@ -1,0 +1,96 @@
+OMP: pid 154423 tid 154443 thread 3 bound to OS proc set {1-8}
+OMP: pid 154423 tid 154423 thread 0 bound to OS proc set {1-8}
+OMP: pid 154423 tid 154437 thread 2 bound to OS proc set {1-8}
+OMP: pid 154423 tid 154433 thread 1 bound to OS proc set {1-8}
+OMP: pid 154423 tid 154453 thread 6 bound to OS proc set {1-8}
+OMP: pid 154423 tid 154445 thread 4 bound to OS proc set {1-8}
+OMP: pid 154423 tid 154456 thread 7 bound to OS proc set {1-8}
+OMP: pid 154423 tid 154451 thread 5 bound to OS proc set {1-8}
+[DRM-pin] pid=154423 tid=154443 assigned=1-8 running_on=6
+[DRM-pin] pid=154423 tid=154433 assigned=1-8 running_on=5
+[DRM-pin] pid=154423 tid=154437 assigned=1-8 running_on=1
+[DRM-pin] pid=154423 tid=154445 assigned=1-8 running_on=5
+[DRM-pin] pid=154423 tid=154453 assigned=1-8 running_on=8
+[DRM-pin] pid=154423 tid=154451 assigned=1-8 running_on=7
+[DRM-pin] pid=154423 tid=154456 assigned=1-8 running_on=2
+[DRM-pin] pid=154423 tid=154437 assigned=1-4 running_on=1
+OMP: pid 154423 tid 154423 thread 0 bound to OS proc set {1-8}
+[DRM-pin] pid=154423 tid=154433 assigned=1-4 running_on=1
+[DRM-pin] pid=154423 tid=154443 assigned=1-4 running_on=1
+OMP: pid 154423 tid 154437 thread 2 bound to OS proc set {1-8}
+OMP: pid 154423 tid 154433 thread 1 bound to OS proc set {1-8}
+OMP: pid 154423 tid 154443 thread 3 bound to OS proc set {1-8}
+OMP: pid 154423 tid 154423 thread 0 bound to OS proc set {1-8}
+[DRM-pin] pid=154423 tid=154443 assigned=1-8 running_on=3
+OMP: pid 154423 tid 154443 thread 3 bound to OS proc set {1-8}
+[DRM-pin] pid=154423 tid=154433 assigned=1-8 running_on=1
+OMP: pid 154423 tid 154433 thread 1 bound to OS proc set {1-8}
+OMP: pid 154423 tid 154456 thread 7 bound to OS proc set {1-8}
+OMP: pid 154423 tid 154445 thread 4 bound to OS proc set {1-8}
+[DRM-pin] pid=154423 tid=154437 assigned=1-8 running_on=2
+OMP: pid 154423 tid 154451 thread 5 bound to OS proc set {1-8}
+OMP: pid 154423 tid 154437 thread 2 bound to OS proc set {1-8}
+OMP: pid 154423 tid 154453 thread 6 bound to OS proc set {1-8}
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - CG Benchmark
+
+ Size:      150000
+ Iterations:                     75
+ Number of available threads:     8
+
+ Initialization time =           3.147 seconds
+
+   iteration           ||r||                 zeta
+        1       0.35328997525708E-12   109.9994423237398
+        5       0.89203611212616E-15    28.6471670038893
+       10       0.91226055487433E-15    28.9496695449003
+       15       0.90736790223493E-15    28.9716336228371
+       20       0.91456034998667E-15    28.9734210663747
+       25       0.90914550520891E-15    28.9735863059382
+       30       0.91046954811640E-15    28.9736033967627
+       35       0.90928276057762E-15    28.9736053266246
+       40       0.90761261776956E-15    28.9736055590700
+       45       0.90969027751932E-15    28.9736055884132
+       50       0.91005366296871E-15    28.9736055922485
+       55       0.90443040565936E-15    28.9736055927632
+       60       0.90866181084015E-15    28.9736055928339
+       65       0.90608225583953E-15    28.9736055928440
+       70       0.90257360277232E-15    28.9736055928455
+       75       0.90094885035772E-15    28.9736055928456
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ Zeta is     0.2897360559285E+02
+ Error is    0.2121308183281E-13
+
+
+ CG Benchmark Completed.
+ Class           =                        C
+ Size            =                   150000
+ Iterations      =                       75
+ Time in seconds =                    22.63
+ Total threads   =                        8
+ Avail threads   =                        8
+ Mop/s total     =                  6334.14
+ Mop/s/thread    =                   791.77
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              03 Sep 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L$(LLVM_BUILD)/lib -lomp
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

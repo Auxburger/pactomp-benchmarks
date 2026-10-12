@@ -13,7 +13,7 @@ from analysis.datasets.mix import (  # noqa: E402
     mix_concurrency,
 )
 
-JOB_DIR = REPO_ROOT / "data" / "mix" / "209466"
+JOB_DIR = REPO_ROOT / "data" / "mix" / "224609"
 
 
 class MixDatasetTest(unittest.TestCase):

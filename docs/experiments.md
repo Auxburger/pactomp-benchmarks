@@ -19,7 +19,7 @@ Beide Worker laufen auf getrennten NUMA-Knoten. Die Taskset-Größe wird pro Thr
 
 ```
 data/                             # Messdaten (unveränderlich)
-├── dual/<JID>/                   # Hauptexperiment: 2 nebenläufige Prozesse (Job 209861)
+├── dual/<JID>/                   # Hauptexperiment: 2 nebenläufige Prozesse (Job 224633)
 │   ├── run_1/ … run_10/          # Pro Run: Ausgabedateien pro Benchmark/Thread count
 │   ├── <RUNTAG>/
 │   │   ├── node0/meta.txt        # Zeitstempel Worker A (NUMA node 0)
@@ -27,7 +27,7 @@ data/                             # Messdaten (unveränderlich)
 │   │   └── rm.log                # DRM-Log (Grants, Kapazität, Clients)
 │   ├── cpu_util.log              # mpstat-Log (per-CPU Auslastung alle 5s)
 │   └── pidstat.log               # pidstat-Log (Prozess→CPU Zuordnung alle 5s)
-├── dual-exclusive/<JID>/         # Solo Process Reference (Job 209458)
+├── dual-exclusive/<JID>/         # Solo Process Reference (Job 224769)
 ├── staggered/<JID>/              # Gestaffeltes Experiment (zeitversetzter Start)
 │   ├── <alg>_t<t>_off<s>_A1.log  # Worker A1: per-Iteration Zeiten
 │   ├── <alg>_t<t>_off<s>_A2.log  # Worker A2
@@ -179,9 +179,14 @@ sbatch --clusters=cm4 experiments/run_staggered.sbatch
 sbatch --clusters=cm4 experiments/run_llvm_tracing.sbatch
 sbatch --clusters=cm4 experiments/run_llvm_tracing.sbatch --runs 3 --threads 2,4,8,16,32
 
+# Solo Process Reference
+sbatch --clusters=cm4 experiments/run_npb_exclusive.sbatch
+
 # Gemischte Last (weitere Argumente gehen an run_mix.py)
 sbatch --clusters=cm4 experiments/run_mix.sbatch
 sbatch --clusters=cm4 experiments/run_mix.sbatch --seed 7 --jobs 8
+# Schedule von 224609 wiederholen (Seed 16, identisch mit dem ersetzten Job 209466)
+sbatch --clusters=cm4 experiments/run_mix.sbatch --schedule data/mix/224609/schedule.json
 
 # Tracing lokal, ohne SLURM
 python3 src/run_llvm_tracing.py --build --out /tmp/tracing --no-drm
@@ -251,7 +256,7 @@ LLVM_BUILD=/anderswo/llvm-project/build ./experiments/build_npb.sh
 
 ### Benchmark-Zeiten
 
-Alle Ausgabedateien liegen unter `data/dual/<JOBID>/run_<N>/<alg>/` (ausgewertet: Job 209861):
+Alle Ausgabedateien liegen unter `data/dual/<JOBID>/run_<N>/<alg>/` (ausgewertet: Job 224633):
 ```
 <alg>_threads_<t>_dyn_<true|false>_<iter>.out
 ```
@@ -262,7 +267,7 @@ for bench in ft cg ep; do
   for t in 2 4 8 16 32; do
     for dyn in true false; do
       avg=$(grep -h "Time in seconds" \
-        data/dual/209861/run_{1..10}/${bench}/${bench}_threads_${t}_dyn_${dyn}_{1,2}.out \
+        data/dual/224633/run_{1..10}/${bench}/${bench}_threads_${t}_dyn_${dyn}_{1,2}.out \
         | awk '{s+=$NF; n++} END{printf "%.2f", s/n}')
       echo "$bench t=$t dyn=$dyn avg=${avg}s"
     done
@@ -304,3 +309,4 @@ Siehe [REPORT.md](REPORT.md) für Details. Kurzfassung:
 3. **`test-one.sh`** — Iterationen liefen sequenziell → auf parallele Ausführung umgestellt
 4. **`OMP_PROC_BIND=spread`** — Überschrieb DRM-CPU-Pinning via `sched_setaffinity` → entfernt
 5. **Taskset-Strategie** — Statische Halbierung ersetzt durch dynamische per-`t` Zuweisung
+6. **`server.rs`** — Clients wurden nur bei EOF aus dem Zustand entfernt; FT- und EP-Prozesse beenden die Verbindung mit `Connection reset by peer` und zählten danach bis zu 5 s weiter als aktiv → Client wird jetzt bei jedem Verbindungsende entfernt. Betroffen waren `dual-exclusive/209458` (nur CG), `staggered/209445` (FT, EP) und `mix/209466`; ersetzt durch Reruns, siehe `experiments/CLAUDE.md`, Einschränkung 4

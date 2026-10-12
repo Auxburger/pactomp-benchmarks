@@ -2,7 +2,8 @@
 
 ## September 23, 2026 correction
 
-The canonical model and aggregated figure dataset is `data/dual/209861`.
+The canonical model and aggregated figure dataset is `data/dual/224633`
+(re-measured 2026-10-11 with coordinator `038e652`; it replaced 209861).
 `src/analysis/model/amdahl.py` now resamples ten four-process launch groups
 independently within every kernel/pool-size cell. Both processes and both
 configurations stay paired within a launch, and the baseline is resampled too.
@@ -15,8 +16,8 @@ model tests pass against the canonical data and synthetic clustering checks.
 
 ## September 24, 2026 data cleanup
 
-`data/` now holds only the evaluated jobs: `dual/209861`, `dual-exclusive/209458`,
-`staggered/209445`, `mix/209466`, `tracing/209227` and `tracing/209228`, plus
+`data/` now holds only the evaluated jobs: `dual/224633`, `dual-exclusive/224769`,
+`staggered/224607`, `mix/224609`, `tracing/209227` and `tracing/209228`, plus
 their SLURM logs. The superseded `dual/run_*` and `dual-exclusive/run_*`
 campaigns, staggered jobs 177053/187202/187303 and the logs of unretained or
 failed jobs were removed; they remain in the Git history (commit `1b6dbc9`).
@@ -40,11 +41,11 @@ uv run python src/main.py --png     # also export PNGs next to each HTML (requir
 
 Flags can be combined: `--static --png` exports both. Outputs land in `output/<group>/`.
 
-**Incremental builds**: all three processing stages (aggregated benchmarks, monitoring, staggered) skip regenerating a plot if the output HTML is already newer than every input file. To force a rebuild: touch any input log file (`touch data/staggered/209445/cg_t32_off10_A1.log`) or delete the output directory.
+**Incremental builds**: all three processing stages (aggregated benchmarks, monitoring, staggered) skip regenerating a plot if the output HTML is already newer than every input file. To force a rebuild: touch any input log file (`touch data/staggered/224607/cg_t32_off10_A1.log`) or delete the output directory.
 
-**Thesis figure export**: `export_thesis_figs.py` (at the repository root, not under `src/`) is a separate script that regenerates the thesis-quality PDFs for job 209445 (staggered), job 209466 (mixed workload) and job 209861 (aggregated `dual`, the re-measured run the scalability model also fits) and writes them into the thesis repo's `figures/` directory (`../master-thesis/figures`, falling back to this repo's `figures/`; `THESIS_FIGURES_DIR` overrides — see `src/analysis/figures.py`). It writes runtime figures only: Mop/s is the NPB operation count over runtime, so a Mop/s figure is the runtime figure inverted, and the thesis reports runtime. The aggregated runtime figures come from `_make_runtime_thesis_fig()`, not the interactive `make_figure()`: mean runtime in seconds per CPU-pool size, one line per configuration in `MODE_COLORS`/`MODE_DASHES`/`MODE_MARKERS`, without raw points or min/max bands. It applies thesis styling via `apply_thesis_style()` (legend at bottom, suppressed title, 900×420 px, white canvas with the light `AXIS_STYLE` grid and grey outside ticks). Run with `uv run python export_thesis_figs.py` (requires Chrome for kaleido rendering — run `uv run plotly_get_chrome` once if missing). Does **not** generate cpu_placement figures — see warning below.
+**Thesis figure export**: `export_thesis_figs.py` (at the repository root, not under `src/`) is a separate script that regenerates the thesis-quality PDFs for job 224607 (staggered), job 224609 (mixed workload) and job 224633 (aggregated `dual`, the re-measured run the scalability model also fits) and writes them into the thesis repo's `figures/` directory (`../master-thesis/figures`, falling back to this repo's `figures/`; `THESIS_FIGURES_DIR` overrides — see `src/analysis/figures.py`). It writes runtime figures only: Mop/s is the NPB operation count over runtime, so a Mop/s figure is the runtime figure inverted, and the thesis reports runtime. The aggregated runtime figures come from `_make_runtime_thesis_fig()`, not the interactive `make_figure()`: mean runtime in seconds per CPU-pool size, one line per configuration in `MODE_COLORS`/`MODE_DASHES`/`MODE_MARKERS`, without raw points or min/max bands. It applies thesis styling via `apply_thesis_style()` (legend at bottom, suppressed title, 900×420 px, white canvas with the light `AXIS_STYLE` grid and grey outside ticks). Run with `uv run python export_thesis_figs.py` (requires Chrome for kaleido rendering — run `uv run plotly_get_chrome` once if missing). Does **not** generate cpu_placement figures — see warning below.
 
-**Scalability model export**: `export_scalability_model.py` fits the configuration-level Amdahl--Karp--Flatt model over `data/dual/209861` and writes `amdahl_karp_flatt_capacity.pdf` to the same thesis figures directory plus two CSVs to `output/model/`. Run with `uv run python export_scalability_model.py` from the repository root. Same thesis styling and TUM colours as above — its axes take `AXIS_STYLE` from `plots/style.py`, the same grid every other thesis figure now uses. Its legend entries are empty proxy traces carrying line dash and observation marker together, which is why the figure needs no "circles are observations" caption.
+**Scalability model export**: `export_scalability_model.py` fits the configuration-level Amdahl--Karp--Flatt model over `data/dual/224633` and writes `amdahl_karp_flatt_capacity.pdf` to the same thesis figures directory plus two CSVs to `output/model/`. Run with `uv run python export_scalability_model.py` from the repository root. Same thesis styling and TUM colours as above — its axes take `AXIS_STYLE` from `plots/style.py`, the same grid every other thesis figure now uses. Its legend entries are empty proxy traces carrying line dash and observation marker together, which is why the figure needs no "circles are observations" caption.
 
 **The mixed workload figure shows one repeat, not an average.** Averaging three
 replays of a schedule destroys the thing the figure is for — an iteration
@@ -71,7 +72,7 @@ Two concurrent processes per benchmark (FT, CG, EP from NPB suite):
 - **A-side (`dyn=true`)**: DRM-managed — grants `t/2` threads each → `t` total threads on `t` CPUs (no oversubscription)
 - **B-side (`dyn=false`)**: unmanaged — each uses `t` threads → `2t` total threads on `t` CPUs (2× oversubscription)
 
-Canonical job: `data/dual/209861`. Per-kernel means are in `output/aggregated/npb_all_kernels_stats_long.csv` and the thesis tables.
+Canonical job: `data/dual/224633`. Per-kernel means are in `output/aggregated/npb_all_kernels_stats_long.csv` and the thesis tables.
 
 ### Tracing microbenchmark (`data/tracing/<jobid>/`)
 Produced by the `src/harness/tracing/` driver package (entry point `src/run_llvm_tracing.py`, submitted via `experiments/run_llvm_tracing.sbatch`). The `omp_dyn.c` microbenchmark stands in for the NPB kernels: two concurrent processes per (thread count, `OMP_DYNAMIC`) cell, `OMP_DISPLAY_AFFINITY` on, and an NPB-shaped summary block so `datasets/npb.py` reads the `.out` files unchanged. `omp` is therefore part of `KNOWN_BENCHES`, and `reports/tracing.py` plots these runs as the separate `output/tracing/` group — the run directories sit one level deeper (`<jobid>/run_<n>/omp/`) than the dual experiment, so `reports/tracing.py` handles the discovery. Each job directory also carries `timings.csv` and `manifest.json` written by the driver.
@@ -139,7 +140,7 @@ standard library.
 | `src/analysis/model/amdahl.py` | Amdahl–Karp–Flatt fit over `dual` (standard library only) |
 | `src/analysis/io.py` | `write_outputs()` — HTML, optionally PDF (`also_static=True`) and/or PNG (`also_png=True`, `scale=2`) |
 | `src/analyze_cpu_util.py` | Entry point for that composite figure — needs the job's `meta.txt` files, optionally `pidstat` and the SLURM log |
-| `export_thesis_figs.py` | Standalone script: thesis-quality PDFs for job 209445 into the thesis figures dir |
+| `export_thesis_figs.py` | Standalone script: thesis-quality PDFs for job 224607 into the thesis figures dir |
 | `export_scalability_model.py` | Standalone script: model CSVs to `output/model/`, `amdahl_karp_flatt_capacity.pdf` to the thesis figures dir |
 
 Both export scripts take their styling from `plots/style.py`, so the thesis
@@ -158,13 +159,13 @@ shared x-axis spike line does the visual alignment instead.
 
 ## Canonical staggered job
 
-**Job 209445** (2026-09-04) is the canonical staggered run: 10 s offset for CG/FT, 5 s for EP, 15 iterations each. Steady-state results (iters 3–13, t=32):
+**Job 224607** (2026-10-10, coordinator `038e652`) is the canonical staggered run: 10 s offset for CG/FT, 5 s for EP, 15 iterations each. It replaced 209445, whose FT and EP rows were distorted by the coordinator's stale-client defect (see `experiments/CLAUDE.md`, limitation 4). Steady-state results (iters 3–13, t=32):
 
 | Alg | A (DRM) | B (no DRM) | B/A  | Effect              |
 |-----|---------|------------|------|---------------------|
-| CG  | 7.76 s  | 11.69 s    | 1.51 | DRM saves 34 %      |
-| FT  | 11.09 s | 9.76 s     | 0.88 | DRM 12 % slower (bandwidth pinning) |
-| EP  | 14.30 s | 6.88 s     | 0.48 | DRM ~2× slower, high variance |
+| CG  | 7.84 s  | 11.64 s    | 1.48 | DRM saves 33 %      |
+| FT  | 8.14 s  | 9.80 s     | 1.20 | DRM saves 17 %      |
+| EP  | 7.67 s  | 6.88 s     | 0.90 | DRM 11 % slower, bimodal (activity window) |
 
 See `docs/STAGGERED_HANDOVER.md` for full per-job history and interpretation.
 

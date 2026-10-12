@@ -25,7 +25,7 @@ class ScalabilityModelTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
         cls.observations = load_dual_observations(
-            REPO_ROOT / "data" / "dual" / "209861"
+            REPO_ROOT / "data" / "dual" / "224633"
         )
 
     def test_complete_raw_dataset_is_loaded(self) -> None:
@@ -42,12 +42,12 @@ class ScalabilityModelTest(unittest.TestCase):
         by_cell = {(fit.kernel, fit.mode): fit for fit in fits}
         self.assertAlmostEqual(
             by_cell[("FT", "dynamic=true")].effective_fraction,
-            0.014157847329686628,
+            0.009527473470275888,
             places=8,
         )
         self.assertAlmostEqual(
             by_cell[("CG", "dynamic=false")].effective_fraction,
-            0.09521677161076388,
+            0.0799224941325036,
             places=8,
         )
 

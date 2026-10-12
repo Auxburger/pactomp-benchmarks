@@ -1,0 +1,158 @@
+OMP: pid 167874 tid 167874 thread 0 bound to OS proc set {1-32}
+OMP: pid 167874 tid 167880 thread 3 bound to OS proc set {1-32}
+OMP: pid 167874 tid 167877 thread 1 bound to OS proc set {1-32}
+OMP: pid 167874 tid 167903 thread 12 bound to OS proc set {1-32}
+OMP: pid 167874 tid 167879 thread 2 bound to OS proc set {1-32}
+OMP: pid 167874 tid 167911 thread 15 bound to OS proc set {1-32}
+OMP: pid 167874 tid 167899 thread 11 bound to OS proc set {1-32}
+OMP: pid 167874 tid 167908 thread 14 bound to OS proc set {1-32}
+OMP: pid 167874 tid 167890 thread 8 bound to OS proc set {1-32}
+OMP: pid 167874 tid 167881 thread 4 bound to OS proc set {1-32}
+OMP: pid 167874 tid 167905 thread 13 bound to OS proc set {1-32}
+OMP: pid 167874 tid 167916 thread 16 bound to OS proc set {1-32}
+OMP: pid 167874 tid 167951 thread 28 bound to OS proc set {1-32}
+OMP: pid 167874 tid 167893 thread 9 bound to OS proc set {1-32}
+OMP: pid 167874 tid 167882 thread 5 bound to OS proc set {1-32}
+OMP: pid 167874 tid 167895 thread 10 bound to OS proc set {1-32}
+OMP: pid 167874 tid 167888 thread 7 bound to OS proc set {1-32}
+OMP: pid 167874 tid 167955 thread 29 bound to OS proc set {1-32}
+OMP: pid 167874 tid 167958 thread 31 bound to OS proc set {1-32}
+OMP: pid 167874 tid 167885 thread 6 bound to OS proc set {1-32}
+OMP: pid 167874 tid 167930 thread 20 bound to OS proc set {1-32}
+OMP: pid 167874 tid 167940 thread 24 bound to OS proc set {1-32}
+OMP: pid 167874 tid 167922 thread 17 bound to OS proc set {1-32}
+OMP: pid 167874 tid 167925 thread 19 bound to OS proc set {1-32}
+OMP: pid 167874 tid 167923 thread 18 bound to OS proc set {1-32}
+OMP: pid 167874 tid 167933 thread 22 bound to OS proc set {1-32}
+OMP: pid 167874 tid 167956 thread 30 bound to OS proc set {1-32}
+OMP: pid 167874 tid 167944 thread 26 bound to OS proc set {1-32}
+OMP: pid 167874 tid 167943 thread 25 bound to OS proc set {1-32}
+OMP: pid 167874 tid 167946 thread 27 bound to OS proc set {1-32}
+OMP: pid 167874 tid 167934 thread 23 bound to OS proc set {1-32}
+OMP: pid 167874 tid 167931 thread 21 bound to OS proc set {1-32}
+[DRM-pin] pid=167874 tid=167888 assigned=1-32 running_on=25
+[DRM-pin] pid=167874 tid=167877 assigned=1-32 running_on=1
+[DRM-pin] pid=167874 tid=167951 assigned=1-32 running_on=31
+[DRM-pin] pid=167874 tid=167890 assigned=1-32 running_on=11
+[DRM-pin] pid=167874 tid=167899 assigned=1-32 running_on=9
+[DRM-pin] pid=167874 tid=167908 assigned=1-32 running_on=4
+[DRM-pin] pid=167874 tid=167931 assigned=1-32 running_on=13
+[DRM-pin] pid=167874 tid=167922 assigned=1-32 running_on=12
+[DRM-pin] pid=167874 tid=167895 assigned=1-32 running_on=3
+[DRM-pin] pid=167874 tid=167958 assigned=1-32 running_on=5
+[DRM-pin] pid=167874 tid=167940 assigned=1-32 running_on=23
+[DRM-pin] pid=167874 tid=167885 assigned=1-32 running_on=24
+[DRM-pin] pid=167874 tid=167946 assigned=1-32 running_on=27
+[DRM-pin] pid=167874 tid=167934 assigned=1-32 running_on=26
+[DRM-pin] pid=167874 tid=167903 assigned=1-32 running_on=15
+[DRM-pin] pid=167874 tid=167879 assigned=1-32 running_on=14
+[DRM-pin] pid=167874 tid=167916 assigned=1-32 running_on=10
+[DRM-pin] pid=167874 tid=167880 assigned=1-32 running_on=17
+[DRM-pin] pid=167874 tid=167943 assigned=1-32 running_on=29
+[DRM-pin] pid=167874 tid=167933 assigned=1-32 running_on=22
+[DRM-pin] pid=167874 tid=167882 assigned=1-32 running_on=21
+[DRM-pin] pid=167874 tid=167881 assigned=1-32 running_on=19
+[DRM-pin] pid=167874 tid=167930 assigned=1-32 running_on=18
+[DRM-pin] pid=167874 tid=167911 assigned=1-32 running_on=20
+[DRM-pin] pid=167874 tid=167955 assigned=1-32 running_on=31
+[DRM-pin] pid=167874 tid=167956 assigned=1-32 running_on=11
+[DRM-pin] pid=167874 tid=167923 assigned=1-32 running_on=4
+[DRM-pin] pid=167874 tid=167893 assigned=1-32 running_on=12
+[DRM-pin] pid=167874 tid=167944 assigned=1-32 running_on=29
+[DRM-pin] pid=167874 tid=167925 assigned=1-32 running_on=2
+[DRM-pin] pid=167874 tid=167905 assigned=1-32 running_on=16
+[DRM-pin] pid=167874 tid=167882 assigned=17-32 running_on=21
+OMP: pid 167874 tid 167874 thread 0 bound to OS proc set {1-32}
+[DRM-pin] pid=167874 tid=167911 assigned=17-32 running_on=20
+OMP: pid 167874 tid 167882 thread 5 bound to OS proc set {1-32}
+[DRM-pin] pid=167874 tid=167881 assigned=17-32 running_on=19
+OMP: pid 167874 tid 167911 thread 15 bound to OS proc set {1-32}
+[DRM-pin] pid=167874 tid=167885 assigned=17-32 running_on=24
+OMP: pid 167874 tid 167885 thread 6 bound to OS proc set {1-32}
+[DRM-pin] pid=167874 tid=167888 assigned=17-32 running_on=25
+OMP: pid 167874 tid 167888 thread 7 bound to OS proc set {1-32}
+[DRM-pin] pid=167874 tid=167908 assigned=17-32 running_on=29
+[DRM-pin] pid=167874 tid=167905 assigned=17-32 running_on=18
+OMP: pid 167874 tid 167908 thread 14 bound to OS proc set {1-32}
+[DRM-pin] pid=167874 tid=167890 assigned=17-32 running_on=24
+OMP: pid 167874 tid 167890 thread 8 bound to OS proc set {1-32}
+[DRM-pin] pid=167874 tid=167879 assigned=17-32 running_on=17
+OMP: pid 167874 tid 167879 thread 2 bound to OS proc set {1-32}
+[DRM-pin] pid=167874 tid=167899 assigned=17-32 running_on=18
+OMP: pid 167874 tid 167899 thread 11 bound to OS proc set {1-32}
+[DRM-pin] pid=167874 tid=167893 assigned=17-32 running_on=17
+OMP: pid 167874 tid 167893 thread 9 bound to OS proc set {1-32}
+[DRM-pin] pid=167874 tid=167895 assigned=17-32 running_on=17
+OMP: pid 167874 tid 167895 thread 10 bound to OS proc set {1-32}
+[DRM-pin] pid=167874 tid=167903 assigned=17-32 running_on=25
+OMP: pid 167874 tid 167903 thread 12 bound to OS proc set {1-32}
+[DRM-pin] pid=167874 tid=167877 assigned=17-32 running_on=24
+OMP: pid 167874 tid 167877 thread 1 bound to OS proc set {1-32}
+[DRM-pin] pid=167874 tid=167880 assigned=17-32 running_on=17
+OMP: pid 167874 tid 167880 thread 3 bound to OS proc set {1-32}
+OMP: pid 167874 tid 167881 thread 4 bound to OS proc set {1-32}
+OMP: pid 167874 tid 167905 thread 13 bound to OS proc set {1-32}
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - CG Benchmark
+
+ Size:      150000
+ Iterations:                     75
+ Number of available threads:    32
+
+ Initialization time =           1.273 seconds
+
+   iteration           ||r||                 zeta
+        1       0.35304219355448E-12   109.9994423237398
+        5       0.89302015097952E-15    28.6471670038896
+       10       0.91215138551355E-15    28.9496695449000
+       15       0.90621159114238E-15    28.9716336228373
+       20       0.91492312049093E-15    28.9734210663751
+       25       0.90912734733846E-15    28.9735863059385
+       30       0.90876506163842E-15    28.9736033967630
+       35       0.91078021429057E-15    28.9736053266249
+       40       0.90685396941632E-15    28.9736055590700
+       45       0.91095153096014E-15    28.9736055884129
+       50       0.90994890808183E-15    28.9736055922482
+       55       0.90333802880945E-15    28.9736055927635
+       60       0.90787875713837E-15    28.9736055928341
+       65       0.90716280356293E-15    28.9736055928438
+       70       0.90235780140480E-15    28.9736055928452
+       75       0.90175539264730E-15    28.9736055928455
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ Zeta is     0.2897360559285E+02
+ Error is    0.1581784714701E-13
+
+
+ CG Benchmark Completed.
+ Class           =                        C
+ Size            =                   150000
+ Iterations      =                       75
+ Time in seconds =                     7.50
+ Total threads   =                       16
+ Avail threads   =                       32
+ Warning: Threads used differ from threads available
+ Mop/s total     =                 19123.35
+ Mop/s/thread    =                  1195.21
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              03 Sep 2026
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = -L$(LLVM_BUILD)/lib -lomp
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
