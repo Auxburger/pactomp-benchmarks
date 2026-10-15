@@ -1,9 +1,7 @@
 # PactOMP Benchmarks
 
 Benchmark harness, raw measurement data, and analysis code for the PactOMP
-dynamic resource management (DRM) work. Split out of the master-thesis
-repository so the thesis text stays lightweight and the measurement artifacts
-have a home of their own.
+dynamic resource management (DRM) work.
 
 ## Related repositories
 
@@ -15,9 +13,6 @@ have a home of their own.
   an LLVM fork whose OpenMP runtime queries the coordinator before forming a
   thread team and applies the returned thread count and affinity. This is the
   `libomp.so` that `experiments/build_omp.sh` builds and the NPB binaries load.
-- **Thesis text** — [Auxburger/master-thesis](https://github.com/Auxburger/master-thesis):
-  the write-up that motivates the design and interprets these measurements. It
-  consumes the figure PDFs exported from this repository.
 
 ## Layout
 
@@ -182,20 +177,18 @@ plotting stack to keep in sync.
 
 `export_thesis_figs.py` and `export_scalability_model.py` write the PDFs that
 the thesis includes — the staggered job 224607, the mixed workload job 224609,
-the aggregated `dual` runs, and the scalability model. The thesis lives in a separate checkout, so by default
-they write straight into `../master-thesis/figures` when that directory exists,
-and fall back to `figures/` at the root of this repository when it does not:
+the aggregated `dual` runs, and the scalability model. By default they write
+to `figures/` at the root of this repository:
 
 ```sh
 uv run python export_thesis_figs.py
 uv run python export_scalability_model.py
 ```
 
-Set `THESIS_FIGURES_DIR` to override the destination — for a thesis checkout
-elsewhere, or to keep the PDFs local:
+Set `THESIS_FIGURES_DIR` to write them somewhere else:
 
 ```sh
-THESIS_FIGURES_DIR=figures uv run python export_thesis_figs.py
+THESIS_FIGURES_DIR=/path/to/figures uv run python export_thesis_figs.py
 ```
 `export_scalability_model.py` additionally writes its fitted summary and
 pointwise Karp--Flatt diagnostics to `output/model/`.

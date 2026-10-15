@@ -11,7 +11,6 @@
 - Benchmark-Läufe abgeschlossen:
   - `data/dual/` — 2 nebenläufige Prozesse, exklusive CPU-Partitionen
   - `data/dual-exclusive/` — 1 Prozess als Baseline ohne Konkurrenz
-- Besprechungsnotizen (Deutsch): `meeting-notes-2026-03-09.md` (im Thesis-Repository)
 - Technischer Bericht: `REPORT.md`
 
 ## Nächste Schritte

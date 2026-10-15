@@ -1,8 +1,7 @@
 # CLAUDE.md — pactomp-benchmarks Root
 
 Benchmark harness, raw measurement data, and analysis code for the PactOMP DRM
-work. Split out of the master-thesis repository, which still holds the thesis
-text and the committed figure PDFs.
+work.
 
 ## Documentation discipline
 
@@ -19,9 +18,6 @@ relevant markdown files before finishing:
 | `README.md` | Layout, entry points, dependencies, anything a newcomer runs |
 
 Do not leave markdown docs stale after a code or data change.
-
-Architecture changes and key findings that bear on the thesis narrative belong
-in `THESIS_HANDOVER.md` in the thesis repository, not here.
 
 ## Never poll SLURM in a tight loop
 
@@ -45,18 +41,15 @@ superseded campaigns were removed on 2026-09-24 and 2026-10-10 and live on in th
 committed deliberately, and the root `.gitignore` negates the generic `*.log`
 rule to keep them tracked. Preserve that negation.
 
-## Relationship to the thesis repository
+## Figure output directory
 
-The figure export scripts write straight into the thesis repo's `figures/`
-directory (`../master-thesis/figures`) when that checkout sits beside this one,
-and fall back to `figures/` at this repo's root otherwise; `THESIS_FIGURES_DIR`
-overrides both (see `README.md`). `src/analysis/figures.py` resolves this for
-every export script — do not re-derive the output directory in a script. The
-local `figures/` output is gitignored.
+The figure export scripts write to `figures/` at this repo's root, and
+`THESIS_FIGURES_DIR` overrides it (see `README.md`). `src/analysis/figures.py`
+resolves this for every export script — do not re-derive the output directory
+in a script. The local `figures/` output is gitignored.
 
-The thesis chapters cite paths in this repository as prose references, for
-example `export_thesis_figs.py` and `data/dual`. If you
-move or rename either, check `chapters/08_benchmarks.tex` in the thesis repo.
+External documents cite paths in this repository, for example
+`export_thesis_figs.py` and `data/dual`. Avoid moving or renaming them.
 
 ## The bundled NPB tree is pristine
 
@@ -83,8 +76,7 @@ via `experiments/paths.sh`, and take external dependencies (`LLVM_BUILD`,
 `POMP_DIR`) from the environment with `$HOME`-relative defaults. The same holds
 for `src/harness/paths.py`, which mirrors `paths.sh` for the Python side and
 resolves the repository from its own `__file__` — keep the two in sync. Do not
-reintroduce absolute cluster paths — they broke once already when this
-repository was split out of the thesis repo, and they leak the cluster account
+reintroduce absolute cluster paths — they broke once already, and they leak the cluster account
 into a public repository.
 
 ## The Python project is rooted at the repository root

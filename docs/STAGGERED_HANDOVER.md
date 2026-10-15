@@ -1,8 +1,7 @@
 # Staggered Results Handover
 
 This document records the staggered DRM experiment.
-It supplements `THESIS_HANDOVER.md` in the thesis repository and
-[PLOTTING_HANDOVER.md](PLOTTING_HANDOVER.md).
+It supplements [PLOTTING_HANDOVER.md](PLOTTING_HANDOVER.md).
 
 **Current ground truth: job 224607** (2026-10-10), under
 `data/staggered/224607/`, measured with coordinator revision `038e652`. It

@@ -228,9 +228,7 @@ __marimo__/
 data/tracing/*/omp
 /src/harness/tracing/omp
 
-# Default local output of export_*.py. The canonical copies of these figures
-# are committed in the thesis repo; set THESIS_FIGURES_DIR to write there
-# directly instead.
+# Default local output of export_*.py (override with THESIS_FIGURES_DIR).
 /figures/
 
 # Generated analysis output: interactive HTML per plot group, plus the

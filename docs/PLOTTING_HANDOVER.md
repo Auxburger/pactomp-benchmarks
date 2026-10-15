@@ -31,7 +31,7 @@ Two experiments were run on LRZ CoolMUC-4 (SLURM, cm4 cluster):
 
 All measurement paths below are relative to the repository root, under `data/`.
 (They were originally written as absolute paths under the cluster home
-directory, before this repository was split out of the thesis repo.)
+directory.)
 
 ---
 
